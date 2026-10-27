@@ -1,0 +1,55 @@
+================================================================================
+MCARIS MEDİKAL - GÜNCEL YAPILAN İŞLER VE CANLI MAĞAZA BAĞLANTILARI RAPORU
+================================================================================
+
+1. YENİ KATEGORİ VE VİTRİN SAYFALARI:
+- 2 Motorlu Elektrikli Hasta Karyolaları:
+  https://shop.mcaris.com.tr/kategori/2-motorlu-hasta-yataklari
+- 3 Motorlu Dikey Asansörlü Karyolalar:
+  https://shop.mcaris.com.tr/kategori/asansorlu-3-motorlu-karyolalar
+- 4 Motorlu Yoğun Bakım ve Trendelenburg Karyolaları:
+  https://shop.mcaris.com.tr/kategori/4-motorlu-yogun-bakim-karyolalari
+- Ev Tipi Ahşap Mobilya Tasarımlı Karyolalar:
+  https://shop.mcaris.com.tr/kategori/ahsap-ev-tipi-hasta-karyolasi
+- Hasta Yatakları Ana Kategorisi:
+  https://shop.mcaris.com.tr/kategori/hasta-yataklari
+
+2. PAZARYERİ VE TESLİMAT KARŞILAŞTIRMA TABLOLARI (DÜZELTİLEN ALANLAR):
+- Ürün Detay Sayfası Karşılaştırma Tablosu:
+  https://shop.mcaris.com.tr/urun/2-motorlu-ekonomik-hasta-karyolasi
+- Ana Sayfa Pazaryeri Kargo Kıyaslama Alanı:
+  https://shop.mcaris.com.tr/
+- Ankara Genel Lojistik ve Montaj Sayfası:
+  https://shop.mcaris.com.tr/ankara-hasta-yatagi
+- Ankara İlçe Sayfaları Yerel Servis ve Kıyaslama Alanı (Örn: Çankaya):
+  https://shop.mcaris.com.tr/ankara-hasta-yatagi/cankaya
+
+3. KİRALAMA & SATIN ALMA HİBRİT ÇÖZÜMLERİ VE ŞARTLAR:
+- Kiralama Prosedürü ve Şartları Sayfası:
+  https://shop.mcaris.com.tr/kiralama-proseduru
+  * Depozitosuz şeffaf kiralama sözleşmesi.
+  * Ankara içi HAZIR STOKLU ürünlerde aynı gün adrese teslimat, kata çıkarma ve odaya montaj.
+  * Kiralama süresince ödenen bedellerin sıfır ürünün liste fiyatından mahsup edilerek satın almaya saydırılması esnekliği.
+  * Hastane tipi medikal sterilizasyon ve dezenfeksiyon standardı.
+
+4. RESMİ ÜRETİCİ GÜVENCESİ & KALİTE TESCİLİ:
+- Kurumsal Güvence ve Fabrika Standartları Sayfası:
+  https://shop.mcaris.com.tr/hakkimizda
+  * CE uygunluğu, ISO 9001:2015 yönetim sistemi, 2 yıl resmi yerinde garanti ve 10 yıl yedek parça güvencesi.
+  * Resmi ÜTS firma kaydı henüz onaylanmadığı için mağaza genelinden (footer, ürün rozetleri, SEO şemaları) ÜTS ve EN 60601-2-52 iddiaları kaldırılmış ve şeffaflık sağlanmıştır.
+
+5. DEĞİŞİKLİK KAYITLARI & ŞEFFAFLIK:
+- Değişiklik Kayıtları Sayfası (v2.9.99 & v2.9.87):
+  https://shop.mcaris.com.tr/degisiklik-kayitlari
+  * Geliştirme maddelerinin altına tek tıkla canlı sayfayı açan tam URL bağlantıları yerleştirildi.
+
+6. OPERASYONEL VE TİCARİ KURALLAR:
+- Teslimat ve Montaj Kuralı (Sadece Ankara İçi): Adrese teslimat, kata çıkarma ve odaya montaj SADECE Ankara ili sınırları içerisindeki siparişlerde fiyata dahildir. Ankara dışına ve pazaryerlerinden (Trendyol, Hepsiburada vb.) şehir dışına giden tüm siparişlerde montaj imkanımız bulunmamakta olup, ürünler kargo/ambar ile sevk edilmekte ve alıcı tarafından taşınıp kurulmaktadır.
+- Set Paketleri İptali: "Tam Evde Hasta Bakım Paketleri" kaldırıldı. Şilte, alez ve havalı yatak gibi aksesuarlar fiyata gömülü değil, müşterinin talebine göre opsiyonel sunulmaktadır.
+- Kiralama Aynı Gün Teslimat Şartı: Ankara içi aynı gün teslimat yalnızca hazır stoklu ürünler için taahhüt edilmektedir.
+- Dekübitik Yatak Yaraları ve Havalı Yatak Gerçeği: Bası ve yatak yaralarını (dekübitüs) önleyen asıl medikal ürün hasta karyolası değil, boru tipi havalı yataktır. Karyola oturma/beslenme pozisyonu ve refakatçi ergonomisi sağlar. Sitede karyolanın yatak yarasını tek başına önlediği yönündeki ifadeler düzeltilmiş ve havalı yatak entegrasyonu vurgulanmıştır.
+- Sabit Motor Gücü (6000N / Nm) Temizliği: Motor güçleri ve tork değerleri modelden modele değiştiği için satış fiyat tablosundan ve site genelinden ezbere "6000N/Nm" ifadeleri kaldırılmış; güçlü lineer elektrikli motor standardı getirilmiştir.
+- Ayak Ucu Açısı Standardı: Ezbere yanlış açılar temizlenmiş, kumandayla kademeli ayarlanabilir medikal standart esas alınmıştır.
+- Kategori sayfalarındaki sıkça sorulan sorular Google zengin sonuç yapısına bağlanarak arama motoru görünürlüğü yükseltildi.
+- Sistem genelindeki testler ve derleme kontrolleri eksiksiz doğrulandı.
+

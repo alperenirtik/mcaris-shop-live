@@ -1,0 +1,3840 @@
+-- ========================================================
+-- MCARIS Shop PostgreSQL Canlı Veritabanı Yedeği
+-- Tarih: 16.09.2026 14:05:39
+-- Toplam Kayıt: 1746
+-- ========================================================
+
+SET session_replication_role = 'replica';
+
+-- Tablo: "Category" (11 kayıt)
+INSERT INTO "Category" ("id", "name", "slug", "parentId", "metaTitle", "metaDescription", "h1Title", "seoContent", "order") VALUES ('cmspom8tv0003l1dqggq847j1', 'Bakım Koltukları', 'bakim-koltuklari', NULL, 'Medikal Bakım Koltukları & Kan Alma Koltuğu Fiyatları | MCARIS', 'Elektrikli motorlu hasta bakım, diyaliz, kemoterapi ve kan alma koltukları. Ergonomik tasarım, 2 yıl garanti ve hızlı teslimat.', 'Elektrikli Motorlu Medikal Bakım ve Tedavi Koltukları', 'Klinik, hastane ve evde bakım için tasarlanmış 2, 3 ve 4 motorlu hareketli medikal koltuklar. Sırt, ayak ve yükseklik ayarlarını tek tuşla yaparak hasta konforunu maksimum seviyeye çıkarır.', 0) ON CONFLICT DO NOTHING;
+INSERT INTO "Category" ("id", "name", "slug", "parentId", "metaTitle", "metaDescription", "h1Title", "seoContent", "order") VALUES ('cmspom8u10008l1dq6k6ob7uh', 'Medikal Kozmetik', 'medikal-kozmetik', NULL, NULL, NULL, NULL, NULL, 0) ON CONFLICT DO NOTHING;
+INSERT INTO "Category" ("id", "name", "slug", "parentId", "metaTitle", "metaDescription", "h1Title", "seoContent", "order") VALUES ('cmspom8u00006l1dq2due6fhf', 'Tabure ve Sandalyeler', 'tabure-ve-sandalyeler', NULL, NULL, NULL, NULL, NULL, 0) ON CONFLICT DO NOTHING;
+INSERT INTO "Category" ("id", "name", "slug", "parentId", "metaTitle", "metaDescription", "h1Title", "seoContent", "order") VALUES ('cmt1ca9l70004qm010n693nbz', 'Hasta Yatakları', 'hasta-yataklari', NULL, 'Ankara Hasta Yatakları Modelleri, Kiralama ve Fiyatları | MCARIS', 'Ankara içi aynı gün 2 saatte ücretsiz kurulum, 2-3-4 motorlu elektrikli ve ahşap hasta karyolaları. 2 yıl yerinde servis garantisi ve SGK geri ödeme faturası.', 'Motorlu Hasta Karyolaları & Ankara Kiralık / Satılık Yatak Modelleri', 'MCARIS Medikal olarak yatağa bağımlı ve hareket kısıtlılığı yaşayan hastalar için en güvenli, CE ve ISO 9001 sertifikalı motorlu hasta karyolalarını sunuyoruz. 2 motorlu pratik modellerden, bakıcı ergonomisini koruyan 3 motorlu asansörlü ve dolaşımı destekleyen 4 motorlu Trendelenburg sistemlerine kadar geniş ürün yelpazemiz mevcuttur. Ankara''nın 25 ilçesine aynı gün kendi araçlarımızla ücretsiz teslimat ve odanıza anahtar teslim montaj yapıyoruz.', 0) ON CONFLICT DO NOTHING;
+INSERT INTO "Category" ("id", "name", "slug", "parentId", "metaTitle", "metaDescription", "h1Title", "seoContent", "order") VALUES ('cmspom8ty0004l1dq1xq390i0', 'Cihaz Sehpası', 'cihaz-sehpasi', NULL, 'Medikal Cihaz Taşıma Sehpaları & Etajer Fiyatları | MCARIS', '2 ve 3 raflı, çekmeceli, kilitli tekerlekli medikal cihaz sehpaları. Hastane ve klinik tipi profesyonel taşıma sehpaları.', 'Medikal Cihaz Taşıma ve Setup Sehpaları', 'Hassas medikal cihazlar, solunum cihazları, ultrason ve lazer sistemleri için kablo geçiş kanallı, elektrostatik boyalı dayanıklı cihaz sehpaları.', 0) ON CONFLICT DO NOTHING;
+INSERT INTO "Category" ("id", "name", "slug", "parentId", "metaTitle", "metaDescription", "h1Title", "seoContent", "order") VALUES ('cmtop0k4s0001w0jkbv2pu3ju', 'Hasta Yemek Masaları & Aksesuar', 'hasta-yemek-masalari', NULL, 'Hasta Yemek Masası Modelleri & Yatak Üstü Amortisörlü Masa Fiyatları | MCARIS', 'Amortisörlü yatak üstü hasta yemek masaları, tekerlekli etajerli medikal yemek masaları. Kolay temizlenebilir, ergonomik yükseklik ayarlı ve garantili.', 'Hasta Yemek Masası Modelleri & Yatak Üstü Amortisörlü Masalar', 'Hasta bakımında beslenme ve günlük aktiviteleri kolaylaştıran MCARIS hasta yemek masaları ve medikal etajerler; amortisörlü hidrolik yükseklik ayarı, 360° dönebilen frenli tekerlekleri ve antibakteriyel leke tutmaz üst tablasıyla maksimum hasta ergonomisi sunar. Motorlu hasta karyolalarının altına kolayca giren U ve H ayak tasarımları ile yatak içi konforu yükseltir.', 2) ON CONFLICT DO NOTHING;
+INSERT INTO "Category" ("id", "name", "slug", "parentId", "metaTitle", "metaDescription", "h1Title", "seoContent", "order") VALUES ('cmtwz3i0d0001w0ckk2soouwk', 'Platinum Hasta Yatakları', 'platinum-hasta-yataklari', NULL, NULL, NULL, NULL, NULL, 0) ON CONFLICT DO NOTHING;
+INSERT INTO "Category" ("id", "name", "slug", "parentId", "metaTitle", "metaDescription", "h1Title", "seoContent", "order") VALUES ('cmtwz3i6k0002w0ckkfitruq7', 'Gold Hasta Yatakları', 'gold-hasta-yataklari', NULL, NULL, NULL, NULL, NULL, 0) ON CONFLICT DO NOTHING;
+INSERT INTO "Category" ("id", "name", "slug", "parentId", "metaTitle", "metaDescription", "h1Title", "seoContent", "order") VALUES ('cmtwz3i9n0003w0ckq3nfrfwj', 'Silver Hasta Yatakları', 'silver-hasta-yataklari', NULL, NULL, NULL, NULL, NULL, 0) ON CONFLICT DO NOTHING;
+INSERT INTO "Category" ("id", "name", "slug", "parentId", "metaTitle", "metaDescription", "h1Title", "seoContent", "order") VALUES ('cmspom8u00007l1dqzxn19xd1', 'Muayene ve Bakım Masaları', 'muayene-ve-bakim-masalari', NULL, 'Klinik Muayene Masaları & Ahşap Masaj Masası Modelleri | MCARIS', 'Klinik muayene masaları, ahşap spa ve masaj masaları. Yüksek taşıma kapasitesi, elektrostatik fırın boyalı sağlam şasi.', 'Profesyonel Klinik Muayene ve Bakım Masaları', 'Doktor muayenehaneleri, klinikler, fizik tedavi merkezleri ve spa salonları için elektrostatik toz boyalı ve masif ahşap muayene masaları. 2 yıl resmi garanti güvencesiyle.', 0) ON CONFLICT DO NOTHING;
+INSERT INTO "Category" ("id", "name", "slug", "parentId", "metaTitle", "metaDescription", "h1Title", "seoContent", "order") VALUES ('cmspom8tz0005l1dqtr9serlz', 'Dövme Kol Sehpaları', 'dovme-kol-sehpalari', NULL, NULL, NULL, NULL, NULL, 0) ON CONFLICT DO NOTHING;
+
+-- Tablo: "Product" (63 kayıt)
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmsswndoi000fl147315ahbcw', NULL, 'Aura – Ahşap Bakım ve Masaj Masası |', 'aura-ahsap-bakim-ve-masaj-masasi', 'MC-3153', '30250', 'Leke tutmayan ve silinebilir özellikte gri renk suni deri döşemelidir.', 'Yatak platformunda 26 dansitede 6 cm lik sünger bulunmaktadır.
+
+Baş deliği mevcuttur.
+
+Melamin kaplı mdf gövdeden imaldir.
+
+Esneme yapmaz ve bu sayede bakım ve masaj esnasında gıcırdamaz.
+
+180 kg. taşıma kapasitelidir.
+
+Ölçüleri:
+
+En: 700 mm - Boy: 1900 mm - Yükseklik: 770 mm', NULL, 'cmspom8u00007l1dqzxn19xd1', NULL, ARRAY['/uploads/products/aura-ahsap-bakim-ve-masaj-masasi-1-d012.webp', '/uploads/products/aura-ahsap-bakim-ve-masaj-masasi-2-6fe2.webp']::text[], '{"Garanti":"2 Yıl"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:36.759Z', '2026-09-16T10:03:39.939Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmst07413001rl1477rrnygdp', NULL, 'CARINE AYAK BANYO TUZU 300 ML', 'carine-ayak-banyo-tuzu-300-ml', 'MC-CRN001', '375', 'Tüm gün vücudunuzun yükünü taşıyan ayaklarınız, özel bir bakımı hak eder. Carine Ayak Banyo Tuzu, içeriğindeki zengin mineraller sayesinde ayaklarınızı derinlemesine arındırırken, günün stresini ve yorgunluğunu saniyeler içinde üzerinizden atmanıza yardımcı olur.', 'Öne Çıkan Ürün Özellikleri:
+Yorgunluk Giderici Etki: Ayaklardaki şişlik ve ağırlık hissini hafifletir. Özellikle ayakta çalışanlar ve yoğun hareket edenler için anında rahatlama sağlar.
+
+Koku ve Bakteri Kontrolü: Terleme sonucu oluşan istenmeyen kokuları nötralize eder. Düzenli kullanımda ayak hijyenini en üst seviyeye çıkararak ferah bir his bırakır.
+
+Sertleşmiş Deriyi Yumuşatır: Topuklardaki sertleşmiş deri ve nasırlaşmış bölgeleri yumuşatarak pedikür işlemlerini kolaylaştırır. Ayaklarınızın ipeksi bir pürüzsüzlüğe kavuşmasını sağlar.
+
+Mineral Desteği: İçeriğindeki kristal tuzlar ve mineraller, cildin doğal dengesini destekler ve gözeneklerin temizlenmesine yardımcı olur.
+
+Ferahlatıcı Aroma: Uygulama sırasında yayılan hoş kokusuyla spa etkisi yaratarak sadece ayaklarınızı değil, ruhunuzu da dinlendirir.
+
+Kullanım Önerileri:
+Hazırlık: Bir ayak banyosu kabını veya uygun bir kabı, ayak bileklerinizi örtecek kadar ılık suyla doldurun.
+
+Uygulama: Suya yaklaşık 2-3 yemek kaşığı (ihtiyaca göre artırılabilir) Carine Ayak Banyo Tuzu ekleyin ve erimesi için karıştırın.
+
+Dinlenme: Ayaklarınızı bu suyun içerisinde 15-20 dakika bekletin.
+
+Bitiş: Ayaklarınızı kuruladıktan sonra, bakımın etkisini artırmak için Carine Ayak Kremi ile nemlendirme yapmanızı öneririz.
+
+Teknik Detaylar:
+Ürün Tipi: Mineral Bazlı Ayak Bakım Tuzu
+
+Etki: Dinlendirici, yumuşatıcı ve koku giderici.
+
+Cilt Tipi: Tüm cilt tipleri için uygundur.
+
+Uygulama Alanı: Sadece ayak banyosu içindir.
+
+Neden Carine Ayak Banyo Tuzu? Ev konforunda profesyonel bir ayak bakımı sunar. Sert kimyasallardan uzak, mineral odaklı yapısıyla ayak sağlığınızı korurken, kendinizi ödüllendirdiğiniz bir ritüel oluşturur.', NULL, 'cmspom8u10008l1dq6k6ob7uh', NULL, ARRAY['/uploads/products/carine-ayak-banyo-tuzu-300-ml-1-232a.webp']::text[], '{"Cilt tipi":"Tüm Cilt Tipleri"}'::jsonb, 10, 20, FALSE, '2026-08-17T19:24:34.189Z', '2026-09-16T10:04:25.115Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssynbim001jl1478hgdmocp', NULL, 'Koza Sırt ve Ayak Kısmı Hareketli Koltuk | Beyaz', 'mcaris-koza-sirt-ve-ayak-kismi-hareketli-koltuk-beyaz', 'MC-2101', '13000', 'Sırt ve ayak kısmı hareketli, vinlex deri döşemeli medikal koltuk. Sedye pozisyonuna dönüşebilir. 23 kg, 58x180x65 cm.', 'Tüm yüzeysel bölgeler 7 lik 28 dans. gri sünger ve üzerine vinlex deri döşemelidir.
+Toplam 23 kg.
+Sedye pozisyonunda uzunluk 180 cm.
+Sırt oturma ve ayak bölgelerindeki en 58 cm.
+Yerden oturma alanına olan yükseklik 65 cm.
+ExBxY – 58 cm x 180 cm x 65 cm', NULL, 'cmspom8tv0003l1dqggq847j1', NULL, ARRAY['/uploads/products/mcaris-koza-sirt-ve-ayak-kismi-hareketli-koltuk-beyaz-1-e333.webp', '/uploads/products/mcaris-koza-sirt-ve-ayak-kismi-hareketli-koltuk-beyaz-2-74cd.webp', '/uploads/products/mcaris-koza-sirt-ve-ayak-kismi-hareketli-koltuk-beyaz-3-b868.webp', '/uploads/products/mcaris-koza-sirt-ve-ayak-kismi-hareketli-koltuk-beyaz-4-3ad6.webp']::text[], '{"Garanti":"2 Yıl"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:33.831Z', '2026-09-16T10:04:26.947Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssylx88001hl147m148f18o', NULL, 'Elegance 3 Motorlu Yükseklik Hareketli Koltuk | Siyah', 'mcaris-elegance-3-motorlu-yukseklik-hareketli-koltuk-siyah', 'MC-2515', '35700', '3 motorlu, el kumandası ile yükseklik ayarlı medikal bakım koltuğu. Sırt, ayak ve yükseklik hareketi. 58x180x69-90 cm.', 'Tüm yüzeysel bölgeler 28 dans. gri sünger ve üzerine vinlex deri döşemelidir.
+Sedye pozisyonunda uzunluk 180 cm.
+Sırt oturma ve ayak bölgelerindeki en 58 cm.
+El kumandası ile ayarlanabilen sırt ayak ve yükseklik hareketi.
+40 cm*19 cm*7 cm kol dayama sünger bölgesi ölçüleri
+Yerden oturma alanına olan yükseklik minimum 69 cm. maksimum 90 cm
+ExBxY – 58 cm x 180 cm x 69 – 90 cm', NULL, 'cmspom8tv0003l1dqggq847j1', NULL, ARRAY['/uploads/products/mcaris-elegance-3-motorlu-yukseklik-hareketli-koltuk-siyah-1-a5ad.webp', '/uploads/products/mcaris-elegance-3-motorlu-yukseklik-hareketli-koltuk-siyah-2-faec.webp', '/uploads/products/mcaris-elegance-3-motorlu-yukseklik-hareketli-koltuk-siyah-3-26c9.webp', '/uploads/products/mcaris-elegance-3-motorlu-yukseklik-hareketli-koltuk-siyah-4-3570.webp', '/uploads/products/mcaris-elegance-3-motorlu-yukseklik-hareketli-koltuk-siyah-5-44ab.webp']::text[], '{"Garanti":"2 Yıl"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:45.439Z', '2026-09-16T09:44:06.189Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssvo2b40001l147gf5spf4w', NULL, 'Amortisörlü Çalışma Taburesi | Beyaz – Plastik Ayak', 'mcaris-amortisorlu-calisma-taburesi-beyaz-plastik-ayak', 'MC-4401', '2900', 'Amortisörlü, yükseklik ayarlı (43-53 cm) çalışma taburesi. 360 derece döner sessiz tekerlekler, 2 yıl garanti.', 'ÜRÜN MODEL ADI - AMORTİSÖRLÜ TABURE
+ÜRÜN ÖZELLİKLERİ\t
+%100 Yerli üretim
+Uzun ömürlü ve kuvvetli amortisör
+360 derece dönebilen SESSİZ ve PARKE ÇİZMEZ dayanıklı mobil tekerler
+Yüksek dayanıklı uzun ömürlü oturum süngeri
+Yükseklik ayarı
+Geniş ve sağlam yıldız ayak
+Kolay ve zahmetsiz kurulum', NULL, 'cmspom8u00006l1dq2due6fhf', NULL, ARRAY['/uploads/products/mcaris-amortisorlu-calisma-taburesi-beyaz-plastik-ayak-1-30b9.webp', '/uploads/products/mcaris-amortisorlu-calisma-taburesi-beyaz-plastik-ayak-2-9421.webp', '/uploads/products/mcaris-amortisorlu-calisma-taburesi-beyaz-plastik-ayak-3-8a83.webp']::text[], '{"Garanti":"2 Yıl","Yükseklik":"43 – 53 cm","Ayak Çapı":"60 cm","ÜRÜN RENKLERİ":"Beyaz","BAKIM VE TEMİZLİK":"Nemli bir bezle temizlenebilir.","Döşeme Genişliği":"40 cm"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:34.606Z', '2026-09-16T10:04:18.734Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmst1epkg002dl1470vtgxgk9', NULL, 'CARINE Vücut Yıkama Losyonu 400 Ml', 'carine-vucut-yikama-losyonu-400-ml', 'MC-CRN014', '440', 'Cildiniz için en iyi bakımı sunmak üzere özel olarak formüle edilen Carine Vücut Yıkama Losyonu, günlük temizliğinizi bir keyfe dönüştürüyor. Bu harika ürün, cildinizi sadece temizlemekle kalmaz, aynı zamanda derinlemesine nemlendirir ve besler.', 'Cildiniz için en iyi bakımı sunmak üzere özel olarak formüle edilen Carine Vücut Yıkama Losyonu, günlük temizliğinizi bir keyfe dönüştürüyor. Bu harika ürün, cildinizi sadece temizlemekle kalmaz, aynı zamanda derinlemesine nemlendirir ve besler.
+
+Üre içeriği sayesinde cildinizin doğal nem dengesini korur ve nemlendirici etkisiyle kuru ve hassas ciltler için mükemmel bir çözüm sunar. Üre, cildinize yumuşaklık kazandırırken, nem tutma kapasitesini artırarak uzun süreli bir rahatlık sağlar.
+
+E vitamini ile zenginleştirilmiş formülü, cildinizi serbest radikallerin zararlı etkilerinden korur. E vitamini, güçlü bir antioksidan olarak bilinir ve cildinizin genç, sağlıklı ve canlı görünmesine yardımcı olur. Aynı zamanda cilt bariyerinizi güçlendirir ve çevresel faktörlere karşı koruma sağlar.
+
+Paraben içermez ve böylece cildinizin doğal dengesini bozmadan nazikçe temizler. Parabensiz formülü, özellikle hassas ciltler için idealdir ve alerji riskini minimize eder. Güvenle kullanabileceğiniz bu losyon, cildinizde herhangi bir tahrişe yol açmaz.
+
+Kullanım Şekli: Islak cildinize nazikçe masaj yaparak uygulayın ve ardından su ile durulayın. Günlük kullanıma uygundur ve düzenli kullanımda cildinizdeki farkı hissedeceksiniz.
+
+Vücut Yıkama Losyonu ile her banyoda spa deneyimi yaşayın. Cildinize gösterdiğiniz özen, onun sağlıklı ve ışıl ışıl görünmesini sağlar. Kendinize bu özel bakımı hediye edin ve cildinizin ihtiyacı olan tüm besinleri sağlayarak, her gün tazelenmiş hissedin', NULL, 'cmspom8u10008l1dq6k6ob7uh', NULL, ARRAY['/uploads/products/carine-vucut-yikama-losyonu-400-ml-1-b08f.webp']::text[], '{"Motor Sayısı":"4 Motorlu Dualatör","Sırt Açısı":"0 - 70° (Elektrikli)","Yükseklik Ayarı":"40 - 80 cm (Elektrikli)","Taşıma Kapasitesi":"220 kg"}'::jsonb, 10, 20, FALSE, '2026-08-17T19:24:53.617Z', '2026-09-16T09:43:45.392Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssyflhm001bl147mn7tqpsw', NULL, 'Cherry | 4 Motorlu Hareketli Koltuk (Trendelenburg)', 'cherry-4-motorlu-hareketli-koltuk-trendelenburg', 'MC-2507', '50500', 'Ürün kolon motorludur.
+Ürün metal aksamları elektrostatik toz boyalıdır.
+Vinlex deri döşeme kullanılmaktadır.
+Tüm yüzeyler 28 DNS. sünger kullanılmaktadır.
+Ürün temizliği nemli bez yardımı ile yapılmalıdır.', 'Sırt ,ayak ve yükseklik – alçaklık hareketlidir.
+Trendelenburg özelliklidir.
+Kumanda yardımı ile sırt, ayak hareketlendirme ve yükseklik – alçaklık ayarı yapılmaktadır.
+Kumanda yardımı ile  trendenlenburg pozisyonuna gelmektedir.
+Kolçaklar yanlardaki elcikler sayesinde isteğe bağlı çıkartılabilmektedir.
+Min. ( en alt seviye alçaklık ) : 68 cm ( +-3 )
+Max. ( en üst seviye yükseklik ) : 88 cm ( +-3 )
+Genişlik: 57 cm
+Uzunluk: 180 cm
+Trendelenburg açısı : 12 derece (+-)
+Ayak ucu döşeme uzunluğu : 47 cm
+Ayak ucu döşeme genişliği : 57 cm
+Oturma kısmı genişliği : 50cm x 57 cm
+Sırt kısmı ölçüsü: 57 cm x 81cm', NULL, 'cmspom8tv0003l1dqggq847j1', NULL, ARRAY['/uploads/products/cherry-4-motorlu-hareketli-koltuk-trendelenburg-1-dd80.webp', '/uploads/products/cherry-4-motorlu-hareketli-koltuk-trendelenburg-2-bcf5.webp', '/uploads/products/cherry-4-motorlu-hareketli-koltuk-trendelenburg-3-b7a9.webp', '/uploads/products/cherry-4-motorlu-hareketli-koltuk-trendelenburg-4-b249.webp']::text[], '{"Garanti":"2 Yıl"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:45.129Z', '2026-09-16T09:44:14.226Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssxyav7000tl147eqds3qt3', NULL, 'Motorlu Veteriner Pet Bakım Ve Muayene Masası – Oval – Beyaz', 'motorlu-veteriner-pet-bakim-ve-muayene-masasi-oval-beyaz', 'MC-6068', '62750', '| Kolay temizlenebilir ve kaymayı engelleyen kauçuk yüzeyli üst tablaya sahiptir.
+| Kauçuk tabla mdf ahşap üzerine döşenmiştir.
+| Elektrikli ayaktan kumandalı sistem ile yükseklik hareketi verilebilir.
+| Yüksek ağırlık taşıma kabiliyetlidir.
+| Kullanım dışı esnalarda çıkarabileceğiniz ayarlanabilir kromajlı '''' H '''' barı mevcuttur.', '| En - Boy ( Üst Tabla) : 60x120cm
+| Yükseklik: 40 cm - 128 cm
+| H Bar Tabladan Yükseklik: 9 cm - 65 cm ( Yatay kullanım) / 93 cm ( Dikey Kullanım)
+| Tüm metal aksam elektrostatik toz boya ile boyalıdır.', NULL, 'cmspom8u00007l1dqzxn19xd1', NULL, ARRAY['/uploads/products/motorlu-veteriner-pet-bakim-ve-muayene-masasi-oval-beyaz-1-42ef.webp', '/uploads/products/motorlu-veteriner-pet-bakim-ve-muayene-masasi-oval-beyaz-2-e8e6.webp', '/uploads/products/motorlu-veteriner-pet-bakim-ve-muayene-masasi-oval-beyaz-3-722e.webp', '/uploads/products/motorlu-veteriner-pet-bakim-ve-muayene-masasi-oval-beyaz-4-123a.webp', '/uploads/products/motorlu-veteriner-pet-bakim-ve-muayene-masasi-oval-beyaz-5-d4eb.webp', '/uploads/products/motorlu-veteriner-pet-bakim-ve-muayene-masasi-oval-beyaz-6-ac1b.webp']::text[], '{"Garanti":"2 Yıl"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:42.230Z', '2026-09-16T10:02:57.716Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssyoq3c001ll1478mu6wfcb', NULL, 'Vesta 3 Motorlu Koltuk', 'vesta-uc-motorlu-koltuk', 'MC-2551', '37000', 'Tüm yüzeysel bölgeler 28 dans. gri sünger ve üzerine vinlex deri döşemelidir.', 'Sedye pozisyonunda uzunluk 180 cm.
+Sırt oturma ve ayak bölgelerindeki en 58 cm.
+El kumandası ile ayarlanabilen sırt ayak ve yükseklik hareketi.
+40 cm*19 cm*7 cm kol dayama sünger bölgesi ölçüleri
+Yerden oturma alanına olan yükseklik minimum 69 cm. maksimum 90 cm
+ExBxY – 58 cm x 180 cm x 69 – 90 cm', NULL, 'cmspom8tv0003l1dqggq847j1', NULL, ARRAY['/uploads/products/vesta-uc-motorlu-koltuk-1-558f.webp', '/uploads/products/vesta-uc-motorlu-koltuk-2-1e04.webp']::text[], '{"Garanti":"2 Yıl"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:35.645Z', '2026-09-16T10:03:57.448Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssy77uk0013l1479cafqqtd', NULL, 'Veteriner Ultrason Masası – Beyaz', 'veteriner-ultrason-masasi-beyaz', 'MC-6115', '37500', 'Yüksek ağırlık taşıma kabiliyetlidir.
+
+Metal bölgeler elektrostatik toz boyalıdır.', 'Min Yükseklik: 66
+Max Yükseklik: 95
+Üst Tabla Ölçüleri: 130*75', NULL, 'cmspom8u00007l1dqzxn19xd1', NULL, ARRAY['/uploads/products/veteriner-ultrason-masasi-beyaz-1-5eda.webp', '/uploads/products/veteriner-ultrason-masasi-beyaz-2-f208.webp', '/uploads/products/veteriner-ultrason-masasi-beyaz-3-386b.webp']::text[], '{"Garanti":"2 Yıl"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:35.432Z', '2026-09-16T10:04:01.289Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmsrhs0910007l1kb79r0g9ry', NULL, 'Cherusker Yemek Masalı Etajer Tiltli', 'cherusker-yemek-masali-etajer-tiltli', 'MC-YMET', '54000', 'Yemek masalı etajer. Yemek masası ABS , yükseklik ve açı ayarlı, tekerlekli, çekmeceli ve dolaplı.', 'Model Özellikleri
+
+İki taraftan erişilebilir
+
+Table yüksekliği 82 cm’den 112 cm’ye ayarlanabilir
+
+Kişisel eşyalar için geniş alan
+
+Kompakt tasarımı sayesinde kolay temizlenebilir
+
+50 mm çift tekerlek, 2 frenli tekerlek
+
+Sizin İçin Avantajlar
+Büyük ahşap dekorlu hasta masası, eğilebilir üst yüzeye sahiptir ve yüksekliği ayarlanabilir. Bu özellikleriyle yemek saatleri ve okuma için idealdir. Komodin kolayca manevra yapılabilir.', NULL, 'cmtop0k4s0001w0jkbv2pu3ju', 'platinum', ARRAY['/uploads/products/cherusker-yemek-masali-etajer-tiltli-1-c352.webp']::text[], '{"Garanti":"2 Yıl","Dış ölçüler G x D x Y (cm)":"52 x 50 x 87","Hasta masası üst ölçüleri (cm)":"60 x 36","Hasta masası üst yüksekliği (cm)":"82 – 112","Maks. hasta masası üst yük kapasitesi (kg)":"8 kg ( yaklaşık)"}'::jsonb, 0, 20, FALSE, '2026-08-17T19:24:34.303Z', '2026-09-16T10:04:22.765Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmst19c240029l147036t9ica', NULL, 'Carine Saç Dökülmesine Karşı Şampuan 400 ML', 'carine-sac-dokulmesine-karsi-sampuan-400-ml', 'MC-CRN012', '355', 'Carine Saç Dökülmesine Karşı Şampuan, saç tellerini kökten uca besleyerek dökülme sorununa karşı etkili bir çözüm sunmak için özel olarak geliştirilmiştir. Saç derisindeki kan dolaşımını destekleyen ve zayıflamış saç köklerini canlandıran formülü ile saçlarınızın daha dirençli, hacimli ve parlak görünmesine yardımcı olur.', 'Öne Çıkan Ürün Özellikleri:
+Dökülme Karşıtı Yoğun Formül: Saç dökülmesine neden olan etkenlerle savaşan aktif bileşenleri sayesinde, düzenli kullanımda saç kaybını gözle görülür şekilde azaltır.
+
+Kökten Uca Besleme: Saç köklerine nüfuz ederek saçın ihtiyacı olan vitamin ve mineralleri sağlar. Zayıflamış ve incelmiş saç tellerini kalınlaştırarak daha gür bir görünüm sunar.
+
+Saç Derisi Bakımı: Saç derisindeki sebum dengesini korur, gözenekleri temizler ve saçın sağlıklı uzaması için ideal bir zemin hazırlar.
+
+Hacim ve Parlaklık: Saçları ağırlaştırmadan temizler. İlk yıkamadan itibaren saçlara doğal bir yumuşaklık, canlılık ve ekstra hacim kazandırır.
+
+Tüm Saç Tiplerine Uygun: Hassas saç derisi dahil olmak üzere; boyalı, kuru veya yağlı tüm saç tipleri için güvenle kullanılabilir.
+
+Paraben ve Sert Kimyasallar İçermez: Saçın doğal yapısına zarar vermeyen, dermatolojik olarak test edilmiş güvenli içerik.
+
+Kullanım Önerileri:
+Uygulama: Islak saça yeterli miktarda şampuanı masaj yaparak uygulayın.
+
+Masaj: Parmak uçlarınızla saç derisine dairesel hareketler yaparak kan dolaşımını hızlandırın.
+
+Bekleme: Aktif bileşenlerin saç köklerine iyice nüfuz etmesi için durulamadan önce 2-3 dakika bekletin.
+
+Durulama: Bol ılık su ile saçınızı arındırın. En iyi sonuç için düzenli kullanım önerilir.
+
+
+Neden Carine Saç Bakımı? Carine, bilimsel yaklaşımla hazırlanan içeriğiyle sadece dökülmeyi durdurmayı değil, aynı zamanda mevcut saçlarınızın kalitesini artırarak size daha özgüvenli bir görünüm kazandırmayı hedefler.', NULL, 'cmspom8u10008l1dq6k6ob7uh', NULL, ARRAY['/uploads/products/carine-sac-dokulmesine-karsi-sampuan-400-ml-1-9804.webp']::text[], '{"Özellik":"Güçlendirici ve Hacim Verici Etki","Cilt Tipi":"Tüm Saç ve Saç Derisi Tipleri","Ürün Tipi":"Dökülme Karşıtı Şampuan","Dermatolojik Uygunluk":"Klinik olarak test edilmiştir."}'::jsonb, 9, 20, FALSE, '2026-08-17T19:24:52.919Z', '2026-09-16T09:43:49.249Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmst08xs9001tl147yp885w6k', NULL, 'CARINE Bebek Banyo Köpüğü 400 Ml', 'carine-bebek-banyo-kopugu-400-ml', 'MC-CRN003', '375', 'Bebeğinizin banyo saatlerini keyifli bir oyuna dönüştüren Carine Bebek Banyo Köpüğü, hassas bebek cildi için özel olarak geliştirilmiştir. Bol ve kalıcı köpük yapısı sayesinde bebeklerin banyoda eğlenmesini sağlarken, içeriğindeki bitkisel özler ve vitaminler ile cildi kurutmadan nazikçe temizler.', 'Öne Çıkan Özellikler ve Yararları
+Göz Yakmayan Formül: Bebeklerin hassas göz yapılarını koruyan, banyo sırasında huzursuzluk yaratmayan özel “göz yakmaz” içeriğe sahiptir.
+
+Hassas Temizlik: Bebeğinizin cildinin doğal nem dengesini (pH seviyesini) bozmadan, nazikçe kirden arındırır.
+
+E Vitamini ve Panthenol Desteği: Cildi nemlendirir, banyo sonrası oluşabilecek kuruluk ve kaşıntı hissini önleyerek ipeksi bir yumuşaklık bırakır.
+
+Güvenilir ve Temiz İçerik: Paraben, alkol ve sert kimyasallar içermez. Bebeğinizin cildi için en güvenli bakımı sunar.
+
+Bol Köpük Deneyimi: Sadece az bir miktar ürünle banyo suyunu bolca köpürterek bebeklerin banyoyu sevmesine yardımcı olur.
+
+Aloe Vera: Bebeğinizin cildini rahatlatır ve canlandırır, nem takviyesi sağlar ve bakım yapar, kızarmış ve tahriş olmuş ciltleri rahatlatır, yara oluşumuna karşı cildi korur, cilt dokularının restore edilmesini sağlar ve pürüzsüz bir cilt sağlar.
+Papatya Özü Yağı: Bebeğinizin bağırsaklarını canlandırır, enfeksiyonu temizler, cildi nemlendirir, saçları canlandırır ve cilt hücrelerini yeniler.
+Nazik ve Güvenli: Bebek cildi için özel olarak geliştirilen formülü, test edilmiştir.
+Eğlenceli Banyo Anları: Yoğun ve eğlenceli köpükler miniklerin banyo keyfini artırır.
+Hassas Temizlik: Bebek cildinin pH dengesine uygun olarak üretilmiştir. Tahriş etmeden temizler.
+Nemlendirici Özellik: Cildin doğal nem dengesini koruyacak içeriklerle zenginleştirilmiştir.
+Kolay Durulanma: Kolayca durulanan formülü, banyo sonrası cilt üzerinde kalıntı bırakmaz.
+Hipoalerjenik: Alerjen içermeyen kompozisyonu ile cildi korur.
+Paraben ve SLS İçermez: Bebeğinizin cildini koruyan paraben ve SLS gibi zararlı maddeleri içermez.
+Hoş Kokulu: Bebeklerin ve çocukların hoşlanacağı, hafif ve ferah bir kokuya sahiptir.
+Kullanım Talimatları;
+
+Banyo suyunu akıtın ve köpük oranını ayarlamak için gerekli miktarda banyo köpüğünü suya ekleyin.
+Bebeğinizi yavaşça suya yerleştirin ve köpükler arasında eğlenmesine izin verin.
+Banyo köpüğünün yumuşak temizlik gücüyle bebeğinizi nazikçe yıkayın.
+Bol su ile durulayarak cildin köpüklerden arındırın.', NULL, 'cmspom8u10008l1dq6k6ob7uh', NULL, ARRAY['/uploads/products/carine-bebek-banyo-kopugu-400-ml-1-4440.webp']::text[], '{"Garanti":"2 Yıl","Motor Sayısı":"2","Taşıma Kapasitesi":"180 kg"}'::jsonb, 10, 20, FALSE, '2026-08-17T19:24:36.323Z', '2026-09-16T10:03:43.745Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmsswaiis000dl147rkqe6sun', NULL, 'Kol Dayama Sehpası | Kare Ayak – Siyah', 'mcaris-kol-dayama-sehpasi-kare-ayak-siyah', 'MC-4532', '3150', 'Yükseklik ayarlı (75-120 cm), 90-180 derece hareket kapasiteli kol dayama sehpası. Vinlex deri, elektrostatik toz boya.', 'Özellikleri:
+En düşük seviyesi 75 cm
+En yüksek seviyesi 120 cm
+Kol dayama minderi 6 lık sünger ile kaplanmış ahşap üzerine temizlenebilir vinlex deri
+20 cm x 40 cm kol dayama yüzeyi
+90 derece ile 180 derece arasında hareket kapasitesi
+Elcikli sıkma aparatı ile kolay yükseklik ayarı
+Kıvrımlı kare sac ve ayarlanabilir 4 ayak
+Komple elektrostatik toz boya', NULL, 'cmspom8tz0005l1dqtr9serlz', NULL, ARRAY['/uploads/products/mcaris-kol-dayama-sehpasi-kare-ayak-siyah-1-5c15.webp', '/uploads/products/mcaris-kol-dayama-sehpasi-kare-ayak-siyah-2-5aab.webp', '/uploads/products/mcaris-kol-dayama-sehpasi-kare-ayak-siyah-3-0c00.webp', '/uploads/products/mcaris-kol-dayama-sehpasi-kare-ayak-siyah-4-477f.webp']::text[], '{"Garanti":"2 Yıl"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:35.335Z', '2026-09-16T10:04:03.696Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmsrhx8bx0009l1kbmwnvaa38', NULL, 'Herrman Yemek Masalı Etajer', 'herrman-yemek-masali-etajer', 'MC-YME1', '40000', 'Katlanır tablalıdır. Plastik kaplamalı gövde, kayın dekoru.', 'Herrman yemek masalı etajer. Ahşap ve sabit yükseklik, tekerlekli, çekmece ve dolaplı.
+Çift tekerlek Ø 50 mm, 4 frenli tekerlek
+Yükseklik 89 cm 
+Genişlik 55 cm
+Toplam Derinlik 45 cm
+Toplam Genişlik (Tabla yatay konumda) 119,5 cm', NULL, 'cmtop0k4s0001w0jkbv2pu3ju', 'platinum', ARRAY['/uploads/products/herrman-yemek-masali-etajer-1-eb4b.webp', '/uploads/products/herrman-yemek-masali-etajer-2-2107.webp', '/uploads/products/herrman-yemek-masali-etajer-3-a3c6.webp', '/uploads/products/herrman-yemek-masali-etajer-4-8833.webp']::text[], '{"Garanti":"2 Yıl","Genişlik":"55 cm","Yükseklik":"89 cm","Toplam derinlik":"45 cm","Toplam genişlik (tabla yatay konumda)":"119,5 cm"}'::jsonb, 0, 20, FALSE, '2026-08-17T19:24:35.236Z', '2026-09-16T10:04:06.409Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmsrhi9wh0003l1kbkaf3jyru', NULL, 'Dali Low Entry Econ', 'dali-low-entry-econ', 'MC-ECON', '115000', 'Bu yatak modeli, teknik veriler ve donanım seçenekleriyle size özel olarak yapılandırılabilir. İhtiyaçlarınıza ve ev dekorasyonunuza tam uyum sağlayacak şekilde, görsel tasarım ve uygun aksesuarlarla bir yatak planlayabilirsiniz.', 'DALI LOW ENTRY ECON
+
+4 parça yatma zemini, 90 x 200 cm
+
+Ahşap kaplama korkuluklar
+
+23-63 cm arası elektrik kumandalı yükseklik ayarı
+
+Elektrikli kumandalı tilt, sırt ve ayak ayarlama imkanı
+
+Kilitleme fonksiyonlu el kumandası
+
+175 kg taşıma kapasitesi, tutma barı dahil
+
+Metal yatma yüzeyi
+
+Tutma barı dahildir.', NULL, 'cmt1ca9l70004qm010n693nbz', 'platinum', ARRAY['/uploads/products/dali-low-entry-econ-1-18e7.webp']::text[], '{"Garanti":"2 Yıl","Motor Sayısı":"4","Yükselik Ayarı":"23 cm - 63 cm","Taşıma Kapasitesi":"175 kg","Sırt dayanağı açısı":"0 – 70°","Ters Trendelenburg eğimi":"12°","Uyluk dayanağı açısı":"0 – 35° (yaklaşık)"}'::jsonb, 0, 20, FALSE, '2026-08-17T19:24:36.221Z', '2026-09-16T10:03:46.126Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmsrngirr000yl1kba8pc8c4l', NULL, '2 Motorlu Full ABS Hasta Yatağı – Tabanca Korkuluklu', 'mcaris-2-motorlu-full-abs-hasta-yatagi-tabanca-korkuluklu', 'MC-ECO2200', '21000', 'Estetik ve hijyeni bir araya getiren bu 2 motorlu hasta karyolası, Full ABS kaplama başlıkları ve güvenli tabanca tipi korkulukları ile hem ev hem de hastane kullanımı için mükemmel bir çözümdür. Elektrikli kumanda sistemi sayesinde sırt ve ayakucu pozisyonları sarsıntısız bir şekilde ayarlanabilir. Ankara içi aynı gün teslimat ve ücretsiz kurulum & montaj avantajıyla, hastanız için en hijyenik konforu bugün sağlayın.', 'Modern tasarımıyla dikkat çeken 2 motorlu ABS kaplama hasta karyolası, hastanın tedavi sürecini kolaylaştırmak ve yaşam kalitesini artırmak için tasarlanmıştır. Özellikle hijyen standartlarının yüksek olduğu durumlarda, antibakteriyel ABS yüzeyleri sayesinde enfeksiyon riskini minimize eder.
+
+Konforlu Pozisyonlandırma ve Kumanda Kontrolü
+Güçlü çift motor sistemi, hastanın gün içerisindeki temel hareketlerini zahmetsizce gerçekleştirir. Ergonomik el kumandası sayesinde şu ayarlar kolaylıkla yapılabilir:
+
+Sırt Ayarı: Hastanın yemek yeme, kitap okuma veya televizyon izleme gibi aktiviteleri için sırt kısmı 0-70 derece arasında ayarlanabilir.
+Ayakucu Ayarı: Bacaklardaki kan dolaşımını düzenlemek ve ödem oluşumunu engellemek için ayak bölgesi kumanda ile hareket ettirilir.
+Sarsıntısız Hareket: Yüksek torklu motorlar, hastayı rahatsız etmeden yumuşak bir geçiş sağlar.
+Full ABS Kaplama ve Tabanca Korkuluk Avantajı
+Bu modeli diğerlerinden ayıran en önemli özellik, kullanılan materyal kalitesi ve güvenlik sistemidir:
+
+Full ABS Başlıklar: Kolayca sökülüp takılabilen baş ve ayak ucu panelleri, ABS (akrilonitril bütadien stiren) malzemeden üretilmiştir. Antibakteriyeldir, hafiftir ve darbelere karşı son derece dayanıklıdır.
+Tabanca Tipi Korkuluklar: “Tabanca korkuluk” olarak bilinen bağımsız hareketli yan korumalar, tek bir pim yardımıyla kolayca indirilir ve kilitlenir. Hastanın yataktan düşme riskini tamamen ortadan kaldırırken, yataktan iniş-binişlerde tam destek sağlar.
+Kolay Temizlik: Pürüzsüz yüzeyi sayesinde ev tipi dezenfektanlarla saniyeler içinde sterilize edilebilir.
+Kullanım Alanları: Hem hastane odası donanımı hem de evde uzun süreli hasta bakımı için uygundur. Sağlam metal aksamı ve koruyucu ABS plastikleri ile uzun ömürlü bir kullanım vaat eder.', NULL, 'cmt1ca9l70004qm010n693nbz', 'silver', ARRAY['/uploads/products/mcaris-2-motorlu-full-abs-hasta-yatagi-tabanca-korkuluklu-1-e03d.webp', '/uploads/products/mcaris-2-motorlu-full-abs-hasta-yatagi-tabanca-korkuluklu-2-c6c4.webp', '/uploads/products/mcaris-2-motorlu-full-abs-hasta-yatagi-tabanca-korkuluklu-3-16e8.webp', '/uploads/products/mcaris-2-motorlu-full-abs-hasta-yatagi-tabanca-korkuluklu-4-232f.webp']::text[], '{"Garanti":"2 Yıl","Ağırlık":"100 kg","Tekerlekler":"360 Derece Dönebilen Çapraz Frenli Medikal Tekerlekler","Korkuluk Tipi":"4 Adet Bağımsız Tabanca Korkuluk (ABS Kaplı)","Motor Sayısı":"2","Serum Askısı":"Yüksekliği Ayarlanabilir (Standart Paket İçeriği)","Şase Yapısı":"Elektrostatik Toz Boyalı Çelik Profil","Başlık Özelliği":"Sökülebilir Antibakteriyel Full ABS Paneller"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:37.484Z', '2026-09-16T10:03:24.909Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssyjmih001fl147cfgsiklp', NULL, 'Liva – Hidrolikli – Yükseklik Ayarlı Kan Alma Koltuğu – Turuncu', 'liva-hidrolikli-yukseklik-ayarli-kan-alma-koltugu-turuncu', 'MC-2495', '37000', 'Hidrolik yardımı ile yükseklik-alçaklık ayarlanmaktadır.
+Ayarlamalar: Sırt desteği, ayak desteği amörtisör yardımı ile manuel olarak ayarlanmaktadır. 
+Vinlex deri döşeme kullanılmaktadır. 
+Metaller elektrostatik toz boyalıdır.', '2 adet frenli, 2 adet frensiz tekerlekleri bulunmaktadır. 
+Ayarlanabilir serum askısı bulunmaktadır.
+Toplam Uzunluk: 176 cm
+Genişlik: 56 cm (oturma alanı), 73 cm (kolçaklar dahil)
+Min. yükseklik: 55 cm
+Max. yükseklik: 75 cm
+Sırt Kısmı Açısı: 75 derece', NULL, 'cmspom8tv0003l1dqggq847j1', NULL, ARRAY['/uploads/products/liva-hidrolikli-yukseklik-ayarli-kan-alma-koltugu-turuncu-1-c9c4.webp', '/uploads/products/liva-hidrolikli-yukseklik-ayarli-kan-alma-koltugu-turuncu-2-5039.webp', '/uploads/products/liva-hidrolikli-yukseklik-ayarli-kan-alma-koltugu-turuncu-3-207b.webp']::text[], '{"Garanti":"2 Yıl"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:45.234Z', '2026-09-16T09:44:11.681Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssydwgo0019l147x8aepo7u', NULL, 'Cherry | 3 Motorlu Hareketli Koltuk', 'cherry-3-motorlu-hareketli-koltuk', 'MC-2506', '45000', 'Yükseklik Hareketli – Kolon Motorlu – Kumandalı
+El kumandası ile ayarlanabilen sırt ayak ve yükseklik hareket özelliği vardır.
+Tüm yatma yüzeyi bölgeleri 28 dans. gri sünger ve üzerine vinlex deri döşemelidir.', 'Yerden oturma alanına olan min. yükseklik:  60 cm max. yükseklik : 80 cm’dir.
+Sırt, oturma ve ayak bölgelerindeki genişliği 57 cm.’dir
+Sedye (Yatay) pozisyonunda uzunluk 180 cm’dir.
+Kolçak ( Kol dayama Özelliklerinde)
+Uzunluk : 37 cm
+En : 15 cm
+Kalınlık : 7 cm olarak tasarlanmıştır.
+Hareket kabiliyeti yükseklik ve öne arkaya doğru manuel olarak ayarlanabilmektedir.', NULL, 'cmspom8tv0003l1dqggq847j1', NULL, ARRAY['/uploads/products/cherry-3-motorlu-hareketli-koltuk-1-dd80.webp', '/uploads/products/cherry-3-motorlu-hareketli-koltuk-2-b7a9.webp', '/uploads/products/cherry-3-motorlu-hareketli-koltuk-3-1a52.webp', '/uploads/products/cherry-3-motorlu-hareketli-koltuk-4-b7a9.webp']::text[], '{"Garanti":"2 Yıl"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:43.811Z', '2026-09-16T09:44:16.212Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmst0g47x001xl147vzm8o4xb', NULL, 'CARINE Bebek Şampuanı 300 Ml', 'carine-bebek-sampuani-300-ml', 'MC-CRN007', '415', 'Bebeğinizin hassas saç derisi ve narin saç telleri için özel olarak geliştirilen Carine Bebek Şampuanı, içeriğindeki saf bileşenlerle banyoyu bir keyfe dönüştürür. Saçları kurutmadan nazikçe temizlerken, saç derisinin doğal nem dengesini korumasına yardımcı olur. Bebeklerin hassas göz yapılarıyla uyumlu formülü sayesinde banyolar artık çok daha huzurlu.', 'Öne Çıkan Özellikler ve Yararları
+Göz Yakmayan Özel İçerik: Bebeklerin banyo yaparken huzursuz olmasını engelleyen, gözlerde yanma ve batma hissi yaratmayan özel bileşenlerle formüle edilmiştir.
+
+Hassas Saç Derisi Bakımı: Bebeğinizin henüz gelişimini tamamlamamış olan hassas saç derisini tahriş etmeden temizler ve konak oluşumuna karşı cildi korumaya yardımcı olur.
+
+Kolay Tarama ve Parlaklık: Saç tellerini yumuşatarak banyo sonrası saçların birbirine karışmasını önler, ipeksi bir yumuşaklık ve doğal bir parlaklık kazandırır.
+
+Doğal pH Dengesi: Bebek cildinin doğal koruyucu tabakasıyla %100 uyumlu pH değerine sahiptir.
+
+Saf ve Güvenilir: Paraben, alkol, boya ve sert kimyasallar içermez. İlk günden itibaren güvenle kullanılabilir.
+
+Kullanım Şekli
+Bebeğinizin saçlarını ılık suyla nazikçe ıslatın.
+
+Avucunuza bir miktar şampuan alıp köpürtün ve bebeğinizin başına masaj yaparak uygulayın.
+
+Saç derisine çok hafif dokunuşlarla yaydıktan sonra bol ve ılık su ile durulayın.
+
+Günlük kullanım için mükemmeldir.', NULL, 'cmspom8u10008l1dq6k6ob7uh', NULL, ARRAY['/uploads/products/carine-bebek-sampuani-300-ml-1-5a73.webp']::text[], '{"Koku":"Hafif ve Ferah Bebek Kokusu","Özellik":"Göz Yakmaz, Saç Derisi Dostu","İçerik":"Paraben, Alkol ve Boya İçermez","Cilt Tipi":"Hassas ve Yeni Doğan Saç Derisi","Ürün Miktarı":"300 ml","Kullanım Alanı":"Bebek ve Çocuk Saç Bakımı"}'::jsonb, 10, 20, FALSE, '2026-08-17T19:24:47.751Z', '2026-09-16T09:44:00.330Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssy08cb000vl147bupyfv2g', NULL, 'Pinea – Ahşap Bakım ve Masaj Masası', 'pinea-ahsap-bakim-ve-masaj-masasi', 'MC-3151', '38750', 'Leke tutmayan ve silinebilir özellikte beyaz suni deri döşemelidir.', 'Sırt kısmı kademeli olarak hareket edebilmektedir. 
+
+Baş deliği mevcuttur.
+
+Yatak platformunda 26 dansitede 6 cm lik sünger bulunmaktadır.
+
+Emprenyeli naturel çam ağacından imal gövdeye sahiptir.
+
+Cilalıdır ve doğal bir görünüme sahiptir.
+
+Islak ve buharlı ortamda çürüme yapmaz ve uzun ömürlüdür.
+
+Esneme yapmaz ve bu sayede bakım ve masaj esnasında gıcırdamaz.
+
+180 kg. taşıma kapasitelidir.
+
+Ölçüleri:
+En: 700 mm - Boy: 1900 mm - Yükseklik: 770 mm', NULL, 'cmspom8u00007l1dqzxn19xd1', NULL, ARRAY['/uploads/products/pinea-ahsap-bakim-ve-masaj-masasi-1-b517.webp', '/uploads/products/pinea-ahsap-bakim-ve-masaj-masasi-2-1e5c.webp', '/uploads/products/pinea-ahsap-bakim-ve-masaj-masasi-3-8cfc.webp']::text[], '{"Garanti":"2 Yıl"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:39.272Z', '2026-09-16T10:03:14.689Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssx5eha000jl147xarcwvkf', NULL, 'Katlanır Veteriner Pet Bakım ve Muayene Masası – Beyaz (Yuvarlak Üst Tabla)', 'katlanir-veteriner-pet-bakim-ve-muayene-masasi-beyaz-yuvarlak-ust-tabla', 'MC-6025', '12750', 'Ürün üst tabla kauçuk yüzeylidir.
+Metal bölgeler elektrostatik toz boyalıdır.
+Kolaylıkla taşınabilir, portatiftir.
+Dişli sistem sayesinde manuel olarak ayarlama yapılabilir ve katlanabilmektedir.', 'Ürün üst kauçuk tabla çap : 65 cm
+Ürün en düşük yükseklik : 69 cm
+Ürün en yüksek yükseklik : 81 cm
+Askı aparatı “L” bar : yüksekliği 70 cm, bağlama yeri olan kısa taraf ise : 38 cm
+Askı aparatı kromajlıdır. Talebe göre yerinden çıkartabilirsiniz.', NULL, 'cmspom8u00007l1dqzxn19xd1', NULL, ARRAY['/uploads/products/katlanir-veteriner-pet-bakim-ve-muayene-masasi-beyaz-yuvarlak-ust-tabla-1-0a14.webp', '/uploads/products/katlanir-veteriner-pet-bakim-ve-muayene-masasi-beyaz-yuvarlak-ust-tabla-2-a602.webp', '/uploads/products/katlanir-veteriner-pet-bakim-ve-muayene-masasi-beyaz-yuvarlak-ust-tabla-3-400d.webp']::text[], '{"Garanti":"2 Yıl"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:38.517Z', '2026-09-16T10:03:16.441Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmsri8wft000dl1kbiza1irsd', NULL, 'ISA COMPACT Hasta Transfer Lifti', 'isa-compact-hasta-transfer-lifti', 'MC-ISACOM', '145000', 'Hem kullanıcıların (hastaların) hem de bakıcıların konforu ve güvenliği merkeze alınarak tasarlanmış bu ergonomik taşıma lifti, esnek ayar seçenekleriyle her vücut tipine uyum sağlar. Gelişmiş destek mekanizmaları ve kolay yönlendirilebilir yapısı sayesinde transfer süreçlerini zahmetsiz hale getir', 'TelescoLift Teknolojisi: Uzatılabilir kaldırma kolları, 9 farklı uzunluk pozisyonunda ayarlanabilir. Bu sayede farklı boylardaki kullanıcılar için maksimum esneklik ve güvenli kaldırma açısı elde edilir.
+
+ErgoSupport Alt Bacak Desteği: Döner yapısı ve 6 farklı yükseklik ayarı ile kullanıcının alt bacaklarına optimum konfor ve destek sunar.
+
+Kişiselleştirilebilir Konfor: * Ayaklık: Topuk bloğu ve yuvarlak hatlı özel tasarımıyla 3 farklı yükseklik kademesine sahiptir.
+
+Bacak Bandı: Ekstra konfor sağlayan yastıklı bir yapıya sahiptir; hijyen standartlarını korumak için kolayca çıkarılıp yıkanabilir.
+
+Bakıcı Dostu Tasarım: Ergonomik olarak şekillendirilmiş itme çubuğu ve pratik ayak pedalı, cihazın minimum güçle yönlendirilmesini ve kontrol edilmesini sağlar.', NULL, 'cmt1ca9l70004qm010n693nbz', 'platinum', ARRAY['/uploads/products/isa-compact-hasta-transfer-lifti-1-9609.webp', '/uploads/products/isa-compact-hasta-transfer-lifti-2-4dcd.webp', '/uploads/products/isa-compact-hasta-transfer-lifti-3-e9b5.webp', '/uploads/products/isa-compact-hasta-transfer-lifti-4-786a.webp', '/uploads/products/isa-compact-hasta-transfer-lifti-5-9402.webp', '/uploads/products/isa-compact-hasta-transfer-lifti-6-ffd3.webp', '/uploads/products/isa-compact-hasta-transfer-lifti-7-b653.webp', '/uploads/products/isa-compact-hasta-transfer-lifti-8-d780.webp']::text[], '{"Garanti":"2 Yıl","Kaldırma Hızı":"46 mm/sn","Ayak Açıklığı":"535 mm (Min.) – 735 mm (Maks.)","Cihaz Ağırlığı":"43 kg","Taşıma Kapasitesi":"140 kg"}'::jsonb, 0, 20, FALSE, '2026-08-17T19:24:37.065Z', '2026-09-16T10:03:34.491Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssyh8dm001dl147pm2ztywz', NULL, 'Cherry-2 | 4 Motorlu Hareketli Koltuk', 'cherry-2-4-motorlu-hareketli-koltuk', 'MC-2505', '50500', 'Ürün metal aksamları elektrostatik toz boyalıdır.
+Vinlex deri döşeme kullanılmaktadır.
+Tüm yüzeyler 28 DNS. sünger kullanılmaktadır.
+Ürün temizliği nemli bez yardımı ile yapılmalıdır.', 'Kumanda yardımı ile yükseklik – alçaklık hareketi sağlanmaktadır.
+Kumanda yardımı ile sırt ve ayak kısımları hareketi sağlanmaktadır.
+Kolçaklar sırt kısmına entegrelidir.
+Sırt kısmı geriye doğru hareket edince kolçaklarda geriye doğru hareket etmektedir.
+Kolçaklar 90 derece yukarı kalkabilmektedir.
+Min. ( en alt seviye alçaklık ) : 60 cm
+Max. ( en üst seviye yükseklik ) : 80 cm
+Genişlik : 57 cm
+ 
+Uzunluk  :180 cm
+
+ 
+Ayak ucu döşeme uzunluğu : 47 cm
+
+Ayak ucu döşeme genişliği : 57 cm
+Oturma kısmı genişliği : 50 cm  x  57 cm
+Sırt kısmı ölçüsü: 57cm  x  81cm', NULL, 'cmspom8tv0003l1dqggq847j1', NULL, ARRAY['/uploads/products/cherry-2-4-motorlu-hareketli-koltuk-1-97d3.webp', '/uploads/products/cherry-2-4-motorlu-hareketli-koltuk-2-76bd.webp', '/uploads/products/cherry-2-4-motorlu-hareketli-koltuk-3-4e7f.webp', '/uploads/products/cherry-2-4-motorlu-hareketli-koltuk-4-4723.webp']::text[], '{"Garanti":"2 Yıl"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:45.335Z', '2026-09-16T09:44:08.665Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmst15g3x0027l147rd9eqdxr', NULL, 'CARINE Genital Bölge Yıkama Jeli 300 Ml', 'carine-genital-bolge-yikama-jeli-300-ml', 'MC-CRN011', '385', 'Genital bölgenin kendine has, hassas bir flora yapısı vardır ve standart sabunlar bu dengeyi bozabilir. Carine Genital Bölge Yıkama Jeli, bu özel bölgenin pH dengesini korumak ve gün boyu süren hijyenik bir ferahlık sağlamak amacıyla özel olarak geliştirilmiştir.', 'Öne Çıkan Ürün Özellikleri:
+pH Dengeli Formül: Genital bölgenin asidik koruyucu tabakasıyla tam uyumludur. Bu sayede bölgenin doğal florasını bozmadan, nazikçe temizler.
+
+Tahriş Karşıtı ve Yatıştırıcı: Alkol, sabun ve paraben içermeyen içeriği sayesinde kaşıntı, kuruluk ve tahriş oluşumunu önlemeye yardımcı olur.
+
+Koku Kontrolü ve Tazelik: İstenmeyen kokuları nötralize ederek gün boyu kendinizi temiz ve özgüvenli hissetmenizi sağlar. Hafif ve taze kokusuyla rahatsız etmez.
+
+Hassas Temizlik: Zenginleştirilmiş içeriği sayesinde cildi kurutmadan arındırır ve ipeksi bir yumuşaklık bırakır.
+
+Dermatolojik ve Jinekolojik Testlerden Geçmiştir: Hassas cilt yapısına uygunluğu klinik olarak test edilmiş, günlük kullanıma uygun güvenilir bir üründür.
+
+300 ml Pompalı Tasarım: Hijyenik ve pratik pompalı şişesi sayesinde her kullanımda ihtiyacınız olan miktarı kolayca almanızı sağlar.
+
+
+Neden Carine? Carine, kadın sağlığını ve konforunu önceliğine alır. Genital bölge bakımında ihtiyacınız olan en nazik ama en etkili temizliği sunarak, doğal dengenizi korumanıza yardımcı olur.
+Kullanım Önerileri:
+Uygulama: Az miktarda jeli avucunuza veya bir yıkama lifine dökün.
+
+Temizlik: Sadece dış genital bölgeye nazikçe uygulayarak köpürtün.
+
+Durulama: Uygulama sonrası bol ılık su ile tamamen durulayın.
+
+Sıklık: Günlük kullanım için uygundur (Özellikle regl dönemleri, havuz/deniz sonrası veya spor sonrası kullanım tazelik hissini artırır).', NULL, 'cmspom8u10008l1dq6k6ob7uh', NULL, ARRAY['/uploads/products/carine-genital-bolge-yikama-jeli-300-ml-1-c873.webp']::text[], '{"Hacim":"300 Ml","Özellik":"Alkol, Sabun ve Paraben içermez.","Ürün Tipi":"Dış Genital Bölge Temizleyici","Dermatolojik Uygunluk":"Klinik olarak test edilmiş ve onaylanmıştır."}'::jsonb, 10, 20, FALSE, '2026-08-17T19:24:52.320Z', '2026-09-16T09:43:50.985Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmst0w7h30025l14712k717dn', NULL, 'CARINE El Kremi 150 Ml', 'carine-el-kremi-150-ml', 'MC-CRN010', '375', 'Elleriniz İçin Yoğun Bakım ve Koruyucu Kalkan!
+
+Gün boyu su, sabun, dezenfektan ve hava değişimleri gibi dış etkenlere en çok maruz kalan organımız ellerimizdir. Carine El Kremi, yıpranmış ve kurumuş elleri derinlemesine beslemek, yumuşatmak ve cildin doğal bariyerini onarmak için özel olarak geliştirilmiştir. 150 ml’lik ekonomik boyu ile tüm ailenin günlük el bakımı ihtiyacını uzun süre karşılar.', 'Öne Çıkan Ürün Özellikleri:
+Derinlemesine Nemlendirme: Zengin formülü sayesinde cildin alt katmanlarına hızla nüfuz eder. Çatlamış ve sertleşmiş deri dokusunu anında yumuşatarak ellerinize esneklik kazandırır.
+
+Hızlı Emilen ve Yağsız Yapı: Özel dokusu sayesinde cilt tarafından saniyeler içinde emilir. Uygulama sonrası ellerde yağlı veya yapışkan bir his bırakmaz; hemen günlük işlerinize dönebilirsiniz.
+
+Bariyer Koruma Teknolojisi: Cilt yüzeyinde ince, görünmez bir tabaka oluşturarak nem kaybını önler ve dış etkenlerin cildi kurutmasını engeller.
+
+Tırnak ve Et Bakımı: Sadece cildi değil, tırnakları ve tırnak etlerini de besleyerek daha sağlıklı ve bakımlı bir el görünümü sunar.
+
+Hassas Ciltlerle Uyumlu: pH dengeli ve dermatolojik olarak test edilmiş içeriği sayesinde hassas ciltlerde bile güvenle kullanılabilir.
+
+Tazeleyici Koku: Hafif ve rahatlatıcı esansı ile ellerinizde uzun süreli bir temizlik ve ferahlık hissi bırakır.
+
+Kullanım Önerileri:
+Günlük Kullanım: İhtiyaç duyduğunuz her an, özellikle ellerinizi yıkadıktan sonra bir miktar kremi ellerinize sürün.
+
+Masaj: Kremi parmak uçlarınızdan bileklerinize kadar masaj yaparak yedirin. Tırnak etlerine ekstra özen göstererek uygulayın.
+
+Gece Bakımı: Yatmadan önce yoğun bir miktar uygulayarak gece boyunca ellerinizin yenilenmesine izin verin.
+
+Neden Carine El Kremi? Carine, ellerinizi sadece nemlendirmekle kalmaz, aynı zamanda onlara ihtiyaç duyduğu korumayı sunar. İster ofiste ister evde, 150 ml’lik pratik boyuyla her an yanınızda olan bu krem, bakımlı ellerin en büyük sırrıdır.', NULL, 'cmspom8u10008l1dq6k6ob7uh', NULL, ARRAY['/uploads/products/carine-el-kremi-150-ml-1-f801.webp']::text[], '{"Hacim":"150 ml (Ekonomik Boy)","Özellik":"Paraben içermez, hızlı emilim.","Ürün Tipi":"El Bakım Kremi","Dermatolojik Uygunluk":"Klinik olarak test edilmiştir."}'::jsonb, 10, 20, FALSE, '2026-08-17T19:24:51.739Z', '2026-09-16T09:43:53.335Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssxnq19000ll147aygcnyin', NULL, 'Marlin – Ahşap Muayene Masası', 'marlin-ahsap-muayene-masasi', 'MC-3152', '19500', 'Leke tutmayan ve silinebilir özellikte Turkuaz renk vinlex deri döşemelidir.
+Başucu manuel olarak ayarlanmaktadır.
+22 dansite sünger kullanılmaktadır.
+Gövde kenarlarında MDFLAM malzeme kullanılmaktadır.', 'Profil ölçüleri 50*50*1,5mm’dir.
+Ölçüleri 220*60*75 cm’dir.
+Tüm metal aksam elektrostatik toz boya ile boyalıdır.', NULL, 'cmspom8u00007l1dqzxn19xd1', NULL, ARRAY['/uploads/products/marlin-ahsap-muayene-masasi-1-7e1f.webp', '/uploads/products/marlin-ahsap-muayene-masasi-2-8a19.webp', '/uploads/products/marlin-ahsap-muayene-masasi-3-e87d.webp']::text[], '{"Garanti":"2 Yıl"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:41.467Z', '2026-09-16T10:03:02.571Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssxu68i000rl147tnshvz3i', NULL, 'MedLift Pro – İki Motorlu Muayene Masası', 'medlift-pro-iki-motorlu-muayene-masasi', 'MC-3605', '36750', '10 cm kalınlığında 28 DNS sünger kullanılmaktadır.
+Leke tutmayan ve silinebilir özellikte Lacivert renk vinlex deri döşemelidir.', 'Yükseklik ölçüsü (sünger dahil) min. 74 cm, max. 90 cm’dir.
+Boy 215 cm, eni 69 cm’dir.
+Ayakları 50 mm x 50 mm x 3 mm ve 40 mm x 60 mm x 2 mm ebatlarındadır.
+Merkezi fren sistemine sahiptir.
+4 köşesinde serum askısı için aksesuar yuvası mevcuttur.
+1 adet serum askısı vardır.
+Yüksekliği, baş ve sırt kısmı hareketi motor yardımı ile ayarlanabilmektedir.
+Baş koyma yerinde yastık görevi gören yükselti mevcuttur.
+Havlu asma aparatı mevcuttur.
+Mekanizmalar kullanılan krom burçlar sayesinde uzun ömürlü kullanım imkanı vermektedir.
+Motoru sessiz çalışma özelliğine sahiptir', NULL, 'cmspom8u00007l1dqzxn19xd1', NULL, ARRAY['/uploads/products/medlift-pro-iki-motorlu-muayene-masasi-1-cbac.webp', '/uploads/products/medlift-pro-iki-motorlu-muayene-masasi-2-7179.webp', '/uploads/products/medlift-pro-iki-motorlu-muayene-masasi-3-9a82.webp']::text[], '{"Garanti":"2 Yıl"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:37.177Z', '2026-09-16T10:03:30.964Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssl3hrf0003l1z8kpu5tad3', NULL, '4 Motorlu ABS Hasta Karyolası', 'mcaris-4-motorlu-abs-hasta-karyolasi', 'MC-ECO4000', '37500', NULL, 'Neden 4 Motorlu Model?
+4 motorlu sistem, standart yataklardan farklı olarak yatağa Trendelenburg ve Ters Trendelenburg (baş yukarı/aşağı bütünsel eğim) hareketi kazandırır. Bu özellik, hastanın kan dolaşımını düzenlemek, ödemi azaltmak ve belirli tıbbi operasyonlar sonrası doğru pozisyonu almak için hayati önem taşır.
+
+Ürün Özellikleri:
+
+Dört Motorlu Tam Kontrol: El kumandası üzerinden; sırt bölgesi (70°), ayak bölgesi (40°), yatak yüksekliği (asansör özelliği) ve Trendelenburg hareketleri kolayca yönetilir.
+
+Full ABS Gövde ve Korkuluklar: Başlıklar ve yan korkuluklar, mikrop barındırmayan, antibakteriyel ve temizliği son derece kolay olan yüksek kaliteli ABS malzemeden üretilmiştir. Amortisörlü korkuluklar tek elle rahatça indirilebilir.
+
+Yüksek Taşıma Kapasitesi: Güçlendirilmiş metal aksamı sayesinde 150 kg güvenli çalışma yükü ve toplamda 250 kg taşıma kapasitesi ile her hasta grubuna uygundur.
+
+Ergonomik ve Hijyenik: Full ABS kaplı platform yapısı sayesinde yatak hava alır, terlemeyi minimize eder ve dezenfektanlara karşı yüksek direnç gösterir.
+
+Sessiz ve Sarsıntısız Çalışma: En üst segment motor bloğu sayesinde hastayı rahatsız etmeden, pürüzsüz ve sessiz bir geçiş imkanı sunar.
+
+360 Derece Döner Tekerlekler: Çapraz kilit sistemli tekerlekler, yatağın güvenle sabitlenmesini veya sarsıntısız bir şekilde taşınmasını sağlar.
+
+Kullanım Alanları:
+
+Üst düzey fonksiyonelliği sayesinde yoğun bakım üniteleri, rehabilitasyon merkezleri ve uzun süreli yatalak hasta bakımı gereken ev ortamları için en profesyonel tercihtir.', NULL, 'cmt1ca9l70004qm010n693nbz', 'silver', ARRAY['/uploads/products/mcaris-4-motorlu-abs-hasta-karyolasi-2-9bd4.webp', '/uploads/products/mcaris-4-motorlu-abs-hasta-karyolasi-1-1a00.webp', '/uploads/products/mcaris-4-motorlu-abs-hasta-karyolasi-3-2540.webp', '/uploads/products/mcaris-4-motorlu-abs-hasta-karyolasi-4-1c56.webp', '/uploads/products/mcaris-4-motorlu-abs-hasta-karyolasi-5-ab80.webp', '/uploads/products/mcaris-4-motorlu-abs-hasta-karyolasi-6-e886.webp', '/uploads/products/mcaris-4-motorlu-abs-hasta-karyolasi-7-880c.webp']::text[], '{"Garanti":"2 Yıl","Motor Sayısı":"4","Tekerlek Çapı":"125 mm","Yatak Platformu":"1900 x 900 mm","Dış Ölçüler":"2030 x 1070 mm","Taşıma Kapasitesi":"250 kg","Yatak Altı Boşluk":"160 mm","Başucu Yüksekliği":"335 mm","Korkuluk yüksekliği":"370 mm","Maksimum Diz Açısı":"40°","Yükseklik Aralığı":"510 mm – 790 mm","Maksimum Sırt Açısı":"70°","Güvenli Çalışma Yükü":"150 kg","Maksimum Taşıma Kapasitesi":"250 kg"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:39.579Z', '2026-09-16T10:03:12.875Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmsswz68a000hl147nhqhs3zk', NULL, 'Katlanır Veteriner Pet Bakım ve Muayene Masası – Beyaz (Dikdörtgen Üst Tabla)', 'katlanir-veteriner-pet-bakim-ve-muayene-masasi-beyaz-dikdortgen-ust-tabla', 'MC-6015', '12950', 'Ürün üst tabla kauçuk yüzeylidir.
+Metal bölgeler elektrostatik toz boyalıdır.
+Kolaylıkla taşınabilir, portatiftir.
+Dişli sistem sayesinde manuel olarak ayarlama yapılabilir ve katlanabilmektedir.', 'Ürün üst tabla ölçüsü : 56 cm x 45 cm
+Ürün en düşük yükseklik : 69 cm
+Ürün en yüksek yükseklik : 86 cm
+Askı aparatı “L” bar : yüksekliği 70 cm, bağlama yeri olan kısa taraf ise : 38 cm
+Askı aparatı kromajlıdır. Talebe göre yerinden çıkartabilirsiniz.', NULL, 'cmspom8u00007l1dqzxn19xd1', NULL, ARRAY['/uploads/products/katlanir-veteriner-pet-bakim-ve-muayene-masasi-beyaz-dikdortgen-ust-tabla-1-9a86.webp', '/uploads/products/katlanir-veteriner-pet-bakim-ve-muayene-masasi-beyaz-dikdortgen-ust-tabla-2-abae.webp', '/uploads/products/katlanir-veteriner-pet-bakim-ve-muayene-masasi-beyaz-dikdortgen-ust-tabla-3-7784.webp', '/uploads/products/katlanir-veteriner-pet-bakim-ve-muayene-masasi-beyaz-dikdortgen-ust-tabla-4-7563.webp']::text[], '{"Garanti":"2 Yıl"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:37.381Z', '2026-09-16T10:03:26.876Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssvuhln0003l147bidq05mt', NULL, 'Dizayn Cihaz Taşıma ve Setup Sehpası | 2 Çekmeceli – Siyah', 'mcaris-dizayn-cihaz-tasima-ve-setup-sehpasi-2-cekmeceli-siyah', 'MC-4006', '4750', '2 çekmeceli, tekerlekli cihaz taşıma ve setup sehpası. Metal gövde, ahşap çekmeceler. 17 kg, 40x50x97 cm.', 'Özellikleri:
+Cihaz ve malzeme koymak için tasarlanmıştır.
+Tekerlekleri sayesinde kolayca yer değiştirilebilir özelliktedir.
+2 adet metal çerçeve üzerine ahşap çekmecesi bulunmaktadır.
+Ana kasa tamamen metal olup elektrostatik toz boya ile boyanmaktadır.
+Toplam ağırlığı 17 kg. dır.
+Ölçüleri:
+En: 400 mm – Boy: 500 mm – Raf Yüksekliği: 820 mm – Toplam Yükseklik: 970 mm', NULL, 'cmspom8ty0004l1dq1xq390i0', NULL, ARRAY['/uploads/products/mcaris-dizayn-cihaz-tasima-ve-setup-sehpasi-2-cekmeceli-siyah-1-bb52.webp', '/uploads/products/mcaris-dizayn-cihaz-tasima-ve-setup-sehpasi-2-cekmeceli-siyah-2-f1b6.webp', '/uploads/products/mcaris-dizayn-cihaz-tasima-ve-setup-sehpasi-2-cekmeceli-siyah-3-1d93.webp']::text[], '{"Renk":"Siyah","Garanti":"2 Yıl","Boyutlar":"50 × 40 × 97 cm","Ağırlık":"17 kg"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:35.135Z', '2026-09-16T10:04:08.087Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmsrhkv5d0005l1kbhgyb4ach', NULL, 'Regia Çift Kişilik Yatak Haline Dönebilen Hasta Karyolası', 'regia-cift-kisilik-yatak-haline-donebilen-hasta-karyolasi', 'MC-REGIA', '245000', '4 parça yatma zemini, 90 x 200 cm. Ahşap kaplama korkuluklar, elektrik kumandalı yükseklik ayarı. Elektrikli kumandalı tilt, sırt ve ayak ayarlama imkanı, kilitleme fonksiyonlu el kumandası. 215 kg taşıma kapasitelidir.
+
+Düşük yüksekliğe sahip, ayrılabilir korkuluklara sahip olan Regia, düşmeden kaynaklı yaralanmaları engellemek için tasarlanmıştır. Çıkabilen korkuluğuyla yataktan kalkarken veya yatağa yatarken hastaya engel olmaz.', 'Teknik Özellikler:
+
+26-82 cm arası yükseklik ayarı
+
+225 kg güvenli çalışma kapasitesi
+
+Opsiyonel 100 cm şilte tabanı seçeneği
+
+Ev ile uyum sağlayabilecek tasarımda baş ve ayak kısımları
+
+Regia Partner olarak çift kişilik yatak opsiyonuyla da mevcuttur.', NULL, 'cmt1ca9l70004qm010n693nbz', 'platinum', ARRAY['/uploads/products/regia-cift-kisilik-yatak-haline-donebilen-hasta-karyolasi-1-38ab.webp', '/uploads/products/regia-cift-kisilik-yatak-haline-donebilen-hasta-karyolasi-2-7f11.webp', '/uploads/products/regia-cift-kisilik-yatak-haline-donebilen-hasta-karyolasi-3-00fc.webp', '/uploads/products/regia-cift-kisilik-yatak-haline-donebilen-hasta-karyolasi-4-890e.webp', '/uploads/products/regia-cift-kisilik-yatak-haline-donebilen-hasta-karyolasi-5-75d9.webp', '/uploads/products/regia-cift-kisilik-yatak-haline-donebilen-hasta-karyolasi-6-2686.webp', '/uploads/products/regia-cift-kisilik-yatak-haline-donebilen-hasta-karyolasi-7-bef3.webp']::text[], '{"Garanti":"2 Yıl","Motor Sayısı":"4","Taşıma Kapasitesi":"215 kg"}'::jsonb, 0, 20, FALSE, '2026-08-17T19:24:36.959Z', '2026-09-16T10:03:36.765Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssy4a0q000zl147c4eleizs', NULL, 'Veteriner Amortisörlü Yükseklik Ayarlı Pet Bakım ve Muayene Masası', 'veteriner-amortisorlu-yukseklik-ayarli-pet-bakim-ve-muayene-masasi', 'MC-6016', '15000', 'Kauçuk üst yüzeylidir.
+Metal bölgeler elektrostatik toz boyalıdır.', 'Ürün üst kauçuk olan tabla çapı : 60 cm
+Amörtisör kapalı hali alçaklık  (sabit rotil ayaklar dahil ) : 75 cm
+Amörtisör açık hali yükseklik  ( sabit rotil ayaklar dahil ) : 91 cm
+Yükseklik ayarı üst tabla altında bulunan kırmızı renkli elcik ile yapılmaktadır.
+Bu sayede amörtisör hareket edecek ve yükseklik alçaklık ayarı meydana gelecektir.
+Askı aparatı “L” bar : yüksekliği 70 cm, bağlama yeri olan kısa taraf ise : 38 cm
+Askı aparatı kromajlıdır. Talebe göre yerinden çıkartabilirsiniz.', NULL, 'cmspom8u00007l1dqzxn19xd1', NULL, ARRAY['/uploads/products/veteriner-amortisorlu-yukseklik-ayarli-pet-bakim-ve-muayene-masasi-1-d4bc.webp', '/uploads/products/veteriner-amortisorlu-yukseklik-ayarli-pet-bakim-ve-muayene-masasi-2-69ec.webp']::text[], '{"Garanti":"2 Yıl"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:42.695Z', '2026-09-16T09:44:20.534Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssy2e09000xl147ahl1rqdq', NULL, 'Veteriner Acil Taşıma Sedyesi – Tekerlekli', 'veteriner-acil-tasima-sedyesi-tekerlekli', 'MC-6116', '16250', 'Ürün acil taşıma kullanım amaçlıdır.', 'Ürün metal kısımları  elektrostatik toz boya ile boyalıdır.
+Üst kısım talebe göre ayrılabilir.
+Üst kısım yanlarda bulunan tekerlekler ani çarpmalara karşı konumlandırılmıştır.
+Taşıma sedyesinde branda kullanılmıştır.
+En : 65 cm
+Boy : 120 cm
+Yükseklik ( tekerlekler dahil ) 85 cm', NULL, 'cmspom8u00007l1dqzxn19xd1', NULL, ARRAY['/uploads/products/veteriner-acil-tasima-sedyesi-tekerlekli-1-44d8.webp', '/uploads/products/veteriner-acil-tasima-sedyesi-tekerlekli-2-7c97.webp', '/uploads/products/veteriner-acil-tasima-sedyesi-tekerlekli-3-717a.webp', '/uploads/products/veteriner-acil-tasima-sedyesi-tekerlekli-4-443f.webp']::text[], '{"Garanti":"2 Yıl"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:40.752Z', '2026-09-16T10:03:06.735Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmst1hy97002fl147oue2335c', NULL, 'CARINE Yüz & Boyun Bakım Kremi 100 Ml', 'carine-yuz-boyun-bakim-kremi-100-ml', 'MC-CRN015', '370', 'Yüzümüz kadar özen isteyen ancak çoğu zaman ihmal edilen boyun ve dekolte bölgesi, yaşlanma belirtilerinin en erken görüldüğü yerlerdir. Carine Yüz ve Boyun Bakım Kremi, bu iki özel bölgeye ihtiyaç duyduğu yoğun nemi, esnekliği ve onarımı tek bir formülde sunmak için geliştirilmiştir.', 'Öne Çıkan Ürün Özellikleri:
+Çift Etkili Sıkılaştırma: İçeriğindeki aktif bileşenler sayesinde yüz hatlarını belirginleştirmeye yardımcı olurken, boyun bölgesindeki sarkma ve ince çizgi görünümüne karşı savaşır.
+
+Yoğun Nem Desteği: Cildin alt katmanlarına kadar nüfuz ederek nemi hapseder. Gün boyu süren nemlendirme etkisiyle kuruluktan kaynaklanan kırışıklık oluşumunu önler.
+
+Elastikiyet Kaybına Karşı Onarım: Cildin doğal kolajen yapısını destekleyerek daha gergin, daha sıkı ve daha genç bir görünüm kazanmasına yardımcı olur.
+
+İpeksi ve Hafif Doku: Yağlı bir his bırakmayan yapısı sayesinde cilt tarafından hızla emilir. Boyun bölgesinde yapışkanlık hissi oluşturmaz, konforlu bir kullanım sunar.
+
+Bariyer Koruyucu Etki: Hassas boyun derisini dış etkenlere (Güneş, rüzgar, hava kirliliği) karşı korur ve cildin savunma mekanizmasını güçlendirir.
+
+Tüm Cilt Tipleri İçin Uygun: pH dengeli formülü ile hassas, kuru veya karma ciltlerde güvenle kullanılabilir.
+
+Kullanım Önerileri:
+Temizlik: Kremi uygulamadan önce yüz ve boyun bölgenizi nazikçe temizleyin.
+
+Uygulama: Yeterli miktarda kremi parmak uçlarınıza alın.
+
+Masaj Yöntemi: Yüz bölgesinde merkezden dışarıya doğru; boyun bölgesinde ise çene hattına doğru aşağıdan yukarıya (yer çekiminin aksine) nazik hareketlerle masaj yaparak uygulayın.
+
+Düzenli Kullanım: En iyi sonuçlar için her sabah ve akşam düzenli olarak kullanılması önerilir.
+
+Neden Carine? Carine Yüz ve Boyun Bakım Kremi, güzellik rutininizi bir bütün haline getirir. Yüzünüzdeki ışıltıyı boyun bölgenizle tamamlayarak, her açıdan kusursuz ve bakımlı bir görünüme kavuşmanızı sağlar.', NULL, 'cmspom8u10008l1dq6k6ob7uh', NULL, ARRAY['/uploads/products/carine-yuz-boyun-bakim-kremi-100-ml-1-4a89.webp']::text[], '{"Formül":"Paraben içermez, hızlı emilen özel doku.","Özellik":"Sıkılaştırıcı, nemlendirici ve bariyer koruyucu.","Ürün Tipi":"Yüz, Boyun ve Dekolte Bakım Kremi","Dermatolojik Uygunluk":"Klinik olarak test edilmiş, cilde dost içerik."}'::jsonb, 10, 20, FALSE, '2026-08-17T19:24:53.730Z', '2026-09-16T09:43:43.058Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmst1l0k6002hl147v352hdnj', NULL, 'CARINE Yüz ve Vücut Bakım Kremi 150 Ml', 'carine-yuz-ve-vucut-bakim-kremi-150-ml', 'MC-CRN016', '460', 'Carine Yüz ve Vücut Bakım Kremi, cildinizin ihtiyaç duyduğu nemi gün boyu hapsetmek ve dış etkenlere karşı koruma kalkanı oluşturmak için özel olarak geliştirilmiştir. Hem yüzünüzün hassas dokusuna hem de vücudunuzun geniş alanlarına uyum sağlayan bu çok yönlü krem, cildinizi besleyerek doğal ışıltısını geri kazandırır.', 'Öne Çıkan Ürün Özellikleri:
+24 Saat Yoğun Nemlendirme: Zenginleştirilmiş formülü sayesinde cildin alt katmanlarına nüfuz eder ve uzun süreli nem dengesi sağlar. Kuruluk kaynaklı gerginlik hissini anında giderir.
+
+Hızlı Emilen Formül: Yağlı bir his bırakmayan hafif dokusu sayesinde sürdükten saniyeler sonra giyinebilirsiniz. Ciltle anında bütünleşir ve kadifemsi bir yumuşaklık bırakır.
+
+Çok Amaçlı Kullanım: Hem yüz hem de vücut için uygun pH değerine sahiptir. Tek bir ürünle tüm cilt bakım rutininizi tamamlamanızı sağlar.
+
+Bariyer Onarıcı Etki: Rüzgar, soğuk hava ve hava kirliliği gibi dış etkenlere karşı cildin doğal bariyerini destekler, tahrişleri önlemeye yardımcı olur.
+
+Hassas Ciltlerle Uyumlu: Dermatolojik olarak test edilmiş içeriği sayesinde tüm cilt tipleri (kuru, karma ve hassas) için güvenle kullanılabilir.
+
+Hoş ve Rahatlatıcı Koku: Gün boyu ferahlık veren, hafif ve temiz kokusuyla cildinizi şımartır.
+
+Kullanım Alanları ve Öneriler:
+Günlük Bakım: Her sabah ve akşam temizlenmiş cilde dairesel hareketlerle uygulanabilir.
+
+Banyo Sonrası: Gözeneklerin açık olduğu banyo sonrası tüm vücuda uygulandığında nemi hapsederek cildi derinlemesine besler.
+
+Dirsek ve Dizler: Özellikle kurumaya meyilli dirsek, diz ve topuk bölgelerinde ekstra yumuşaklık için idealdir.
+
+Makyaj Altı Bazı: Yüzdeki kuru bölgeleri pürüzsüzleştirerek makyajın daha kusursuz durmasını sağlar. 
+
+
+
+Neden Carine Bakım Kremi? Kaliteli içeriği ve ekonomik boyutuyla ailenizin her ferdi için uygun olan bu krem, cildinizi neme doyururken size gün boyu süren bir konfor sunar.', NULL, 'cmspom8u10008l1dq6k6ob7uh', NULL, ARRAY['/uploads/products/carine-yuz-ve-vucut-bakim-kremi-150-ml-1-fdc4.webp']::text[], '{"Özellik":"Paraben içermez, hızlı emilim.","Kullanım":"Tüm Cilt Tipleri","Ürün Tipi":"Yüz ve Vücut Kremi","Dermatolojik Uygunluk":"Klinik olarak test edilmiştir."}'::jsonb, 10, 20, FALSE, '2026-08-17T19:24:53.847Z', '2026-09-16T09:43:40.881Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmst0ci54001vl147d5xwob22', NULL, 'Carine Bebek Pişik Önleyici Bariyer Krem | 100 Ml', 'carine-bebek-pisik-onleyici-bariyer-krem-100-ml', 'MC-CRN006', '435', 'Bebeklerin en hassas bölgeleri olan bez bölgesi, nem ve sürtünme nedeniyle tahrişe oldukça açıktır. Carine Bebek Pişik Önleyici Bariyer Krem, cilt üzerinde koruyucu bir tabaka oluşturarak ıslaklık ve dış etkenlerin cilde zarar vermesini engellemek için özel olarak formüle edilmiştir. Hem var olan pişiklerin iyileşmesini hızlandırır hem de yeni pişik oluşumuna karşı cildi bir bariyer gibi korur.', 'Öne Çıkan Özellikler ve Yararları
+Bariyer Etkisi: Cilt yüzeyinde su geçirmez, nefes alabilen bir katman oluşturarak dışkı ve idrarın cilde temas etmesini engeller.
+
+Hızlı Yatıştırma: İçeriğindeki özel bileşenler sayesinde kızarıklık ve yanma hissini anında yatıştırır, bebeğinizin huzurlu hissetmesini sağlar.
+
+E Vitamini ve Besleyici İçerik: Cilt bariyerini onarır ve cildin kendi kendini yenileme sürecini destekleyerek ipeksi bir yumuşaklık kazandırır.
+
+Kolay Sürüm: Yoğun yapısına rağmen cilt üzerinde kolayca yayılır, bebeğinizin canını acıtmadan uygulama imkanı sunar.
+
+Güvenilir Formül: Paraben ve alkol içermez. En hassas ciltlerde ve yeni doğan döneminden itibaren güvenle kullanılabilir.
+
+Kullanım Şekli
+Her bez değişiminde bebeğinizin altını temizleyip kuruladıktan sonra uygulayın.
+
+Özellikle kıvrımlı bölgelere ve pişik oluşma riski taşıyan alanlara ince bir tabaka halinde sürün.
+
+Düzenli kullanım, pişik oluşumunu %100’e yakın oranda engellemeye yardımcı olur.', NULL, 'cmspom8u10008l1dq6k6ob7uh', NULL, ARRAY['/uploads/products/carine-bebek-pisik-onleyici-bariyer-krem-100-ml-1-1250.webp']::text[], '{"Özellik":"Bariyer Oluşturucu, Yatıştırıcı","İçerik":"Paraben ve Alkol İçermez","Cilt Tipi":"Tüm Bebek ve Çocuk Ciltleri","Ürün Miktarı":"100 ML","Kullanım Amacı":"Pişik Önleme, Onarma ve Koruma"}'::jsonb, 10, 20, FALSE, '2026-08-17T19:24:46.021Z', '2026-09-16T09:44:02.174Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmsrn2twu000sl1kb0vc3x4jv', NULL, '2 Motorlu Hasta Yatağı', 'mcaris-2-motorlu-hasta-yatagi', 'MC-PLUS2000', '48000', 'Elektrikli motor desteğiyle baş ve ayak ucu hareketlerini kolayca yönetmenizi sağlayan, maksimum güvenlik ve konfor odaklı, ergonomik 2 motorlu hasta karyolasıdır.', '2 Motorlu Hasta Karyolası
+Üstün fonksiyonellik ve uzun ömürlü dayanıklılığı bir araya getiren 2 motorlu profesyonel bir hasta karyolasıdır. Güçlü elektrik motorları sayesinde başucu ve ayakucu hareketlerini sessiz ve zahmetsizce yönetmenize olanak tanırken, özel amortisör sistemi ile hastanın ihtiyaç duyduğu Trendelenburg pozisyonunu güvenle sağlar. Hem hastalar hem de bakıcılar için maksimum konfor ve pratiklik sunmak üzere tasarlanmıştır.
+
+Öne Çıkan Genel Özellikler
+Elektrikli Hareket Kontrolü: Baş ve ayak bölgesi hareketleri, yüksek performanslı motorlar aracılığıyla pürüzsüz ve efor gerektirmeden ayarlanabilir.
+Üst Düzey Güvenlikli Korkuluk Sistemi: EN 60601-2-52 uluslararası standartlarına uygun olarak PE plastikten üretilen ergonomik korkuluklar, düşme riskini tamamen ortadan kaldırır. Transfer esnasında yatak altına kolayca gizlenerek pratik bir kullanım sunar.
+Hijyenik ve Dayanıklı Yapı: Temizliği son derece kolay olan dört parçalı yatak platformu ve paslanmaya karşı elektrostatik toz boya ile güçlendirilmiş metal aksamı sayesinde uzun yıllar güvenle kullanılabilir.', NULL, 'cmt1ca9l70004qm010n693nbz', 'gold', ARRAY['/uploads/products/mcaris-2-motorlu-hasta-yatagi-1-5a9f.webp']::text[], '{"Garanti":"2 Yıl","Ağırlık":"100 kg","Dış Boyutlar":"102 x 217,5 x 49,5 cm","Motor Sayısı":"2","Hareket Açıları":"Sırt: 0-68°, Üst Bacak: 0-27°, Alt Bacak: 0-22°","Yatak Yüksekliği":"49,5 cm (125 mm teker ile sabit)","Güvenli Çalışma Kapasitesi":"230 kg"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:37.900Z', '2026-09-16T10:03:20.656Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssy8ths0015l147ecgabm4r', NULL, 'Veteriner Yükseklik Ayarlı Pet Bakım ve Muayene Masası', 'veteriner-yukseklik-ayarli-pet-bakim-ve-muayene-masasi', 'MC-6014', '13900', 'Ürün üst tabla kauçuk yüzeylidir.
+Metal bölgeler elektrostatik toz boyalıdır.', 'Yükseklik ayarı üst tabla altında bulunan kırmızı renkli elcik ile yapılmaktadır.
+Bu sayede amörtisör hareket edecek ve yükseklik alçaklık ayarı meydana gelecektir.
+Ürün üst kauçuk olan tabla çapı : 60 cm
+Amörtisör açık hali yükseklik : 110 cm
+Amörtisör kapalı hali alçaklık : 90 cm
+Askı aparatı “L” bar : yüksekliği 70 cm, bağlama yeri olan kısa taraf ise : 38 cm
+Askı aparatı kromajlıdır. Talebe göre yerinden çıkartabilirsiniz.', NULL, 'cmspom8u00007l1dqzxn19xd1', NULL, ARRAY['/uploads/products/veteriner-yukseklik-ayarli-pet-bakim-ve-muayene-masasi-1-b786.webp', '/uploads/products/veteriner-yukseklik-ayarli-pet-bakim-ve-muayene-masasi-2-b786.webp', '/uploads/products/veteriner-yukseklik-ayarli-pet-bakim-ve-muayene-masasi-3-9359.webp', '/uploads/products/veteriner-yukseklik-ayarli-pet-bakim-ve-muayene-masasi-4-c0c8.webp']::text[], '{"Garanti":"2 Yıl"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:43.212Z', '2026-09-16T09:44:18.288Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmsrn9mxz000ul1kbr26kl760', NULL, '3 Motorlu Hasta Yatağı', '3-motorlu-hasta-yatagi', 'MC-PLUS3000', '58000', '3 Motorlu Hasta Yatağı, maksimum hasta güvenliği ve konforu için tasarlanmış profesyonel bir bakım karyolasıdır. Elektrikli motor sistemi sayesinde yükseklik, başucu, ayakucu hareketlerini sarsıntısızca gerçekleştirir. Hijyenik yapısı ve gelişmiş korkuluk sistemiyle hem evde bakım hem de klinik kullanım için mükemmel bir tercihtir.', '3 Motorlu Makaslı Hasta Karyolası 
+Motorlu Hasta Yatağı profesyonel hasta bakım standartlarını hem evinizin konforuna hem de hastane ortamına taşıyan üst düzey bir medikal çözümdür. Gelişmiş 3 motorlu sistemi sayesinde, hastanızın ihtiyaç duyduğu tüm pozisyon geçişleri sarsıntısız, sessiz ve son derece güvenli bir şekilde gerçekleştirilir. Hem hastanın yaşam kalitesini artırmak hem de refakatçilerin bakım sürecini kolaylaştırmak için özel olarak tasarlanmıştır.
+
+Öne Çıkan Özellikler
+Tam Elektrikli ve Ergonomik Kontrol: Yükseklik ayarı, baş ve ayakucu hareketleri tamamen elektrikli motorlarla yönetilir.
+Gelişmiş Tedavi Pozisyonları: Fowler, Kardiyak ve Vasküler pozisyon destekleri sayesinde hastaya en ideal dinlenme ve tedavi açısı sunulur.
+Maksimum Hijyen ve Kolay Temizlik: Dört parçalı yatak platformu ve ABS plastik kaplı alt kasa tasarımı, bakteri oluşumunu en aza indirerek steril bir ortam sağlar.
+Üst Düzey Güvenlik: EN 60601-2-52 standartlarına tam uyumlu, hastanın düşme riskini ortadan kaldıran iki parçalı, tam boy PE korkuluk sistemi ile donatılmıştır.
+Uzun Ömürlü ve Dayanıklı Yapı: Anti-korozyon özellikli elektrostatik toz boya ile kaplanmış metal aksam ve darbe emici tampon tekerlekler sayesinde yıllarca güvenle kullanılabilir.', NULL, 'cmt1ca9l70004qm010n693nbz', 'gold', ARRAY['/uploads/products/3-motorlu-hasta-yatagi-1-9e57.webp']::text[], '{"Garanti":"2 Yıl","Ağırlık":"100 kg","Dış Boyutlar":"102 x 217,5 cm","Motor Sayısı":"3","Yatak Platformu":"85 x 190 cm","Yükseklik Aralığı (yTA)":"43 cm – 79 cm","Güvenli Çalışma Kapasitesi":"200 kg","Otomatik Kayma (Sırt/Ayakucu)":"18 cm / 4 cm","Sırt ve Bacak Hareket Açıları":"Sırt: 0-68°, Üst Bacak: 0-27°"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:35.530Z', '2026-09-16T10:03:59.286Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmsrhbf5z0001l1kb0omjc77l', NULL, 'Burmeier Dali – 4 Motorlu Alman Hasta Karyolası', 'burmeier-dali-4-motorlu-alman-hasta-karyolasi', 'MC-DALI', '89500', 'Alman medikal devlerinden Burmeier’in amiral gemisi olan Dali, yüksek dayanıklılık ve kullanım kolaylığını bir arada sunar. Ergonomik kablolu kumandası, alet gerektirmeyen patentli Easy Click korkuluk sistemi ve 185 kg güvenli taşıma kapasitesiyle evde bakımın en güvenilir tercihidir. 24V Dali-Safe teknolojisiyle maksimum elektriksel güvenlik sağlayan bu model, Ankara içi aynı gün teslimat ve ücretsiz kurulum avantajıyla MCARIS’te.', 'Öne Çıkan Fonksiyonel Avantajlar
+1. Easy Click: Saniyeler İçinde Aletsiz Kurulum
+Dali modelinin en büyük kolaylıklarından biri patentli Easy Click sistemidir. Yan korkuluklar, herhangi bir el aleti kullanmadan “tık” sesiyle yerine oturur. Bu özellik, hem kurulum sırasında zaman kazandırır hem de temizlik veya çarşaf değişimi gibi günlük rutinlerde korkulukların hızla çıkarılmasına olanak tanır.
+
+2. 24 Volt Dali-Safe Güvenlik Teknolojisi
+Kullanıcı güvenliği için geliştirilen bu sistemde, 230V şebeke elektriği doğrudan fişin içindeki adaptörde 24 Volt düşük akıma dönüştürülür. Yatak şasisi altında yüksek voltajlı akım dolaşmadığı için elektriksel kaza riski tamamen ortadan kaldırılmış olur.
+
+3. Ergonomik Kablolu Kumanda ve Pozisyonlandırma
+Kablolu el kumandası, her zaman erişilebilir ve güvenilirdir. 4 motorlu güçlü yapısı sayesinde şu pozisyonlar sarsıntısız bir şekilde ayarlanabilir:
+
+Reverse Trendelenburg: Hastanın sindirim ve solunum sistemini rahatlatan, sosyal etkileşim için dikleşme sağlayan eğim pozisyonu.
+Sırt ve Ayakucu Ayarı: Birbirinden bağımsız olarak kontrol edilebilen, anatomik olarak doğru yatış açısı.
+Kademesiz Yükseklik Ayarı: Bakım veren kişinin eğilmeden hizmet verebilmesi için ideal çalışma yüksekliği (40-80 cm).
+Teslimat İçeriği: Karyola ile birlikte “Kendi Kendine Yardım Kolu” (asılma barı) ve tutunma üçgeni standart olarak sunulmaktadır. Ürün, en sıkı Avrupa medikal standartlarına (DIN EN 60601-2-52) tam uyumludur.', NULL, 'cmt1ca9l70004qm010n693nbz', 'platinum', ARRAY['/uploads/products/burmeier-dali-4-motorlu-alman-hasta-karyolasi-1-3bae.webp', '/uploads/products/burmeier-dali-4-motorlu-alman-hasta-karyolasi-2-a242.webp', '/uploads/products/burmeier-dali-4-motorlu-alman-hasta-karyolasi-3-23cd.webp', '/uploads/products/burmeier-dali-4-motorlu-alman-hasta-karyolasi-4-9cac.webp', '/uploads/products/burmeier-dali-4-motorlu-alman-hasta-karyolasi-5-aa8c.webp', '/uploads/products/burmeier-dali-4-motorlu-alman-hasta-karyolasi-6-7caa.webp']::text[], '{"Garanti":"2 Yıl","Kumanda Tipi":"Kilitleme Fonksiyonlu Kablolu El Kumandası","Motor Sayısı":"4","Yatak Platformu":"90 x 200 cm (4 Parçalı Platform)","Dış Ölçüler":"101 cm x 218 cm","Koruma Sınıfı":"IPX4 (Sıvı temasından etkilenmez)","Tekerlek Sistemi":"4 adet 100mm, bağımsız kilitlenebilir","Taşıma Kapasitesi":"180 kg","Güvenli Çalışma Yükü":"185 kg (Kullanıcı + Yatak + Aksesuar)","Yükseklik Ayar Aralığı":"40 cm – 80 cm (Kademesiz Motorlu)"}'::jsonb, 10, 20, FALSE, '2026-08-17T19:24:35.015Z', '2026-09-16T10:04:10.813Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssxsmek000pl147gr8wse1d', NULL, 'Elit Ekstra Sağlam Sırt Hareketli Bakım ve Masaj Masası | Siyah', 'mcaris-elit-ekstra-saglam-sirt-hareketli-bakim-ve-masaj-masasi-siyah', 'MC-3232', '10950', 'Ekstra sağlam, sırt hareketli bakım ve masaj masası. 250 kg taşıma kapasiteli, yüz koyma delikli. 32 kg, 70x190x77 cm.', 'Tüm yüzeysel bölgeler 5’lik gri sünger ve üzerine vinlex deri döşemelidir.
+Profil ölçüleri 60*60*1,50 olup komple 32 kg.
+Yüz koyma deliği bulunmaktadır.
+Alt bölümünde malzeme koymak için ızgara sistemi mevcuttur.
+Sırt kısmı manuel mekanizma ile ayarlanmaktadır.
+Demonte gönderilmektedir kurulumu basittir, 250 kg. taşıma kapasitelidir.
+Tüm metal aksam elektrostatik toz boya ile boyalıdır.
+ExBxY – 70 cm x 190 cm x 77 cm', NULL, 'cmspom8u00007l1dqzxn19xd1', NULL, ARRAY['/uploads/products/mcaris-elit-ekstra-saglam-sirt-hareketli-bakim-ve-masaj-masasi-siyah-1-02be.webp', '/uploads/products/mcaris-elit-ekstra-saglam-sirt-hareketli-bakim-ve-masaj-masasi-siyah-2-4b6b.webp', '/uploads/products/mcaris-elit-ekstra-saglam-sirt-hareketli-bakim-ve-masaj-masasi-siyah-3-71e5.webp', '/uploads/products/mcaris-elit-ekstra-saglam-sirt-hareketli-bakim-ve-masaj-masasi-siyah-4-bb0d.webp', '/uploads/products/mcaris-elit-ekstra-saglam-sirt-hareketli-bakim-ve-masaj-masasi-siyah-5-50d1.webp']::text[], '{"Garanti":"2 Yıl"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:41.840Z', '2026-09-16T10:03:00.532Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssvwtmf0005l147w5lubdgw', NULL, 'Dizayn Cihaz Taşıma ve Setup Sehpası | 3 Raflı – Beyaz', 'mcaris-dizayn-cihaz-tasima-ve-setup-sehpasi-3-rafli-beyaz', 'MC-4001', '3750', '3 raflı, tekerlekli cihaz taşıma ve setup sehpası. Metal gövde, ahşap raflar. 9 kg, 40x50x97 cm.', 'Özellikleri:
+Cihaz ve malzeme koymak için tasarlanmıştır.
+Tekerlekleri sayesinde kolayca yer değiştirilebilir özelliktedir.
+3 adet metal çerçeve üzerine ahşap rafı bulunmaktadır.
+Ana kasa tamamen metal olup elektrostatik toz boya ile boyanmaktadır.
+Toplam ağırlığı 9 kg. dır.
+Ölçüleri:
+En: 400 mm – Boy: 500 mm – Raf Yüksekliği: 820 mm – Toplam Yükseklik: 970 mm', NULL, 'cmspom8ty0004l1dq1xq390i0', NULL, ARRAY['/uploads/products/mcaris-dizayn-cihaz-tasima-ve-setup-sehpasi-3-rafli-beyaz-1-1885.webp', '/uploads/products/mcaris-dizayn-cihaz-tasima-ve-setup-sehpasi-3-rafli-beyaz-2-da4b.webp', '/uploads/products/mcaris-dizayn-cihaz-tasima-ve-setup-sehpasi-3-rafli-beyaz-3-b616.webp']::text[], '{"Renk":"Beyaz","Garanti":"2 Yıl","Boyutlar":"50 × 40 × 97 cm","Ağırlık":"9 kg"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:37.279Z', '2026-09-16T10:03:29.083Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssm2u440007l1z8ngawmh6k', NULL, '2 Motorlu ABS Hasta Karyolası', 'mcaris-2-motorlu-abs-hasta-karyolasi', 'MC-ECO2000', '25500', 'Hem evde bakım süreçlerinde hem de hastane ortamında hastanın ve refakatçinin hayatını kolaylaştırmak için tasarlanan bu ekonomik ve dayanıklı çözüm, yüksek hijyen standartlarını modern bir tasarımla birleştiriyor.', '2 Motorlu ABS Hasta Karyolası – Profesyonel Bakım ve Konfor Çözümü
+Hem evde bakım süreçlerinde hem de hastane ortamında güvenle kullanabileceğiniz 2 Motorlu ABS Hasta Karyolası, hastanızın konforunu ve güvenliğini en üst seviyeye taşımak için tasarlanmıştır. Güçlü motor sistemi ve hijyenik ABS panelleri ile hem hastaya ideal dinlenme pozisyonları sunar hem de bakım verenlerin iş yükünü hafifletir.
+
+Öne Çıkan Fonksiyonel Özellikler:
+Çift Motorlu Dinamik Kontrol: Ergonomik el kumandası sayesinde sırt kısmını 70°, ayak kısmını ise 40° açıya kadar birbirinden bağımsız olarak ayarlayabilirsiniz. Bu sayede yemek yeme, TV izleme veya uyku pozisyonları saniyeler içinde zahmetsizce verilir.
+Antibakteriyel ABS Panel Sistemi: Başlık, ayaklık ve yan korkuluklar; darbelere dayanıklı, antibakteriyel ve kolay temizlenebilir ABS malzemeden üretilmiştir. Modern tasarımıyla bakım ortamına estetik bir görünüm katar ve yüksek hijyen standartlarını destekler.
+Güvenli Yan Korkuluklar: Katlanabilir ABS yan korkuluklar, hastanın yataktan düşme riskini minimize eder. Tek bir mandal hareketiyle aşağı indirilebilen korkuluklar, hastanın yataktan transferini kolaylaştırır.
+Sessiz ve Sarsıntısız Hareket: Sessiz çalışan motorlar hastayı rahatsız etmez. 360° dönebilen ve çapraz kilit sistemine sahip tekerlekler, karyolayı güvenle sabitlemenize veya rahatça hareket ettirmenize olanak tanır.
+Paket İçeriği:
+Ürün size kullanıma hazır, tam set olarak ulaştırılır:
+
+2 Motorlu Karyola İskeleti
+ABS Başlık ve Ayaklık Panelleri (1 Takım)
+Katlanabilir ABS Yan Korkuluklar (1 Takım)
+Ergonomik El Kumandası ve Motor Seti
+Yüksekliği Ayarlanabilir Serum Askısı', NULL, 'cmt1ca9l70004qm010n693nbz', 'silver', ARRAY['/uploads/products/mcaris-2-motorlu-abs-hasta-karyolasi-1-7418.webp', '/uploads/products/mcaris-2-motorlu-abs-hasta-karyolasi-2-3512.webp', '/uploads/products/mcaris-2-motorlu-abs-hasta-karyolasi-3-6e91.webp', '/uploads/products/mcaris-2-motorlu-abs-hasta-karyolasi-4-b992.webp']::text[], '{"Garanti":"2 Yıl","Ağırlık":"100 kg","Motor Sayısı":"2","Serum Askısı":"Mevcut (Yüksekliği Ayarlanabilir)","Yan Korkuluklar":"Katlanabilir ABS (Amortisörsüz)","Dış Ölçüler":"2160 x 1010 mm","Gövde Malzemesi":"Elektrostatik Toz Boyalı Metal Şase","Tekerlek Sistemi":"360° Dönebilen, Kilitlenebilir","Ayak Ucu Açısı":"0° – 40° (Ayarlanabilir)","Sırtlık Açısı":"0° – 70° (Ayarlanabilir)","Başlık ve Ayaklık":"Kolay Sökülebilir ABS Panel","Kontrol Paneli (Hasta)":"Ergonomik El Kumandası","Güvenli Çalışma Yükü":"120 kg"}'::jsonb, 8, 10, FALSE, '2026-08-17T19:24:40.359Z', '2026-09-16T10:03:08.871Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssw001s0007l1470swxdweg', NULL, 'Amörtisörlü Kol Dayama Sehpası – Kırmızı', 'amortisorlu-kol-dayama-sehpasi-kirmizi', 'MC-4557', '8100', 'Gazlı amortisör mekanizması sayesinde ürünün yüksekliği kullanıcı ihtiyacına göre kolayca ayarlanabilmektedir.', 'En düşük seviyesi 69 cm''dir.
+En yüksek seviyesi 93 cm''dir.
+Kol dayama minderinde 5 lik sünger ile kaplanmış ahşap üzerine temizlenebilir vinlex deri kullanılmaktadır.
+Kol dayama yüzeyi 47 cm x 32 cm''dir.
+90 derece ile 180 derece arasında hareket kapasitesi mevcuttur.
+Elcikli sıkma aparatı ile kolay yükseklik ayarı vardır. 
+4 adet çizmeyi önleyici sabit plastik ayak mevcuttur.
+Lateks eldiven koyma yeri bulunmaktadır.
+Komple elektrostatik toz boya ile imal edilmektedir.', NULL, 'cmspom8tz0005l1dqtr9serlz', NULL, ARRAY['/uploads/products/amortisorlu-kol-dayama-sehpasi-kirmizi-1-601c.webp', '/uploads/products/amortisorlu-kol-dayama-sehpasi-kirmizi-2-75c3.webp']::text[], '{"Garanti":"2 Yıl"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:38.220Z', '2026-09-16T10:03:18.697Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmsrmzstv000ql1kbqsvfpci9', NULL, '4 Motorlu Yoğun Bakım ve Akut Bakım Hasta Karyolası', 'mcaris-4-motorlu-yogun-bakim-ve-akut-bakim-hasta-karyolasi', 'MC-INV4000', '68000', '4 motorlu profesyonel kontrol sistemiyle; Trendelenburg, Kardiyak ve Fowler pozisyonlarını tek tuşla sağlayan bu hasta karyolası, en üst düzey hasta konforu için tasarlandı. Temizlenebilir ABS platformu ve dayanıklı PP panelleri ile tam hijyen sağlayan bu model, Ankara içi aynı gün teslimat ve ücretsiz kurulum & montaj avantajıyla kapınıza geliyor. Profesyonel kurulum desteğimizle hastanızın konforunu hemen başlatın.', 'Modern medikal teknolojilerle donatılan 4 motorlu profesyonel hasta karyolası, hem yoğun bakım hem de evde uzun süreli tedavi gören hastalar için maksimum güvenlik ve ergonomi sunar. Dört bağımsız motor sayesinde, sarsıntısız bir şekilde hastanın tüm hayati pozisyonları ayarlanabilir.
+
+Gelişmiş Klinik Fonksiyonlar
+Karyola, standart hareketlerin yanı sıra tıbbi gereklilikleri karşılayan özel modlara sahiptir:
+
+Full Motorize Kontrol: Sırt, ayak, yükseklik ve Trendelenburg / Anti-Trendelenburg hareketleri tamamen motor kontrollüdür.
+Özel Pozisyonlar: Kalp yükünü hafifleten Kardiyak pozisyonu, rahat nefes almayı sağlayan Fowler ve muayene modları mevcuttur.
+Yüksek Malzeme Kalitesi ve Hijyen
+Enfeksiyon kontrolü ve uzun süreli dayanıklılık için ürünün her detayı yüksek standartlı malzemelerle üretilmiştir:
+
+ABS Yatak Platformu: Hava sirkülasyonu sağlayan kanallı yapısı, temizlenebilir ve dezenfektanlara dayanıklıdır.
+PP Panel Sistemi: Baş ve ayak kısımları ile 4 adet yan korkuluk, darbelere dayanıklı polipropilen (PP) malzemeden üretilmiştir ve acil durumlarda kolayca çıkarılabilir.
+Güvenli Hareket: 125mm çapındaki tekerlekler yüksek manevra kabiliyetine sahiptir (Opsiyonel merkezi kilit veya frenli).', NULL, 'cmt1ca9l70004qm010n693nbz', 'gold', ARRAY['/uploads/products/mcaris-4-motorlu-yogun-bakim-ve-akut-bakim-hasta-karyolasi-1-d0d2.webp', '/uploads/products/mcaris-4-motorlu-yogun-bakim-ve-akut-bakim-hasta-karyolasi-2-7869.webp', '/uploads/products/mcaris-4-motorlu-yogun-bakim-ve-akut-bakim-hasta-karyolasi-3-ec13.webp', '/uploads/products/mcaris-4-motorlu-yogun-bakim-ve-akut-bakim-hasta-karyolasi-4-44ae.webp']::text[], '{"Garanti":"2 Yıl","Tekerlekler":"Tekerlekler 4 adet 125mm (Opsiyonel merkezi kilit veya frenli)","Genel Boyutlar":"2130 x 1030 x (430-780) mm","Motor Sayısı":"4","Yatak Platformu":"1900 x 850 mm","Korkuluk Sistemi":"4 adet PP malzemeden imal edilmiş yan korkuluklar","Aksesuar Desteği":"Her köşede serum askısı yuvası","Klinik Pozisyonlar":"Kardiyak, Fowler, Muayene","Güvenlik Detayları":"4 Köşede çarpma tamponu, Sırt açı göstergesi, Drenaj torbası tutucuları","Opsiyonel Özellikler":"Hemşire kontrol ünitesi, Merkezi kilit tekerlek sistemi"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:34.898Z', '2026-09-16T10:04:12.740Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmsr8xbv50001l180j552vcv8', NULL, '2 Motorlu Baza Görünümlü Hasta Karyolası', '2-motorlu-baza-gorunumlu-hasta-karyolasi', 'MC-BAZA2000', '55990', '2 Motorlu Baza Görünümlü Hasta Karyolası
+(2 Motorlu – Kumandalı)
+ Hareketli Karyola ve Yatak Sistemleri yatak platformu lata olarak bilinen 150 kg. taşıma kapasiteli esnek ve sağlam yapıdaki ahşap
+sütunlar ile üzerine koyulacak yatağın hava geçirgenliği ön planda tutulmuştur.
+Hareketli yatak sistemi kumanda yardımı ile sırt ve ayak kısmı hareketlerini kolayca gerçekleştirmenize olanak sağlar.
+Sırt kısmını 0 dereceden 85 dereceye kadar ayak kısmını ise 0 dereceden 35 dereceye kadar kolaylıkla kaldırıp indirebileceğiniz kumandalı bir karyolası modelidir.
+İsteğinize bağlı olarak satın alabileceğiniz tabanca korkuluk sistemi, kişilerin düşmesini engelleyen, güvenilir bir mekanizma olmasının yanı sıra kişinin korkuluklara tutunarak güç almasıyla tek başına karyola üzerinde hareket etmesine olanak sağlamaktadır. 2 motorlu elektrikli karyola, korkuluk ihtiyacının olmadığı dönemlerde korkuluk mekanizmasının karyoladan kolayca çıkartıp klasik karyola gibi kullanılabilmektedir.
+220 volt elektriğin olduğu her alanda kullanabileceğiniz bir karyola modelidir.
+2 yıl garantili olan 2 motorlu elektrikli hareketli karyola kumanda ile hareket kabiliyeti sağlanan 4500 N gücündeki dualatör motor olabildiğince sessiz çalışmakta ve 150 kg. kadar taşıma kapasitesindedir.
+Hareketli yatak sistemi başlıkları dışında tamamen montajlı bir şekilde kargo edilir ve sizler sadece başlıklarını yerlerine monte ederek kolayca kurulumu gerçekleştirmiş olursunuz.', 'Genel Özellikleri;
+Kumanda ile kolay hareket kabiliyeti
+
+Sırt ve ayak ucu hareketleri
+
+Hareketli tabanca korkuluk sistemi (Opsiyonel)
+
+150 kg taşıma kapasitesi
+
+Çelik konstrüksiyon gövde
+
+Serum askısı
+
+Baş ucunda iki yanda serum askı yuvası
+
+Tüm metal aksam elektrostatik toz boyalı
+
+Giydirme panelleri ile şık görünüm
+
+Elektrik kesildiğinde pozisyon halindeki karyolanın sırt ve ayak kısmını indirebileceğiniz pilli sistem
+
+Teknik Özellikler:
+
+Ses seviyesi: 40 desibelin altında
+
+Sırt kalkma açısı: 85°
+
+Ayak kalkma açısı: 35°
+
+Yatak Ölçüleri: 90 cm x 190 cm x 14 cm
+
+Yatak dahil yükseklik: 55 cm
+
+Garanti: 2 yıl', NULL, 'cmt1ca9l70004qm010n693nbz', 'platinum', ARRAY['/uploads/products/2-motorlu-baza-gorunumlu-hasta-karyolasi-1-deea.webp', '/uploads/products/2-motorlu-baza-gorunumlu-hasta-karyolasi-2-dded.webp', '/uploads/products/2-motorlu-baza-gorunumlu-hasta-karyolasi-3-e633.webp', '/uploads/products/2-motorlu-baza-gorunumlu-hasta-karyolasi-4-5300.webp', '/uploads/products/2-motorlu-baza-gorunumlu-hasta-karyolasi-5-8525.webp', '/uploads/products/2-motorlu-baza-gorunumlu-hasta-karyolasi-6-61c7.webp']::text[], '{"Garanti":"2 Yıl","Motor Sayısı":"2","Taşıma Kapasitesi":"150 kg"}'::jsonb, 8, 10, FALSE, '2026-08-17T19:24:35.867Z', '2026-09-16T10:03:52.260Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssybvgz0017l1473bemmxv5', NULL, 'Veteriner Yükseklik Ayarlı Pet Bakım ve Muayene Masası', 'veteriner-yukseklik-ayarli-pet-bakim-ve-muayene-masasi-2', 'MC-6017', '14750', 'Ürün üst tabla kauçuk yüzeylidir.
+Metal bölgeler elektrostatik toz boyalıdır.', 'Yükseklik ayarı üst tabla altında bulunan kırmızı renkli elcik ile yapılmaktadır. 
+Bu sayede amörtisör hareket edecek ve yükseklik alçaklık ayarı meydana gelecektir.
+Ürün üst kauçuk olan tabla çapı : 60 cm 
+Amörtisör açık hali yükseklik : 110 cm 
+Amörtisör kapalı hali alçaklık : 90 cm
+Askı aparatı "L" bar : yüksekliği 70 cm, bağlama yeri olan kısa taraf ise : 38 cm 
+Askı aparatı kromajlıdır. Talebe göre yerinden çıkartabilirsiniz.', NULL, 'cmspom8u00007l1dqzxn19xd1', NULL, ARRAY['/uploads/products/veteriner-yukseklik-ayarli-pet-bakim-ve-muayene-masasi-2-1-e7a3.webp', '/uploads/products/veteriner-yukseklik-ayarli-pet-bakim-ve-muayene-masasi-2-2-78b6.webp']::text[], '{"Garanti":"2 Yıl"}'::jsonb, 9, 10, FALSE, '2026-08-17T19:24:54.626Z', '2026-09-16T09:43:37.516Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmsrndl6x000wl1kbf5ozccyk', NULL, '4 Motorlu Hasta Yatağı', 'mcaris-4-motorlu-hasta-yatagi', 'MC-PLUS4000', '68000', 'Platinum Seri 4 Motorlu Hasta Yatağı, ev ve hastane ortamında maksimum hasta konforu ve güvenliği sağlamak üzere tasarlanmıştır. Makaslı sistemi ve 4 adet güçlü elektrikli motoru sayesinde yükseklik, baş, ayak ve trendelenburg ayarlarını sarsıntısızca yapmanıza olanak tanır. Gelişmiş PE korkulukları ve hijyenik yapısıyla profesyonel bakımı evinize getirir.', '4 Motorlu Makaslı Hasta Karyolası
+Platinum Seri (U0003), profesyonel hasta bakım standartlarını hem ev hem de klinik ortamlara taşıyan, 4 motorlu ve makaslı sisteme sahip üst düzey bir hasta karyolasıdır. İleri teknoloji elektrikli motor mekanizması sayesinde hastanızın tüm pozisyon geçişleri son derece sessiz, sarsıntısız ve güvenli bir şekilde gerçekleştirilir. Hastanızın yaşam kalitesini artırırken, bakım verenlerin de iş yükünü hafifletir.
+
+Öne Çıkan Özellikler
+Tam Otomatik Elektrikli Kontrol: Yükseklik ayarı, Trendelenburg, Ters Trendelenburg, baş ve ayakucu hareketleri tamamen motor kontrollü olup, kumanda üzerinden zahmetsizce yönetilir.
+Gelişmiş Yatış Pozisyonları: Fowler, Kardiyak ve Vasküler pozisyon destekleri sayesinde hastaya en uygun dinlenme, beslenme ve tedavi açısı sunulur.
+Maksimum Hijyen ve Kolay Temizlik: Dört parçalı, silinebilir yatak platformu ve ABS plastik kaplı alt kasa tasarımı, bakteri oluşumunu en aza indirerek steril bir ortam sağlar.
+Üst Düzey Güvenlikli Korkuluklar: EN 60601-2-52 uluslararası standartlarına uygun olarak üretilen iki parçalı tam boy PE korkuluk sistemi, hastanın düşme riskini tamamen ortadan kaldırır.
+Uzun Ömürlü ve Dayanıklı Yapı: Anti-korozyon özellikli elektrostatik toz boya ile kaplanmış sağlam metal aksam ve darbe emici tampon tekerlekler ile yıllara meydan okuyan dayanıklılık.
+Opsiyonel Donanım Seçenekleri
+125 mm veya 150 mm çapında, merkezi frenli ve yön kilitli tekerlek sistemleri.
+Kullanım kolaylığı sağlayan hemşire kontrol paneli, el kumandası veya ayak kontrol pedalı.
+Röntgen çekimine uygun, X-Ray geçirgen kompakt laminat sırt platformu.
+Kesintisiz kullanım için şarj edilebilir batarya kiti ve gece güvenliği için yatak altı aydınlatma.
+Serum askısı, TV standı ve hastanın doğrulmasını kolaylaştıran tutunma kolu.
+* Ürünümüz uluslararası kalite standartlarını belgeleyen ISO 9001:2015, ISO 14001:2015 ve CE sertifikalarına sahiptir.', NULL, 'cmt1ca9l70004qm010n693nbz', 'gold', ARRAY['/uploads/products/mcaris-4-motorlu-hasta-yatagi-1-5e9d.webp']::text[], '{"Garanti":"2 Yıl","Ağırlık":"100 kg","Dış Boyutlar":"102 x 217,5 cm","Motor Sayısı":"4","Güvenli Çalışma Kapasitesi":"230 kg","Otomatik Kayma (Sırt/Ayakucu)":"18 cm / 4 cm","Sırt ve Bacak Hareket Açıları":"Sırt: 0-68°, Üst Bacak: 0-27°","Yükseklik Aralığı (150 mm teker ile)":"49 cm – 79 cm"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:35.745Z', '2026-09-16T10:03:54.519Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmtnm0726000bw0bcjvqfvmh8', NULL, 'Amortisörlü Yatak Üstü Hasta Yemek Masası', 'amortisorlu-hasta-yemek-masasi', 'MC-YM100', '3250', 'Gazlı amortisör sistemi ile tek elle yükseklik ayarı yapılabilen, U ayak tasarımı ile tüm karyola ve koltukların altına yanaşabilen medikal yemek masası.', '## MCARIS Amortisörlü Yatak Üstü Hasta Yemek Masası
+
+Yatağa bağımlı veya oturma pozisyonundaki hastaların beslenmesi, ilaç takibi ve kişisel eşyalarına erişimi için tasarlanan **MCARIS Amortisörlü Hasta Yemek Masası**, hastanın yatak konforunu bozmadan ergonomik bir çalışma ve yemek alanı sunar.
+
+---
+
+### Öne Çıkan Fonksiyonlar
+
+- **Gazlı Amortisör Mekanizması:** Mandalına hafifçe basılarak 72 cm ile 105 cm arasında zahmetsizce yükseltilip alçaltılabilir; kilit mekanizması sayesinde seçilen seviyede sabit kalır.
+- **U Tipi Alçak Şasi:** Düşük profilli alt ayakları sayesinde motorlu hasta karyolalarının, tekerlekli sandalyelerin ve dinlenme koltuklarının altına kolaylıkla girer.
+- **Leke Tutmaz ve Kenar Korumalı Tabla:** Sıvı dökülmelerine karşı yükseltilmiş kenar bariyerlerine sahiptir; hastanın çorbası veya suyu döküldüğünde yatağa akmasını önler.
+- **360° Dönebilen Kilitli Tekerlekler:** Parke ve halı zeminlerde sessizce kayar, fren mandalları ile istenen yerde güvenle sabitlenir.
+
+---
+
+### Teknik Özellikler
+
+| Parametre | Değer |
+| :--- | :--- |
+| **Yükseklik Ayarı** | 72 cm - 105 cm (Gazlı Amortisörlü) |
+| **Üst Tabla Ölçüsü** | 40 x 80 cm |
+| **Tabla Materyali** | Sıvı Geçirmez Antibakteriyel Kaplama |
+| **Şasi Yapısı** | Elektrostatik Toz Boyalı Güçlendirilmiş Çelik |
+| **Tekerlekler** | 4 Adet 360° Döner Medikal Kauçuk (2 Teker Frenli) |
+| **Taşıma Kapasitesi** | 25 kg |
+| **Garanti** | 2 Yıl Resmi MCARIS Garantisi |', NULL, 'cmtop0k4s0001w0jkbv2pu3ju', 'silver', ARRAY['/uploads/products/amortisorlu-hasta-yemek-masasi-1.jpg']::text[], '{"Tabla":"Sıvı Dökülme Havuzlu Antibakteriyel Yüzey","Şasi":"U Tipi Alçak Profil Çelik Gövde","Garanti":"2 Yıl Resmi MCARIS Garantisi","Tekerlekler":"360° Döner Medikal Tekerlek (Frenli)","Yükseklik Ayarı":"72 cm - 105 cm (Amortisörlü)","Taşıma Kapasitesi":"25 kg","Üst Tabla Ölçüsü":"40 x 80 cm"}'::jsonb, 30, 10, TRUE, '2026-09-04T23:53:00.606Z', '2026-09-16T09:37:15.474Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssw5srd0009l147u22cqh3k', NULL, 'Amortisörlü Kol Dayama Sehpası – Siyah', 'amortisorlu-kol-dayama-sehpasi-siyah-2', 'MC-4555', '6750', 'Gazlı amortisör mekanizması sayesinde ürünün yüksekliği kullanıcı ihtiyacına göre kolayca ayarlanabilmektedir.', 'En düşük seviyesi 69 cm''dir.
+En yüksek seviyesi 93 cm''dir.
+Kol dayama minderinde 5''lik sünger ile kaplanmış ahşap üzerine temizlenebilir vinlex deri kullanılmaktadır.
+Kol dayama yüzeyi 47 cm x 32 cm''dir.
+90 derece ile 180 derece arasında hareket kapasitesi mevcuttur.
+Elcikli sıkma aparatı ile kolay yükseklik ayarı vardır. 
+4 adet çizmeyi önleyici sabit plastik ayak mevcuttur.
+Komple elektrostatik toz boya ile imal edilmektedir.', NULL, 'cmspom8tz0005l1dqtr9serlz', NULL, ARRAY['/uploads/products/amortisorlu-kol-dayama-sehpasi-siyah-2-1-4b40.webp']::text[], '{"Garanti":"2 Yıl"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:41.107Z', '2026-09-16T10:03:04.624Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmst0scjv0023l147dv22zfxc', NULL, 'CARINE DUŞ JELİ 400 ML', 'carine-dus-jeli-400-ml', 'MC-CRN004', '410', 'Her Duşta Yenilenmiş ve İpeksi Bir Cilt!
+
+Carine Duş Jeli, cildinizi nazikçe temizlerken aynı zamanda ihtiyaç duyduğu nemi kazandırmak için özel olarak geliştirilmiştir. Zengin köpüğü ve büyüleyici kokusuyla banyo rutininizi sıradan bir temizliğin ötesine taşıyarak, günün yorgunluğunu üzerinizden atmanıza yardımcı olur.', 'Öne Çıkan Ürün Özellikleri:
+Derinlemesine ve Nazik Temizlik: Cildin doğal nem dengesini bozmadan kir ve yağı arındırır. Gözeneklerin nefes almasını sağlar.
+
+Yoğun Nemlendirici Etki: Formülündeki nem tutucu bileşenler sayesinde duş sonrasında oluşabilecek kuruluk ve gerginlik hissini önler. Cildinize yumuşak ve pürüzsüz bir doku kazandırır.
+
+Kalıcı ve Ferahlatıcı Koku: Özenle seçilmiş esansları sayesinde duş sonrasında bile teninizde hafif ve hoş bir koku bırakarak gün boyu ferahlık hissi verir.
+
+pH Dengeli Formül: Cildin doğal koruyucu tabakasıyla (pH 5.5) uyumludur. Tüm aile bireyleri ve tüm cilt tipleri için güvenli bir kullanım sunar.
+
+Zengin Köpük Yapısı: Az miktarda kullanımda bile bol köpürerek ekonomik ve keyifli bir temizlik deneyimi sağlar.
+
+Dermatolojik Olarak Test Edilmiştir: Hassas ciltler dahil tüm vücut tiplerinde güvenle kullanılabilir, alerji riskini minimize eder.
+
+Kullanım Önerileri:
+Uygulama: Vücudunuzu ıslattıktan sonra bir miktar Carine Duş Jeli’ni banyo lifine veya avucunuza dökün.
+
+Köpürtme: Nazik hareketlerle masaj yaparak tüm vücudunuza yayın ve bolca köpürtün.
+
+Durulama: Ilık su ile cildinizi tamamen arındırın.
+
+Neden Carine Duş Jeli? Carine, banyo sonrası cildinizde bıraktığı o eşsiz yumuşaklık ve tazelik hissiyle, kişisel bakımınızı bir keyif anına dönüştürür. Kaliteli içeriğiyle cildinizi beslerken, her kullanımda kendinizi daha enerjik hissetmenizi sağlar', NULL, 'cmspom8u10008l1dq6k6ob7uh', NULL, ARRAY['/uploads/products/carine-dus-jeli-400-ml-1-9ba8.webp']::text[], '{"Özellik":"Paraben içermez, pH dengelidir.","Cilt Tipi":"Tüm Cilt Tipleri (Kuru, Karma, Yağlı ve Hassas)","Ürün Tipi":"Nemlendirici Duş Jeli","Dermatolojik Uygunluk":"Klinik olarak onaylanmıştır."}'::jsonb, 10, 20, FALSE, '2026-08-17T19:24:36.645Z', '2026-09-16T10:03:41.571Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmst1cvq6002bl147u4qnv5rp', NULL, 'CARINE Vücut Losyonu 400 Ml', 'carine-vucut-losyonu-400-ml', 'MC-CRN013', '520', 'Carine Vücut Losyonu, cildinizin doğal nem dengesini korumak ve dış etkenlere karşı direncini artırmak için özel olarak geliştirilmiş hafif ve etkili bir bakım ürünüdür. İnce yapısı sayesinde cildiniz tarafından anında emilir, ağırlık yapmadan ipeksi bir yumuşaklık ve sağlıklı bir parlaklık kazandırır.', 'Öne Çıkan Ürün Özellikleri:
+Hızlı Emilen Hafif Formül: Yağlı ve yapışkan bir his bırakmaz. Sürdükten saniyeler sonra cildinizle bütünleşir, bu sayede uygulamanın hemen ardından giyinebilirsiniz.
+
+24 Saat Nem Koruma: Zenginleştirilmiş içeriği sayesinde nemi cildinize hapseder. Gün boyu süren bir konfor sağlar ve kuruluktan kaynaklanan pul pul dökülmeleri önlemeye yardımcı olur.
+
+Cilt Bariyerini Güçlendirir: Cildin koruyucu tabakasını destekleyerek dış etkenlerin (soğuk hava, rüzgar, kirlilik) cildinizi yıpratmasını engeller.
+
+Kadifemsi Dokunuş: Düzenli kullanımda cildin elastikiyetini artırır ve daha pürüzsüz, yumuşak bir görünüm kazandırır.
+
+Hassas Ciltlere Uygun: pH dengeli formülü sayesinde tüm cilt tipleriyle uyumludur. Tahriş etmez, nazik bir bakım sunar.
+
+Tazeleyici ve Rahatlatıcı Koku: Hafif ve zarif kokusuyla hem cildinizi hem de ruhunuzu tazeler, gün boyu temizlik hissi verir.
+
+Kullanım Önerileri:
+Uygulama: Her banyo veya duş sonrası, kuruladığınız cildinize yeterli miktarda uygulayın.
+
+Masaj: Dairesel hareketlerle masaj yaparak tüm vücudunuza yayın.
+
+Bölgeler: Özellikle kurumaya daha meyilli olan dirsek, diz ve topuk bölgelerine yoğunlaşarak ekstra bakım sağlayın.
+
+Neden Carine Vücut Losyonu? Carine, ağır nemlendiricilerin aksine cildinize nefes aldırırken ihtiyaç duyduğu suyu sağlar. Ekonomik boyutu ve kaliteli içeriğiyle ailenizin günlük vücut bakımı için en ideal ve pratik çözümdür.', NULL, 'cmspom8u10008l1dq6k6ob7uh', NULL, ARRAY['/uploads/products/carine-vucut-losyonu-400-ml-1-2dfb.webp']::text[], '{"Özellik":"Paraben içermez, hızlı emilim özelliği.","Cilt Tipi":"Tüm Cilt Tipleri (Normal, Kuru, Hassas)","Ürün Tipi":"Vücut Nemlendirici Losyon","Dermatolojik Uygunluk":"Klinik olarak test edilmiş, güvenilir içerik."}'::jsonb, 10, 20, FALSE, '2026-08-17T19:24:53.415Z', '2026-09-16T09:43:47.429Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmsskwqyv0001l1z8ufnout06', NULL, '2 Motorlu Hasta Karyolası — Metal Korkuluk / Ahşap Başlık', 'mcaris-2-motorlu-hasta-karyolasi-metal-korkuluk-ahsap-baslik', 'MC-ECO2100', '19000', 'Maksimum hasta güvenliği ve konforu için tasarlanan 2 motorlu elektrikli hasta karyolası; şık ahşap başlıkları ve dayanıklı metal korkulukları ile öne çıkar. Kumanda yardımıyla baş ve ayak kısımları kolayca ayarlanabilir, hem evde bakım hem de klinik kullanım için idealdir.', 'Hasta bakım sürecini hem hastalar hem de hasta yakınları için en konforlu hale getirmek amacıyla özel olarak tasarlanan 2 Motorlu Hasta Karyolası, işlevselliği ve estetiği bir araya getiriyor. Çift motorlu elektrikli sistemi sayesinde başucu ve ayakucu hareketleri el kumandası yardımıyla zahmetsizce ayarlanabilir, böylece hastanın ergonomik ve rahat bir pozisyonda dinlenmesi sağlanır. Ürünün tasarımında yer alan ahşap başlıklar, ev ortamına kusursuz uyum sağlayarak hastane atmosferinden uzak, sıcak bir görünüm sunar. Güvenliği en üst düzeye çıkaran dayanıklı metal korkuluk sistemi ise hastanın düşme riskini ortadan kaldırırken, pratik mekanizması sayesinde refakatçiler tarafından kolayca indirilip kaldırılabilir. Hem evde bakım hem de profesyonel sağlık kurumları için uzun ömürlü bir kullanım sunan bu karyola, sağlam gövde yapısıyla tedavi sürecindeki en güvenilir yardımcınızdır.', NULL, 'cmt1ca9l70004qm010n693nbz', 'silver', ARRAY['/uploads/products/mcaris-2-motorlu-hasta-karyolasi-metal-korkuluk-ahsap-baslik-1-bf4d.webp', '/uploads/products/mcaris-2-motorlu-hasta-karyolasi-metal-korkuluk-ahsap-baslik-2-2355.webp', '/uploads/products/mcaris-2-motorlu-hasta-karyolasi-metal-korkuluk-ahsap-baslik-3-0ab0.webp', '/uploads/products/mcaris-2-motorlu-hasta-karyolasi-metal-korkuluk-ahsap-baslik-4-840f.webp', '/uploads/products/mcaris-2-motorlu-hasta-karyolasi-metal-korkuluk-ahsap-baslik-5-ecd0.webp']::text[], '{"Garanti":"2 Yıl","Ağırlık":"100 kg","Dış Boyutlar":"102 x 217,5 cm","Motor Sayısı":"2","Yatak Platformu":"89 x 195 cm","Güvenli Çalışma Kapasitesi":"230 kg","Otomatik Kayma (Sırt/Ayakucu)":"18 cm / 4 cm","Sırt ve Bacak Hareket Açıları":"Sırt: 0-68°, Üst Bacak: 0-27°","Yükseklik Aralığı (150 mm teker ile)":"49 cm – 79 cm"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:37.610Z', '2026-09-16T10:03:22.479Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssy5ofx0011l1476ywr1bbl', NULL, 'Veteriner Hidrolik Yükseklik Ayarlı Pet Bakım ve Muayene Masası', 'veteriner-hidrolik-yukseklik-ayarli-pet-bakim-ve-muayene-masasi', 'MC-6021', '32250', 'Ürün üst tabla kauçuk yüzeylidir.
+
+Kauçuk tabla mdf ahşap üzerine döşenmiştir.', 'Yüksek ağırlık taşıma kabiliyetlidir.
+
+Metal bölgeler elektrostatik toz boyalıdır.
+
+Askı aparatı kromajlıdır. Talebe göre yerinden çıkartabilirsiniz.
+
+Ürün hidrolik özellikli olup, manuel olarak pedalla çalışmaktadır.
+
+Sabit ayaklı olup, zemin dengeleme amacıyla ayarlanabilir pabuçlara sahiptir.
+
+ 
+
+Min Yükseklik: 68
+
+Max Yükseklik: 94
+
+Üst Tabla Ölçüleri: 142*64', NULL, 'cmspom8u00007l1dqzxn19xd1', NULL, ARRAY['/uploads/products/veteriner-hidrolik-yukseklik-ayarli-pet-bakim-ve-muayene-masasi-1-9997.webp', '/uploads/products/veteriner-hidrolik-yukseklik-ayarli-pet-bakim-ve-muayene-masasi-2-c2f0.webp', '/uploads/products/veteriner-hidrolik-yukseklik-ayarli-pet-bakim-ve-muayene-masasi-3-7128.webp']::text[], '{"Garanti":"2 Yıl"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:34.803Z', '2026-09-16T10:04:15.134Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssll3ol0005l1z8hfbsjjvr', NULL, '3 Motorlu ABS Hasta Karyolası', 'mcaris-3-motorlu-abs-hasta-karyolasi', 'MC-ECO3000', '34500', 'Hastalarınızın konforu, güvenliği ve bakım kolaylığı için en gelişmiş çözümü arıyorsanız, 3 Motorlu Full ABS Hasta Karyolası tam size göre. Hem evde hem de profesyonel sağlık ortamlarında güvenle kullanabileceğiniz bu dayanıklı ve hijyenik model, modern tasarımı ve güçlü 3 motorlu sistemi ile hastanın günlük ihtiyaçlarını en pratik şekilde karşılamayı ve bakım kalitesini en üst seviyeye çıkarmayı hedefler.', '3 Motorlu Full ABS Hasta Karyolası – Konforlu Hasta Yatağı
+Hastalarınızın konforu, güvenliği ve bakım kolaylığı için en gelişmiş çözümü arıyorsanız, 3 Motorlu Full ABS Hasta Karyolası tam size göre. Hem evde hem de profesyonel sağlık ortamlarında güvenle kullanabileceğiniz bu dayanıklı ve hijyenik model, modern tasarımı ve güçlü 3 motorlu sistemi ile hastanın günlük ihtiyaçlarını en pratik şekilde karşılamayı ve bakım kalitesini en üst seviyeye çıkarmayı hedefler.
+
+Ürün Özellikleri:
+
+Gelişmiş 3-Motorlu Kontrol: El kumandası aracılığıyla karyolanın sırt, ayak ve en önemlisi yükseklik bölümleri birbirinden bağımsız olarak kolayca ayarlanabilir. Bu, hastaya en rahat pozisyonu (oturma, dinlenme, yemek yeme) hızlıca vermenizi sağlar ve yükseklik ayarı ile bakım verenlerin hastaya eğilmeden daha ergonomik bir şekilde bakım yapmasına olanak tanır.
+
+Tam ABS Panel ve Yan Korkuluklar: Başlık, ayaklık ve yan korkuluklar, darbeye dayanıklı, antibakteriyel ve kolay temizlenebilen ABS (Akrilonitril Bütadien Stiren) malzemeden üretilmiştir. Bu özellik, yüksek hijyen standartlarının korunmasına yardımcı olur ve karyolanın ömrünü uzatır.
+
+Kolay Kullanım ve Taşınabilirlik: Karyola, sessiz çalışan güçlü motorları ve ergonomik el kumandası ile hem hasta hem de bakıcı için kullanım kolaylığı sağlar. Kilitlenebilir tekerlekleri sayesinde güvenli bir şekilde sabitlenebilir veya gerektiğinde rahatça hareket ettirilebilir.
+
+Dayanıklı ve Şık Tasarım: Sağlam metal iskelet üzerine inşa edilen karyola, uzun ömürlü kullanım vaat eder. ABS panellerin modern ve estetik görünümü, bakım ortamına sıcaklık ve şıklık katar.
+
+Güvenli Yan Korkuluklar: Katlanabilir Full ABS yan korkuluklar, hastanın düşme riskini en aza indirir. Gerektiğinde aşağı indirilerek hastanın karyolaya transferini kolaylaştırır.
+
+Kullanım Alanları:
+
+Bu karyola, evde uzun süreli yatan hastaların bakımı, geriatri merkezleri, rehabilitasyon üniteleri, yoğun bakım sonrası bakım ve genel hastane servisleri için idealdir. Hastanın konforunu artırırken bakım verenlerin iş yükünü hafifletmek üzere optimize edilmiştir.
+
+Paket İçeriği:
+
+1 adet 3 Motorlu Full ABS Hasta Karyolası İskelesi
+
+1 takım ABS Başlık ve Ayaklık Panelleri
+
+2 adet Full ABS Yan Korkuluk Takımı
+
+1 adet El Kumandası ve 3 Motorlu Güç Seti
+
+(Opsiyonel) Uyumlu Hasta Yatağı (Sipariş seçeneğinize göre değişir)', NULL, 'cmt1ca9l70004qm010n693nbz', 'silver', ARRAY['/uploads/products/mcaris-3-motorlu-abs-hasta-karyolasi-2-981e.webp', '/uploads/products/mcaris-3-motorlu-abs-hasta-karyolasi-1-d1e4.webp', '/uploads/products/mcaris-3-motorlu-abs-hasta-karyolasi-3-d5bd.webp', '/uploads/products/mcaris-3-motorlu-abs-hasta-karyolasi-4-fb1b.webp', '/uploads/products/mcaris-3-motorlu-abs-hasta-karyolasi-5-804d.webp']::text[], '{"Garanti":"2 Yıl","Motor Sayısı":"3","Tekerlek Çapı":"125 mm","Yatak Platformu":"1900 x 900 mm","Dış Ölçüler":"2030 x 1070 mm","Maks. Diz Açısı":"40°","Yatak Yüksekliği":"510 - 790 mm","Taşıma Kapasitesi":"250 kg","Yatak Altı Boşluk":"160 mm","Ayakucu Yüksekliği":"335 mm","Maks. Sırt Açısı":"70°","Başucu Yüksekliği:":"335 mm","Korkuluk Yüksekliği":"370 mm","Güvenli Çalışma Yükü":"150 kg"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:39.931Z', '2026-09-16T10:03:10.764Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssw8e82000bl1479medggqq', NULL, 'Amörtisörlü Kol Dayama Sehpası - Siyah', 'amortisorlu-kol-dayama-sehpasi-siyah', 'MC-4556', '8100', 'Gazlı amortisör mekanizması sayesinde ürünün yüksekliği kullanıcı ihtiyacına göre kolayca ayarlanabilmektedir.', 'En düşük seviyesi 69 cm''dir.
+En yüksek seviyesi 93 cm''dir.
+Kol dayama minderinde 5 lik sünger ile kaplanmış ahşap üzerine temizlenebilir vinlex deri kullanılmaktadır.
+Kol dayama yüzeyi 47 cm x 32 cm''dir.
+90 derece ile 180 derece arasında hareket kapasitesi mevcuttur.
+Elcikli sıkma aparatı ile kolay yükseklik ayarı vardır. 
+4 adet çizmeyi önleyici sabit plastik ayak mevcuttur.
+Lateks eldiven koyma yeri bulunmaktadır.
+Komple elektrostatik toz boya ile imal edilmektedir.', NULL, 'cmspom8tz0005l1dqtr9serlz', NULL, ARRAY['/uploads/products/amortisorlu-kol-dayama-sehpasi-siyah-1-4b40.webp']::text[], '{"Garanti":"2 Yıl"}'::jsonb, 10, 10, FALSE, '2026-08-17T19:24:34.706Z', '2026-09-16T10:04:17.144Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmsri4rqz000bl1kbm4b9t6e9', NULL, 'Birdie EVO Katlanabilir Hasta Taşıma ve Transfer Lifti', 'mcaris-birdie-evo-katlanabilir-hasta-tasima-ve-transfer-lifti', 'MC-BIRDIE-EVO', '99000', 'Ürün Özeti Dar alanlarda dahi üstün manevra kabiliyeti sunan Birdie EVO; hasta transfer süreçlerini zahmetsiz, güvenli ve konforlu hale getirmek için geliştirilmiştir. Herhangi bir alet gerektirmeyen katlanabilir yapısı ve 360° dönebilme özelliği ile hem hastalar hem de bakıcılar için maksimum ergonomi ve kullanım kolaylığı sağlar.', 'Geniş Hareket Alanı ve 360° Dönüş: Tam uzatma pozisyonunda bile hasta için ferah bir alan yaratır. 360° dönebilme özelliği sayesinde hastanın yatağa, sandalyeye veya tekerlekli sandalyeye konumlandırılması çok daha kolay ve hassas bir şekilde yapılır.
+
+Aletsiz Kurulum ve Pratik Depolama: Katlama ve açma işlemleri hiçbir alete ihtiyaç duyulmadan saniyeler içinde tamamlanır. Gövde (mast) ve kollar alt tabandan kolayca ayrılarak cihazın dar alanlarda depolanmasını ve araç bagajında taşınmasını basitleştirir.
+
+Kompakt ve Fonksiyonel Tasarım: Özellikle dar kapılardan ve koridorlardan geçişi kolaylaştıran kompakt yapısı, yüksek manevra kabiliyeti sunar. Pedal yardımıyla kolayca ayarlanan ayak yayma sistemi, kullanım pratikliğini artırır.
+
+Üst Düzey Güvenlik Donanımları: * Snap Lock Sistemi: Cihazın kurulumu ve kullanımı sırasında bileşenlerin tam olarak kilitlenmesini sağlayarak optimum güvenlik sunar.
+
+Acil Durum Müdahalesi: Güç kesintisi veya acil durumlarda kullanılmak üzere manuel veya elektrikli acil indirme sistemine sahiptir (Kompakt versiyon yalnızca elektrikli indirme içerir).
+
+Cihaz, kullanım esnekliğine göre sabit veya çıkarılabilir bataryalı kontrol kutusu ile gelir.', NULL, 'cmt1ca9l70004qm010n693nbz', 'platinum', ARRAY['/uploads/products/mcaris-birdie-evo-katlanabilir-hasta-tasima-ve-transfer-lifti-1-c35d.webp', '/uploads/products/mcaris-birdie-evo-katlanabilir-hasta-tasima-ve-transfer-lifti-2-b5b8.webp', '/uploads/products/mcaris-birdie-evo-katlanabilir-hasta-tasima-ve-transfer-lifti-3-8666.webp', '/uploads/products/mcaris-birdie-evo-katlanabilir-hasta-tasima-ve-transfer-lifti-4-96cf.webp']::text[], '{"Garanti":"2 Yıl","Kaldırma Hızı":"30 mm/sn","Ayak Açıklığı":"640 mm (Min.) – 1020 mm (Maks.)","Cihaz Ağırlığı":"40 kg","Taşıma Kapasitesi":"180 kg (Kompakt model versiyonunda taşıma kapasitesi 150 kg’dır)","Kaldırma Aralığı":"530 mm – 1590 mm"}'::jsonb, 0, 20, FALSE, '2026-08-17T19:24:34.492Z', '2026-09-16T10:04:20.680Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmsrieg9l000fl1kbsjhx03px', NULL, '2 Motorlu Hasta Yatağı (ABS Panelli & Alüminyum Korkuluklu)', 'mcaris-2-motorlu-hasta-yatagi-abs-panelli-aluminyum-korkuluklu', 'MC-INV2200', '43000', 'Ekonomik ve fonksiyonel çözümü bir arada sunan 2 motorlu elektrikli hasta karyolası; baş ve ayakucu hareketlerini el kumandası ile kolayca yönetmenizi sağlar. Otomatik kayma (regresyon) sistemi ve Fowler/Vasküler pozisyon özellikleri ile hastanın konforunu artırırken, Ankara içi aynı gün teslimat ve ücretsiz kurulum & montaj avantajıyla tedavi sürecinizi kolaylaştırır. Hijyenik ABS muhafazalı şasesi ve katlanabilir alüminyum korkuluklarıyla hem güvenli hem de uzun ömürlü bir medikal yardımcıdır.', 'Sağlık standartlarına uygun olarak üretilen 2 motorlu elektrikli hasta karyolası, evde bakım veya klinik ortamlarda hastanın temel hareket ihtiyaçlarını en zahmetsiz şekilde karşılamak için tasarlanmıştır. Güçlü motor yapısı ve kullanıcı dostu kumandası ile hem hastaya hem de refakatçiye kullanım kolaylığı sağlar.
+
+Gelişmiş Hareket Kapasitesi ve Konfor
+Bu model, elektrikli motoru sayesinde başucu ve ayakucu açılarını hassas bir şekilde ayarlar. Öne çıkan fonksiyonel özellikler şunlardır:
+
+Otomatik Kayma Sistemi: Başucu yükseltilirken yatak platformu geriye doğru kayarak hastanın karın bölgesindeki sıkışmayı ve sürtünmeyi minimize eder.
+Klinik Pozisyonlar: Hastanın solunumunu rahatlatan Fowler ve bacaklardaki dolaşımı destekleyen Vasküler pozisyonları kolayca verilebilir.
+Otomatik Kontur: Baş ve ayakucu hareketlerinin senkronize çalışmasıyla vücut ergonomisi tam olarak korunur.
+Dayanıklı Tasarım ve Üst Düzey Hijyen
+Uzun süreli kullanımlar göz önünde bulundurularak, temizliği kolay ve dayanıklı materyaller tercih edilmiştir:
+
+Hijyenik Yan Korkuluklar: Kilitlenebilir ve katlanabilir alüminyum korkuluklar, hastanın güvenli bir şekilde inip binmesini sağlar.
+ABS Muhafazalı Şase: Profil şase üzerinde bulunan kolay sökülüp takılabilen ABS plastik kaplamalar, estetik bir görünümün yanı sıra kolay sterilizasyon imkanı sunar.
+PP Başlıklar: Kolayca yerinden çıkarılabilen polipropilen (PP) başlıklar, acil müdahale ve temizlik anlarında büyük avantaj sağlar.
+
+*Tüm mekanik ve elektronik aksamlar yüksek kalite standartlarına ve dayanıklılık testlerine uygun üretilmiştir.', NULL, 'cmt1ca9l70004qm010n693nbz', 'gold', ARRAY['/uploads/products/mcaris-2-motorlu-hasta-yatagi-abs-panelli-aluminyum-korkuluklu-1-2cc1.webp', '/uploads/products/mcaris-2-motorlu-hasta-yatagi-abs-panelli-aluminyum-korkuluklu-2-2cc1.webp', '/uploads/products/mcaris-2-motorlu-hasta-yatagi-abs-panelli-aluminyum-korkuluklu-3-f21b.webp', '/uploads/products/mcaris-2-motorlu-hasta-yatagi-abs-panelli-aluminyum-korkuluklu-4-4bf7.webp', '/uploads/products/mcaris-2-motorlu-hasta-yatagi-abs-panelli-aluminyum-korkuluklu-5-79d3.webp', '/uploads/products/mcaris-2-motorlu-hasta-yatagi-abs-panelli-aluminyum-korkuluklu-6-4060.webp', '/uploads/products/mcaris-2-motorlu-hasta-yatagi-abs-panelli-aluminyum-korkuluklu-7-07aa.webp']::text[], '{"Garanti":"2 Yıl","Tekerlekler":"Çapraz Kilitlenebilir Plastik Tekerlekler","Korkuluk Tipi":"Kilitlenebilir Alüminyum Yan Korkuluklar","Motor Sayısı":"2 (Baş ve Ayakucu Kontrollü)","Yüzey Koruması":"Elektrostatik Toz Boyalı Metal Aksam"}'::jsonb, 9, 10, FALSE, '2026-08-17T19:24:36.098Z', '2026-09-16T10:03:48.094Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmssytven001nl147lhdk2sdi', NULL, 'CARINE 2’si 1 Arada Bebek Saç ve Vücut Şampuanı 400 ML', 'carine-2si-1-arada-bebek-sac-ve-vucut-sampuani-400-ml', 'MC-CRN002', '475', 'Bebeğinizin banyo keyfini pratikleştiren Carine 2’si 1 Arada Bebek Şampuanı, hem saç derisini hem de hassas vücut cildini tek bir ürünle derinlemesine temizler. Saçların kolay taranmasını sağlayan yumuşatıcı etkisi ve cildi besleyen özel formülüyle, bebeğinizin banyo sonrası huzurlu ve taze hissetmesine yardımcı olur. 400 ml’lik avantajlı boyutuyla uzun süreli ve ekonomik bir kullanım sunar.', 'Öne Çıkan Özellikler ve Yararları
+Pratik 2’si 1 Arada Formül: Hem şampuan hem de yıkama jeli görevini aynı anda üstlenir. Bebeğinizin saçlarını ipeksi yapar, vücudunu ise nazikçe kirden arındırır.
+
+Göz Yakmayan Güvenli İçerik: Bebeklerin hassas gözlerini tahriş etmeyen, banyoyu korkusuz bir aktiviteye dönüştüren özel formüle sahiptir.
+
+Kolay Tarama Etkisi: Bebek saçlarının düğümlenmesini önler, banyo sonrası saçların zahmetsizce ve can yakmadan taranmasını sağlar.
+
+Hassas pH Dengesi: Bebek cildinin doğal koruyucu tabakasına zarar vermez, cildin nem dengesini koruyarak kuruluğu önler.
+
+Doğal ve Güvenilir: Paraben, alkol ve sert kimyasallar içermeyen içeriği sayesinde yeni doğan döneminden itibaren güvenle kullanılabilir.
+
+Kullanım Şekli
+Bebeğinizin saçını ve vücudunu ılık suyla ıslatın.
+
+Avucunuza bir miktar şampuan alarak köpürtün ve nazik hareketlerle masaj yaparak uygulayın.
+
+Bol su ile durulayın.
+
+Saç ve vücut kullanımına uygun olduğu için banyo süresini kısaltarak bebeğinizin üşümesini engeller.', NULL, 'cmspom8u10008l1dq6k6ob7uh', NULL, ARRAY['/uploads/products/carine-2si-1-arada-bebek-sac-ve-vucut-sampuani-400-ml-1-4440.webp']::text[], '{"Özellik":"Göz Yakmaz, Kolay Tarama Sağlar","İçerik":"Paraben, Alkol ve Boya İçermez","Cilt Tipi":"Tüm Bebek ve Çocuk Ciltleri","Ürün miktarı":"400 ml","Kullanım Amacı":"Saç ve Vücut Temizliği (2’si 1 Arada)"}'::jsonb, 10, 20, FALSE, '2026-08-17T19:24:35.985Z', '2026-09-16T10:03:50.214Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmst0oiz90021l147j72467tv', NULL, 'CARINE Bebek Yüz Kremi 50 Ml', 'carine-bebek-yuz-kremi-50-ml', 'MC-CRN009', '305', 'Bebeklerin yüz bölgesi, dış dünyaya en çok maruz kalan ve çevresel faktörlerden (soğuk, rüzgar, güneşin kurutucu etkisi) en çabuk etkilenen alandır. Carine Bebek Yüz Kremi, bebeğinizin hassas yüz hatlarını korumak, nemlendirmek ve ipeksi yumuşaklığını sürdürmek için özel olarak formüle edilmiştir. Hafif yapısı sayesinde gözenekleri tıkamadan cildi besler.', 'Öne Çıkan Özellikler ve Yararları
+Hassas Koruma Bariyeri: Bebeğinizin yüzünde görünmez bir koruma tabakası oluşturarak dış etkenlerin (soğuk hava, kuru rüzgar) cildi tahriş etmesini önler.
+
+Derinlemesine Nemlendirme: Yüz bölgesindeki kurumaya ve pullanmaya yatkın alanları hızla nemlendirir, cilde anında rahatlık kazandırır.
+
+E Vitamini ve Panthenol Desteği: Cilt bariyerini güçlendirir, tahriş olmuş bölgelerin onarılmasına yardımcı olur ve cildi besleyerek pürüzsüzleştirir.
+
+Hızlı Emilim ve Yağsız Formül: Bebeklerin hareketli yapısına uyum sağlar; cilde sürüldüğü andan itibaren hızla emilir ve yapışkan bir his bırakmaz.
+
+Temiz ve Güvenli İçerik: Paraben, alkol ve boya içermez. pH değeri bebeğinizin cildiyle tamamen uyumludur.
+
+Kullanım Şekli
+Bebeğinizin yüzünü temizleyip kuruladıktan sonra uygulayın.
+
+Az miktarda kremi parmak uçlarınıza alın ve bebeğinizin yanaklarına, alnına ve çenesine nazik, dairesel hareketlerle masaj yaparak yedirin.
+
+Dışarı çıkmadan önce veya banyo sonrası günlük kullanım için idealdir.', NULL, 'cmspom8u10008l1dq6k6ob7uh', NULL, ARRAY['/uploads/products/carine-bebek-yuz-kremi-50-ml-1-2adf.webp']::text[], '{"Etki":"Nemlendirme, Koruma ve Yatıştırma","İçerik":"Paraben, Alkol ve Boya İçermez","Cilt Tipi":"Hassas ve Narin Bebek Ciltleri","Ürün Miktarı":"50 Ml","Kullanım Alanı":"Bebek ve Çocuk Yüz Bölgesi"}'::jsonb, 10, 20, FALSE, '2026-08-17T19:24:50.426Z', '2026-09-16T09:43:54.737Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmst0kl2x001zl147ofgrf8sf', NULL, 'Carine Bebek Vücut Losyonu | 300 Ml', 'carine-bebek-vucut-losyonu-300-ml', 'MC-CRN008', '440', 'Bebeğinizin cildi banyo sonrası ve gün içinde nemini hızla kaybedebilir. Carine Bebek Vücut Losyonu, bu nem kaybını önlemek ve bebeğinizin hassas cildini dış etkenlere karşı korumak için özel olarak geliştirilmiştir. Hafif yapısı ve zengin içeriğiyle cildi ağırlaştırmadan besler, bebeğinize banyo sonrası huzurlu bir rahatlama sunar.', 'Öne Çıkan Özellikler ve Yararları
+24 Saat Nem Desteği: İçeriğindeki yoğun nemlendirici bileşenler sayesinde bebeğinizin cildini gün boyu nemli tutar, kuruluk kaynaklı pullanma ve kaşıntıyı önler.
+
+Besleyici E Vitamini ve Panthenol: Cilt bariyerini güçlendirerek bebeğinizin cildinin daha dirençli, yumuşak ve sağlıklı kalmasına yardımcı olur.
+
+Hızlı Emilim & Yağsız His: İpeksi dokusu cilt tarafından anında emilir, kıyafetlerde leke bırakmaz ve bebeğinize yapışkanlık hissi vermeden konfor sağlar.
+
+Hassas pH Dengesi: Bebeğinizin doğal deri koruma tabakasıyla uyumlu pH seviyesi sayesinde tahriş oluşumunu engeller.
+
+Temiz İçerik: Paraben, alkol ve boya içermez. Hassas ve alerjik reaksiyonlara meyilli ciltler için güvenli bir kullanım sunar.
+
+Kullanım Şekli
+İdeal olarak banyodan sonra kurulanmış cilde uygulayın.
+
+Avucunuza aldığınız bir miktar losyonu bebeğinizin tüm vücuduna nazik masaj hareketleriyle yedirin.
+
+Bebeğinizi rahatlatmak ve uykuya hazırlamak için akşam rutinlerinde masaj yağı alternatifi olarak da kullanabilirsiniz.', NULL, 'cmspom8u10008l1dq6k6ob7uh', NULL, ARRAY['/uploads/products/carine-bebek-vucut-losyonu-300-ml-1-92f3.webp']::text[], '{"Özellik":"Hızlı Emilim, pH Dengeli","İçerik":"Paraben, Alkol ve Boya İçermez","Cilt Tipi":"Tüm Bebek ve Çocuk Ciltleri","Ürün Miktarı":"300 Ml","Kullanım Amacı":"Vücut Nemlendirme ve Koruma"}'::jsonb, 10, 20, FALSE, '2026-08-17T19:24:50.005Z', '2026-09-16T09:43:58.186Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Product" ("id", "wcId", "name", "slug", "sku", "price", "shortDescription", "description", "searchKeywords", "categoryId", "series", "images", "specs", "stock", "vatRate", "isDraft", "createdAt", "updatedAt") VALUES ('cmst04rcn001pl14782dowjkg', NULL, 'CARINE 2’si 1 Arada Şampuan 400 Ml', 'carine-2si-1-arada-sampuan-400-ml', 'MC-CRN005', '335', 'Carine 2’si 1 Arada Şampuan, yoğun yaşam temposunda saç bakımından ödün vermek istemeyenler için özel olarak geliştirilmiştir. Güçlü temizleme özelliği ile saç kreminin yumuşatıcı etkisini tek bir formülde birleştirerek, saçlarınızı hem temizler hem de derinlemesine besler.', 'Öne Çıkan Ürün Özellikleri:
+Çift Etkili Formül: Şampuanın arındırıcı gücü ile saç kreminin nemlendirici ve yumuşatıcı etkisini aynı anda sunar. Ekstra saç kremi kullanma ihtiyacını ortadan kaldırır.
+
+Kolay Tarama: Saç tellerini pürüzsüzleştirerek duş sonrası karışıklıkları önler. Saçlarınızın zahmetsizce taranmasını sağlar ve kırılmaları minimize eder.
+
+Derinlemesine Temizlik ve Ferahlık: Saç derisindeki kiri ve yağı nazikçe arındırırken, saçın doğal nem dengesini korur.
+
+İpeksi Yumuşaklık ve Parlaklık: Saçlara doğal bir canlılık kazandırır. Mat görünümü gidererek saçlarınızın gün boyu parlak ve bakımlı görünmesini sağlar.
+
+Ağırlaştırmayan Bakım: Hafif formülü sayesinde saçları ağırlaştırmaz, sönükleşmesini engeller ve doğal hacmini korur.
+
+Tüm Saç Tipleri İçin Uygun: Ailenin tüm fertleri tarafından günlük kullanıma uygundur. pH dengeli yapısıyla saç derisine dosttur.
+
+Kullanım Avantajları:
+Zaman Tasarrufu: Tek yıkama ile hem temizlik hem bakım sağlayarak duş süresini kısaltır.
+
+Pratiklik: Spor salonunda, seyahatlerde veya tatillerde yanınızda taşımanız gereken ürün sayısını azaltır.
+
+Ekonomik Çözüm: Şampuan ve saç kremi maliyetini tek bir üründe birleştirerek bütçenize katkı sağlar.
+
+Teknik Detaylar:
+Ürün Tipi: 2’si 1 Arada (Şampuan & Saç Kremi)
+
+Saç Tipi: Tüm Saç Tipleri
+
+Özellik: Kolay tarama, nemlendirme, paraben içermez.
+
+Dermatolojik Uygunluk: Klinik olarak test edilmiş, cilde uyumlu içerik.
+
+Neden Carine 2’si 1 Arada? Carine, karmaşık bakım rutinlerini sadeleştirir. Saçlarınızın ihtiyacı olan temizliği ve yumuşaklığı tek bir şişede toplayarak size her gün “yeni bakımdan çıkmış” saç hissi verir.', NULL, 'cmspom8u10008l1dq6k6ob7uh', NULL, ARRAY['/uploads/products/carine-2si-1-arada-sampuan-400-ml-1-2bef.webp']::text[], '{"Saç Tipi":"Tüm saç tipleri"}'::jsonb, 10, 20, FALSE, '2026-08-17T19:24:45.640Z', '2026-09-16T09:44:04.036Z') ON CONFLICT DO NOTHING;
+
+-- Tablo: "User" (6 kayıt)
+INSERT INTO "User" ("id", "email", "passwordHash", "name", "phone", "address", "role", "resetToken", "resetTokenExpires", "createdAt", "updatedAt") VALUES ('cmsrfq1060000l1ye690oe3xd', 'info.mcaris@gmail.com', 'dummy-hash', 'MCARIS Admin', NULL, NULL, 'USER', NULL, NULL, '2026-08-17T19:24:33.642Z', '2026-08-17T19:24:33.642Z') ON CONFLICT DO NOTHING;
+INSERT INTO "User" ("id", "email", "passwordHash", "name", "phone", "address", "role", "resetToken", "resetTokenExpires", "createdAt", "updatedAt") VALUES ('cmt1daw2r0000pa01kojvgkov', 'alperxyaman@gmail.com', '$2b$10$MHc714ejfM.lOqKaQFOwTOlMCiZKdZW3kvubdo0KNzyFMJTOx3y0i', 'Alper', '05331519395', NULL, 'USER', NULL, NULL, '2026-08-20T10:18:27.171Z', '2026-08-20T10:18:27.171Z') ON CONFLICT DO NOTHING;
+INSERT INTO "User" ("id", "email", "passwordHash", "name", "phone", "address", "role", "resetToken", "resetTokenExpires", "createdAt", "updatedAt") VALUES ('cmsr652m4001ol1s6ydodyqwv', 'silacakir01@gmail.com', '$2b$10$oIjTEclX79M6IZ0MDfS21.G32w0Zk26ExnxZfjbNC9Z1RIPl7Kzqm', 'Sıla Çakır', NULL, NULL, 'USER', '05fe0adbae842d6a85dad28d071fa51911f51ab8719382992fa14f70027baf9f', '2026-08-20T11:24:09.785Z', '2026-08-17T19:24:33.730Z', '2026-08-20T10:24:09.786Z') ON CONFLICT DO NOTHING;
+INSERT INTO "User" ("id", "email", "passwordHash", "name", "phone", "address", "role", "resetToken", "resetTokenExpires", "createdAt", "updatedAt") VALUES ('cmts6stm20b9cnc01fpx9a34p', 'ashener@gmail.com', '$2b$10$IZonI7mxPV52Q1k8wX2UqOMSV0siD8cIxE22BqfhFtd3pEoBvSqsu', 'arzu şener', '5302470338', 'Tahtakale mh Petunya sk Garantikoza evleri 2 etap a3 d5 ıspartakule avcılar istanbul', 'USER', NULL, NULL, '2026-09-08T04:46:13.227Z', '2026-09-08T04:48:55.428Z') ON CONFLICT DO NOTHING;
+INSERT INTO "User" ("id", "email", "passwordHash", "name", "phone", "address", "role", "resetToken", "resetTokenExpires", "createdAt", "updatedAt") VALUES ('cmsxailk80000w0nkrwphcsoh', 'admin@mcaris.com.tr', '$2b$10$ZM.O3o4SIE4Qb69F6LSKceoiBrvl4IipCDPoViBsRn5Smee/fmx7W', 'Çağrı Kahveci', NULL, NULL, 'ADMIN', NULL, NULL, '2026-08-17T13:49:23.238Z', '2026-09-11T13:09:25.126Z') ON CONFLICT DO NOTHING;
+INSERT INTO "User" ("id", "email", "passwordHash", "name", "phone", "address", "role", "resetToken", "resetTokenExpires", "createdAt", "updatedAt") VALUES ('cmu3w9dvr0000scc59a4b9ans', 'figen@mcaris.com.tr', '$2b$10$7U/a3we45IPLdYBq5WAOSOBY8CP3/aloggmQzZgOK6B3XxUC9gZB.', 'Figen', NULL, NULL, 'ADMIN', NULL, NULL, '2026-09-16T09:24:24.327Z', '2026-09-16T09:24:24.327Z') ON CONFLICT DO NOTHING;
+
+-- Tablo: "Address" (0 kayıt)
+
+-- Tablo: "Cart" (1421 kayıt)
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxna0l10002w09otlkkfdtm', '2026-08-17T19:46:37.814Z', '2026-08-17T19:46:37.814Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxna0z60005w09ovbaxh1jr', '2026-08-17T19:46:38.323Z', '2026-08-17T19:46:38.323Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxna1x4000cw09oem0lwmxf', '2026-08-17T19:46:39.544Z', '2026-08-17T19:46:39.544Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxna23x000dw09orszw4dpp', '2026-08-17T19:46:39.789Z', '2026-08-17T19:46:39.789Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxna3iy000gw09o4bqlptb8', '2026-08-17T19:46:41.626Z', '2026-08-17T19:46:41.626Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxna85o000jw09otw82zhmt', '2026-08-17T19:46:44.549Z', '2026-08-17T19:46:44.549Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxna9nh000kw09orgdiw8mj', '2026-08-17T19:46:49.565Z', '2026-08-17T19:46:49.565Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxna9p7000lw09o343u072m', '2026-08-17T19:46:46.638Z', '2026-08-17T19:46:46.638Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxnaae9000mw09oh7hj9w6p', '2026-08-17T19:46:50.529Z', '2026-08-17T19:46:50.529Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxnae3f000tw09oz2ik0puz', '2026-08-17T19:46:55.323Z', '2026-08-17T19:46:55.323Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxnafkb000uw09omthzlj3f', '2026-08-17T19:46:57.227Z', '2026-08-17T19:46:57.227Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxnagsh000vw09ofus28o01', '2026-08-17T19:46:58.818Z', '2026-08-17T19:46:58.818Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxnk04i0004w0wc1s72wkh0', '2026-08-17T19:54:23.778Z', '2026-08-17T19:54:23.778Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxnk0j80005w0wc8lgh6gxh', '2026-08-17T19:54:24.308Z', '2026-08-17T19:54:24.308Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxnk1np000cw0wchj9gu3ua', '2026-08-17T19:54:25.766Z', '2026-08-17T19:54:25.766Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxnk1td000dw0wcly3th0lo', '2026-08-17T19:54:25.969Z', '2026-08-17T19:54:25.969Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxnk2cx000gw0wc1qfevmkp', '2026-08-17T19:54:26.673Z', '2026-08-17T19:54:26.673Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxnk2y8000jw0wcm6sm7yw7', '2026-08-17T19:54:27.440Z', '2026-08-17T19:54:27.440Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxnk3tl000mw0wc17jcv36h', '2026-08-17T19:54:28.569Z', '2026-08-17T19:54:28.569Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxnk3z1000rw0wcfmf5b6nm', '2026-08-17T19:54:28.766Z', '2026-08-17T19:54:28.766Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxnk7jg000uw0wca0mjk7sa', '2026-08-17T19:54:33.388Z', '2026-08-17T19:54:33.388Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxnk7vz000vw0wc5pajqz2r', '2026-08-17T19:54:33.839Z', '2026-08-17T19:54:33.839Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxnk909000ww0wca310khsy', '2026-08-17T19:54:35.289Z', '2026-08-17T19:54:35.289Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxnk99t000zw0wcp1iuv9m0', '2026-08-17T19:54:35.634Z', '2026-08-17T19:54:35.634Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo3kjn0004w0oc88b5vd4m', '2026-08-17T20:09:36.708Z', '2026-08-17T20:09:36.708Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo3l4r0007w0ocyitifmvb', '2026-08-17T20:09:37.468Z', '2026-08-17T20:09:37.468Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo3ma1000cw0ock49fc1g0', '2026-08-17T20:09:38.953Z', '2026-08-17T20:09:38.953Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo3mhr000dw0ocvq5i8f2j', '2026-08-17T20:09:39.232Z', '2026-08-17T20:09:39.232Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo3myu000gw0ocqrzb5nxb', '2026-08-17T20:09:39.847Z', '2026-08-17T20:09:39.847Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo3p3c000jw0oce40f83gb', '2026-08-17T20:09:42.600Z', '2026-08-17T20:09:42.600Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo3s0n000rw0ocv58fznd4', '2026-08-17T20:09:46.392Z', '2026-08-17T20:09:46.392Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo3s0i000qw0ocmbol4jg9', '2026-08-17T20:09:46.386Z', '2026-08-17T20:09:46.386Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo3ski000sw0ocswsqui92', '2026-08-17T20:09:47.106Z', '2026-08-17T20:09:47.106Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo3tea000xw0ocdcyl788p', '2026-08-17T20:09:48.179Z', '2026-08-17T20:09:48.179Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo3tot000yw0oc7l5mxi7j', '2026-08-17T20:09:48.557Z', '2026-08-17T20:09:48.557Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo3tsu000zw0ocz0z4r6gv', '2026-08-17T20:09:48.702Z', '2026-08-17T20:09:48.702Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo6jsa0004w0sgo0bccduc', '2026-08-17T20:11:55.690Z', '2026-08-17T20:11:55.690Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo6kwy0005w0sgdpe36ye5', '2026-08-17T20:11:57.154Z', '2026-08-17T20:11:57.154Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo6p7e000aw0sgi2l0uzzx', '2026-08-17T20:12:02.714Z', '2026-08-17T20:12:02.714Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo6swx000fw0sg3l5pcbez', '2026-08-17T20:12:07.522Z', '2026-08-17T20:12:07.522Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo6vho000gw0sgmk7stova', '2026-08-17T20:12:10.861Z', '2026-08-17T20:12:10.861Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo6vi7000hw0sg4nsjfohs', '2026-08-17T20:12:10.470Z', '2026-08-17T20:12:10.470Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo6wuu000mw0sgd1fuqe5e', '2026-08-17T20:12:12.631Z', '2026-08-17T20:12:12.631Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo6x21000nw0sg45boisgt', '2026-08-17T20:12:12.889Z', '2026-08-17T20:12:12.889Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo6ynt000qw0sgw8q75j5b', '2026-08-17T20:12:14.969Z', '2026-08-17T20:12:14.969Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo6zir000vw0sgkv8twfkv', '2026-08-17T20:12:16.083Z', '2026-08-17T20:12:16.083Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo6ztz000ww0sgpq0flqdq', '2026-08-17T20:12:16.487Z', '2026-08-17T20:12:16.487Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo738a000zw0sgdj30w8nj', '2026-08-17T20:12:20.890Z', '2026-08-17T20:12:20.890Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo8sj10004w0w8xvh0fd5v', '2026-08-17T20:13:40.334Z', '2026-08-17T20:13:40.334Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo8tyk0007w0w8wnrkgefe', '2026-08-17T20:13:42.188Z', '2026-08-17T20:13:42.188Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo8ymn000cw0w8vp7lcmiz', '2026-08-17T20:13:48.240Z', '2026-08-17T20:13:48.240Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo8z0g000dw0w8x8a905ej', '2026-08-17T20:13:48.736Z', '2026-08-17T20:13:48.736Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo92bb000gw0w8yfyyu9l3', '2026-08-17T20:13:52.357Z', '2026-08-17T20:13:52.357Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo97dk000jw0w8juzi7jav', '2026-08-17T20:13:59.576Z', '2026-08-17T20:13:59.576Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo9do3000qw0w891c9usjn', '2026-08-17T20:14:07.732Z', '2026-08-17T20:14:07.732Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo9eg5000rw0w8tgcla3bn', '2026-08-17T20:14:08.742Z', '2026-08-17T20:14:08.742Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo9eut000uw0w83ocs2qme', '2026-08-17T20:14:09.269Z', '2026-08-17T20:14:09.269Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo9hv2000xw0w8kyk6yvfu', '2026-08-17T20:14:12.574Z', '2026-08-17T20:14:12.574Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo9jbt000yw0w8v2m0cmaj', '2026-08-17T20:14:15.066Z', '2026-08-17T20:14:15.066Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxo9joy000zw0w851n34x22', '2026-08-17T20:14:15.539Z', '2026-08-17T20:14:15.539Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxol2jg0002w0qokgamw96t', '2026-08-17T20:23:13.180Z', '2026-08-17T20:23:13.180Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxol4s80005w0qo9n8dq522', '2026-08-17T20:23:16.089Z', '2026-08-17T20:23:16.089Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxol8j5000aw0qoks619zom', '2026-08-17T20:23:20.945Z', '2026-08-17T20:23:20.945Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxolapa000fw0qo80z9wert', '2026-08-17T20:23:23.758Z', '2026-08-17T20:23:23.758Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxoldkk000gw0qoykstfrs0', '2026-08-17T20:23:27.477Z', '2026-08-17T20:23:27.477Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxolgsa000jw0qo24l2sdtu', '2026-08-17T20:23:31.642Z', '2026-08-17T20:23:31.642Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxoljhr000mw0qo9yffq3le', '2026-08-17T20:23:35.152Z', '2026-08-17T20:23:35.152Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxoljvk000rw0qok16zaf77', '2026-08-17T20:23:35.648Z', '2026-08-17T20:23:35.648Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxolms2000uw0qoqnqgm5s3', '2026-08-17T20:23:39.411Z', '2026-08-17T20:23:39.411Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxolo0f000vw0qom1em972j', '2026-08-17T20:23:41.007Z', '2026-08-17T20:23:41.007Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxolp19000yw0qoysez4jhh', '2026-08-17T20:23:42.334Z', '2026-08-17T20:23:42.334Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmsxolppl000zw0qocmhqh8zi', '2026-08-17T20:23:42.874Z', '2026-08-17T20:23:42.874Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08k4010004w0p4qrnucezn', '2026-08-19T15:17:53.090Z', '2026-08-19T15:17:53.090Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08k4du0007w0p4717iqslz', '2026-08-19T15:17:53.586Z', '2026-08-19T15:17:53.586Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08k59l000cw0p4tgh48z2i', '2026-08-19T15:17:54.729Z', '2026-08-19T15:17:54.729Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08k5c5000dw0p47w79424g', '2026-08-19T15:17:54.822Z', '2026-08-19T15:17:54.822Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08k62p000gw0p4wj35rniu', '2026-08-19T15:17:55.777Z', '2026-08-19T15:17:55.777Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08k79u000jw0p4l4qknqyu', '2026-08-19T15:17:57.331Z', '2026-08-19T15:17:57.331Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08k7u3000nw0p4macn7xh4', '2026-08-19T15:17:58.059Z', '2026-08-19T15:17:58.059Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08k7yn000rw0p4b0pwnzby', '2026-08-19T15:17:58.224Z', '2026-08-19T15:17:58.224Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08k8j4000uw0p4pwfuftd1', '2026-08-19T15:17:58.961Z', '2026-08-19T15:17:58.961Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08k8jb000vw0p4x9ttazz4', '2026-08-19T15:17:58.968Z', '2026-08-19T15:17:58.968Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08k8qc000ww0p4qluxnn4x', '2026-08-19T15:17:59.220Z', '2026-08-19T15:17:59.220Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08k8sl000xw0p4l3ot4lyq', '2026-08-19T15:17:59.302Z', '2026-08-19T15:17:59.302Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08ktra0002w0go8y8b6s62', '2026-08-19T15:18:26.470Z', '2026-08-19T15:18:26.470Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08ku4u0005w0go42lahyan', '2026-08-19T15:18:26.958Z', '2026-08-19T15:18:26.958Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08kv0k000cw0goj26tct5k', '2026-08-19T15:18:28.100Z', '2026-08-19T15:18:28.100Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08kvd0000fw0goiiw20cj2', '2026-08-19T15:18:28.549Z', '2026-08-19T15:18:28.549Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08kwnj000gw0gop2lax7ty', '2026-08-19T15:18:30.224Z', '2026-08-19T15:18:30.224Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08kwy8000hw0govvlzmd4u', '2026-08-19T15:18:30.609Z', '2026-08-19T15:18:30.609Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08kxji000mw0goyx49wpf8', '2026-08-19T15:18:31.374Z', '2026-08-19T15:18:31.374Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08kxnx000nw0goh650ca86', '2026-08-19T15:18:31.534Z', '2026-08-19T15:18:31.534Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08ky7y000uw0go4713ynmx', '2026-08-19T15:18:32.254Z', '2026-08-19T15:18:32.254Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08kyes000vw0goxt0u73cz', '2026-08-19T15:18:32.501Z', '2026-08-19T15:18:32.501Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08kygz000ww0gohwe6ohkd', '2026-08-19T15:18:32.580Z', '2026-08-19T15:18:32.580Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08kyti000xw0go4agpy3yw', '2026-08-19T15:18:33.031Z', '2026-08-19T15:18:33.031Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08l9pl0004w0ng682ej1iu', '2026-08-19T15:18:47.146Z', '2026-08-19T15:18:47.146Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08ladg0005w0ngh8zh8ugr', '2026-08-19T15:18:48.004Z', '2026-08-19T15:18:48.004Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08ld39000cw0nghvnlmk1y', '2026-08-19T15:18:51.525Z', '2026-08-19T15:18:51.525Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08uhxi0004w0l8sz83wksd', '2026-08-19T15:25:57.702Z', '2026-08-19T15:25:57.702Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08uijb0005w0l85n1afp93', '2026-08-19T15:25:58.487Z', '2026-08-19T15:25:58.487Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08ujp1000cw0l8w544t963', '2026-08-19T15:25:59.990Z', '2026-08-19T15:25:59.990Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08ujx4000dw0l8lwz1vzzl', '2026-08-19T15:26:00.281Z', '2026-08-19T15:26:00.281Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08ukft000gw0l8vq1holl3', '2026-08-19T15:26:00.954Z', '2026-08-19T15:26:00.954Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08ulb2000jw0l844ffsojv', '2026-08-19T15:26:02.078Z', '2026-08-19T15:26:02.078Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08um7o000mw0l8cop5wdbh', '2026-08-19T15:26:03.253Z', '2026-08-19T15:26:03.253Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08umev000rw0l8jcpvx3p3', '2026-08-19T15:26:03.511Z', '2026-08-19T15:26:03.511Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08une4000uw0l847199w6z', '2026-08-19T15:26:04.781Z', '2026-08-19T15:26:04.781Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08unl3000ww0l86huwt3iz', '2026-08-19T15:26:05.031Z', '2026-08-19T15:26:05.031Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08unnb000xw0l8xoul6g5l', '2026-08-19T15:26:05.111Z', '2026-08-19T15:26:05.111Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvm2nva0002w0gg2fx2n3p9', '2026-09-10T14:17:05.110Z', '2026-09-10T14:17:05.110Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvm2qqe0005w0ggqtau4lli', '2026-09-10T14:17:08.823Z', '2026-09-10T14:17:08.823Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvm32a1000cw0gg5v5kk7kv', '2026-09-10T14:17:23.786Z', '2026-09-10T14:17:23.786Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvm3d29000fw0ggwl2vpqcg', '2026-09-10T14:17:37.761Z', '2026-09-10T14:17:37.761Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvm3hl3000iw0ggrtps2k0u', '2026-09-10T14:17:43.623Z', '2026-09-10T14:17:43.623Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvm3imv000jw0gg879q05le', '2026-09-10T14:17:44.984Z', '2026-09-10T14:17:44.984Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvm3nn6000mw0ggbw81zegc', '2026-09-10T14:17:50.828Z', '2026-09-10T14:17:50.828Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvm3p56000nw0gg1tkrbubx', '2026-09-10T14:17:53.419Z', '2026-09-10T14:17:53.419Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvm3pj1000ow0gg1riwpjn9', '2026-09-10T14:17:53.917Z', '2026-09-10T14:17:53.917Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvnjrn20002w0poec2p5o2z', '2026-09-10T14:58:22.766Z', '2026-09-10T14:58:22.766Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvnjsxf0007w0pobrrb9p82', '2026-09-10T14:58:24.436Z', '2026-09-10T14:58:24.436Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvnju52000cw0pom6ercz7s', '2026-09-10T14:58:26.006Z', '2026-09-10T14:58:26.006Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvnjwaq000jw0pog2la4qlw', '2026-09-10T14:58:28.803Z', '2026-09-10T14:58:28.803Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvnjwzu000mw0pomokajwv5', '2026-09-10T14:58:29.706Z', '2026-09-10T14:58:29.706Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvnjx5i000rw0pohvez83sj', '2026-09-10T14:58:29.910Z', '2026-09-10T14:58:29.910Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvnjxvc000uw0po07lowqex', '2026-09-10T14:58:30.841Z', '2026-09-10T14:58:30.841Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvnjy3m000ww0pog7mn9g2u', '2026-09-10T14:58:31.139Z', '2026-09-10T14:58:31.139Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvnjy6r000xw0po7p968wur', '2026-09-10T14:58:31.251Z', '2026-09-10T14:58:31.251Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwzaljk000dw0wsn3avsp4o', '2026-09-11T13:14:56.529Z', '2026-09-11T13:14:56.529Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwzam74000gw0wsvt2jwnv8', '2026-09-11T13:14:57.376Z', '2026-09-11T13:14:57.376Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwzaoq8000uw0wseauq0etx', '2026-09-11T13:15:00.656Z', '2026-09-11T13:15:00.656Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2utkk50002w0100lf1n4dw', '2026-09-15T15:56:20.693Z', '2026-09-15T15:56:20.693Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2utl430005w010u5tbldw0', '2026-09-15T15:56:21.411Z', '2026-09-15T15:56:21.411Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2utmgo000cw0107cx0wzig', '2026-09-15T15:56:23.161Z', '2026-09-15T15:56:23.161Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2uto41000hw01065cvlsza', '2026-09-15T15:56:25.297Z', '2026-09-15T15:56:25.297Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2utot4000mw010kxjhru85', '2026-09-15T15:56:26.201Z', '2026-09-15T15:56:26.201Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2utoyp000nw010fkbomzef', '2026-09-15T15:56:26.401Z', '2026-09-15T15:56:26.401Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2utpnm000uw0107zrvijah', '2026-09-15T15:56:27.298Z', '2026-09-15T15:56:27.298Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2utpvt000vw0103eqvors5', '2026-09-15T15:56:27.593Z', '2026-09-15T15:56:27.593Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2utpyo000ww010rhgjneg1', '2026-09-15T15:56:27.696Z', '2026-09-15T15:56:27.696Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2xq9720006w05881xvbdi8', '2026-09-15T17:17:44.846Z', '2026-09-15T17:17:44.846Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2xqacj0007w058bkxjlrmp', '2026-09-15T17:17:46.339Z', '2026-09-15T17:17:46.339Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2xqd34000gw058eac8pnh1', '2026-09-15T17:17:49.888Z', '2026-09-15T17:17:49.888Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2xqgho000qw058q7z09axl', '2026-09-15T17:17:54.300Z', '2026-09-15T17:17:54.300Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2xqiac000tw058pqj30ttd', '2026-09-15T17:17:56.629Z', '2026-09-15T17:17:56.629Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2xqinj000uw0583rho4r4k', '2026-09-15T17:17:57.103Z', '2026-09-15T17:17:57.103Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2xqkyl000xw058st1g4qim', '2026-09-15T17:18:00.093Z', '2026-09-15T17:18:00.093Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2xqlma000yw058d7b9sv0i', '2026-09-15T17:18:00.947Z', '2026-09-15T17:18:00.947Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2xqltr000zw058ro7kdhi2', '2026-09-15T17:18:01.216Z', '2026-09-15T17:18:01.216Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3y5bnx0002w0vkx1ri9ch1', '2026-09-16T10:17:14.061Z', '2026-09-16T10:17:14.061Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3y5c2h0005w0vkakvc08ry', '2026-09-16T10:17:14.585Z', '2026-09-16T10:17:14.585Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3y5d2n000cw0vkylydfnm1', '2026-09-16T10:17:15.888Z', '2026-09-16T10:17:15.888Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3y5h5u000jw0vkdnb4j40t', '2026-09-16T10:17:21.186Z', '2026-09-16T10:17:21.186Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3y5jdd000mw0vkrbpqr6cv', '2026-09-16T10:17:24.050Z', '2026-09-16T10:17:24.050Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3y5jxn000nw0vkyba3fkkr', '2026-09-16T10:17:24.780Z', '2026-09-16T10:17:24.780Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3y5m2z000uw0vk8bj4pe45', '2026-09-16T10:17:27.415Z', '2026-09-16T10:17:27.415Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3y5mgh000vw0vksbov43wo', '2026-09-16T10:17:28.049Z', '2026-09-16T10:17:28.049Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3y5mj2000xw0vkg4msk865', '2026-09-16T10:17:28.143Z', '2026-09-16T10:17:28.143Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3zh6hz0004w0bkemx5aw7s', '2026-09-16T10:54:26.856Z', '2026-09-16T10:54:26.856Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3zh72b0005w0bkdrxwkxsx', '2026-09-16T10:54:27.587Z', '2026-09-16T10:54:27.587Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3zhchm000cw0bkfitvjp5j', '2026-09-16T10:54:34.618Z', '2026-09-16T10:54:34.618Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt08unh7000vw0l8i3mkiw0t', '2026-08-19T15:26:04.891Z', '2026-08-19T15:26:04.891Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0922c20004w0rs42936ajh', '2026-08-19T15:31:50.738Z', '2026-08-19T15:31:50.738Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0922pc0005w0rs9hbq49hj', '2026-08-19T15:31:51.216Z', '2026-08-19T15:31:51.216Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0923k0000cw0rs3qwrrb43', '2026-08-19T15:31:52.321Z', '2026-08-19T15:31:52.321Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0923pc000dw0rs7zi7wtjw', '2026-08-19T15:31:52.512Z', '2026-08-19T15:31:52.512Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0924fg000gw0rs4f0jyd0x', '2026-08-19T15:31:53.453Z', '2026-08-19T15:31:53.453Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0924zd000jw0rsr855v2wr', '2026-08-19T15:31:54.169Z', '2026-08-19T15:31:54.169Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0925jh000mw0rsv2kkdd3n', '2026-08-19T15:31:54.893Z', '2026-08-19T15:31:54.893Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0925o0000rw0rsil6jtgkh', '2026-08-19T15:31:55.057Z', '2026-08-19T15:31:55.057Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0926jf000uw0rskcg73o7c', '2026-08-19T15:31:56.187Z', '2026-08-19T15:31:56.187Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0926lt000vw0rsk278eaw7', '2026-08-19T15:31:56.273Z', '2026-08-19T15:31:56.273Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0926q6000ww0rsa3a28vyw', '2026-08-19T15:31:56.430Z', '2026-08-19T15:31:56.430Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0926sd000xw0rs4e8sw777', '2026-08-19T15:31:56.509Z', '2026-08-19T15:31:56.509Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt092nef0004w0usgftiz050', '2026-08-19T15:32:18.040Z', '2026-08-19T15:32:18.040Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt092nxk0007w0usqqhzz2n6', '2026-08-19T15:32:18.729Z', '2026-08-19T15:32:18.729Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt092oui000cw0ussztzzoct', '2026-08-19T15:32:19.915Z', '2026-08-19T15:32:19.915Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt092pbs000dw0ussuoxeu6x', '2026-08-19T15:32:20.536Z', '2026-08-19T15:32:20.536Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt092pc9000ew0usrs886q2o', '2026-08-19T15:32:20.553Z', '2026-08-19T15:32:20.553Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt092r7o000nw0us4niw05rh', '2026-08-19T15:32:22.980Z', '2026-08-19T15:32:22.980Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt092rjk000qw0use4izwc80', '2026-08-19T15:32:23.409Z', '2026-08-19T15:32:23.409Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt092s37000tw0us1qunayu1', '2026-08-19T15:32:24.116Z', '2026-08-19T15:32:24.116Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt092s98000uw0usklv0x7kr', '2026-08-19T15:32:24.333Z', '2026-08-19T15:32:24.333Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt092szy000xw0us6xmruawe', '2026-08-19T15:32:25.295Z', '2026-08-19T15:32:25.295Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt092t8w000yw0us5qk2cpsz', '2026-08-19T15:32:25.617Z', '2026-08-19T15:32:25.617Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt092tbx000zw0usxp6sx3pc', '2026-08-19T15:32:25.725Z', '2026-08-19T15:32:25.725Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt09oeis0002w0sgz1lq282a', '2026-08-19T15:49:12.964Z', '2026-08-19T15:49:12.964Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt09oew90005w0sg785m3c38', '2026-08-19T15:49:13.450Z', '2026-08-19T15:49:13.450Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt09ofwk000cw0sgxoys985x', '2026-08-19T15:49:14.756Z', '2026-08-19T15:49:14.756Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt09ogbv000fw0sgpm0d8ohu', '2026-08-19T15:49:15.308Z', '2026-08-19T15:49:15.308Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt09oh0s000gw0sgjlsb64ws', '2026-08-19T15:49:16.204Z', '2026-08-19T15:49:16.204Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt09ohdt000hw0sgqr4o5rt7', '2026-08-19T15:49:16.674Z', '2026-08-19T15:49:16.674Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt09oibv000mw0sg1rd051ym', '2026-08-19T15:49:17.899Z', '2026-08-19T15:49:17.899Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt09oigc000nw0sgam7q8f7l', '2026-08-19T15:49:18.060Z', '2026-08-19T15:49:18.060Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt09oj84000uw0sg4i3m85fo', '2026-08-19T15:49:19.061Z', '2026-08-19T15:49:19.061Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt09ojex000vw0sge86rdn7l', '2026-08-19T15:49:19.305Z', '2026-08-19T15:49:19.305Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt09ojh8000ww0sg2lb1bxmc', '2026-08-19T15:49:19.389Z', '2026-08-19T15:49:19.389Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt09ojno000xw0sgfhnm8elg', '2026-08-19T15:49:19.621Z', '2026-08-19T15:49:19.621Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt09sd820004w0rooknu01bg', '2026-08-19T15:52:17.906Z', '2026-08-19T15:52:17.906Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt09sdpl0007w0rosmoue9zy', '2026-08-19T15:52:18.538Z', '2026-08-19T15:52:18.538Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt09see6000cw0ronozybf3l', '2026-08-19T15:52:19.423Z', '2026-08-19T15:52:19.423Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt09sf10000dw0roz9ipttum', '2026-08-19T15:52:20.244Z', '2026-08-19T15:52:20.244Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt09sf16000ew0roug0od8gd', '2026-08-19T15:52:20.250Z', '2026-08-19T15:52:20.250Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt09sglf000nw0ro7sfnelkx', '2026-08-19T15:52:22.276Z', '2026-08-19T15:52:22.276Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt09sh3n000qw0roq4rietae', '2026-08-19T15:52:22.931Z', '2026-08-19T15:52:22.931Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt09shhy000tw0ro37igyxlg', '2026-08-19T15:52:23.446Z', '2026-08-19T15:52:23.446Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt09shnt000uw0roaz69t6yx', '2026-08-19T15:52:23.658Z', '2026-08-19T15:52:23.658Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt09siky000xw0rowaowora0', '2026-08-19T15:52:24.850Z', '2026-08-19T15:52:24.850Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt09situ000yw0rolfibvbcj', '2026-08-19T15:52:25.171Z', '2026-08-19T15:52:25.171Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt09siwt000zw0rosb67hsip', '2026-08-19T15:52:25.278Z', '2026-08-19T15:52:25.278Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0iapfa0002w05o4qx05uce', '2026-08-19T19:50:30.454Z', '2026-08-19T19:50:30.454Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0iapx20005w05olplck7nz', '2026-08-19T19:50:31.094Z', '2026-08-19T19:50:31.094Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0iar2x000cw05of4yza21q', '2026-08-19T19:50:32.602Z', '2026-08-19T19:50:32.602Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0iarc8000dw05or6bhgmqk', '2026-08-19T19:50:32.937Z', '2026-08-19T19:50:32.937Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0iarzv000gw05okplq0zet', '2026-08-19T19:50:33.788Z', '2026-08-19T19:50:33.788Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0iasld000jw05o0bsw6bd7', '2026-08-19T19:50:34.561Z', '2026-08-19T19:50:34.561Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0iatar000mw05oq02eolm3', '2026-08-19T19:50:35.475Z', '2026-08-19T19:50:35.475Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0iatgh000nw05oj9j6env7', '2026-08-19T19:50:35.681Z', '2026-08-19T19:50:35.681Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0iaupv000uw05otr4rjcoq', '2026-08-19T19:50:37.315Z', '2026-08-19T19:50:37.315Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0iauyf000vw05ob2t0arer', '2026-08-19T19:50:37.623Z', '2026-08-19T19:50:37.623Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0iauzr000ww05otm91z1no', '2026-08-19T19:50:37.671Z', '2026-08-19T19:50:37.671Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0iav16000xw05oijglzn9b', '2026-08-19T19:50:37.722Z', '2026-08-19T19:50:37.722Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ifyzq0004w06cah9mudk7', '2026-08-19T19:54:36.135Z', '2026-08-19T19:54:36.135Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ifzln0005w06cgd7jrpxp', '2026-08-19T19:54:36.923Z', '2026-08-19T19:54:36.923Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ig118000cw06cnk8glb6r', '2026-08-19T19:54:38.780Z', '2026-08-19T19:54:38.780Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ig1a8000dw06cisvnsd3e', '2026-08-19T19:54:39.105Z', '2026-08-19T19:54:39.105Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ig22r000gw06cyif4zviq', '2026-08-19T19:54:40.131Z', '2026-08-19T19:54:40.131Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ig30t000jw06ct2kbnp62', '2026-08-19T19:54:41.358Z', '2026-08-19T19:54:41.358Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ig3yv000qw06c132j3kud', '2026-08-19T19:54:42.583Z', '2026-08-19T19:54:42.583Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ig460000rw06cg4n4eh59', '2026-08-19T19:54:42.840Z', '2026-08-19T19:54:42.840Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ig51e000uw06cwh6nvk3u', '2026-08-19T19:54:43.970Z', '2026-08-19T19:54:43.970Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ig52q000vw06coflvppvv', '2026-08-19T19:54:44.019Z', '2026-08-19T19:54:44.019Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ig5dj000ww06ch2yb7ieh', '2026-08-19T19:54:44.407Z', '2026-08-19T19:54:44.407Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ig5h1000zw06c3fib7tbj', '2026-08-19T19:54:44.533Z', '2026-08-19T19:54:44.533Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ijr5z0002w0kwykhmmfq8', '2026-08-19T19:57:32.616Z', '2026-08-19T19:57:32.616Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ijrnj0005w0kwhjxh8dzz', '2026-08-19T19:57:33.248Z', '2026-08-19T19:57:33.248Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ijsrn000cw0kwo0ji2q9v', '2026-08-19T19:57:34.691Z', '2026-08-19T19:57:34.691Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ijszl000dw0kw295lenuk', '2026-08-19T19:57:34.977Z', '2026-08-19T19:57:34.977Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ijtni000gw0kw9o1cqbem', '2026-08-19T19:57:35.838Z', '2026-08-19T19:57:35.838Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0iju96000jw0kwftt60jgt', '2026-08-19T19:57:36.619Z', '2026-08-19T19:57:36.619Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ijuys000mw0kwwm8iginn', '2026-08-19T19:57:37.541Z', '2026-08-19T19:57:37.541Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ijv4f000nw0kwblo0ogvy', '2026-08-19T19:57:37.743Z', '2026-08-19T19:57:37.743Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ijvvm000uw0kw84uhitn7', '2026-08-19T19:57:38.723Z', '2026-08-19T19:57:38.723Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ijw3v000vw0kwgmwjp8in', '2026-08-19T19:57:39.020Z', '2026-08-19T19:57:39.020Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ijw48000ww0kw5uljjxbc', '2026-08-19T19:57:39.032Z', '2026-08-19T19:57:39.032Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ijw6m000xw0kw5w950zpo', '2026-08-19T19:57:39.119Z', '2026-08-19T19:57:39.119Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ilqzz0004w0zc3c7bnbhy', '2026-08-19T19:59:05.712Z', '2026-08-19T19:59:05.712Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ilrhp0005w0zcorp4dpnm', '2026-08-19T19:59:06.349Z', '2026-08-19T19:59:06.349Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ilsn4000cw0zc98au7b3g', '2026-08-19T19:59:07.840Z', '2026-08-19T19:59:07.840Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ilsvo000dw0zcrxp4spx8', '2026-08-19T19:59:08.148Z', '2026-08-19T19:59:08.148Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0iltj3000gw0zcdcp9vmfy', '2026-08-19T19:59:08.991Z', '2026-08-19T19:59:08.991Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ilu63000jw0zcdkbyvv9r', '2026-08-19T19:59:09.819Z', '2026-08-19T19:59:09.819Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0iluw5000mw0zcw3rr3n5z', '2026-08-19T19:59:10.757Z', '2026-08-19T19:59:10.757Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ilv1u000nw0zcvb9mqli2', '2026-08-19T19:59:10.963Z', '2026-08-19T19:59:10.963Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ilvz9000uw0zc2wxnq9xh', '2026-08-19T19:59:12.166Z', '2026-08-19T19:59:12.166Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ilw5k000vw0zcg3231ldo', '2026-08-19T19:59:12.392Z', '2026-08-19T19:59:12.392Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ilw7s000ww0zc71nwvsy0', '2026-08-19T19:59:12.473Z', '2026-08-19T19:59:12.473Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ilwan000xw0zc3jkddcjd', '2026-08-19T19:59:12.575Z', '2026-08-19T19:59:12.575Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0is8w20004w098b4wdh6f5', '2026-08-19T20:04:08.835Z', '2026-08-19T20:04:08.835Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0is9e20005w098sd5de1nn', '2026-08-19T20:04:09.482Z', '2026-08-19T20:04:09.482Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0isajo000cw098c0ny7dua', '2026-08-19T20:04:10.981Z', '2026-08-19T20:04:10.981Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0isaql000dw098p1m88erh', '2026-08-19T20:04:11.230Z', '2026-08-19T20:04:11.230Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0isbdl000gw098vf3yoiox', '2026-08-19T20:04:12.057Z', '2026-08-19T20:04:12.057Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0isc1l000jw098t6fx2vkq', '2026-08-19T20:04:12.922Z', '2026-08-19T20:04:12.922Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0iscv8000mw098ghfxwfdq', '2026-08-19T20:04:13.989Z', '2026-08-19T20:04:13.989Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0isd3b000rw098gjm94zsq', '2026-08-19T20:04:14.280Z', '2026-08-19T20:04:14.280Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0isdsg000uw09876kdjcg7', '2026-08-19T20:04:15.184Z', '2026-08-19T20:04:15.184Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0isdvv000vw09897akej8o', '2026-08-19T20:04:15.308Z', '2026-08-19T20:04:15.308Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ise14000ww098e5i3bs3o', '2026-08-19T20:04:15.497Z', '2026-08-19T20:04:15.497Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ise3y000xw098nx0y7a18', '2026-08-19T20:04:15.599Z', '2026-08-19T20:04:15.599Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0itqkf0004w0w04wab4t9x', '2026-08-19T20:05:18.399Z', '2026-08-19T20:05:18.399Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0itr640005w0w0npr3lkl2', '2026-08-19T20:05:19.181Z', '2026-08-19T20:05:19.181Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0itsqa000cw0w0nlr37cq7', '2026-08-19T20:05:21.203Z', '2026-08-19T20:05:21.203Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0itsx8000dw0w0fwp1chd8', '2026-08-19T20:05:21.452Z', '2026-08-19T20:05:21.452Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ittpv000gw0w03arowjy9', '2026-08-19T20:05:22.483Z', '2026-08-19T20:05:22.483Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0itv3o000jw0w0h7g2eu2o', '2026-08-19T20:05:24.276Z', '2026-08-19T20:05:24.276Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0itvzy000qw0w0yq9x4g63', '2026-08-19T20:05:25.438Z', '2026-08-19T20:05:25.438Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0itw72000rw0w01rd8g9gm', '2026-08-19T20:05:25.695Z', '2026-08-19T20:05:25.695Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0itxrt000uw0w08p816qwp', '2026-08-19T20:05:27.737Z', '2026-08-19T20:05:27.737Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0itxsf000vw0w0uyxf600z', '2026-08-19T20:05:27.760Z', '2026-08-19T20:05:27.760Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ity2z000ww0w08oq333ql', '2026-08-19T20:05:28.139Z', '2026-08-19T20:05:28.139Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ity6j000zw0w0homzv025', '2026-08-19T20:05:28.267Z', '2026-08-19T20:05:28.267Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ixt7u0004w01cs5jnap36', '2026-08-19T20:08:28.458Z', '2026-08-19T20:08:28.458Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ixtp90005w01c6pzbfkcs', '2026-08-19T20:08:29.085Z', '2026-08-19T20:08:29.085Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ixuus000cw01cha51e5u0', '2026-08-19T20:08:30.580Z', '2026-08-19T20:08:30.580Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ixv0w000dw01cwpvc8v3z', '2026-08-19T20:08:30.801Z', '2026-08-19T20:08:30.801Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ixvon000gw01c7d5d8m6b', '2026-08-19T20:08:31.655Z', '2026-08-19T20:08:31.655Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ixwdx000jw01cbvw2mdoe', '2026-08-19T20:08:32.566Z', '2026-08-19T20:08:32.566Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ixxe2000mw01cae08vs6w', '2026-08-19T20:08:33.866Z', '2026-08-19T20:08:33.866Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ixxpz000nw01cruxl2g8k', '2026-08-19T20:08:34.295Z', '2026-08-19T20:08:34.295Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ixyfm000uw01clovnnedv', '2026-08-19T20:08:35.218Z', '2026-08-19T20:08:35.218Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ixyny000vw01cksj50ehb', '2026-08-19T20:08:35.518Z', '2026-08-19T20:08:35.518Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ixyo3000ww01csj7y6aa7', '2026-08-19T20:08:35.523Z', '2026-08-19T20:08:35.523Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0ixyqs000xw01ctxvyp4ln', '2026-08-19T20:08:35.621Z', '2026-08-19T20:08:35.621Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j1g5o0004w0m4ftkdpcss', '2026-08-19T20:11:18.156Z', '2026-08-19T20:11:18.156Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j1gnf0005w0m4p82px8vr', '2026-08-19T20:11:18.795Z', '2026-08-19T20:11:18.795Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j1j1t000aw0m42jw3imif', '2026-08-19T20:11:21.906Z', '2026-08-19T20:11:21.906Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j1k7c000fw0m43qnr3ldx', '2026-08-19T20:11:23.400Z', '2026-08-19T20:11:23.400Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j1l8m000gw0m425ino1bi', '2026-08-19T20:11:24.742Z', '2026-08-19T20:11:24.742Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j1ld3000hw0m46kn5z0cg', '2026-08-19T20:11:24.904Z', '2026-08-19T20:11:24.904Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j1lya000kw0m4fmzmbry1', '2026-08-19T20:11:25.666Z', '2026-08-19T20:11:25.666Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j1m3q000nw0m4v9s33cas', '2026-08-19T20:11:25.863Z', '2026-08-19T20:11:25.863Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j1mtm000qw0m4oai1gpdr', '2026-08-19T20:11:26.794Z', '2026-08-19T20:11:26.794Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j1n1z000rw0m41hytiwja', '2026-08-19T20:11:27.095Z', '2026-08-19T20:11:27.095Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j1n4u000sw0m4glijoudk', '2026-08-19T20:11:27.198Z', '2026-08-19T20:11:27.198Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j1n3x0000w0fsykxk1slc', '2026-08-19T20:11:27.165Z', '2026-08-19T20:11:27.165Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j1p9f000zw0m4coiyf8tv', '2026-08-19T20:11:29.956Z', '2026-08-19T20:11:29.956Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j4olb0002w03szv5l953u', '2026-08-19T20:13:49.055Z', '2026-08-19T20:13:49.055Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j4p2h0007w03srovpc26m', '2026-08-19T20:13:49.673Z', '2026-08-19T20:13:49.673Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j4qmn000cw03sykaozs0b', '2026-08-19T20:13:51.695Z', '2026-08-19T20:13:51.695Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j4qp9000dw03szovjftk2', '2026-08-19T20:13:51.790Z', '2026-08-19T20:13:51.790Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j4rh3000gw03sbpvcph4d', '2026-08-19T20:13:52.792Z', '2026-08-19T20:13:52.792Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j4sic000jw03sk4swu91l', '2026-08-19T20:13:54.133Z', '2026-08-19T20:13:54.133Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j4tgb000mw03sjiygih39', '2026-08-19T20:13:55.355Z', '2026-08-19T20:13:55.355Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j4to9000rw03s3jctvuo4', '2026-08-19T20:13:55.642Z', '2026-08-19T20:13:55.642Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j4v73000uw03sp5n056d2', '2026-08-19T20:13:57.616Z', '2026-08-19T20:13:57.616Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j4v9u000vw03sb2v0wkoy', '2026-08-19T20:13:57.715Z', '2026-08-19T20:13:57.715Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j4vj5000ww03sgnb24zf8', '2026-08-19T20:13:58.050Z', '2026-08-19T20:13:58.050Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j4vmk000xw03smrh3cljj', '2026-08-19T20:13:58.172Z', '2026-08-19T20:13:58.172Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j5dyg0002w0w02tllie3h', '2026-08-19T20:14:21.928Z', '2026-08-19T20:14:21.928Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j5eiy0005w0w0wdnqa2dl', '2026-08-19T20:14:22.667Z', '2026-08-19T20:14:22.667Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j5gwk000cw0w0ckud0jxy', '2026-08-19T20:14:25.748Z', '2026-08-19T20:14:25.748Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j5hn1000fw0w0t9i5zvnv', '2026-08-19T20:14:26.702Z', '2026-08-19T20:14:26.702Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j5j5r000gw0w0lbbmr2p6', '2026-08-19T20:14:28.672Z', '2026-08-19T20:14:28.672Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j5k7q000jw0w0ghl8xe8z', '2026-08-19T20:14:30.039Z', '2026-08-19T20:14:30.039Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j5l1q000mw0w05h22u212', '2026-08-19T20:14:31.119Z', '2026-08-19T20:14:31.119Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j5l85000nw0w0jizsh670', '2026-08-19T20:14:31.349Z', '2026-08-19T20:14:31.349Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j5mbv000uw0w0i4xk2h7a', '2026-08-19T20:14:32.779Z', '2026-08-19T20:14:32.779Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j5mon000ww0w0p6cuj4vc', '2026-08-19T20:14:33.239Z', '2026-08-19T20:14:33.239Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j5mol000vw0w0707wdtf5', '2026-08-19T20:14:33.238Z', '2026-08-19T20:14:33.238Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt0j5mw1000xw0w01poyuwr5', '2026-08-19T20:14:33.506Z', '2026-08-19T20:14:33.506Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt19wa3o0000qm01lam7p839', '2026-08-20T08:43:06.639Z', '2026-08-20T08:43:06.639Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1fvxzw0000n201da0la5n1', '2026-08-20T11:30:48.668Z', '2026-08-20T11:30:48.668Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1jwsnm0004w01klh6j9ux2', '2026-08-20T13:23:26.866Z', '2026-08-20T13:23:26.866Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1jwt2x0005w01kn1jioj21', '2026-08-20T13:23:27.417Z', '2026-08-20T13:23:27.417Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1jwuhi000cw01kd53cvumj', '2026-08-20T13:23:29.238Z', '2026-08-20T13:23:29.238Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1jwuxr000fw01ksx4mug7d', '2026-08-20T13:23:29.824Z', '2026-08-20T13:23:29.824Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1jwvqr000gw01kbouippbj', '2026-08-20T13:23:30.868Z', '2026-08-20T13:23:30.868Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1jww5i000hw01k4gj9zzx7', '2026-08-20T13:23:31.399Z', '2026-08-20T13:23:31.399Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1jwx46000mw01kb63ofohp', '2026-08-20T13:23:32.646Z', '2026-08-20T13:23:32.646Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1jwxad000nw01k0j6h22b5', '2026-08-20T13:23:32.870Z', '2026-08-20T13:23:32.870Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1jwxxz000uw01kdnqx0hef', '2026-08-20T13:23:33.720Z', '2026-08-20T13:23:33.720Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1jwy53000vw01k9snv55f0', '2026-08-20T13:23:33.975Z', '2026-08-20T13:23:33.975Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1jwy7c000ww01klgif0pb1', '2026-08-20T13:23:34.056Z', '2026-08-20T13:23:34.056Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1jwyc5000xw01kulgokkts', '2026-08-20T13:23:34.229Z', '2026-08-20T13:23:34.229Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1jxlvi0004w0ms74vzpw1z', '2026-08-20T13:24:04.735Z', '2026-08-20T13:24:04.735Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1jxmcq0005w0ms0eoh8rz3', '2026-08-20T13:24:05.355Z', '2026-08-20T13:24:05.355Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1jxnde000cw0msd7l39f34', '2026-08-20T13:24:06.674Z', '2026-08-20T13:24:06.674Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1jxnlz000dw0msqp53zoq9', '2026-08-20T13:24:06.984Z', '2026-08-20T13:24:06.984Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1jxo6k000gw0mspltzwx0l', '2026-08-20T13:24:07.725Z', '2026-08-20T13:24:07.725Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1jxomn000hw0ms0iv83a2f', '2026-08-20T13:24:08.303Z', '2026-08-20T13:24:08.303Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1jxp8x000mw0msel6amw9s', '2026-08-20T13:24:09.105Z', '2026-08-20T13:24:09.105Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1jxpds000nw0ms487lrovf', '2026-08-20T13:24:09.280Z', '2026-08-20T13:24:09.280Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1jxq2d000uw0msa6thcd0t', '2026-08-20T13:24:10.165Z', '2026-08-20T13:24:10.165Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1jxqe7000vw0msdutlhehr', '2026-08-20T13:24:10.591Z', '2026-08-20T13:24:10.591Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1jxqgh000ww0msevm6vnc1', '2026-08-20T13:24:10.673Z', '2026-08-20T13:24:10.673Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1jxqgy000xw0ms1hhl8jxe', '2026-08-20T13:24:10.690Z', '2026-08-20T13:24:10.690Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1jzzww0004w0d055jgsges', '2026-08-20T13:25:56.240Z', '2026-08-20T13:25:56.240Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k00b40005w0d0rjgj3i4g', '2026-08-20T13:25:56.753Z', '2026-08-20T13:25:56.753Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k01cd000cw0d0s0utpshi', '2026-08-20T13:25:58.094Z', '2026-08-20T13:25:58.094Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k01id000dw0d09j1zw4sr', '2026-08-20T13:25:58.309Z', '2026-08-20T13:25:58.309Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k026y000gw0d0f3w12e8g', '2026-08-20T13:25:59.194Z', '2026-08-20T13:25:59.194Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k02sm000jw0d0oys9x6j3', '2026-08-20T13:25:59.975Z', '2026-08-20T13:25:59.975Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k03bt000mw0d0z0cvtrgo', '2026-08-20T13:26:00.665Z', '2026-08-20T13:26:00.665Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k03g3000nw0d0if48y6a3', '2026-08-20T13:26:00.819Z', '2026-08-20T13:26:00.819Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k041e000uw0d0s8u3mr5r', '2026-08-20T13:26:01.586Z', '2026-08-20T13:26:01.586Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k048f000vw0d0knqd39xk', '2026-08-20T13:26:01.840Z', '2026-08-20T13:26:01.840Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k04cc000ww0d0wo2vqevj', '2026-08-20T13:26:01.980Z', '2026-08-20T13:26:01.980Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k04cd000xw0d0347dyv9e', '2026-08-20T13:26:01.981Z', '2026-08-20T13:26:01.981Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k1d2w0004w0a4ikvlb7jk', '2026-08-20T13:26:59.960Z', '2026-08-20T13:26:59.960Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k1dv20007w0a4clesokxr', '2026-08-20T13:27:00.975Z', '2026-08-20T13:27:00.975Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k1ezr000cw0a4wpqg0d9o', '2026-08-20T13:27:02.439Z', '2026-08-20T13:27:02.439Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k1f2x000dw0a42jnmfxwd', '2026-08-20T13:27:02.553Z', '2026-08-20T13:27:02.553Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k1fj5000gw0a47hl4zm84', '2026-08-20T13:27:03.138Z', '2026-08-20T13:27:03.138Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k1ghr000jw0a4r272sedy', '2026-08-20T13:27:04.383Z', '2026-08-20T13:27:04.383Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k1h77000qw0a4bzptw49d', '2026-08-20T13:27:05.299Z', '2026-08-20T13:27:05.299Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k1hcw000rw0a470b2fnc2', '2026-08-20T13:27:05.505Z', '2026-08-20T13:27:05.505Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k1icq000xw0a46u0ny35h', '2026-08-20T13:27:06.794Z', '2026-08-20T13:27:06.794Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k1j3n000yw0a4msy4w06c', '2026-08-20T13:27:07.764Z', '2026-08-20T13:27:07.764Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k1j6k000zw0a4xv0o3002', '2026-08-20T13:27:07.868Z', '2026-08-20T13:27:07.868Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvmuqra0002w0o4rw8xqi4l', '2026-09-10T14:38:55.223Z', '2026-09-10T14:38:55.223Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvmutto0005w0o4vd7ezykw', '2026-09-10T14:38:59.197Z', '2026-09-10T14:38:59.197Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvmv0sh000cw0o4utyviyvo', '2026-09-10T14:39:07.655Z', '2026-09-10T14:39:07.655Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvmv9cf000hw0o4p7cgjjph', '2026-09-10T14:39:19.311Z', '2026-09-10T14:39:19.311Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvmvc4o000mw0o4tp6c65az', '2026-09-10T14:39:22.921Z', '2026-09-10T14:39:22.921Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvmvdqj000nw0o4jp8zq6y3', '2026-09-10T14:39:25.003Z', '2026-09-10T14:39:25.003Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvmvjzp000uw0o4ycf85qr3', '2026-09-10T14:39:33.109Z', '2026-09-10T14:39:33.109Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvmvlem000vw0o466mqmwdp', '2026-09-10T14:39:34.942Z', '2026-09-10T14:39:34.942Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvmvlxr000ww0o4iyg451yu', '2026-09-10T14:39:35.632Z', '2026-09-10T14:39:35.632Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvnjuih000dw0po1cnwa0we', '2026-09-10T14:58:26.490Z', '2026-09-10T14:58:26.490Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvnjvi4000gw0po8wtuu925', '2026-09-10T14:58:27.772Z', '2026-09-10T14:58:27.772Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvnjy1o000vw0pof1unosf3', '2026-09-10T14:58:31.069Z', '2026-09-10T14:58:31.069Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwzanrq000qw0wsna3spz9l', '2026-09-11T13:14:59.415Z', '2026-09-11T13:14:59.415Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwzao16000rw0ws06y2xr6y', '2026-09-11T13:14:59.755Z', '2026-09-11T13:14:59.755Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwzaoqz000vw0ws8zda6wlk', '2026-09-11T13:15:00.684Z', '2026-09-11T13:15:00.684Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwzap4a000ww0wsozgbxqu5', '2026-09-11T13:15:01.162Z', '2026-09-11T13:15:01.162Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwzap6z000zw0wswv8elqyr', '2026-09-11T13:15:01.260Z', '2026-09-11T13:15:01.260Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2utmrw000dw010gkqvhev0', '2026-09-15T15:56:23.565Z', '2026-09-15T15:56:23.565Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2utnf4000gw010i4710mzy', '2026-09-15T15:56:24.401Z', '2026-09-15T15:56:24.401Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2utpyx000xw010a2aax0hf', '2026-09-15T15:56:27.705Z', '2026-09-15T15:56:27.705Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2xqaxp000aw058f3cqufsz', '2026-09-15T17:17:47.101Z', '2026-09-15T17:17:47.101Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2xqbue000dw058vv9fke9t', '2026-09-15T17:17:48.279Z', '2026-09-15T17:17:48.279Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2xqfiz000nw058pd7lhi0d', '2026-09-15T17:17:53.051Z', '2026-09-15T17:17:53.051Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3y5d9q000dw0vk699qf0me', '2026-09-16T10:17:16.142Z', '2026-09-16T10:17:16.142Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3y5dv2000gw0vk3iuk3x93', '2026-09-16T10:17:16.911Z', '2026-09-16T10:17:16.911Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3y5mj1000ww0vkmf09g1lz', '2026-09-16T10:17:28.031Z', '2026-09-16T10:17:28.031Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3zi7z90002w0mw18qcgwma', '2026-09-16T10:55:15.430Z', '2026-09-16T10:55:15.430Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3zi9p30003w0mwb5x8sspq', '2026-09-16T10:55:17.656Z', '2026-09-16T10:55:17.656Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3zian80006w0mwkccdt977', '2026-09-16T10:55:18.884Z', '2026-09-16T10:55:18.884Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3zid600009w0mwav8w2dcj', '2026-09-16T10:55:22.152Z', '2026-09-16T10:55:22.152Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3zidql000cw0mwlpynxn5u', '2026-09-16T10:55:22.893Z', '2026-09-16T10:55:22.893Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3zidvf000dw0mwdq4mj4j9', '2026-09-16T10:55:23.067Z', '2026-09-16T10:55:23.067Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3ziega000gw0mw0enohlcy', '2026-09-16T10:55:23.818Z', '2026-09-16T10:55:23.818Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3zien6000hw0mwr8w8yex6', '2026-09-16T10:55:24.067Z', '2026-09-16T10:55:24.067Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3zieph000iw0mw52u4s1iz', '2026-09-16T10:55:24.149Z', '2026-09-16T10:55:24.149Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k1hz3000uw0a4t4cpafqk', '2026-08-20T13:27:06.303Z', '2026-08-20T13:27:06.303Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k2ckb0004w0eopwsbxi4r', '2026-08-20T13:27:45.948Z', '2026-08-20T13:27:45.948Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k2d7j0007w0eoevu05aii', '2026-08-20T13:27:46.784Z', '2026-08-20T13:27:46.784Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k2ec9000dw0eoxkxah3yq', '2026-08-20T13:27:48.249Z', '2026-08-20T13:27:48.249Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k2e9h000cw0eomfk4uoq7', '2026-08-20T13:27:48.149Z', '2026-08-20T13:27:48.149Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k2f6z000gw0eoyx2xb4js', '2026-08-20T13:27:49.355Z', '2026-08-20T13:27:49.355Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k2g24000jw0eo7hyuoa6u', '2026-08-20T13:27:50.476Z', '2026-08-20T13:27:50.476Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k2gre000qw0eof3nnmffs', '2026-08-20T13:27:51.386Z', '2026-08-20T13:27:51.386Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k2gwc000rw0eogxc2px1f', '2026-08-20T13:27:51.564Z', '2026-08-20T13:27:51.564Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k2hpo000uw0eol75fn11o', '2026-08-20T13:27:52.621Z', '2026-08-20T13:27:52.621Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k2hxp000vw0eozo9effs1', '2026-08-20T13:27:52.909Z', '2026-08-20T13:27:52.909Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k2i53000yw0eohr9wylh3', '2026-08-20T13:27:53.176Z', '2026-08-20T13:27:53.176Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1k2i7j000zw0eo1y3oauct', '2026-08-20T13:27:53.263Z', '2026-08-20T13:27:53.263Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt1khqid0000ml01w89t9zhm', '2026-08-20T13:39:43.861Z', '2026-08-20T13:39:43.861Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmt7016lm0000mo01n5ongd23', '2026-08-24T08:53:36.280Z', '2026-08-24T08:53:36.280Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmta535tg0000pj01uly5alv0', '2026-08-26T13:38:25.184Z', '2026-08-26T13:38:25.184Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtb2vpgc0000pr0124uxaaxs', '2026-08-27T05:24:24.329Z', '2026-08-27T05:24:24.329Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtblw5mg0004w070smrszpna', '2026-08-27T14:16:38.008Z', '2026-08-27T14:16:38.008Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtblw6jq0007w070m72g3sgy', '2026-08-27T14:16:39.206Z', '2026-08-27T14:16:39.206Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtblw87j000cw070qqk4wgau', '2026-08-27T14:16:41.359Z', '2026-08-27T14:16:41.359Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtblw8a9000dw070u2tfztzo', '2026-08-27T14:16:41.458Z', '2026-08-27T14:16:41.458Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtblw96a000gw0707kqasd9b', '2026-08-27T14:16:42.611Z', '2026-08-27T14:16:42.611Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtblwaqp000jw0703ufd02vl', '2026-08-27T14:16:44.642Z', '2026-08-27T14:16:44.642Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtblwbr5000mw070hfcpwp1b', '2026-08-27T14:16:45.954Z', '2026-08-27T14:16:45.954Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtblwc03000nw070z99hpsyc', '2026-08-27T14:16:46.276Z', '2026-08-27T14:16:46.276Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtblwd2l000uw070k3q4wgix', '2026-08-27T14:16:47.661Z', '2026-08-27T14:16:47.661Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtblwdek000vw07095xxo7ki', '2026-08-27T14:16:48.093Z', '2026-08-27T14:16:48.093Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtblwdil000ww0702sqbzlc5', '2026-08-27T14:16:48.238Z', '2026-08-27T14:16:48.238Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtblwe3i000xw070o63cuw5x', '2026-08-27T14:16:48.990Z', '2026-08-27T14:16:48.990Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtcpdovz0004w064v2zgls3e', '2026-08-28T08:42:01.152Z', '2026-08-28T08:42:01.152Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtcpdpjf0007w0640tcbrvvq', '2026-08-28T08:42:01.995Z', '2026-08-28T08:42:01.995Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtcpdqmk000cw064e42h89t6', '2026-08-28T08:42:03.404Z', '2026-08-28T08:42:03.404Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtcpdqry000dw064kl7v33vy', '2026-08-28T08:42:03.598Z', '2026-08-28T08:42:03.598Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtcpdrn7000gw064s1rtk95b', '2026-08-28T08:42:04.723Z', '2026-08-28T08:42:04.723Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtcpdsc0000jw0648wcvprmu', '2026-08-28T08:42:05.616Z', '2026-08-28T08:42:05.616Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtcpdtgn000mw064rjd9m37y', '2026-08-28T08:42:07.079Z', '2026-08-28T08:42:07.079Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtcpdtm7000rw064y8n6rs0u', '2026-08-28T08:42:07.280Z', '2026-08-28T08:42:07.280Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtcpdub9000uw064hngwxc71', '2026-08-28T08:42:08.181Z', '2026-08-28T08:42:08.181Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtcpdue2000vw064swdra6fp', '2026-08-28T08:42:08.282Z', '2026-08-28T08:42:08.282Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtcpdujt000ww0640axsvnpm', '2026-08-28T08:42:08.489Z', '2026-08-28T08:42:08.489Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtcpduml000xw064nyasap8v', '2026-08-28T08:42:08.589Z', '2026-08-28T08:42:08.589Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtgxuhdf0000n5017g56fjrx', '2026-08-31T07:50:06.195Z', '2026-08-31T07:50:06.195Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtildj0l0006w0ys38wifk0s', '2026-09-01T11:36:32.134Z', '2026-09-01T11:36:32.134Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtildkon0007w0ys75qhq2ik', '2026-09-01T11:36:34.296Z', '2026-09-01T11:36:34.296Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtildt83000ew0ysmn03z79s', '2026-09-01T11:36:45.364Z', '2026-09-01T11:36:45.364Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtj563700000o00152x02fcl', '2026-09-01T20:50:37.357Z', '2026-09-01T20:50:37.357Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtkbl2ot0002w00kz2r3htg9', '2026-09-02T16:38:00.414Z', '2026-09-02T16:38:00.414Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtkbl38f0005w00k22dv4hwx', '2026-09-02T16:38:01.120Z', '2026-09-02T16:38:01.120Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtkbl4kx000cw00k15l851ww', '2026-09-02T16:38:02.866Z', '2026-09-02T16:38:02.866Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtkbl4q3000dw00keu6j3j7m', '2026-09-02T16:38:03.052Z', '2026-09-02T16:38:03.052Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtkbl5g5000gw00kc2b6izle', '2026-09-02T16:38:03.989Z', '2026-09-02T16:38:03.989Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtkbl6hi000jw00k7nbmes8v', '2026-09-02T16:38:05.335Z', '2026-09-02T16:38:05.335Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtkbl792000mw00kceqz2vo9', '2026-09-02T16:38:06.326Z', '2026-09-02T16:38:06.326Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtkbl7ey000rw00k6bm0brk0', '2026-09-02T16:38:06.538Z', '2026-09-02T16:38:06.538Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtkbl87l000uw00knkusf2w0', '2026-09-02T16:38:07.569Z', '2026-09-02T16:38:07.569Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtkbl8ar000vw00kmimdxkzc', '2026-09-02T16:38:07.684Z', '2026-09-02T16:38:07.684Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtkbl8gy000ww00k5unt2wey', '2026-09-02T16:38:07.907Z', '2026-09-02T16:38:07.907Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtkbl8jw000xw00k0yo22lk7', '2026-09-02T16:38:08.013Z', '2026-09-02T16:38:08.013Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtksapi601m2mt01fvopizd0', '2026-09-03T00:25:50.216Z', '2026-09-03T00:25:50.216Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtndfajz0004w0qcimt7nolf', '2026-09-04T19:52:48.431Z', '2026-09-04T19:52:48.431Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtndfb3d0005w0qcln19hezv', '2026-09-04T19:52:49.130Z', '2026-09-04T19:52:49.130Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtndfcs0000cw0qcyc5bju9j', '2026-09-04T19:52:51.312Z', '2026-09-04T19:52:51.312Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtndfcye000dw0qc3nklp6hr', '2026-09-04T19:52:51.542Z', '2026-09-04T19:52:51.542Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtndfdn2000gw0qcjnldqh7m', '2026-09-04T19:52:52.431Z', '2026-09-04T19:52:52.431Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtndfefw000jw0qceq20w8j0', '2026-09-04T19:52:53.468Z', '2026-09-04T19:52:53.468Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtndff6i000mw0qcptc07l2z', '2026-09-04T19:52:54.427Z', '2026-09-04T19:52:54.427Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtndffcj000nw0qcfmgwrezx', '2026-09-04T19:52:54.643Z', '2026-09-04T19:52:54.643Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtndfgqr000uw0qcw4utwn2t', '2026-09-04T19:52:56.452Z', '2026-09-04T19:52:56.452Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtndfgxd000vw0qc9s494unt', '2026-09-04T19:52:56.689Z', '2026-09-04T19:52:56.689Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtndfh07000ww0qclcbtahc0', '2026-09-04T19:52:56.792Z', '2026-09-04T19:52:56.792Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtndfh4g000xw0qchvy25o3l', '2026-09-04T19:52:56.945Z', '2026-09-04T19:52:56.945Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnit0cf0004w078m1e2s5hr', '2026-09-04T22:23:26.463Z', '2026-09-04T22:23:26.463Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnit0w10005w078zz9om6qf', '2026-09-04T22:23:27.170Z', '2026-09-04T22:23:27.170Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnit27k000cw078afbos2hm', '2026-09-04T22:23:28.881Z', '2026-09-04T22:23:28.881Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnit2gb000dw078mua9jrtd', '2026-09-04T22:23:29.195Z', '2026-09-04T22:23:29.195Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnit35f000gw078g3pby7c8', '2026-09-04T22:23:30.099Z', '2026-09-04T22:23:30.099Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnit3w7000jw0781jv4pm3x', '2026-09-04T22:23:31.063Z', '2026-09-04T22:23:31.063Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnit4os000mw078q5zag54l', '2026-09-04T22:23:32.092Z', '2026-09-04T22:23:32.092Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnit4ux000rw078a02ypksp', '2026-09-04T22:23:32.313Z', '2026-09-04T22:23:32.313Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnit5ns000uw0781gj6lt20', '2026-09-04T22:23:33.352Z', '2026-09-04T22:23:33.352Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnit5su000vw078r8hwqpm5', '2026-09-04T22:23:33.534Z', '2026-09-04T22:23:33.534Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnit5xq000ww0784xyw0t2o', '2026-09-04T22:23:33.710Z', '2026-09-04T22:23:33.710Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnit60y000xw078ig8r3kxn', '2026-09-04T22:23:33.827Z', '2026-09-04T22:23:33.827Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnk8bqe0004w0yc29xuhcjc', '2026-09-04T23:03:20.679Z', '2026-09-04T23:03:20.679Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnk8c9h0007w0yctwbq1970', '2026-09-04T23:03:21.365Z', '2026-09-04T23:03:21.365Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnk8djx000cw0yctc3lrfyi', '2026-09-04T23:03:23.037Z', '2026-09-04T23:03:23.037Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnk8dlg000dw0yc34ejmddm', '2026-09-04T23:03:23.093Z', '2026-09-04T23:03:23.093Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnk8eak000gw0yc1m4rcwck', '2026-09-04T23:03:23.996Z', '2026-09-04T23:03:23.996Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnk8fgm000jw0yc0wo29gez', '2026-09-04T23:03:25.510Z', '2026-09-04T23:03:25.510Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnk8g8k000qw0yca35zhhk5', '2026-09-04T23:03:26.516Z', '2026-09-04T23:03:26.516Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnk8geo000rw0yc3po7heku', '2026-09-04T23:03:26.736Z', '2026-09-04T23:03:26.736Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnk8h5t000uw0yc5o4mksmf', '2026-09-04T23:03:27.714Z', '2026-09-04T23:03:27.714Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnk8h6u000vw0ycrguvmzvi', '2026-09-04T23:03:27.751Z', '2026-09-04T23:03:27.751Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnk8hgv000ww0ycb9c74d90', '2026-09-04T23:03:28.111Z', '2026-09-04T23:03:28.111Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnk8hkc000zw0yc8wdjpgm1', '2026-09-04T23:03:28.236Z', '2026-09-04T23:03:28.236Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlorge0002w020elu79vjj', '2026-09-04T23:44:07.167Z', '2026-09-04T23:44:07.167Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlorzm0005w020t6ra3a73', '2026-09-04T23:44:07.859Z', '2026-09-04T23:44:07.859Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlot7u000cw0208btki5dl', '2026-09-04T23:44:09.450Z', '2026-09-04T23:44:09.450Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlou5t000fw020p8qttnrh', '2026-09-04T23:44:10.674Z', '2026-09-04T23:44:10.674Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlouvt000gw020z5fa9rtu', '2026-09-04T23:44:11.610Z', '2026-09-04T23:44:11.610Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlovdv000hw020xs9mcduw', '2026-09-04T23:44:12.260Z', '2026-09-04T23:44:12.260Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlowls000mw0207glparyb', '2026-09-04T23:44:13.841Z', '2026-09-04T23:44:13.841Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlowt0000nw0202ptmjdxa', '2026-09-04T23:44:14.101Z', '2026-09-04T23:44:14.101Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnloy2x000uw0204f4ywe6y', '2026-09-04T23:44:15.754Z', '2026-09-04T23:44:15.754Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnloyc4000vw020dndfrc4e', '2026-09-04T23:44:16.084Z', '2026-09-04T23:44:16.084Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnloyf5000ww020qlqsy9vq', '2026-09-04T23:44:16.193Z', '2026-09-04T23:44:16.193Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnloyk7000xw020hzjlx93c', '2026-09-04T23:44:16.375Z', '2026-09-04T23:44:16.375Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlrike0002w0mszetpo4rz', '2026-09-04T23:46:15.614Z', '2026-09-04T23:46:15.614Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlrj3e0005w0mspmz3tn24', '2026-09-04T23:46:16.298Z', '2026-09-04T23:46:16.298Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlrkbg000cw0mswjebqhqe', '2026-09-04T23:46:17.884Z', '2026-09-04T23:46:17.884Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlrkmo000dw0msfq6ya2it', '2026-09-04T23:46:18.289Z', '2026-09-04T23:46:18.289Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlrlcs000gw0msbkwx172d', '2026-09-04T23:46:19.229Z', '2026-09-04T23:46:19.229Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlrm1v000hw0msywp962s7', '2026-09-04T23:46:20.131Z', '2026-09-04T23:46:20.131Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlrmub000mw0msn6qypg31', '2026-09-04T23:46:21.156Z', '2026-09-04T23:46:21.156Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlrn0l000nw0msonjoc1b3', '2026-09-04T23:46:21.382Z', '2026-09-04T23:46:21.382Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlrnvm000uw0msq2rlulbn', '2026-09-04T23:46:22.499Z', '2026-09-04T23:46:22.499Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlro8p000vw0msfhr608xf', '2026-09-04T23:46:22.969Z', '2026-09-04T23:46:22.969Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlro9b000ww0ms5ssd4usw', '2026-09-04T23:46:22.992Z', '2026-09-04T23:46:22.992Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlrof6000xw0msvfdyqpz5', '2026-09-04T23:46:23.202Z', '2026-09-04T23:46:23.202Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnls8np0004w0jo3pnglftj', '2026-09-04T23:46:49.429Z', '2026-09-04T23:46:49.429Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnls9760005w0jou4vzk1th', '2026-09-04T23:46:50.130Z', '2026-09-04T23:46:50.130Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlsagx000cw0joq3worz62', '2026-09-04T23:46:51.777Z', '2026-09-04T23:46:51.777Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlsao7000dw0jo7kfchn24', '2026-09-04T23:46:52.040Z', '2026-09-04T23:46:52.040Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlsbfs000gw0joeaf1w2sz', '2026-09-04T23:46:53.032Z', '2026-09-04T23:46:53.032Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlsca4000jw0jo8k01et8h', '2026-09-04T23:46:54.125Z', '2026-09-04T23:46:54.125Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlsd7l000mw0jo0kxjrmxn', '2026-09-04T23:46:55.330Z', '2026-09-04T23:46:55.330Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlsde8000rw0jo057assfy', '2026-09-04T23:46:55.568Z', '2026-09-04T23:46:55.568Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlse6d000uw0jouyw1gik2', '2026-09-04T23:46:56.582Z', '2026-09-04T23:46:56.582Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlse7b000vw0jowy2wr61i', '2026-09-04T23:46:56.616Z', '2026-09-04T23:46:56.616Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlseh0000ww0jobx4jmanu', '2026-09-04T23:46:56.965Z', '2026-09-04T23:46:56.965Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlsek8000zw0jopkfgaavz', '2026-09-04T23:46:57.080Z', '2026-09-04T23:46:57.080Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnltk1a0004w0vg5dmpp0kd', '2026-09-04T23:47:50.831Z', '2026-09-04T23:47:50.831Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnltkkb0005w0vg4qa7zy1w', '2026-09-04T23:47:51.515Z', '2026-09-04T23:47:51.515Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnltltg000cw0vg8jtz1ujc', '2026-09-04T23:47:53.141Z', '2026-09-04T23:47:53.141Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnltm0i000dw0vgxitwbyob', '2026-09-04T23:47:53.394Z', '2026-09-04T23:47:53.394Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnltmpr000gw0vgzxbfl7i0', '2026-09-04T23:47:54.303Z', '2026-09-04T23:47:54.303Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnltnh6000jw0vg1i3hr959', '2026-09-04T23:47:55.290Z', '2026-09-04T23:47:55.290Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlto9y000mw0vg5ed7ivnc', '2026-09-04T23:47:56.327Z', '2026-09-04T23:47:56.327Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnltog8000rw0vghxh90uo7', '2026-09-04T23:47:56.552Z', '2026-09-04T23:47:56.552Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnltpd9000uw0vgrddrmh7n', '2026-09-04T23:47:57.741Z', '2026-09-04T23:47:57.741Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnltpgk000vw0vg6a592tfr', '2026-09-04T23:47:57.860Z', '2026-09-04T23:47:57.860Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnltpmv000ww0vg9f40ne0j', '2026-09-04T23:47:58.087Z', '2026-09-04T23:47:58.087Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnltppt000xw0vgc9r8ii48', '2026-09-04T23:47:58.194Z', '2026-09-04T23:47:58.194Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnluiy00004w05cqp6netdb', '2026-09-04T23:48:36.072Z', '2026-09-04T23:48:36.072Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlujhp0005w05c5wo1125p', '2026-09-04T23:48:36.782Z', '2026-09-04T23:48:36.782Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnluks6000cw05ch0dlxdgf', '2026-09-04T23:48:38.454Z', '2026-09-04T23:48:38.454Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlukyj000dw05clcfilpuv', '2026-09-04T23:48:38.684Z', '2026-09-04T23:48:38.684Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlulop000gw05chuxc82s9', '2026-09-04T23:48:39.626Z', '2026-09-04T23:48:39.626Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlumiz000jw05c055r781q', '2026-09-04T23:48:40.716Z', '2026-09-04T23:48:40.716Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlunck000mw05cxk4v1ivd', '2026-09-04T23:48:41.780Z', '2026-09-04T23:48:41.780Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnlunjn000rw05c1um58gw2', '2026-09-04T23:48:42.036Z', '2026-09-04T23:48:42.036Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnluodc000uw05cydi7xxdl', '2026-09-04T23:48:43.105Z', '2026-09-04T23:48:43.105Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnluogt000vw05ca41548d6', '2026-09-04T23:48:43.230Z', '2026-09-04T23:48:43.230Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnluonh000ww05cqpgj7rjb', '2026-09-04T23:48:43.469Z', '2026-09-04T23:48:43.469Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnluoqv000xw05cm5e9hyu5', '2026-09-04T23:48:43.591Z', '2026-09-04T23:48:43.591Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnm5bbu0004w0usn38f9v5l', '2026-09-04T23:56:59.418Z', '2026-09-04T23:56:59.418Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnm5bv70005w0us86rtrau6', '2026-09-04T23:57:00.116Z', '2026-09-04T23:57:00.116Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnm5d5e000cw0ustz94ym3t', '2026-09-04T23:57:01.779Z', '2026-09-04T23:57:01.779Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnm5db1000dw0usmnz3vzdo', '2026-09-04T23:57:01.981Z', '2026-09-04T23:57:01.981Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnm5e0t000gw0usev28re3n', '2026-09-04T23:57:02.910Z', '2026-09-04T23:57:02.910Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnm5ev5000jw0usg7xng6ca', '2026-09-04T23:57:04.001Z', '2026-09-04T23:57:04.001Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnm5fp6000mw0usqjmtibv9', '2026-09-04T23:57:05.083Z', '2026-09-04T23:57:05.083Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnm5fzx000rw0usa79rwv9h', '2026-09-04T23:57:05.469Z', '2026-09-04T23:57:05.469Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnm5gsw000uw0usxx7odacr', '2026-09-04T23:57:06.512Z', '2026-09-04T23:57:06.512Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnm5gsy000vw0us0ldggzf8', '2026-09-04T23:57:06.514Z', '2026-09-04T23:57:06.514Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnm5h2m000ww0usrz2v0yg9', '2026-09-04T23:57:06.863Z', '2026-09-04T23:57:06.863Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnm5h5w000xw0usl66ku3sn', '2026-09-04T23:57:06.981Z', '2026-09-04T23:57:06.981Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnma9lp0002w0dciz5oowyg', '2026-09-05T00:00:50.461Z', '2026-09-05T00:00:50.461Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmaa4f0005w0dc45tpwej1', '2026-09-05T00:00:51.136Z', '2026-09-05T00:00:51.136Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmabop000cw0dctew0zicu', '2026-09-05T00:00:53.162Z', '2026-09-05T00:00:53.162Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmac2l000fw0dc5bwirjud', '2026-09-05T00:00:53.661Z', '2026-09-05T00:00:53.661Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmact4000gw0dcvwkljm9c', '2026-09-05T00:00:54.616Z', '2026-09-05T00:00:54.616Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmadw3000hw0dc80jc5zr5', '2026-09-05T00:00:56.020Z', '2026-09-05T00:00:56.020Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmaesz000mw0dc96g1186e', '2026-09-05T00:00:57.204Z', '2026-09-05T00:00:57.204Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmaez7000nw0dc23c0efvc', '2026-09-05T00:00:57.428Z', '2026-09-05T00:00:57.428Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmafr7000uw0dcbw7fi7i5', '2026-09-05T00:00:58.435Z', '2026-09-05T00:00:58.435Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmag0j000vw0dcyvl1vme5', '2026-09-05T00:00:58.771Z', '2026-09-05T00:00:58.771Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmag3o000ww0dc4ej9pzwd', '2026-09-05T00:00:58.885Z', '2026-09-05T00:00:58.885Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmag5g000xw0dc1p70mlj6', '2026-09-05T00:00:58.948Z', '2026-09-05T00:00:58.948Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmcey80004w010vpih90aq', '2026-09-05T00:02:30.704Z', '2026-09-05T00:02:30.704Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmcfhf0005w010el3hxzn0', '2026-09-05T00:02:31.395Z', '2026-09-05T00:02:31.395Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmcgq9000cw010d0jg4z55', '2026-09-05T00:02:33.009Z', '2026-09-05T00:02:33.009Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmcgv7000dw010kp3ga93m', '2026-09-05T00:02:33.187Z', '2026-09-05T00:02:33.187Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmchjw000gw0101p6nw3ik', '2026-09-05T00:02:34.077Z', '2026-09-05T00:02:34.077Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmcicv000jw0104r5ft770', '2026-09-05T00:02:35.119Z', '2026-09-05T00:02:35.119Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmcj4e000mw010oqutu9bg', '2026-09-05T00:02:36.110Z', '2026-09-05T00:02:36.110Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmcjaf000rw010uoz4ao2b', '2026-09-05T00:02:36.328Z', '2026-09-05T00:02:36.328Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmck2h000uw010uhn3aw0b', '2026-09-05T00:02:37.337Z', '2026-09-05T00:02:37.337Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmckbs000vw0104s5o2tgq', '2026-09-05T00:02:37.673Z', '2026-09-05T00:02:37.673Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmckef000ww0108vsw0wpq', '2026-09-05T00:02:37.767Z', '2026-09-05T00:02:37.767Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmckex000xw010k9bxf50y', '2026-09-05T00:02:37.785Z', '2026-09-05T00:02:37.785Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmm51x0002w0co41tor8of', '2026-09-05T00:10:04.438Z', '2026-09-05T00:10:04.438Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmm5le0005w0coh1secpgo', '2026-09-05T00:10:05.139Z', '2026-09-05T00:10:05.139Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmm6xi000cw0cou5syq1uo', '2026-09-05T00:10:06.870Z', '2026-09-05T00:10:06.870Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmm74o000dw0cok7049ln2', '2026-09-05T00:10:07.129Z', '2026-09-05T00:10:07.129Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmm7uj000gw0coa6x1o78n', '2026-09-05T00:10:08.059Z', '2026-09-05T00:10:08.059Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmm8oj000jw0coj01ulwf8', '2026-09-05T00:10:09.139Z', '2026-09-05T00:10:09.139Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmm9xq000mw0cosfuy69xq', '2026-09-05T00:10:10.766Z', '2026-09-05T00:10:10.766Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmma51000rw0co6ui2u4hs', '2026-09-05T00:10:11.029Z', '2026-09-05T00:10:11.029Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmmb9v000uw0coytf67afv', '2026-09-05T00:10:12.499Z', '2026-09-05T00:10:12.499Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmmb9w000vw0coi1vbmiaj', '2026-09-05T00:10:12.500Z', '2026-09-05T00:10:12.500Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmmbm8000ww0copb4v2pox', '2026-09-05T00:10:12.945Z', '2026-09-05T00:10:12.945Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmmbpr000xw0cou3ulm3hm', '2026-09-05T00:10:13.071Z', '2026-09-05T00:10:13.071Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmtau60002w00otf98fs46', '2026-09-05T00:15:38.527Z', '2026-09-05T00:15:38.527Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmtbea0005w00ombg8spsz', '2026-09-05T00:15:39.251Z', '2026-09-05T00:15:39.251Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmtcvq000cw00oe5gsr67h', '2026-09-05T00:15:41.175Z', '2026-09-05T00:15:41.175Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmtd5h000dw00ouxp5wgmj', '2026-09-05T00:15:41.526Z', '2026-09-05T00:15:41.526Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmte4q000gw00oz0esbxf0', '2026-09-05T00:15:42.794Z', '2026-09-05T00:15:42.794Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmtff1000jw00om1plqgr5', '2026-09-05T00:15:44.462Z', '2026-09-05T00:15:44.462Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmthcm000mw00o8f8f2ho7', '2026-09-05T00:15:46.966Z', '2026-09-05T00:15:46.966Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmthje000rw00omicasdj0', '2026-09-05T00:15:47.211Z', '2026-09-05T00:15:47.211Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmtidy000uw00otz8c7s78', '2026-09-05T00:15:48.310Z', '2026-09-05T00:15:48.310Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmtigk000vw00ovede5umg', '2026-09-05T00:15:48.404Z', '2026-09-05T00:15:48.404Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmtinw000ww00o1a0dqpds', '2026-09-05T00:15:48.668Z', '2026-09-05T00:15:48.668Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmtirb000xw00orvsc19db', '2026-09-05T00:15:48.792Z', '2026-09-05T00:15:48.792Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmzjlv0004w0s0ez6gnwzg', '2026-09-05T00:20:29.827Z', '2026-09-05T00:20:29.827Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmzl7g0007w0s0ej1t5ybw', '2026-09-05T00:20:31.900Z', '2026-09-05T00:20:31.900Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmzouh000cw0s0x49plknp', '2026-09-05T00:20:36.618Z', '2026-09-05T00:20:36.618Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmzp18000dw0s025hy6zk4', '2026-09-05T00:20:36.860Z', '2026-09-05T00:20:36.860Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmzqrk000gw0s0mmfddwns', '2026-09-05T00:20:39.105Z', '2026-09-05T00:20:39.105Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmzs9s000jw0s05e2yvwm2', '2026-09-05T00:20:41.056Z', '2026-09-05T00:20:41.056Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmzvek000qw0s0b7y2jzu9', '2026-09-05T00:20:44.445Z', '2026-09-05T00:20:44.445Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmzvr7000rw0s095qzi5xw', '2026-09-05T00:20:45.572Z', '2026-09-05T00:20:45.572Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmzwga000uw0s0cpqk6sak', '2026-09-05T00:20:46.474Z', '2026-09-05T00:20:46.474Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmzwy4000xw0s0hs0mn82p', '2026-09-05T00:20:47.116Z', '2026-09-05T00:20:47.116Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmzxfq000yw0s00yqhq7py', '2026-09-05T00:20:47.750Z', '2026-09-05T00:20:47.750Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnmzxu5000zw0s0kt8iftv0', '2026-09-05T00:20:48.269Z', '2026-09-05T00:20:48.269Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnn6o3r0004w03cbtakfv4s', '2026-09-05T00:26:02.248Z', '2026-09-05T00:26:02.248Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnn6omz0005w03ch8l2p3i6', '2026-09-05T00:26:02.939Z', '2026-09-05T00:26:02.939Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnn6pvq000cw03cz28brpjv', '2026-09-05T00:26:04.550Z', '2026-09-05T00:26:04.550Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnn6q41000dw03csrnb9tj4', '2026-09-05T00:26:04.849Z', '2026-09-05T00:26:04.849Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnn6rao000gw03crvdes8tp', '2026-09-05T00:26:06.384Z', '2026-09-05T00:26:06.384Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnn6s3o000jw03c6v0wfcky', '2026-09-05T00:26:07.429Z', '2026-09-05T00:26:07.429Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnn6sy0000mw03csbuxz4n9', '2026-09-05T00:26:08.520Z', '2026-09-05T00:26:08.520Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnn6t4a000rw03cmu62ujtz', '2026-09-05T00:26:08.746Z', '2026-09-05T00:26:08.746Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnn6u0s000uw03cc2bbti1v', '2026-09-05T00:26:09.916Z', '2026-09-05T00:26:09.916Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnn6u83000vw03c9iaigjl1', '2026-09-05T00:26:10.180Z', '2026-09-05T00:26:10.180Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnn6ubv000ww03cm8s7ty0e', '2026-09-05T00:26:10.316Z', '2026-09-05T00:26:10.316Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnn6uew000xw03cr0wh0612', '2026-09-05T00:26:10.425Z', '2026-09-05T00:26:10.425Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtno3bka0002w090a598yfh4', '2026-09-05T00:51:25.642Z', '2026-09-05T00:51:25.642Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtno3byo0007w09019fhhztu', '2026-09-05T00:51:26.160Z', '2026-09-05T00:51:26.160Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtno3ew8000cw090o56bo1sp', '2026-09-05T00:51:29.961Z', '2026-09-05T00:51:29.961Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtno3f9n000dw090zkakty4n', '2026-09-05T00:51:30.443Z', '2026-09-05T00:51:30.443Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtno3i3g000gw090swm342te', '2026-09-05T00:51:34.109Z', '2026-09-05T00:51:34.109Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtno3iqi000jw090xafzguls', '2026-09-05T00:51:34.938Z', '2026-09-05T00:51:34.938Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtno3mfq000mw090ogyawfcq', '2026-09-05T00:51:39.735Z', '2026-09-05T00:51:39.735Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtno3niv000rw09032ocmxey', '2026-09-05T00:51:41.144Z', '2026-09-05T00:51:41.144Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtno3oij000uw090s5twlh1y', '2026-09-05T00:51:42.428Z', '2026-09-05T00:51:42.428Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtno3okn000vw090aevkq32c', '2026-09-05T00:51:42.504Z', '2026-09-05T00:51:42.504Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtno3opj000ww090xt86vgty', '2026-09-05T00:51:42.680Z', '2026-09-05T00:51:42.680Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtno3oru000xw090f5gunk14', '2026-09-05T00:51:42.762Z', '2026-09-05T00:51:42.762Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnofnh70004w0mg0y3a15c5', '2026-09-05T01:01:00.956Z', '2026-09-05T01:01:00.956Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnofnvj0005w0mgt768lwz4', '2026-09-05T01:01:01.472Z', '2026-09-05T01:01:01.472Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnofor9000cw0mgjf8mfq1g', '2026-09-05T01:01:02.614Z', '2026-09-05T01:01:02.614Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnofp0y000fw0mgi4czgloo', '2026-09-05T01:01:02.962Z', '2026-09-05T01:01:02.962Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnofpjz000gw0mgntyb2c3v', '2026-09-05T01:01:03.648Z', '2026-09-05T01:01:03.648Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnofpx7000hw0mg8ezvnoim', '2026-09-05T01:01:04.124Z', '2026-09-05T01:01:04.124Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnofqh0000mw0mgon6n4tdq', '2026-09-05T01:01:04.836Z', '2026-09-05T01:01:04.836Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnofqlb000nw0mguczzcfid', '2026-09-05T01:01:04.992Z', '2026-09-05T01:01:04.992Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnofr56000uw0mgtvpt3u1t', '2026-09-05T01:01:05.706Z', '2026-09-05T01:01:05.706Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnofs6g000vw0mgvwwio6d3', '2026-09-05T01:01:07.048Z', '2026-09-05T01:01:07.048Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnofslu000ww0mglvquga65', '2026-09-05T01:01:07.602Z', '2026-09-05T01:01:07.602Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnoftod000xw0mgcij5yhtq', '2026-09-05T01:01:08.989Z', '2026-09-05T01:01:08.989Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnoteyh0002w0e0na89try5', '2026-09-05T01:11:43.098Z', '2026-09-05T01:11:43.098Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnotfc90005w0e0dmni3aax', '2026-09-05T01:11:43.594Z', '2026-09-05T01:11:43.594Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnotg8u000cw0e0j6y3hb1j', '2026-09-05T01:11:44.767Z', '2026-09-05T01:11:44.767Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnotgdh000dw0e0oaenr5h2', '2026-09-05T01:11:44.934Z', '2026-09-05T01:11:44.934Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnotgww000gw0e0gii43bfb', '2026-09-05T01:11:45.633Z', '2026-09-05T01:11:45.633Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnothgd000jw0e05fg8r9rf', '2026-09-05T01:11:46.334Z', '2026-09-05T01:11:46.334Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnoti10000mw0e02842qfsq', '2026-09-05T01:11:47.076Z', '2026-09-05T01:11:47.076Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnoti61000rw0e03w830po7', '2026-09-05T01:11:47.257Z', '2026-09-05T01:11:47.257Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnotiqw000uw0e0spal1m8w', '2026-09-05T01:11:48.009Z', '2026-09-05T01:11:48.009Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnotivh000vw0e0ln8knvds', '2026-09-05T01:11:48.174Z', '2026-09-05T01:11:48.174Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnotixu000ww0e0tik4422m', '2026-09-05T01:11:48.258Z', '2026-09-05T01:11:48.258Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnotj04000xw0e0n8ix2yin', '2026-09-05T01:11:48.341Z', '2026-09-05T01:11:48.341Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnoz02f0004w0j8qz1vbr01', '2026-09-05T01:16:03.735Z', '2026-09-05T01:16:03.735Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnoz0g20005w0j879xhmjjh', '2026-09-05T01:16:04.227Z', '2026-09-05T01:16:04.227Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnoz1cw000cw0j8d1l1wu0h', '2026-09-05T01:16:05.409Z', '2026-09-05T01:16:05.409Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnoz1j0000dw0j8lfiv1nrc', '2026-09-05T01:16:05.629Z', '2026-09-05T01:16:05.629Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnoz21o000gw0j87uml2vvj', '2026-09-05T01:16:06.300Z', '2026-09-05T01:16:06.300Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnoz2jz000jw0j8eaoqtnv7', '2026-09-05T01:16:06.959Z', '2026-09-05T01:16:06.959Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnoz34d000mw0j8qqhgmf8s', '2026-09-05T01:16:07.694Z', '2026-09-05T01:16:07.694Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnoz399000nw0j80kq6d3v2', '2026-09-05T01:16:07.869Z', '2026-09-05T01:16:07.869Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnoz3ts000uw0j8chijdl6g', '2026-09-05T01:16:08.609Z', '2026-09-05T01:16:08.609Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnoz40s000vw0j81v3lo48z', '2026-09-05T01:16:08.860Z', '2026-09-05T01:16:08.860Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnoz411000ww0j8p3a975dg', '2026-09-05T01:16:08.869Z', '2026-09-05T01:16:08.869Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnoz432000xw0j8goukiy44', '2026-09-05T01:16:08.942Z', '2026-09-05T01:16:08.942Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnp53wy0002w0iwzygccepp', '2026-09-05T01:20:48.659Z', '2026-09-05T01:20:48.659Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnp54im0005w0iwbpgjyq5m', '2026-09-05T01:20:49.439Z', '2026-09-05T01:20:49.439Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnp561g000cw0iwblgstnbn', '2026-09-05T01:20:51.413Z', '2026-09-05T01:20:51.413Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnp567l000dw0iwz8vxe9zq', '2026-09-05T01:20:51.633Z', '2026-09-05T01:20:51.633Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnp56p6000gw0iw3wnud5sq', '2026-09-05T01:20:52.266Z', '2026-09-05T01:20:52.266Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnp576v000jw0iwhjsduyrs', '2026-09-05T01:20:52.903Z', '2026-09-05T01:20:52.903Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnp57qm000mw0iwyqrd090j', '2026-09-05T01:20:53.614Z', '2026-09-05T01:20:53.614Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnp57v0000nw0iww1xm10ex', '2026-09-05T01:20:53.772Z', '2026-09-05T01:20:53.772Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnp58et000uw0iwlrkawfjr', '2026-09-05T01:20:54.485Z', '2026-09-05T01:20:54.485Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnp58kv000vw0iwj46zswz0', '2026-09-05T01:20:54.703Z', '2026-09-05T01:20:54.703Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnp58l9000ww0iwxssdftqg', '2026-09-05T01:20:54.717Z', '2026-09-05T01:20:54.717Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnp58nf000xw0iw8etwhpbx', '2026-09-05T01:20:54.795Z', '2026-09-05T01:20:54.795Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnpi6zf0002w0cock6ecyhr', '2026-09-05T01:30:59.163Z', '2026-09-05T01:30:59.163Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnpi7dp0005w0coxlygtm2l', '2026-09-05T01:30:59.677Z', '2026-09-05T01:30:59.677Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnpi8aq000cw0cox8x9o5f2', '2026-09-05T01:31:00.867Z', '2026-09-05T01:31:00.867Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnpi8fp000dw0coh2oi99y9', '2026-09-05T01:31:01.045Z', '2026-09-05T01:31:01.045Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnpi8xx000gw0cov0driv8x', '2026-09-05T01:31:01.701Z', '2026-09-05T01:31:01.701Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnpi9ks000jw0co22564xdt', '2026-09-05T01:31:02.524Z', '2026-09-05T01:31:02.524Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnpia5v000mw0co83dbahoq', '2026-09-05T01:31:03.284Z', '2026-09-05T01:31:03.284Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnpiaaj000rw0comwcbw2mp', '2026-09-05T01:31:03.451Z', '2026-09-05T01:31:03.451Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnpiavg000uw0cos4dtiphv', '2026-09-05T01:31:04.204Z', '2026-09-05T01:31:04.204Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnpiaxe000vw0cozipuj5nh', '2026-09-05T01:31:04.274Z', '2026-09-05T01:31:04.274Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnpib2g000ww0co4qkr4dwg', '2026-09-05T01:31:04.456Z', '2026-09-05T01:31:04.456Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnpib4r000xw0colpkq201l', '2026-09-05T01:31:04.540Z', '2026-09-05T01:31:04.540Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnpyhof0004w01cyq4blwcg', '2026-09-05T01:43:39.519Z', '2026-09-05T01:43:39.519Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnpyi670007w01cyne3c39w', '2026-09-05T01:43:40.159Z', '2026-09-05T01:43:40.159Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnpyldv000cw01c6qd4cqd0', '2026-09-05T01:43:44.323Z', '2026-09-05T01:43:44.323Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnpylo7000dw01cxavkpmcs', '2026-09-05T01:43:44.695Z', '2026-09-05T01:43:44.695Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnpylvm000ew01c4y6h0osd', '2026-09-05T01:43:44.962Z', '2026-09-05T01:43:44.962Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnpyoe4000nw01cr9g319ab', '2026-09-05T01:43:48.220Z', '2026-09-05T01:43:48.220Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnpyozs000qw01cswuk1q4j', '2026-09-05T01:43:49.000Z', '2026-09-05T01:43:49.000Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnpyp4t000rw01c0yiqsqqk', '2026-09-05T01:43:49.181Z', '2026-09-05T01:43:49.181Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnpypqv000uw01c89b636yx', '2026-09-05T01:43:49.976Z', '2026-09-05T01:43:49.976Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnpyrj8000xw01cvzf5phd4', '2026-09-05T01:43:52.293Z', '2026-09-05T01:43:52.293Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnpyrs8000yw01cwq6lyqcz', '2026-09-05T01:43:52.617Z', '2026-09-05T01:43:52.617Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtnpyrv6000zw01cirg2unwk', '2026-09-05T01:43:52.723Z', '2026-09-05T01:43:52.723Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmto7tri602czmj01ca8m0ty5', '2026-09-05T10:03:51.909Z', '2026-09-05T10:03:51.909Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtodj41n0004w06wtxno6034', '2026-09-05T12:43:32.795Z', '2026-09-05T12:43:32.795Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtodj4fg0005w06w7lvxwubz', '2026-09-05T12:43:33.293Z', '2026-09-05T12:43:33.293Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtodj8a1000cw06wy1s57vea', '2026-09-05T12:43:38.281Z', '2026-09-05T12:43:38.281Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtodj9rn000dw06wqdjsn4gd', '2026-09-05T12:43:40.212Z', '2026-09-05T12:43:40.212Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtodjbp1000gw06w9fcsrw01', '2026-09-05T12:43:42.709Z', '2026-09-05T12:43:42.709Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtodjcv0000jw06wk4jyz13j', '2026-09-05T12:43:44.220Z', '2026-09-05T12:43:44.220Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtodjdfq000mw06wln5b9z5l', '2026-09-05T12:43:44.966Z', '2026-09-05T12:43:44.966Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtodjdkc000rw06w4v2onyxp', '2026-09-05T12:43:45.132Z', '2026-09-05T12:43:45.132Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtodjf22000uw06w9zgqff8x', '2026-09-05T12:43:47.067Z', '2026-09-05T12:43:47.067Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtodjfwc000vw06wgzibeco7', '2026-09-05T12:43:47.621Z', '2026-09-05T12:43:47.621Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtodjgpf000ww06wzn1b3kbl', '2026-09-05T12:43:49.203Z', '2026-09-05T12:43:49.203Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtodjh1c000xw06wn2vw8te2', '2026-09-05T12:43:49.633Z', '2026-09-05T12:43:49.633Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtof9uhp0004w0lk2olx3ays', '2026-09-05T13:32:19.742Z', '2026-09-05T13:32:19.742Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtof9uw70007w0lkmqphn1q4', '2026-09-05T13:32:20.263Z', '2026-09-05T13:32:20.263Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtof9vui000cw0lkgww4u9z2', '2026-09-05T13:32:21.499Z', '2026-09-05T13:32:21.499Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtof9vwf000dw0lkgomjxesf', '2026-09-05T13:32:21.568Z', '2026-09-05T13:32:21.568Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtof9we5000gw0lkv52jzk3d', '2026-09-05T13:32:22.205Z', '2026-09-05T13:32:22.205Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtof9x1b000jw0lkluyqbkmi', '2026-09-05T13:32:23.040Z', '2026-09-05T13:32:23.040Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtof9xmj000qw0lka7dielkv', '2026-09-05T13:32:23.804Z', '2026-09-05T13:32:23.804Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtof9xr1000rw0lk2iinr6gh', '2026-09-05T13:32:23.966Z', '2026-09-05T13:32:23.966Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtof9y93000uw0lkfin9xjnp', '2026-09-05T13:32:24.616Z', '2026-09-05T13:32:24.616Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtof9yb5000vw0lkvck2mr75', '2026-09-05T13:32:24.690Z', '2026-09-05T13:32:24.690Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtof9yhx000yw0lkd60xveju', '2026-09-05T13:32:24.934Z', '2026-09-05T13:32:24.934Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtof9z17000zw0lkv62lf6af', '2026-09-05T13:32:25.627Z', '2026-09-05T13:32:25.627Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtofzyg10004w06oluf28cf7', '2026-09-05T13:52:37.921Z', '2026-09-05T13:52:37.921Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtofzyyg0007w06oon7bwsmv', '2026-09-05T13:52:38.585Z', '2026-09-05T13:52:38.585Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtofzziz000cw06oba5mjmr8', '2026-09-05T13:52:39.323Z', '2026-09-05T13:52:39.323Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtog0005000dw06ou64m1lfi', '2026-09-05T13:52:39.941Z', '2026-09-05T13:52:39.941Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtog005a000ew06o3pcd4qtb', '2026-09-05T13:52:40.126Z', '2026-09-05T13:52:40.126Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtog01qp000nw06o0kraqbsa', '2026-09-05T13:52:42.194Z', '2026-09-05T13:52:42.194Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtog01vc000ow06o8nuwl0ue', '2026-09-05T13:52:42.360Z', '2026-09-05T13:52:42.360Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtog02i7000tw06ozt34ahy4', '2026-09-05T13:52:43.183Z', '2026-09-05T13:52:43.183Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtog02oj000uw06om84cnzmn', '2026-09-05T13:52:43.412Z', '2026-09-05T13:52:43.412Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtog06qi000xw06oacc9kpqb', '2026-09-05T13:52:48.666Z', '2026-09-05T13:52:48.666Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtog084f000yw06ojd8siqlr', '2026-09-05T13:52:50.464Z', '2026-09-05T13:52:50.464Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtog08ku000zw06ontcxhxb9', '2026-09-05T13:52:51.054Z', '2026-09-05T13:52:51.054Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtog1ylu0004w0eo96zvurni', '2026-09-05T13:54:11.443Z', '2026-09-05T13:54:11.443Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtog1yzl0005w0eorkv5t5pl', '2026-09-05T13:54:11.937Z', '2026-09-05T13:54:11.937Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtog1zwa000cw0eo7x4n31qr', '2026-09-05T13:54:13.115Z', '2026-09-05T13:54:13.115Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtog203m000dw0eohq3jxc87', '2026-09-05T13:54:13.378Z', '2026-09-05T13:54:13.378Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtog21f5000gw0eolk0socd5', '2026-09-05T13:54:15.090Z', '2026-09-05T13:54:15.090Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtog21y2000jw0eorux8qosk', '2026-09-05T13:54:15.771Z', '2026-09-05T13:54:15.771Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtog22io000mw0eouquui3k4', '2026-09-05T13:54:16.512Z', '2026-09-05T13:54:16.512Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtog22n8000rw0eoi7i4u3bu', '2026-09-05T13:54:16.676Z', '2026-09-05T13:54:16.676Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtog2385000uw0eod219nsf8', '2026-09-05T13:54:17.429Z', '2026-09-05T13:54:17.429Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtog23cx000vw0eob9grnbc7', '2026-09-05T13:54:17.602Z', '2026-09-05T13:54:17.602Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtog23f5000ww0eo5mwvy5fj', '2026-09-05T13:54:17.681Z', '2026-09-05T13:54:17.681Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtog23j9000xw0eo3zchntr8', '2026-09-05T13:54:17.829Z', '2026-09-05T13:54:17.829Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtohjfyk0004w03cn0s41thb', '2026-09-05T14:35:46.701Z', '2026-09-05T14:35:46.701Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtohjgin0007w03cv1l4dc78', '2026-09-05T14:35:47.424Z', '2026-09-05T14:35:47.424Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtohjh1j000aw03c9b20y660', '2026-09-05T14:35:48.103Z', '2026-09-05T14:35:48.103Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtohjhk1000dw03cwu2b7zd1', '2026-09-05T14:35:48.769Z', '2026-09-05T14:35:48.769Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtohjhrx000ew03ccir4k9m3', '2026-09-05T14:35:49.054Z', '2026-09-05T14:35:49.054Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtohjjdi000nw03ci3lfd8t4', '2026-09-05T14:35:51.127Z', '2026-09-05T14:35:51.127Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtohjjhh000ow03cot897f8c', '2026-09-05T14:35:51.269Z', '2026-09-05T14:35:51.269Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtohjm5j000tw03cy6y1riql', '2026-09-05T14:35:54.727Z', '2026-09-05T14:35:54.727Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtohjn2r000uw03c7gzu13jb', '2026-09-05T14:35:55.924Z', '2026-09-05T14:35:55.924Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtohjp8t000xw03cl7t0lhbe', '2026-09-05T14:35:58.733Z', '2026-09-05T14:35:58.733Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtohjphz000yw03c5qwsf4n8', '2026-09-05T14:35:59.064Z', '2026-09-05T14:35:59.064Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtohjpl0000zw03cfh34y2y5', '2026-09-05T14:35:59.172Z', '2026-09-05T14:35:59.172Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo1zhi0004w0o8gtshzgvu', '2026-09-05T17:38:09.510Z', '2026-09-05T17:38:09.510Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo204t0005w0o8ba1z3mzn', '2026-09-05T17:38:10.350Z', '2026-09-05T17:38:10.350Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo2222000cw0o84q83spcj', '2026-09-05T17:38:12.842Z', '2026-09-05T17:38:12.842Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo2293000dw0o8g1bdp9q3', '2026-09-05T17:38:13.096Z', '2026-09-05T17:38:13.096Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo231q000gw0o8olo4pijq', '2026-09-05T17:38:14.126Z', '2026-09-05T17:38:14.126Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo23v1000jw0o8ml9dmb26', '2026-09-05T17:38:15.181Z', '2026-09-05T17:38:15.181Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo25ko000mw0o8lvlz9ywz', '2026-09-05T17:38:17.400Z', '2026-09-05T17:38:17.400Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo25w2000rw0o88q67ev38', '2026-09-05T17:38:17.811Z', '2026-09-05T17:38:17.811Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo27it000uw0o8wx4t41dj', '2026-09-05T17:38:19.926Z', '2026-09-05T17:38:19.926Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo27q2000vw0o8rig8ywed', '2026-09-05T17:38:20.187Z', '2026-09-05T17:38:20.187Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo27ub000ww0o895ynqj5k', '2026-09-05T17:38:20.339Z', '2026-09-05T17:38:20.339Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo27yn000xw0o86tnhd6en', '2026-09-05T17:38:20.495Z', '2026-09-05T17:38:20.495Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo4t0n0004w0hku39atidh', '2026-09-05T17:40:21.095Z', '2026-09-05T17:40:21.095Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo4tki0005w0hkp7c5vevj', '2026-09-05T17:40:21.810Z', '2026-09-05T17:40:21.810Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo4veg000cw0hkcw16ov01', '2026-09-05T17:40:24.185Z', '2026-09-05T17:40:24.185Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo4vk7000dw0hkhb4q8zjk', '2026-09-05T17:40:24.392Z', '2026-09-05T17:40:24.392Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo4wad000gw0hk9bnq2vcs', '2026-09-05T17:40:25.333Z', '2026-09-05T17:40:25.333Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo4x73000jw0hk13ffcx0z', '2026-09-05T17:40:26.511Z', '2026-09-05T17:40:26.511Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo4ycc000mw0hkeux2mveq', '2026-09-05T17:40:27.996Z', '2026-09-05T17:40:27.996Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo4yr7000rw0hk3dt1vffm', '2026-09-05T17:40:28.532Z', '2026-09-05T17:40:28.532Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo50co000uw0hkv67tqez6', '2026-09-05T17:40:30.601Z', '2026-09-05T17:40:30.601Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo50gp000vw0hktoez4vb5', '2026-09-05T17:40:30.746Z', '2026-09-05T17:40:30.746Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo50nd000ww0hkeenwmgp3', '2026-09-05T17:40:30.985Z', '2026-09-05T17:40:30.985Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo50qq000xw0hkry4sjjir', '2026-09-05T17:40:31.107Z', '2026-09-05T17:40:31.107Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo7re50004w0g0azpo80q8', '2026-09-05T17:42:38.957Z', '2026-09-05T17:42:38.957Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo7ryf0005w0g0xe7mpo6j', '2026-09-05T17:42:39.688Z', '2026-09-05T17:42:39.688Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo7tvg000cw0g010wjzza9', '2026-09-05T17:42:42.172Z', '2026-09-05T17:42:42.172Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo7u07000dw0g0w7te63jw', '2026-09-05T17:42:42.344Z', '2026-09-05T17:42:42.344Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo7uu8000gw0g021m4feca', '2026-09-05T17:42:43.424Z', '2026-09-05T17:42:43.424Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo7wb3000jw0g0zvmpqmsm', '2026-09-05T17:42:45.328Z', '2026-09-05T17:42:45.328Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo7x5w000qw0g0y6f6yp06', '2026-09-05T17:42:46.437Z', '2026-09-05T17:42:46.437Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo7xc5000rw0g0vbm93dzg', '2026-09-05T17:42:46.662Z', '2026-09-05T17:42:46.662Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo7ysu000uw0g0xxhy4yui', '2026-09-05T17:42:48.559Z', '2026-09-05T17:42:48.559Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo7yt5000vw0g0k7ay7ipm', '2026-09-05T17:42:48.569Z', '2026-09-05T17:42:48.569Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo7z38000ww0g0zobrvj3u', '2026-09-05T17:42:48.933Z', '2026-09-05T17:42:48.933Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo7z6g000zw0g0pdp0dy4k', '2026-09-05T17:42:49.048Z', '2026-09-05T17:42:49.048Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo8ivs0002w0owkhc8qz8a', '2026-09-05T17:43:14.584Z', '2026-09-05T17:43:14.584Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo8jdw0005w0owkvrcbhaj', '2026-09-05T17:43:15.237Z', '2026-09-05T17:43:15.237Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo8l6y000cw0owiggbdn16', '2026-09-05T17:43:17.578Z', '2026-09-05T17:43:17.578Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo8lnd000fw0owclf87o4a', '2026-09-05T17:43:18.169Z', '2026-09-05T17:43:18.169Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo8n0y000gw0owtwpuscty', '2026-09-05T17:43:19.955Z', '2026-09-05T17:43:19.955Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo8ndq000hw0owc8w3i6j2', '2026-09-05T17:43:20.415Z', '2026-09-05T17:43:20.415Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo8o59000mw0owh4rm0xdr', '2026-09-05T17:43:21.406Z', '2026-09-05T17:43:21.406Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo8ob9000nw0ow66xgyuwx', '2026-09-05T17:43:21.622Z', '2026-09-05T17:43:21.622Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo8pk2000uw0owkytczouo', '2026-09-05T17:43:23.234Z', '2026-09-05T17:43:23.234Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo8ptz000vw0owpj6kuwu8', '2026-09-05T17:43:23.591Z', '2026-09-05T17:43:23.591Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo8pxf000ww0owfpd8gq2c', '2026-09-05T17:43:23.716Z', '2026-09-05T17:43:23.716Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvmv4ny000fw0o4ewx1bkv6', '2026-09-10T14:39:12.591Z', '2026-09-10T14:39:12.591Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvmv8ts000gw0o4qutbx04z', '2026-09-10T14:39:18.640Z', '2026-09-10T14:39:18.640Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvmvog1000xw0o48yv2jzu1', '2026-09-10T14:39:38.882Z', '2026-09-10T14:39:38.882Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwyotzu0002w0tozthtdxko', '2026-09-11T12:58:01.050Z', '2026-09-11T12:58:01.050Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwyoui10005w0tocpsn5hmh', '2026-09-11T12:58:01.706Z', '2026-09-11T12:58:01.706Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwyovms000aw0to8t6fci9d', '2026-09-11T12:58:03.172Z', '2026-09-11T12:58:03.172Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwyoxc4000gw0tomjt5vdrx', '2026-09-11T12:58:05.380Z', '2026-09-11T12:58:05.380Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwyoy2i000kw0tokzb7time', '2026-09-11T12:58:06.330Z', '2026-09-11T12:58:06.330Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwyoy82000nw0tom6ebm1h9', '2026-09-11T12:58:06.530Z', '2026-09-11T12:58:06.530Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwyoyy5000qw0to4glmhly8', '2026-09-11T12:58:07.469Z', '2026-09-11T12:58:07.469Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwyoz61000vw0tofe8fukvk', '2026-09-11T12:58:07.753Z', '2026-09-11T12:58:07.753Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwyoz8m000ww0to2kfizr1i', '2026-09-11T12:58:07.847Z', '2026-09-11T12:58:07.847Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtx14b640002w0bsrx17r2et', '2026-09-11T14:06:02.380Z', '2026-09-11T14:06:02.380Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtx14bnm0005w0bsm5nkzids', '2026-09-11T14:06:03.011Z', '2026-09-11T14:06:03.011Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtx14ct3000cw0bs1jsq1m8v', '2026-09-11T14:06:04.503Z', '2026-09-11T14:06:04.503Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtx14ecm000jw0bsgy9ukazg', '2026-09-11T14:06:06.503Z', '2026-09-11T14:06:06.503Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtx14fc6000mw0bsu1ufamkm', '2026-09-11T14:06:07.782Z', '2026-09-11T14:06:07.782Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtx14fi4000rw0bs2d8uphaz', '2026-09-11T14:06:07.997Z', '2026-09-11T14:06:07.997Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtx14g6o000uw0bstp75k4q8', '2026-09-11T14:06:08.880Z', '2026-09-11T14:06:08.880Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtx14gfk000ww0bsg7awwhm0', '2026-09-11T14:06:09.200Z', '2026-09-11T14:06:09.200Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtx14gim000xw0bs3bu0o54e', '2026-09-11T14:06:09.310Z', '2026-09-11T14:06:09.310Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2wulp40002w0vgx7v7r9ny', '2026-09-15T16:53:08.056Z', '2026-09-15T16:53:08.056Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2wum5m0007w0vgkyqk7lhr', '2026-09-15T16:53:08.650Z', '2026-09-15T16:53:08.650Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2wuna0000cw0vgnx226jkj', '2026-09-15T16:53:10.104Z', '2026-09-15T16:53:10.104Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2wuor3000jw0vg1u9p960e', '2026-09-15T16:53:12.015Z', '2026-09-15T16:53:12.015Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2wupkq000mw0vg0sfrdgcp', '2026-09-15T16:53:13.082Z', '2026-09-15T16:53:13.082Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2wupqc000nw0vggvsg97oz', '2026-09-15T16:53:13.285Z', '2026-09-15T16:53:13.285Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2wuqfl000uw0vg9evt3g1f', '2026-09-15T16:53:14.194Z', '2026-09-15T16:53:14.194Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2wuqph000vw0vg6mb42mq9', '2026-09-15T16:53:14.550Z', '2026-09-15T16:53:14.550Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2wuqs8000ww0vgmjwxdv87', '2026-09-15T16:53:14.649Z', '2026-09-15T16:53:14.649Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2xuefd0002w0wc3nh48nrg', '2026-09-15T17:20:58.250Z', '2026-09-15T17:20:58.250Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2xuf3y0003w0wc6mrhq07t', '2026-09-15T17:20:59.135Z', '2026-09-15T17:20:59.135Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2xuhdf000dw0wc7x7k327b', '2026-09-15T17:21:02.068Z', '2026-09-15T17:21:02.068Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2xujoy000jw0wclxcf5ihg', '2026-09-15T17:21:05.075Z', '2026-09-15T17:21:05.075Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2xuky4000qw0wc37xlzwcg', '2026-09-15T17:21:06.701Z', '2026-09-15T17:21:06.701Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2xul67000sw0wcr21rbtx7', '2026-09-15T17:21:06.991Z', '2026-09-15T17:21:06.991Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2xumc5000xw0wcsfxc0h44', '2026-09-15T17:21:08.501Z', '2026-09-15T17:21:08.501Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2xumoc000yw0wcw67j5bwo', '2026-09-15T17:21:08.941Z', '2026-09-15T17:21:08.941Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2xums6000zw0wc94bf241a', '2026-09-15T17:21:09.078Z', '2026-09-15T17:21:09.078Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3ycwx30002w03k4l0i72ju', '2026-09-16T10:23:08.200Z', '2026-09-16T10:23:08.200Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3ycxy60007w03kh62kcj22', '2026-09-16T10:23:09.534Z', '2026-09-16T10:23:09.534Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3yd01d000dw03kerhjon2e', '2026-09-16T10:23:12.242Z', '2026-09-16T10:23:12.242Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3yd4y1000jw03k05s47zwz', '2026-09-16T10:23:18.602Z', '2026-09-16T10:23:18.602Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3yd8go000qw03keutx4bfu', '2026-09-16T10:23:22.835Z', '2026-09-16T10:23:22.835Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3yd8qd000rw03krg87dkje', '2026-09-16T10:23:23.510Z', '2026-09-16T10:23:23.510Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3yd9n2000xw03k4rkl6xe1', '2026-09-16T10:23:24.686Z', '2026-09-16T10:23:24.686Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3yda5n000yw03kzpub42sg', '2026-09-16T10:23:25.355Z', '2026-09-16T10:23:25.355Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3yda9o000zw03ksp4spmmv', '2026-09-16T10:23:25.501Z', '2026-09-16T10:23:25.501Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3ziqnl0004w0mw96jb9rtu', '2026-09-16T10:55:39.633Z', '2026-09-16T10:55:39.633Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3zirmr0005w0mwfky55d82', '2026-09-16T10:55:40.899Z', '2026-09-16T10:55:40.899Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3zituh000cw0mwhmb5s73l', '2026-09-16T10:55:43.769Z', '2026-09-16T10:55:43.769Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo8qdw000xw0ow5tvq9x89', '2026-09-05T17:43:24.308Z', '2026-09-05T17:43:24.308Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo93hr0004w0kgs9qvx4tp', '2026-09-05T17:43:41.295Z', '2026-09-05T17:43:41.295Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo94c30005w0kg0ruygx3p', '2026-09-05T17:43:42.387Z', '2026-09-05T17:43:42.387Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo98c7000cw0kg06xpcj7w', '2026-09-05T17:43:47.576Z', '2026-09-05T17:43:47.576Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo9cx20002w0cs6x441lek', '2026-09-05T17:43:53.511Z', '2026-09-05T17:43:53.511Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo9dkc0003w0cs8tlqlqvj', '2026-09-05T17:43:54.348Z', '2026-09-05T17:43:54.348Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo9fdn0006w0csbv1n0ase', '2026-09-05T17:43:56.700Z', '2026-09-05T17:43:56.700Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo9i6b0009w0csghr2b99z', '2026-09-05T17:44:00.324Z', '2026-09-05T17:44:00.324Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo9j70000cw0csu8xgegds', '2026-09-05T17:44:01.644Z', '2026-09-05T17:44:01.644Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo9jdx000dw0csrrca2nrq', '2026-09-05T17:44:01.893Z', '2026-09-05T17:44:01.893Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo9kpw000gw0csbdmjcmjn', '2026-09-05T17:44:03.621Z', '2026-09-05T17:44:03.621Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo9l00000hw0csrl71xzgn', '2026-09-05T17:44:03.985Z', '2026-09-05T17:44:03.985Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo9l39000iw0csoz5apdp7', '2026-09-05T17:44:04.102Z', '2026-09-05T17:44:04.102Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo9rzx0004w0csm4zrq4nn', '2026-09-05T17:44:13.054Z', '2026-09-05T17:44:13.054Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo9sri0005w0cs3lw1d8oj', '2026-09-05T17:44:14.047Z', '2026-09-05T17:44:14.047Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtoo9wne000cw0csm7zryz6h', '2026-09-05T17:44:19.082Z', '2026-09-05T17:44:19.082Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtop6plk0002w0380viumv8u', '2026-09-05T18:09:49.592Z', '2026-09-05T18:09:49.592Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtop6q880005w038kvrcvt5s', '2026-09-05T18:09:50.409Z', '2026-09-05T18:09:50.409Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtop6rkc000aw038fs2mn5fo', '2026-09-05T18:09:52.141Z', '2026-09-05T18:09:52.141Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtop6sd3000fw038cjucyj00', '2026-09-05T18:09:53.176Z', '2026-09-05T18:09:53.176Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtop6tg9000gw038tc2ndnbr', '2026-09-05T18:09:54.585Z', '2026-09-05T18:09:54.585Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtop6tk8000hw038sj5l6ayw', '2026-09-05T18:09:54.729Z', '2026-09-05T18:09:54.729Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtop6uki000mw038ukddw82i', '2026-09-05T18:09:56.035Z', '2026-09-05T18:09:56.035Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtop6usu000nw038mxisxlpv', '2026-09-05T18:09:56.335Z', '2026-09-05T18:09:56.335Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtop6vqk000qw038qvasmxho', '2026-09-05T18:09:57.549Z', '2026-09-05T18:09:57.549Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtop6w42000rw038i05wa43d', '2026-09-05T18:09:58.034Z', '2026-09-05T18:09:58.034Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtop6w7a000sw0383d6qzj1h', '2026-09-05T18:09:58.150Z', '2026-09-05T18:09:58.150Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtop6y35000zw038qe1yj8ei', '2026-09-05T18:10:00.594Z', '2026-09-05T18:10:00.594Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtopdsxp0004w0cs99ws5ysb', '2026-09-05T18:15:20.509Z', '2026-09-05T18:15:20.509Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtopdttk0007w0csi5zyvzy5', '2026-09-05T18:15:21.657Z', '2026-09-05T18:15:21.657Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtopduyd000aw0cs16164h81', '2026-09-05T18:15:23.126Z', '2026-09-05T18:15:23.126Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtopdvph000dw0cstvr14it5', '2026-09-05T18:15:24.102Z', '2026-09-05T18:15:24.102Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtopdxhj000gw0csapqpunyc', '2026-09-05T18:15:26.408Z', '2026-09-05T18:15:26.408Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtopdzx9000nw0cslq47ld86', '2026-09-05T18:15:29.566Z', '2026-09-05T18:15:29.566Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtope1lc000qw0csegmk4adl', '2026-09-05T18:15:31.728Z', '2026-09-05T18:15:31.728Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtope37d000tw0csqdt2sw74', '2026-09-05T18:15:33.817Z', '2026-09-05T18:15:33.817Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtope3jv000uw0csv9lchntj', '2026-09-05T18:15:34.267Z', '2026-09-05T18:15:34.267Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtope5kx000xw0cszwp14c44', '2026-09-05T18:15:36.898Z', '2026-09-05T18:15:36.898Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtope60k000yw0cserxlj131', '2026-09-05T18:15:37.461Z', '2026-09-05T18:15:37.461Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtope65v000zw0cspqep56by', '2026-09-05T18:15:37.652Z', '2026-09-05T18:15:37.652Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqw7z9t0000od01oay2vgve', '2026-09-07T07:02:18.449Z', '2026-09-07T07:02:18.449Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqy50nk0004w0l4732wdjvk', '2026-09-07T07:55:59.504Z', '2026-09-07T07:55:59.504Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqy512c0005w0l4q0leks2p', '2026-09-07T07:56:00.037Z', '2026-09-07T07:56:00.037Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqy51xs000aw0l46c2ys0ae', '2026-09-07T07:56:01.168Z', '2026-09-07T07:56:01.168Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqy52y1000fw0l42qrur2wu', '2026-09-07T07:56:02.473Z', '2026-09-07T07:56:02.473Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqy535b000gw0l4486utf8q', '2026-09-07T07:56:02.736Z', '2026-09-07T07:56:02.736Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqy53oi000jw0l4ekm7fa7g', '2026-09-07T07:56:03.427Z', '2026-09-07T07:56:03.427Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqy53pj000kw0l499oyacc8', '2026-09-07T07:56:03.464Z', '2026-09-07T07:56:03.464Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqy53u7000lw0l48fm4px6w', '2026-09-07T07:56:03.631Z', '2026-09-07T07:56:03.631Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqy54ee000qw0l4lrtuyhw0', '2026-09-07T07:56:04.358Z', '2026-09-07T07:56:04.358Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqy54l4000rw0l4sk73m77w', '2026-09-07T07:56:04.601Z', '2026-09-07T07:56:04.601Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqy54nb000sw0l4obhtx6dx', '2026-09-07T07:56:04.680Z', '2026-09-07T07:56:04.680Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqy56hi000zw0l4x6jvjoup', '2026-09-07T07:56:07.062Z', '2026-09-07T07:56:07.062Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqylmn00004w0t4yjv5etpw', '2026-09-07T08:08:54.493Z', '2026-09-07T08:08:54.493Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqyln0t0005w0t4pb7gap9m', '2026-09-07T08:08:54.989Z', '2026-09-07T08:08:54.989Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqylo2s000ew0t40tveqqns', '2026-09-07T08:08:56.357Z', '2026-09-07T08:08:56.357Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqylo5t000fw0t4edemomnk', '2026-09-07T08:08:56.466Z', '2026-09-07T08:08:56.466Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqylon3000iw0t4146rp84z', '2026-09-07T08:08:57.087Z', '2026-09-07T08:08:57.087Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqylpgy000lw0t43ggxdqo2', '2026-09-07T08:08:58.162Z', '2026-09-07T08:08:58.162Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqylq3i000sw0t4aofb3585', '2026-09-07T08:08:58.974Z', '2026-09-07T08:08:58.974Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqylq9h000tw0t4sxbq44ii', '2026-09-07T08:08:59.190Z', '2026-09-07T08:08:59.190Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqylqn6000ww0t4gz8fp36u', '2026-09-07T08:08:59.683Z', '2026-09-07T08:08:59.683Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqylqz1000xw0t496n9qytk', '2026-09-07T08:09:00.110Z', '2026-09-07T08:09:00.110Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqylr7d0010w0t4logxt69v', '2026-09-07T08:09:00.409Z', '2026-09-07T08:09:00.409Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqylrj60011w0t45ay5rgnp', '2026-09-07T08:09:00.835Z', '2026-09-07T08:09:00.835Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqyr48z0004w0z43dyh6c11', '2026-09-07T08:13:10.596Z', '2026-09-07T08:13:10.596Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqyr4lu0005w0z4id304qq8', '2026-09-07T08:13:11.059Z', '2026-09-07T08:13:11.059Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqyr5fr000cw0z4x6rxi8sn', '2026-09-07T08:13:12.135Z', '2026-09-07T08:13:12.135Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqyr5mz000dw0z4zmm6n1my', '2026-09-07T08:13:12.396Z', '2026-09-07T08:13:12.396Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqyr64e000gw0z45nwuax3n', '2026-09-07T08:13:13.022Z', '2026-09-07T08:13:13.022Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqyr6k8000jw0z4ck4gc8zp', '2026-09-07T08:13:13.593Z', '2026-09-07T08:13:13.593Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqyr73h000mw0z4qwvtbd68', '2026-09-07T08:13:14.285Z', '2026-09-07T08:13:14.285Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqyr77s000nw0z4ajmliunw', '2026-09-07T08:13:14.440Z', '2026-09-07T08:13:14.440Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqyr7s2000uw0z4nmz13qo1', '2026-09-07T08:13:15.171Z', '2026-09-07T08:13:15.171Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqyr7x4000vw0z4s7et0pfs', '2026-09-07T08:13:15.352Z', '2026-09-07T08:13:15.352Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqyr7yl000ww0z4ckzguf94', '2026-09-07T08:13:15.405Z', '2026-09-07T08:13:15.405Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqyr80r000xw0z4y18pykh0', '2026-09-07T08:13:15.483Z', '2026-09-07T08:13:15.483Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqyyxd60002w0643u71a2b2', '2026-09-07T08:19:14.923Z', '2026-09-07T08:19:14.923Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqyyxrd0005w064z1atsndd', '2026-09-07T08:19:15.433Z', '2026-09-07T08:19:15.433Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqyyyp2000cw06406xk2j6y', '2026-09-07T08:19:16.646Z', '2026-09-07T08:19:16.646Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqyyyrz000dw064gj5lyxcu', '2026-09-07T08:19:16.751Z', '2026-09-07T08:19:16.751Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqyyza4000gw064lcd1r9j6', '2026-09-07T08:19:17.404Z', '2026-09-07T08:19:17.404Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqyyzz0000jw0642zdw53jc', '2026-09-07T08:19:18.301Z', '2026-09-07T08:19:18.301Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqyz0kd000qw064rv4ixqoq', '2026-09-07T08:19:19.070Z', '2026-09-07T08:19:19.070Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqyz0pb000rw064ze4f0g3o', '2026-09-07T08:19:19.247Z', '2026-09-07T08:19:19.247Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqyz1hs000uw06428uzvqma', '2026-09-07T08:19:20.273Z', '2026-09-07T08:19:20.273Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqyz1mj000vw06476py5zsp', '2026-09-07T08:19:20.443Z', '2026-09-07T08:19:20.443Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqyz1u2000yw064g8hs6w30', '2026-09-07T08:19:20.715Z', '2026-09-07T08:19:20.715Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqyz1wf000zw064gj895ro3', '2026-09-07T08:19:20.800Z', '2026-09-07T08:19:20.800Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqz3g8j0002w0d8tdi5zxlw', '2026-09-07T08:22:46.004Z', '2026-09-07T08:22:46.004Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqz3gls0005w0d84ednm5lh', '2026-09-07T08:22:46.480Z', '2026-09-07T08:22:46.480Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqz3hkp000cw0d8pk3k75zg', '2026-09-07T08:22:47.737Z', '2026-09-07T08:22:47.737Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqz3hox000dw0d81mxejayl', '2026-09-07T08:22:47.889Z', '2026-09-07T08:22:47.889Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqz3i5i000gw0d8mdstmyw7', '2026-09-07T08:22:48.487Z', '2026-09-07T08:22:48.487Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqz3iqp000jw0d8picslhgh', '2026-09-07T08:22:49.249Z', '2026-09-07T08:22:49.249Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqz3jb0000qw0d88bzyelql', '2026-09-07T08:22:49.981Z', '2026-09-07T08:22:49.981Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqz3jfj000rw0d8clhc8dc2', '2026-09-07T08:22:50.144Z', '2026-09-07T08:22:50.144Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqz3jyd000uw0d8vh5mhwon', '2026-09-07T08:22:50.821Z', '2026-09-07T08:22:50.821Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqz3jzg000vw0d8s534upb7', '2026-09-07T08:22:50.861Z', '2026-09-07T08:22:50.861Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqz3k60000ww0d89jxhmlfc', '2026-09-07T08:22:51.097Z', '2026-09-07T08:22:51.097Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqz3k86000zw0d8t5xa092t', '2026-09-07T08:22:51.175Z', '2026-09-07T08:22:51.175Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqzd27z0002w0ysoppx141r', '2026-09-07T08:30:14.399Z', '2026-09-07T08:30:14.399Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqzd2mo0005w0yspya364qo', '2026-09-07T08:30:14.929Z', '2026-09-07T08:30:14.929Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqzd3jo000cw0ysaymz531n', '2026-09-07T08:30:16.116Z', '2026-09-07T08:30:16.116Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqzd3py000dw0ysu586m0st', '2026-09-07T08:30:16.343Z', '2026-09-07T08:30:16.343Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqzd491000gw0ysytvfsg8t', '2026-09-07T08:30:17.030Z', '2026-09-07T08:30:17.030Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqzd4yt000jw0ys3ib2ecie', '2026-09-07T08:30:17.957Z', '2026-09-07T08:30:17.957Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqzd5jp000mw0ysivic475u', '2026-09-07T08:30:18.709Z', '2026-09-07T08:30:18.709Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqzd5od000rw0ysctd5ny17', '2026-09-07T08:30:18.878Z', '2026-09-07T08:30:18.878Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqzd6xd000uw0ys3inoe03c', '2026-09-07T08:30:20.497Z', '2026-09-07T08:30:20.497Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqzd74o000ww0yswge521zq', '2026-09-07T08:30:20.760Z', '2026-09-07T08:30:20.760Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqzd76z000xw0ysjuzejhh3', '2026-09-07T08:30:20.844Z', '2026-09-07T08:30:20.844Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvn9lp70002w000xzih0op2', '2026-09-10T14:50:28.507Z', '2026-09-10T14:50:28.507Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvn9mw80005w000i6a7r0uy', '2026-09-10T14:50:30.056Z', '2026-09-10T14:50:30.056Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvn9uy7000dw00066oshdxy', '2026-09-10T14:50:40.495Z', '2026-09-10T14:50:40.495Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvna49p000jw000x3bpr2uk', '2026-09-10T14:50:52.574Z', '2026-09-10T14:50:52.574Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvna67f000qw000tna5hmxe', '2026-09-10T14:50:55.084Z', '2026-09-10T14:50:55.084Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvna6ng000rw000j4r9yryj', '2026-09-10T14:50:55.660Z', '2026-09-10T14:50:55.660Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvna9iu000vw00058ef2mtl', '2026-09-10T14:50:59.383Z', '2026-09-10T14:50:59.383Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvnaa8o000yw000am8y4fpa', '2026-09-10T14:51:00.313Z', '2026-09-10T14:51:00.313Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvnaahn000zw000yh2o9nbx', '2026-09-10T14:51:00.635Z', '2026-09-10T14:51:00.635Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwyowh1000fw0tonadlgw1d', '2026-09-11T12:58:04.262Z', '2026-09-11T12:58:04.262Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwyoxcz000hw0towy8a9wuu', '2026-09-11T12:58:05.412Z', '2026-09-11T12:58:05.412Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwyp0ac000zw0togzx7yzfu', '2026-09-11T12:58:09.204Z', '2026-09-11T12:58:09.204Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtx14d0k000dw0bscssibjm1', '2026-09-11T14:06:04.773Z', '2026-09-11T14:06:04.773Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtx14dnl000gw0bsjl4p4anp', '2026-09-11T14:06:05.602Z', '2026-09-11T14:06:05.602Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtx14gd4000vw0bsvtij23rv', '2026-09-11T14:06:09.113Z', '2026-09-11T14:06:09.113Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2wune2000dw0vgblt9rwug', '2026-09-15T16:53:10.251Z', '2026-09-15T16:53:10.251Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2wunzf000gw0vgz5mh8a05', '2026-09-15T16:53:11.019Z', '2026-09-15T16:53:11.019Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2wuqv5000xw0vgnpf8gbkt', '2026-09-15T16:53:14.754Z', '2026-09-15T16:53:14.754Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2xugzw000cw0wc4qws75y8', '2026-09-15T17:21:01.580Z', '2026-09-15T17:21:01.580Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2xuhwa000gw0wcsegp4yh6', '2026-09-15T17:21:02.746Z', '2026-09-15T17:21:02.746Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2xul0o000rw0wcwjm5zwto', '2026-09-15T17:21:06.792Z', '2026-09-15T17:21:06.792Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3yd00m000cw03ks3yiviej', '2026-09-16T10:23:12.215Z', '2026-09-16T10:23:12.215Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3yd1pb000gw03kly218hik', '2026-09-16T10:23:14.400Z', '2026-09-16T10:23:14.400Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3yd8yc000sw03kujwgratk', '2026-09-16T10:23:23.796Z', '2026-09-16T10:23:23.796Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqzd6zo000vw0ysp7qq5vq1', '2026-09-07T08:30:20.580Z', '2026-09-07T08:30:20.580Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqzlq8l0002w0cwq94vrrf4', '2026-09-07T08:36:58.773Z', '2026-09-07T08:36:58.773Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqzlqmk0005w0cw1f1u0bii', '2026-09-07T08:36:59.277Z', '2026-09-07T08:36:59.277Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqzlriw000aw0cwkkepx95r', '2026-09-07T08:37:00.441Z', '2026-09-07T08:37:00.441Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqzls7r000fw0cwm16swv6u', '2026-09-07T08:37:01.335Z', '2026-09-07T08:37:01.335Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqzlsqr000gw0cw4ztj9uae', '2026-09-07T08:37:02.020Z', '2026-09-07T08:37:02.020Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqzlsuw000hw0cwex8dcycp', '2026-09-07T08:37:02.169Z', '2026-09-07T08:37:02.169Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqzltbp000kw0cwi5b4haqe', '2026-09-07T08:37:02.773Z', '2026-09-07T08:37:02.773Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqzltgn000nw0cwp2oi7ypb', '2026-09-07T08:37:02.952Z', '2026-09-07T08:37:02.952Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqzlu28000qw0cw4oa4u1lp', '2026-09-07T08:37:03.729Z', '2026-09-07T08:37:03.729Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqzlu9w000rw0cwf25k1k0b', '2026-09-07T08:37:04.004Z', '2026-09-07T08:37:04.004Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqzluck000ww0cwonua39xt', '2026-09-07T08:37:04.100Z', '2026-09-07T08:37:04.100Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtqzlvlz000zw0cwgmznt75n', '2026-09-07T08:37:05.735Z', '2026-09-07T08:37:05.735Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr03hry0002w080hm1c58vb', '2026-09-07T08:50:47.614Z', '2026-09-07T08:50:47.614Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr03i4m0005w080ij06wkdu', '2026-09-07T08:50:48.071Z', '2026-09-07T08:50:48.071Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr03j0l000cw080ft2peo7h', '2026-09-07T08:50:49.222Z', '2026-09-07T08:50:49.222Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr03j53000dw080t37g2417', '2026-09-07T08:50:49.384Z', '2026-09-07T08:50:49.384Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr03jpy000gw0802ire0gbi', '2026-09-07T08:50:50.135Z', '2026-09-07T08:50:50.135Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr03kiq000jw0802rklrs2m', '2026-09-07T08:50:51.170Z', '2026-09-07T08:50:51.170Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr03l1j000mw080udg0c0np', '2026-09-07T08:50:51.848Z', '2026-09-07T08:50:51.848Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr03l5o000nw0804954ixby', '2026-09-07T08:50:51.997Z', '2026-09-07T08:50:51.997Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr03lut000uw080b1fsfwb4', '2026-09-07T08:50:52.901Z', '2026-09-07T08:50:52.901Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr03mfl000vw0800ku2044k', '2026-09-07T08:50:53.649Z', '2026-09-07T08:50:53.649Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr03mnf000ww080t6e81pcv', '2026-09-07T08:50:53.932Z', '2026-09-07T08:50:53.932Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr03mtn000xw08086ntef1x', '2026-09-07T08:50:54.156Z', '2026-09-07T08:50:54.156Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr2ujcp0002w0e4fw8witpi', '2026-09-07T10:07:48.601Z', '2026-09-07T10:07:48.601Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr2ujpf0005w0e4nf32iwvh', '2026-09-07T10:07:49.060Z', '2026-09-07T10:07:49.060Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr2uklq000cw0e42ui2dn5o', '2026-09-07T10:07:50.223Z', '2026-09-07T10:07:50.223Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr2uks7000dw0e4xvirvzl2', '2026-09-07T10:07:50.456Z', '2026-09-07T10:07:50.456Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr2ul9f000gw0e4173ua7gk', '2026-09-07T10:07:51.076Z', '2026-09-07T10:07:51.076Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr2ulzm000jw0e42e74qr2p', '2026-09-07T10:07:52.018Z', '2026-09-07T10:07:52.018Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr2umj3000mw0e4tvbj6kvj', '2026-09-07T10:07:52.720Z', '2026-09-07T10:07:52.720Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr2umnm000nw0e49mgvt09h', '2026-09-07T10:07:52.882Z', '2026-09-07T10:07:52.882Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr2un6q000uw0e48fj3v0o7', '2026-09-07T10:07:53.571Z', '2026-09-07T10:07:53.571Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr2und3000vw0e4ose1vuwm', '2026-09-07T10:07:53.799Z', '2026-09-07T10:07:53.799Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr2une6000ww0e4i11pld5b', '2026-09-07T10:07:53.838Z', '2026-09-07T10:07:53.838Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr2unf8000xw0e4n07i8lbo', '2026-09-07T10:07:53.877Z', '2026-09-07T10:07:53.877Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr6bbvn0002w0rohmbrvpph', '2026-09-07T11:44:50.915Z', '2026-09-07T11:44:50.915Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr6bc8q0005w0rovug2pjjc', '2026-09-07T11:44:51.386Z', '2026-09-07T11:44:51.386Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr6bd3m000cw0ro7cgjvq9u', '2026-09-07T11:44:52.499Z', '2026-09-07T11:44:52.499Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr6bday000dw0ronudbohjx', '2026-09-07T11:44:52.762Z', '2026-09-07T11:44:52.762Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr6be2r000gw0roeups88tt', '2026-09-07T11:44:53.763Z', '2026-09-07T11:44:53.763Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr6bem0000jw0ro54quuygu', '2026-09-07T11:44:54.457Z', '2026-09-07T11:44:54.457Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr6bgfp000mw0row1mn64wi', '2026-09-07T11:44:56.822Z', '2026-09-07T11:44:56.822Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr6bgzt000rw0rojp8n4zjl', '2026-09-07T11:44:57.545Z', '2026-09-07T11:44:57.545Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr6bipe000uw0romxr5rhi7', '2026-09-07T11:44:59.762Z', '2026-09-07T11:44:59.762Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr6bisr000vw0rou0h0e2qi', '2026-09-07T11:44:59.884Z', '2026-09-07T11:44:59.884Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr6biw5000ww0rounuoyas6', '2026-09-07T11:45:00.006Z', '2026-09-07T11:45:00.006Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr6biyh000xw0rotgsxbvh1', '2026-09-07T11:45:00.090Z', '2026-09-07T11:45:00.090Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr6wwka0002w0a80mfygmsn', '2026-09-07T12:01:37.498Z', '2026-09-07T12:01:37.498Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr6wwxa0003w0a8e2cl6i4j', '2026-09-07T12:01:37.966Z', '2026-09-07T12:01:37.966Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr6wy4q000aw0a8ocwtyah2', '2026-09-07T12:01:39.530Z', '2026-09-07T12:01:39.530Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr6wyy1000fw0a8zdih39az', '2026-09-07T12:01:40.585Z', '2026-09-07T12:01:40.585Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr6wzaq000gw0a89gxq5ie7', '2026-09-07T12:01:41.043Z', '2026-09-07T12:01:41.043Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr6x02t000jw0a8wtf7ws6o', '2026-09-07T12:01:42.053Z', '2026-09-07T12:01:42.053Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr6x0hk000kw0a8i0ff9ra6', '2026-09-07T12:01:42.584Z', '2026-09-07T12:01:42.584Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr6x0og000lw0a81delg7jo', '2026-09-07T12:01:42.832Z', '2026-09-07T12:01:42.832Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr6x1gq000qw0a84xksjglf', '2026-09-07T12:01:43.850Z', '2026-09-07T12:01:43.850Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr6x1rj000rw0a8za5v1i8l', '2026-09-07T12:01:44.239Z', '2026-09-07T12:01:44.239Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr6x1uq000sw0a8dfis8y5j', '2026-09-07T12:01:44.355Z', '2026-09-07T12:01:44.355Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr6x38p000zw0a8pb57f5ve', '2026-09-07T12:01:46.154Z', '2026-09-07T12:01:46.154Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr745dw0002w08ssdm93xgw', '2026-09-07T12:07:15.524Z', '2026-09-07T12:07:15.524Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr746ai0005w08s6m8lduzl', '2026-09-07T12:07:16.699Z', '2026-09-07T12:07:16.699Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr748ef000cw08sa92amklv', '2026-09-07T12:07:19.431Z', '2026-09-07T12:07:19.431Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr748u2000dw08suisy914t', '2026-09-07T12:07:19.995Z', '2026-09-07T12:07:19.995Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr74a70000gw08srx6bkakg', '2026-09-07T12:07:21.756Z', '2026-09-07T12:07:21.756Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr74bi6000jw08sri5ljpz6', '2026-09-07T12:07:23.455Z', '2026-09-07T12:07:23.455Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr74d17000mw08siiuchonz', '2026-09-07T12:07:25.435Z', '2026-09-07T12:07:25.435Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr74dhe000rw08sibp2n2uh', '2026-09-07T12:07:26.018Z', '2026-09-07T12:07:26.018Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr74erl000uw08sw20yfdsg', '2026-09-07T12:07:27.681Z', '2026-09-07T12:07:27.681Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr74ex0000vw08s1e433iyg', '2026-09-07T12:07:27.877Z', '2026-09-07T12:07:27.877Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr74f8f000ww08skvgilf4k', '2026-09-07T12:07:28.288Z', '2026-09-07T12:07:28.288Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr74fgi000xw08s2ay8t03r', '2026-09-07T12:07:28.578Z', '2026-09-07T12:07:28.578Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr75hrs0002w05o3chgpezd', '2026-09-07T12:08:18.233Z', '2026-09-07T12:08:18.233Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr75i5u0005w05ow1v3zlaz', '2026-09-07T12:08:18.739Z', '2026-09-07T12:08:18.739Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr75j4a000cw05o2hw14015', '2026-09-07T12:08:19.978Z', '2026-09-07T12:08:19.978Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr75jan000dw05oqaflyiy1', '2026-09-07T12:08:20.207Z', '2026-09-07T12:08:20.207Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr75jnt000gw05ok82ztcwc', '2026-09-07T12:08:20.681Z', '2026-09-07T12:08:20.681Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr75klp000jw05oujiuzey3', '2026-09-07T12:08:21.902Z', '2026-09-07T12:08:21.902Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr75l6a000qw05ota267mbu', '2026-09-07T12:08:22.643Z', '2026-09-07T12:08:22.643Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr75lau000rw05oyro38tnf', '2026-09-07T12:08:22.807Z', '2026-09-07T12:08:22.807Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr75lin000sw05ogmp1dqv2', '2026-09-07T12:08:23.088Z', '2026-09-07T12:08:23.088Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr75lve000xw05od88kt2yb', '2026-09-07T12:08:23.547Z', '2026-09-07T12:08:23.547Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr75mb7000yw05o7zrzagpu', '2026-09-07T12:08:24.116Z', '2026-09-07T12:08:24.116Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr75mfs000zw05o036bah6s', '2026-09-07T12:08:24.281Z', '2026-09-07T12:08:24.281Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr7au980002w0xok8gfcx02', '2026-09-07T12:12:27.692Z', '2026-09-07T12:12:27.692Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr7auns0005w0xow5s60h09', '2026-09-07T12:12:28.216Z', '2026-09-07T12:12:28.216Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr7avnd000cw0xoeqpa5nur', '2026-09-07T12:12:29.498Z', '2026-09-07T12:12:29.498Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr7avvk000dw0xo590tmjgz', '2026-09-07T12:12:29.792Z', '2026-09-07T12:12:29.792Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr7awdz000gw0xoyf62kw1z', '2026-09-07T12:12:30.456Z', '2026-09-07T12:12:30.456Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr7awwn000jw0xo9pa3w5yc', '2026-09-07T12:12:31.127Z', '2026-09-07T12:12:31.127Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr7axl8000mw0xo8j02iv4z', '2026-09-07T12:12:32.013Z', '2026-09-07T12:12:32.013Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr7axt7000rw0xoethr8hrb', '2026-09-07T12:12:32.300Z', '2026-09-07T12:12:32.300Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr7ayfs000uw0xobdy7o6m7', '2026-09-07T12:12:33.113Z', '2026-09-07T12:12:33.113Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr7aygr000vw0xotum9ovjr', '2026-09-07T12:12:33.147Z', '2026-09-07T12:12:33.147Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr7ayn2000ww0xolxsttuc4', '2026-09-07T12:12:33.375Z', '2026-09-07T12:12:33.375Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr7aypc000xw0xof0n4v1ms', '2026-09-07T12:12:33.457Z', '2026-09-07T12:12:33.457Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr7h0cl0002w0ncenk01wql', '2026-09-07T12:17:15.525Z', '2026-09-07T12:17:15.525Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr7h0pt0005w0ncseti867u', '2026-09-07T12:17:16.002Z', '2026-09-07T12:17:16.002Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr7h1kq000cw0nc3eu4zzcw', '2026-09-07T12:17:17.115Z', '2026-09-07T12:17:17.115Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr7h1ql000dw0ncqn8gmcwz', '2026-09-07T12:17:17.326Z', '2026-09-07T12:17:17.326Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr7h28d000gw0ncoangx74s', '2026-09-07T12:17:17.966Z', '2026-09-07T12:17:17.966Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr7h2sc000jw0ncer02sjfm', '2026-09-07T12:17:18.684Z', '2026-09-07T12:17:18.684Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr7h3bt000mw0nc8xjfhsak', '2026-09-07T12:17:19.386Z', '2026-09-07T12:17:19.386Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr7h3g0000nw0ncyor3hpgs', '2026-09-07T12:17:19.536Z', '2026-09-07T12:17:19.536Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr7h408000uw0ncaa862htx', '2026-09-07T12:17:20.264Z', '2026-09-07T12:17:20.264Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr7h47r000vw0ncs25syx8o', '2026-09-07T12:17:20.536Z', '2026-09-07T12:17:20.536Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr7h47r000ww0nc2hzb3nrd', '2026-09-07T12:17:20.536Z', '2026-09-07T12:17:20.536Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvn9ur2000cw000hcwkke94', '2026-09-10T14:50:40.238Z', '2026-09-10T14:50:40.238Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvn9z0u000gw000unedx4qn', '2026-09-10T14:50:45.774Z', '2026-09-10T14:50:45.774Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvna90s000uw0008u2667du', '2026-09-10T14:50:58.256Z', '2026-09-10T14:50:58.256Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwz8tl00002w0q0j1plxjm4', '2026-09-11T13:13:33.637Z', '2026-09-11T13:13:33.637Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwz8u3e0007w0q0m6zqw1lh', '2026-09-11T13:13:34.299Z', '2026-09-11T13:13:34.299Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwz8vai000cw0q0f26y87zr', '2026-09-11T13:13:35.850Z', '2026-09-11T13:13:35.850Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwz8wuv000jw0q023ns2hvr', '2026-09-11T13:13:37.880Z', '2026-09-11T13:13:37.880Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwz8xmp000qw0q0v11uzcmi', '2026-09-11T13:13:38.881Z', '2026-09-11T13:13:38.881Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwz8xsn000rw0q0iigrbwew', '2026-09-11T13:13:39.096Z', '2026-09-11T13:13:39.096Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwz8z3h000vw0q0urcavmwy', '2026-09-11T13:13:40.782Z', '2026-09-11T13:13:40.782Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwz8zc8000yw0q0dth1yxrg', '2026-09-11T13:13:41.096Z', '2026-09-11T13:13:41.096Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwz8zfm000zw0q0twjxnxdd', '2026-09-11T13:13:41.219Z', '2026-09-11T13:13:41.219Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmty5xhdg0f16qo016f6pumx6', '2026-09-12T09:08:27.932Z', '2026-09-12T09:08:27.932Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2wxuwa0002w09scrka0xso', '2026-09-15T16:55:39.947Z', '2026-09-15T16:55:39.947Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2wxvcz0005w09s4ywlry2w', '2026-09-15T16:55:40.547Z', '2026-09-15T16:55:40.547Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2wxwfd000cw09spo4phip6', '2026-09-15T16:55:41.929Z', '2026-09-15T16:55:41.929Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2wxy07000jw09sm5clj8nd', '2026-09-15T16:55:43.975Z', '2026-09-15T16:55:43.975Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2wxysp000qw09sgynfeyif', '2026-09-15T16:55:45.001Z', '2026-09-15T16:55:45.001Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2wxyyu000rw09scgrwpmcn', '2026-09-15T16:55:45.222Z', '2026-09-15T16:55:45.222Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2wxzqm000vw09sr37qep2f', '2026-09-15T16:55:46.223Z', '2026-09-15T16:55:46.223Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2wxzyu000ww09sjmts54ll', '2026-09-15T16:55:46.518Z', '2026-09-15T16:55:46.518Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2wy01g000zw09s5dr1xr1q', '2026-09-15T16:55:46.613Z', '2026-09-15T16:55:46.613Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2y29520002w02khi7u41ws', '2026-09-15T17:27:04.646Z', '2026-09-15T17:27:04.646Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2y29x90007w02keuieoa5j', '2026-09-15T17:27:05.661Z', '2026-09-15T17:27:05.661Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2y2beo000cw02kuc07cwdm', '2026-09-15T17:27:07.584Z', '2026-09-15T17:27:07.584Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2y2df9000jw02kivd102uw', '2026-09-15T17:27:10.198Z', '2026-09-15T17:27:10.198Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2y2e7r000mw02kwx6dmet4', '2026-09-15T17:27:11.223Z', '2026-09-15T17:27:11.223Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2y2eeb000nw02kq0x3jzey', '2026-09-15T17:27:11.460Z', '2026-09-15T17:27:11.460Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2y2f86000uw02k9i9upsc8', '2026-09-15T17:27:12.535Z', '2026-09-15T17:27:12.535Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2y2fh2000vw02k5c6be4ld', '2026-09-15T17:27:12.854Z', '2026-09-15T17:27:12.854Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2y2fjq000ww02k1wwz8gqx', '2026-09-15T17:27:12.951Z', '2026-09-15T17:27:12.951Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3zfi1q0002w0to52l5w73n', '2026-09-16T10:53:08.510Z', '2026-09-16T10:53:08.510Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3zfifc0005w0toltvft37p', '2026-09-16T10:53:09.001Z', '2026-09-16T10:53:09.001Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3zfjp9000aw0tom93xkwkn', '2026-09-16T10:53:10.653Z', '2026-09-16T10:53:10.653Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3zflj3000gw0toz9qy5xcb', '2026-09-16T10:53:13.024Z', '2026-09-16T10:53:13.024Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3zfo6k000mw0to801qtiqa', '2026-09-16T10:53:16.460Z', '2026-09-16T10:53:16.460Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3zfox0000nw0tok5120q1w', '2026-09-16T10:53:17.413Z', '2026-09-16T10:53:17.413Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3zfq3v000uw0todarl8fv6', '2026-09-16T10:53:18.955Z', '2026-09-16T10:53:18.955Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3zfqby000vw0toj4vfsi5c', '2026-09-16T10:53:19.246Z', '2026-09-16T10:53:19.246Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3zfqea000ww0to9zt1s2kn', '2026-09-16T10:53:19.331Z', '2026-09-16T10:53:19.331Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr7h49w000xw0ncc51179ik', '2026-09-07T12:17:20.612Z', '2026-09-07T12:17:20.612Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr81hu10002w03skxy44uyc', '2026-09-07T12:33:11.306Z', '2026-09-07T12:33:11.306Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr81iyu0003w03s1cihkknn', '2026-09-07T12:33:12.774Z', '2026-09-07T12:33:12.774Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr81n89000cw03s85mdq7rd', '2026-09-07T12:33:18.298Z', '2026-09-07T12:33:18.298Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr81ojb000fw03sx8j8hggw', '2026-09-07T12:33:19.991Z', '2026-09-07T12:33:19.991Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr81reg000gw03s8d1yocv9', '2026-09-07T12:33:23.704Z', '2026-09-07T12:33:23.704Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr81vgj000jw03sha78xm00', '2026-09-07T12:33:28.964Z', '2026-09-07T12:33:28.964Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr81ypp000mw03skqyhpjzo', '2026-09-07T12:33:33.181Z', '2026-09-07T12:33:33.181Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr81z7n000rw03shfipdtk2', '2026-09-07T12:33:33.828Z', '2026-09-07T12:33:33.828Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr821gt000uw03sjyy6h7g9', '2026-09-07T12:33:36.749Z', '2026-09-07T12:33:36.749Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr821l1000vw03sw3i5iov8', '2026-09-07T12:33:36.901Z', '2026-09-07T12:33:36.901Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr8228m000ww03s0lem4v0a', '2026-09-07T12:33:37.751Z', '2026-09-07T12:33:37.751Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr822jh000xw03sluopsdyf', '2026-09-07T12:33:38.142Z', '2026-09-07T12:33:38.142Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr8gu3v0002w078d8qm8sq7', '2026-09-07T12:45:07.051Z', '2026-09-07T12:45:07.051Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr8guir0005w078x4lk9xn1', '2026-09-07T12:45:07.588Z', '2026-09-07T12:45:07.588Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr8gvq2000aw078po1v3he3', '2026-09-07T12:45:09.146Z', '2026-09-07T12:45:09.146Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr8gw4r000fw078u31xeryn', '2026-09-07T12:45:09.675Z', '2026-09-07T12:45:09.675Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr8gwrs000gw0781v39axvr', '2026-09-07T12:45:10.504Z', '2026-09-07T12:45:10.504Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr8gx3e000hw0787n6b7s16', '2026-09-07T12:45:10.922Z', '2026-09-07T12:45:10.922Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr8gxq0000mw078o6gvfejg', '2026-09-07T12:45:11.737Z', '2026-09-07T12:45:11.737Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr8gxul000nw0788xcid2o6', '2026-09-07T12:45:11.901Z', '2026-09-07T12:45:11.901Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr8gyfc000uw0788r7b0yn8', '2026-09-07T12:45:12.649Z', '2026-09-07T12:45:12.649Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr8gymj000vw07825f4mzhq', '2026-09-07T12:45:12.908Z', '2026-09-07T12:45:12.908Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr8gyot000ww0788iik6fhg', '2026-09-07T12:45:12.989Z', '2026-09-07T12:45:12.989Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr8gz8o000zw078vbizcxkb', '2026-09-07T12:45:13.705Z', '2026-09-07T12:45:13.705Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr8lo8h0002w0ok4hz94uer', '2026-09-07T12:48:52.721Z', '2026-09-07T12:48:52.721Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr8lolt0005w0ok0fblztlf', '2026-09-07T12:48:53.201Z', '2026-09-07T12:48:53.201Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr8lpgp000cw0oknh8n0mdo', '2026-09-07T12:48:54.313Z', '2026-09-07T12:48:54.313Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr8lpp2000dw0oku6c2okf1', '2026-09-07T12:48:54.614Z', '2026-09-07T12:48:54.614Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr8lq82000gw0ok1i3opghb', '2026-09-07T12:48:55.298Z', '2026-09-07T12:48:55.298Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr8lqtn000jw0ok1fuqhmjf', '2026-09-07T12:48:56.076Z', '2026-09-07T12:48:56.076Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr8lrg2000mw0okk7rlurof', '2026-09-07T12:48:56.883Z', '2026-09-07T12:48:56.883Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr8lrof000rw0okvs7c6f1f', '2026-09-07T12:48:57.183Z', '2026-09-07T12:48:57.183Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr8lsan000uw0oko8ybezr2', '2026-09-07T12:48:57.984Z', '2026-09-07T12:48:57.984Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr8lscq000vw0okn86m0ey7', '2026-09-07T12:48:58.059Z', '2026-09-07T12:48:58.059Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr8lsha000ww0okmrjjujdj', '2026-09-07T12:48:58.223Z', '2026-09-07T12:48:58.223Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr8lsjh000xw0okhdtuqa8s', '2026-09-07T12:48:58.301Z', '2026-09-07T12:48:58.301Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr99qqn0002w05gnmuwiklf', '2026-09-07T13:07:35.711Z', '2026-09-07T13:07:35.711Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr99rkj0007w05g5ac5v8w7', '2026-09-07T13:07:36.788Z', '2026-09-07T13:07:36.788Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr99t1n000cw05guyxcsdgo', '2026-09-07T13:07:38.700Z', '2026-09-07T13:07:38.700Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr99t6y000dw05g9tdkdmra', '2026-09-07T13:07:38.890Z', '2026-09-07T13:07:38.890Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr99tyr000gw05gz9y72061', '2026-09-07T13:07:39.891Z', '2026-09-07T13:07:39.891Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr99v2p000jw05gmvka4n2i', '2026-09-07T13:07:41.329Z', '2026-09-07T13:07:41.329Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr99vty000qw05g7ttu2wgy', '2026-09-07T13:07:42.310Z', '2026-09-07T13:07:42.310Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr99w0b000rw05gdhfmwq4a', '2026-09-07T13:07:42.539Z', '2026-09-07T13:07:42.539Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr99wwo000uw05gxqvhjji5', '2026-09-07T13:07:43.704Z', '2026-09-07T13:07:43.704Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr99wxp000vw05guespy16q', '2026-09-07T13:07:43.742Z', '2026-09-07T13:07:43.742Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr99x8w000ww05g86wbufee', '2026-09-07T13:07:44.145Z', '2026-09-07T13:07:44.145Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtr99xcq000zw05gzqlke5pm', '2026-09-07T13:07:44.282Z', '2026-09-07T13:07:44.282Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtrbybgo0002w0foftc91ii0', '2026-09-07T14:22:41.545Z', '2026-09-07T14:22:41.545Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtrbybtj0005w0fovepxic1s', '2026-09-07T14:22:42.007Z', '2026-09-07T14:22:42.007Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtrbycw4000cw0foad819t59', '2026-09-07T14:22:43.397Z', '2026-09-07T14:22:43.397Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtrbyd6s000fw0foxm7shtq3', '2026-09-07T14:22:43.780Z', '2026-09-07T14:22:43.780Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtrbydsj000gw0foiii5mnpj', '2026-09-07T14:22:44.564Z', '2026-09-07T14:22:44.564Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtrbye55000hw0fo9039gsxl', '2026-09-07T14:22:45.017Z', '2026-09-07T14:22:45.017Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtrbyeod000mw0foq2258ylf', '2026-09-07T14:22:45.710Z', '2026-09-07T14:22:45.710Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtrbyesj000nw0foxwqfn5ab', '2026-09-07T14:22:45.859Z', '2026-09-07T14:22:45.859Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtrbyfh6000uw0foc0x4mpkj', '2026-09-07T14:22:46.746Z', '2026-09-07T14:22:46.746Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtrbyfnf000vw0foydpmq6wu', '2026-09-07T14:22:46.971Z', '2026-09-07T14:22:46.971Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtrbyfpj000ww0fouy2350yv', '2026-09-07T14:22:47.047Z', '2026-09-07T14:22:47.047Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtrbyfqz000xw0fofb6iylmy', '2026-09-07T14:22:47.099Z', '2026-09-07T14:22:47.099Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtrgp01h01s8nc01qw6j88ed', '2026-09-07T16:35:24.765Z', '2026-09-07T16:35:24.765Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtrjfm9l02v1nc01sz5z94dy', '2026-09-07T17:52:05.852Z', '2026-09-07T17:52:05.852Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmts70owg0bd5nc01nr7gut27', '2026-09-08T04:52:20.215Z', '2026-09-08T04:52:20.215Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsczej30002w0nory5w9saa', '2026-09-08T07:39:17.967Z', '2026-09-08T07:39:17.967Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsczf0a0007w0noe5k05ely', '2026-09-08T07:39:18.586Z', '2026-09-08T07:39:18.586Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsczg5a000cw0nomhd1jiwu', '2026-09-08T07:39:20.062Z', '2026-09-08T07:39:20.062Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsczg8p000dw0nohjlryl4c', '2026-09-08T07:39:20.186Z', '2026-09-08T07:39:20.186Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsczgvj000gw0nojb2n9igz', '2026-09-08T07:39:21.008Z', '2026-09-08T07:39:21.008Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsczhof000jw0nol7dysezv', '2026-09-08T07:39:22.047Z', '2026-09-08T07:39:22.047Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtscziey000qw0no5swanmhd', '2026-09-08T07:39:23.003Z', '2026-09-08T07:39:23.003Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtscziko000rw0nouus0dr1h', '2026-09-08T07:39:23.208Z', '2026-09-08T07:39:23.208Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsczjab000vw0noz4hq79l9', '2026-09-08T07:39:24.132Z', '2026-09-08T07:39:24.132Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsczjaa000uw0nolob4va96', '2026-09-08T07:39:24.131Z', '2026-09-08T07:39:24.131Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsczjjh000ww0nocj7a0cq1', '2026-09-08T07:39:24.461Z', '2026-09-08T07:39:24.461Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsczjmn000zw0no4r39412f', '2026-09-08T07:39:24.575Z', '2026-09-08T07:39:24.575Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsddq5w0002w0jgpiwlgetq', '2026-09-08T07:50:26.229Z', '2026-09-08T07:50:26.229Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsddqop0005w0jge3dki1mr', '2026-09-08T07:50:26.906Z', '2026-09-08T07:50:26.906Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsddrsy000aw0jgfduy7hf3', '2026-09-08T07:50:28.355Z', '2026-09-08T07:50:28.355Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsddsqy000fw0jgcudyrcrx', '2026-09-08T07:50:29.578Z', '2026-09-08T07:50:29.578Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsddt8v000gw0jgs5s28xje', '2026-09-08T07:50:30.224Z', '2026-09-08T07:50:30.224Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsddtjl000hw0jgmyizqwux', '2026-09-08T07:50:30.609Z', '2026-09-08T07:50:30.609Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsddtz4000kw0jgwuibjsex', '2026-09-08T07:50:31.169Z', '2026-09-08T07:50:31.169Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsddu4c000lw0jgzsl7ketc', '2026-09-08T07:50:31.357Z', '2026-09-08T07:50:31.357Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsdduvg000qw0jgkcgd3w21', '2026-09-08T07:50:32.332Z', '2026-09-08T07:50:32.332Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsddv3n000rw0jgtvhfwztv', '2026-09-08T07:50:32.627Z', '2026-09-08T07:50:32.627Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsddv6d000sw0jgf8o426j5', '2026-09-08T07:50:32.726Z', '2026-09-08T07:50:32.726Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsddwkt000zw0jg572ba7xd', '2026-09-08T07:50:34.542Z', '2026-09-08T07:50:34.542Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsdmrrh0002w02gvkgt847c', '2026-09-08T07:57:28.206Z', '2026-09-08T07:57:28.206Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsdms7y0005w02gohkrkst8', '2026-09-08T07:57:28.799Z', '2026-09-08T07:57:28.799Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsdmthu000aw02gcw1tcbi6', '2026-09-08T07:57:30.451Z', '2026-09-08T07:57:30.451Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsdmucu000fw02gddaj163u', '2026-09-08T07:57:31.566Z', '2026-09-08T07:57:31.566Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsdmuz2000gw02gfrxmwwdg', '2026-09-08T07:57:32.367Z', '2026-09-08T07:57:32.367Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsdmv4l000hw02gpzru2zg9', '2026-09-08T07:57:32.566Z', '2026-09-08T07:57:32.566Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsdmvof000kw02gjjif24gi', '2026-09-08T07:57:33.280Z', '2026-09-08T07:57:33.280Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsdmvu5000nw02gtga1yz05', '2026-09-08T07:57:33.486Z', '2026-09-08T07:57:33.486Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsdmwjw000qw02ghcw4eqak', '2026-09-08T07:57:34.413Z', '2026-09-08T07:57:34.413Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsdmwsc000rw02g36iujyjq', '2026-09-08T07:57:34.716Z', '2026-09-08T07:57:34.716Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsdmwvf000ww02gnnkpcl7c', '2026-09-08T07:57:34.827Z', '2026-09-08T07:57:34.827Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsdmy1o000zw02gyxkjcn2k', '2026-09-08T07:57:36.348Z', '2026-09-08T07:57:36.348Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseea4k0002w0m479o3pxgw', '2026-09-08T08:18:51.716Z', '2026-09-08T08:18:51.716Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseeaku0005w0m4ilex0mcm', '2026-09-08T08:18:52.302Z', '2026-09-08T08:18:52.302Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseebni000cw0m4c4mg32nx', '2026-09-08T08:18:53.694Z', '2026-09-08T08:18:53.694Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseebw0000dw0m4ywjr1c86', '2026-09-08T08:18:54.000Z', '2026-09-08T08:18:54.000Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseecjd000gw0m4switnvfa', '2026-09-08T08:18:54.842Z', '2026-09-08T08:18:54.842Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseed6f000jw0m4jsmo8xir', '2026-09-08T08:18:55.672Z', '2026-09-08T08:18:55.672Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseeduh000mw0m4k6gx92r7', '2026-09-08T08:18:56.537Z', '2026-09-08T08:18:56.537Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseedzt000nw0m4ifh9f648', '2026-09-08T08:18:56.729Z', '2026-09-08T08:18:56.729Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseeepb000uw0m431hi7f5s', '2026-09-08T08:18:57.648Z', '2026-09-08T08:18:57.648Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseeexv000vw0m4hos3046b', '2026-09-08T08:18:57.955Z', '2026-09-08T08:18:57.955Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseef0q000xw0m4lufdkadr', '2026-09-08T08:18:58.059Z', '2026-09-08T08:18:58.059Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvndq4e0002w0h4k7f44d4v', '2026-09-10T14:53:40.863Z', '2026-09-10T14:53:40.863Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvndr0q0005w0h45ixffvpc', '2026-09-10T14:53:42.027Z', '2026-09-10T14:53:42.027Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvndx62000aw0h4pimqqh6f', '2026-09-10T14:53:49.995Z', '2026-09-10T14:53:49.995Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvne6tb000jw0h40mrdxnvu', '2026-09-10T14:54:02.495Z', '2026-09-10T14:54:02.495Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvneaqc000qw0h4g3rqhli6', '2026-09-10T14:54:07.573Z', '2026-09-10T14:54:07.573Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvnebiz000rw0h4fy2ekpgd', '2026-09-10T14:54:08.604Z', '2026-09-10T14:54:08.604Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvnefvw000vw0h4j3akl89c', '2026-09-10T14:54:14.252Z', '2026-09-10T14:54:14.252Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvnegtx000yw0h4v78wmp6b', '2026-09-10T14:54:15.477Z', '2026-09-10T14:54:15.477Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvneh3h000zw0h4v4acqqi0', '2026-09-10T14:54:15.821Z', '2026-09-10T14:54:15.821Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwz8vbl000dw0q0hagb7avg', '2026-09-11T13:13:35.889Z', '2026-09-11T13:13:35.889Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwz8vz4000gw0q0tgbr6qro', '2026-09-11T13:13:36.737Z', '2026-09-11T13:13:36.737Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwz8yt9000uw0q0tr91qkur', '2026-09-11T13:13:40.414Z', '2026-09-11T13:13:40.414Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2njs1s29q1qo01yvb35ajn', '2026-09-15T12:32:46.489Z', '2026-09-15T12:32:46.489Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2wxwkk000dw09sdvnv8w0o', '2026-09-15T16:55:42.117Z', '2026-09-15T16:55:42.117Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2wxx69000gw09s18g5ohof', '2026-09-15T16:55:42.897Z', '2026-09-15T16:55:42.897Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2wxzph000uw09srwq18l0t', '2026-09-15T16:55:46.181Z', '2026-09-15T16:55:46.181Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2y2bo1000dw02kq416uxvg', '2026-09-15T17:27:07.921Z', '2026-09-15T17:27:07.921Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2y2cnc000gw02kz9jm5lqv', '2026-09-15T17:27:09.192Z', '2026-09-15T17:27:09.192Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu2y2frh000xw02k8xnigxuu', '2026-09-15T17:27:13.230Z', '2026-09-15T17:27:13.230Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3zfkig000fw0tove0rado7', '2026-09-16T10:53:11.705Z', '2026-09-16T10:53:11.705Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3zflsf000hw0topfoghz7p', '2026-09-16T10:53:13.359Z', '2026-09-16T10:53:13.359Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmu3zfrtv000zw0to526mbjje', '2026-09-16T10:53:21.187Z', '2026-09-16T10:53:21.187Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseeeyf000ww0m4vyfybkc8', '2026-09-08T08:18:57.975Z', '2026-09-08T08:18:57.975Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsegbch0002w0o4ekiizjhi', '2026-09-08T08:20:26.609Z', '2026-09-08T08:20:26.609Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsegbth0005w0o4vjmgeh7l', '2026-09-08T08:20:27.221Z', '2026-09-08T08:20:27.221Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsegcyq000cw0o45bvsq7cy', '2026-09-08T08:20:28.707Z', '2026-09-08T08:20:28.707Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsegd73000dw0o4tp6rlayg', '2026-09-08T08:20:29.007Z', '2026-09-08T08:20:29.007Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsegdu1000gw0o43cdk25mk', '2026-09-08T08:20:29.834Z', '2026-09-08T08:20:29.834Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsegelc000jw0o4acjdtl5g', '2026-09-08T08:20:30.817Z', '2026-09-08T08:20:30.817Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsegfdc000mw0o4hzuxi7d6', '2026-09-08T08:20:31.824Z', '2026-09-08T08:20:31.824Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsegfiw000nw0o4879338td', '2026-09-08T08:20:32.025Z', '2026-09-08T08:20:32.025Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsegg8x000uw0o4e553flkj', '2026-09-08T08:20:32.961Z', '2026-09-08T08:20:32.961Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsegghn000vw0o4t77dkg44', '2026-09-08T08:20:33.276Z', '2026-09-08T08:20:33.276Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseggj6000ww0o4xnn21vi6', '2026-09-08T08:20:33.331Z', '2026-09-08T08:20:33.331Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseggke000xw0o4p0dq8pj6', '2026-09-08T08:20:33.374Z', '2026-09-08T08:20:33.374Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseqpja0002w0ycadvvza2q', '2026-09-08T08:28:31.559Z', '2026-09-08T08:28:31.559Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseqq5d0007w0yc3xh4f0ke', '2026-09-08T08:28:32.354Z', '2026-09-08T08:28:32.354Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseqr4s000cw0yctzjeas83', '2026-09-08T08:28:33.629Z', '2026-09-08T08:28:33.629Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseqrkt000dw0ycu22abr0p', '2026-09-08T08:28:34.205Z', '2026-09-08T08:28:34.205Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseqrrg000ew0yc6f24lg55', '2026-09-08T08:28:34.444Z', '2026-09-08T08:28:34.444Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseqtfs000nw0ycp8uu9xs5', '2026-09-08T08:28:36.616Z', '2026-09-08T08:28:36.616Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsequ4h000qw0ycbgsrpzk9', '2026-09-08T08:28:37.505Z', '2026-09-08T08:28:37.505Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsequdr000rw0yc69kfpvas', '2026-09-08T08:28:37.840Z', '2026-09-08T08:28:37.840Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsequkw000uw0yctoizwie7', '2026-09-08T08:28:38.096Z', '2026-09-08T08:28:38.096Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseqvhe000xw0yczgu5w58r', '2026-09-08T08:28:39.267Z', '2026-09-08T08:28:39.267Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseqvs8000yw0yc5surddvf', '2026-09-08T08:28:39.656Z', '2026-09-08T08:28:39.656Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseqvvs000zw0yckpkggwy5', '2026-09-08T08:28:39.785Z', '2026-09-08T08:28:39.785Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsesfvl0002w09wo7ofhwht', '2026-09-08T08:29:52.353Z', '2026-09-08T08:29:52.353Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsesgdb0005w09wm29h6i88', '2026-09-08T08:29:52.992Z', '2026-09-08T08:29:52.992Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseshii000cw09wsq93rjes', '2026-09-08T08:29:54.474Z', '2026-09-08T08:29:54.474Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseshno000dw09w5nl1ua9e', '2026-09-08T08:29:54.660Z', '2026-09-08T08:29:54.660Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsesia7000gw09wvzyo3hpe', '2026-09-08T08:29:55.471Z', '2026-09-08T08:29:55.471Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsesj0c000jw09wlor1yqvp', '2026-09-08T08:29:56.412Z', '2026-09-08T08:29:56.412Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsesjq0000mw09wh3k1ts8p', '2026-09-08T08:29:57.337Z', '2026-09-08T08:29:57.337Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsesjvt000rw09wsp03bus7', '2026-09-08T08:29:57.546Z', '2026-09-08T08:29:57.546Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseskoj000uw09wn55cwups', '2026-09-08T08:29:58.579Z', '2026-09-08T08:29:58.579Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseskoj000vw09wr97xhphz', '2026-09-08T08:29:58.580Z', '2026-09-08T08:29:58.580Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseskwz000ww09w80q3nwj5', '2026-09-08T08:29:58.884Z', '2026-09-08T08:29:58.884Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtseskzr000zw09wmxeo5ygb', '2026-09-08T08:29:58.984Z', '2026-09-08T08:29:58.984Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsex6j10002w0n02dksvafc', '2026-09-08T08:33:33.517Z', '2026-09-08T08:33:33.517Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsex6zt0005w0n00zuh3z1g', '2026-09-08T08:33:34.122Z', '2026-09-08T08:33:34.122Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsex88p000cw0n0qv21ovmd', '2026-09-08T08:33:35.737Z', '2026-09-08T08:33:35.737Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsex8nm000dw0n03suuburc', '2026-09-08T08:33:36.274Z', '2026-09-08T08:33:36.274Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsex99w000gw0n0sckmst9u', '2026-09-08T08:33:37.077Z', '2026-09-08T08:33:37.077Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsex9sp000hw0n0lhzjkg96', '2026-09-08T08:33:37.754Z', '2026-09-08T08:33:37.754Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsexagy000mw0n01o8f8d7k', '2026-09-08T08:33:38.627Z', '2026-09-08T08:33:38.627Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsexamg000nw0n0ou6yumkc', '2026-09-08T08:33:38.824Z', '2026-09-08T08:33:38.824Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsexbab000uw0n0r1yt84c8', '2026-09-08T08:33:39.684Z', '2026-09-08T08:33:39.684Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsexbjk000vw0n0te3b4ctb', '2026-09-08T08:33:40.017Z', '2026-09-08T08:33:40.017Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsexbn0000ww0n0zfvad9ie', '2026-09-08T08:33:40.141Z', '2026-09-08T08:33:40.141Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsexbqg000xw0n0c9kzg3s4', '2026-09-08T08:33:40.264Z', '2026-09-08T08:33:40.264Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsf7fmz0002w0p4gu2v1kav', '2026-09-08T08:41:31.883Z', '2026-09-08T08:41:31.883Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsf7g4i0005w0p41w0amhc6', '2026-09-08T08:41:32.514Z', '2026-09-08T08:41:32.514Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsf7h8d000aw0p4i781uw9z', '2026-09-08T08:41:33.949Z', '2026-09-08T08:41:33.949Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsf7hzg000fw0p4se6v8r3e', '2026-09-08T08:41:34.925Z', '2026-09-08T08:41:34.925Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsf7ion000gw0p4btt5ja5u', '2026-09-08T08:41:35.831Z', '2026-09-08T08:41:35.831Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsf7iqs000hw0p4wa271jk5', '2026-09-08T08:41:35.909Z', '2026-09-08T08:41:35.909Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsf7jdj000kw0p4wahw8bsn', '2026-09-08T08:41:36.728Z', '2026-09-08T08:41:36.728Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsf7jis000nw0p40sm5tlan', '2026-09-08T08:41:36.917Z', '2026-09-08T08:41:36.917Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsf7kb8000qw0p40bj06ty8', '2026-09-08T08:41:37.940Z', '2026-09-08T08:41:37.940Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsf7kjc000rw0p4ghfh9lec', '2026-09-08T08:41:38.233Z', '2026-09-08T08:41:38.233Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsf7km4000sw0p48stasle7', '2026-09-08T08:41:38.332Z', '2026-09-08T08:41:38.332Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsf7low000zw0p4em4wgwbp', '2026-09-08T08:41:39.728Z', '2026-09-08T08:41:39.728Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsfffdp0002w0m8i2zjg29j', '2026-09-08T08:47:44.797Z', '2026-09-08T08:47:44.797Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsfffuk0005w0m884fegs2s', '2026-09-08T08:47:45.404Z', '2026-09-08T08:47:45.404Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsffgxv000cw0m84k6zyy5i', '2026-09-08T08:47:46.820Z', '2026-09-08T08:47:46.820Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsffh42000dw0m8kxswx0cl', '2026-09-08T08:47:47.043Z', '2026-09-08T08:47:47.043Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsffhpu000gw0m81n6ozx4r', '2026-09-08T08:47:47.826Z', '2026-09-08T08:47:47.826Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsffiet000jw0m8odnyhsh0', '2026-09-08T08:47:48.725Z', '2026-09-08T08:47:48.725Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsffj48000mw0m8w9ecoicq', '2026-09-08T08:47:49.640Z', '2026-09-08T08:47:49.640Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsffj9u000rw0m849dvdibw', '2026-09-08T08:47:49.842Z', '2026-09-08T08:47:49.842Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsffjzc000vw0m8on1jvu6o', '2026-09-08T08:47:50.760Z', '2026-09-08T08:47:50.760Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsffjzb000uw0m8onbh1ij3', '2026-09-08T08:47:50.760Z', '2026-09-08T08:47:50.760Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsffk94000ww0m8lh6tk3uv', '2026-09-08T08:47:51.112Z', '2026-09-08T08:47:51.112Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtsffkbt000zw0m8r1llhpt3', '2026-09-08T08:47:51.209Z', '2026-09-08T08:47:51.209Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu18j6d0002w0m01qx1kaiq', '2026-09-09T11:46:00.853Z', '2026-09-09T11:46:00.853Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu18jlu0005w0m07u7romp3', '2026-09-09T11:46:01.410Z', '2026-09-09T11:46:01.410Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu18l14000aw0m01a07ealq', '2026-09-09T11:46:03.257Z', '2026-09-09T11:46:03.257Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu18m48000fw0m0z3b0i3ya', '2026-09-09T11:46:04.665Z', '2026-09-09T11:46:04.665Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu18nkg000gw0m03jmb3u82', '2026-09-09T11:46:06.544Z', '2026-09-09T11:46:06.544Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu18obl000hw0m0erzkwum6', '2026-09-09T11:46:07.521Z', '2026-09-09T11:46:07.521Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu18puw000mw0m0bhbw8gbn', '2026-09-09T11:46:09.513Z', '2026-09-09T11:46:09.513Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu18q2o000nw0m0ryeaqarx', '2026-09-09T11:46:09.793Z', '2026-09-09T11:46:09.793Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu18r1o000uw0m0sjmv8a7u', '2026-09-09T11:46:11.052Z', '2026-09-09T11:46:11.052Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu18rhx000vw0m0qvdowv0z', '2026-09-09T11:46:11.637Z', '2026-09-09T11:46:11.637Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu18ro0000ww0m0c4bfuqkp', '2026-09-09T11:46:11.856Z', '2026-09-09T11:46:11.856Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu18sq7000xw0m0vjlpc6nz', '2026-09-09T11:46:13.231Z', '2026-09-09T11:46:13.231Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu19nsm0004w0d4vf8thsuj', '2026-09-09T11:46:53.495Z', '2026-09-09T11:46:53.495Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu19p0u0005w0d4ngj3urn7', '2026-09-09T11:46:55.086Z', '2026-09-09T11:46:55.086Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu19v68000cw0d4eojjhppv', '2026-09-09T11:47:03.056Z', '2026-09-09T11:47:03.056Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu1ebaj0002w0ww4fneoi29', '2026-09-09T11:50:30.572Z', '2026-09-09T11:50:30.572Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu1ebqi0007w0ww27w1kons', '2026-09-09T11:50:31.146Z', '2026-09-09T11:50:31.146Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu1ecz8000dw0ww5f4lhbtw', '2026-09-09T11:50:32.757Z', '2026-09-09T11:50:32.757Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu1ecz7000cw0ww7b5xpf2f', '2026-09-09T11:50:32.755Z', '2026-09-09T11:50:32.755Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu1edlq000gw0wwdv5kx3vf', '2026-09-09T11:50:33.567Z', '2026-09-09T11:50:33.567Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu1eejf000jw0wwvcan091f', '2026-09-09T11:50:34.779Z', '2026-09-09T11:50:34.779Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu1efbu000qw0wwk28cph38', '2026-09-09T11:50:35.802Z', '2026-09-09T11:50:35.802Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu1efq6000rw0wwl4ma7oot', '2026-09-09T11:50:36.318Z', '2026-09-09T11:50:36.318Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu1efwl000sw0wwkmtupz8w', '2026-09-09T11:50:36.549Z', '2026-09-09T11:50:36.549Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu1egcg000xw0ww66af0tlu', '2026-09-09T11:50:37.120Z', '2026-09-09T11:50:37.120Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu1egrv000yw0ww3s51eayw', '2026-09-09T11:50:37.676Z', '2026-09-09T11:50:37.676Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtu1egu7000zw0wwnkgh2ctu', '2026-09-09T11:50:37.760Z', '2026-09-09T11:50:37.760Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvndzos000fw0h4rf9utp8r', '2026-09-10T14:53:53.261Z', '2026-09-10T14:53:53.261Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvne3au000gw0h41nibrh1i', '2026-09-10T14:53:57.305Z', '2026-09-10T14:53:57.305Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtvnee5z000uw0h4x0plp0hr', '2026-09-10T14:54:12.024Z', '2026-09-10T14:54:12.024Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwzajrx0002w0wsz04a04or', '2026-09-11T13:14:54.237Z', '2026-09-11T13:14:54.237Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwzakar0007w0wscs0o68ty', '2026-09-11T13:14:54.916Z', '2026-09-11T13:14:54.916Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwzalh3000cw0ws8he4fyma', '2026-09-11T13:14:56.440Z', '2026-09-11T13:14:56.440Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Cart" ("id", "createdAt", "updatedAt") VALUES ('cmtwzan0t000jw0wsgrj2kp5z', '2026-09-11T13:14:58.445Z', '2026-09-11T13:14:58.445Z') ON CONFLICT DO NOTHING;
+
+-- Tablo: "CartItem" (0 kayıt)
+
+-- Tablo: "Order" (9 kayıt)
+INSERT INTO "Order" ("id", "accessToken", "status", "userId", "customerName", "customerPhone", "customerEmail", "shippingAddress", "subtotal", "discountAmount", "couponCode", "shippingCost", "total", "iyzicoToken", "iyzicoPaymentId", "failureReason", "trackingNumber", "carrier", "estimatedDelivery", "driverName", "driverPhone", "driverPhoto", "assistantName", "assistantPhoto", "lat", "lng", "invoiceUrl", "createdAt", "updatedAt") VALUES ('cmtvm59zn006pmu01fcwrtrbh', '155019a1-c209-4050-bd0b-593e98e531e4', 'pending', 'cmsxailk80000w0nkrwphcsoh', 'Çağrı Kahveci', '5368200269', 'admin@mcaris.com.tr', 'batı sit mah 2308 sok no:62, Yenimahalle / Ankara', '435', '0', NULL, '0', '435', NULL, NULL, NULL, NULL, 'MCARIS Özel Medikal Filosu', 'Aynı Gün / 24 Saat İçerisinde', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-09-10T14:19:07.092Z', '2026-09-10T14:19:07.092Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Order" ("id", "accessToken", "status", "userId", "customerName", "customerPhone", "customerEmail", "shippingAddress", "subtotal", "discountAmount", "couponCode", "shippingCost", "total", "iyzicoToken", "iyzicoPaymentId", "failureReason", "trackingNumber", "carrier", "estimatedDelivery", "driverName", "driverPhone", "driverPhoto", "assistantName", "assistantPhoto", "lat", "lng", "invoiceUrl", "createdAt", "updatedAt") VALUES ('cmsspmzhv000dl1z8570498mw', 'd8b51a0f-5bfc-4cdb-829d-e222623aaf10', 'completed', 'cmsr652m4001ol1s6ydodyqwv', 'Sıla Çakır', '5517349666', 'silacakir01@gmail.com', 'XX - Hamamözü / Amasya', '64000', '0', NULL, '0', '64000', 'odeal-test-cmsspmzhv000dl1z8570498mw-1786697631967', 'odeal-test-cmsspmzhv000dl1z8570498mw-1786697631967', NULL, NULL, 'MCARIS Özel Medikal Filo (06 EHJ 866)', 'Aynı Gün / 24 Saat İçerisinde', 'Murat Aksoy (Sürücü & Kurulum)', '0532 221 7931', NULL, NULL, NULL, 39.95650658622569, 32.69491924256429, NULL, '2026-08-17T19:24:54.727Z', '2026-08-17T19:24:54.727Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Order" ("id", "accessToken", "status", "userId", "customerName", "customerPhone", "customerEmail", "shippingAddress", "subtotal", "discountAmount", "couponCode", "shippingCost", "total", "iyzicoToken", "iyzicoPaymentId", "failureReason", "trackingNumber", "carrier", "estimatedDelivery", "driverName", "driverPhone", "driverPhoto", "assistantName", "assistantPhoto", "lat", "lng", "invoiceUrl", "createdAt", "updatedAt") VALUES ('cmswxkkii002tl1473ft6zol0', '22fd153d-df3d-4443-ab0f-8a288e0571f6', 'completed', 'cmsr652m4001ol1s6ydodyqwv', 'Sıla Çakır', '5517349666', 'silacakir01@gmail.com', 'ss - Besni / Adıyaman', '460', '0', NULL, '0', '460', 'iyz-test-cmswxkkii002tl1473ft6zol0-1786952820662', NULL, NULL, NULL, 'MCARIS Özel Medikal Filosu', 'Aynı Gün / 24 Saat İçerisinde', 'Murat Aksoy (Sürücü & Kurulum)', '0532 123 45 67', NULL, NULL, NULL, NULL, NULL, NULL, '2026-08-17T19:24:55.120Z', '2026-08-20T09:48:44.463Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Order" ("id", "accessToken", "status", "userId", "customerName", "customerPhone", "customerEmail", "shippingAddress", "subtotal", "discountAmount", "couponCode", "shippingCost", "total", "iyzicoToken", "iyzicoPaymentId", "failureReason", "trackingNumber", "carrier", "estimatedDelivery", "driverName", "driverPhone", "driverPhoto", "assistantName", "assistantPhoto", "lat", "lng", "invoiceUrl", "createdAt", "updatedAt") VALUES ('cmswvz9dn002ll147vlinmv0d', 'c681a4b0-3493-470f-99c1-4af0e917ef39', 'completed', 'cmsr652m4001ol1s6ydodyqwv', 'Sıla Çakır', '5517349666', 'silacakir01@gmail.com', 'ee - Demre / Antalya', '460', '0', NULL, '150', '610', 'iyz-test-cmswvz9dn002ll147vlinmv0d-1786950146819', NULL, NULL, NULL, 'MCARIS Özel Medikal Filosu', 'Aynı Gün / 24 Saat İçerisinde', 'Murat Aksoy (Sürücü & Kurulum)', '0532 123 45 67', NULL, NULL, NULL, NULL, NULL, NULL, '2026-08-17T19:24:54.930Z', '2026-08-20T09:49:28.802Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Order" ("id", "accessToken", "status", "userId", "customerName", "customerPhone", "customerEmail", "shippingAddress", "subtotal", "discountAmount", "couponCode", "shippingCost", "total", "iyzicoToken", "iyzicoPaymentId", "failureReason", "trackingNumber", "carrier", "estimatedDelivery", "driverName", "driverPhone", "driverPhoto", "assistantName", "assistantPhoto", "lat", "lng", "invoiceUrl", "createdAt", "updatedAt") VALUES ('cmtgx0c6n0001rv01dxxrtday', '2615456e-0dad-46bf-bc1b-9b4fe2be8fbb', 'pending', 'cmsr652m4001ol1s6ydodyqwv', 'Sıla Çakır', '05517349666', 'silacakir01@gmail.com', 'Nevadium BATIKENT, Yenimahalle / Ankara', '355', '0', NULL, '0', '355', 'iyz-test-cmtgx0c6n0001rv01dxxrtday-1788161199814', NULL, NULL, NULL, 'MCARIS Özel Medikal Filosu', 'Aynı Gün / 24 Saat İçerisinde', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-08-31T07:26:39.791Z', '2026-08-31T07:26:39.815Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Order" ("id", "accessToken", "status", "userId", "customerName", "customerPhone", "customerEmail", "shippingAddress", "subtotal", "discountAmount", "couponCode", "shippingCost", "total", "iyzicoToken", "iyzicoPaymentId", "failureReason", "trackingNumber", "carrier", "estimatedDelivery", "driverName", "driverPhone", "driverPhoto", "assistantName", "assistantPhoto", "lat", "lng", "invoiceUrl", "createdAt", "updatedAt") VALUES ('cmtgx957p0001t501hhvxc37e', 'c06f9150-e1c9-401d-b7a5-9fdd39daa90b', 'completed', 'cmsr652m4001ol1s6ydodyqwv', 'Sıla Çakır', '05517349666', 'silacakir01@gmail.com', 'Nevadium Batıkent Konutları, Yenimahalle / Ankara', '355', '0', NULL, '0', '355', 'iyz-test-cmtgx957p0001t501hhvxc37e-1788161610677', 'IYZ-TEST-1788161655854', NULL, NULL, 'MCARIS Özel Medikal Filosu', 'Aynı Gün / 24 Saat İçerisinde', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-08-31T07:33:30.661Z', '2026-09-02T06:22:31.871Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Order" ("id", "accessToken", "status", "userId", "customerName", "customerPhone", "customerEmail", "shippingAddress", "subtotal", "discountAmount", "couponCode", "shippingCost", "total", "iyzicoToken", "iyzicoPaymentId", "failureReason", "trackingNumber", "carrier", "estimatedDelivery", "driverName", "driverPhone", "driverPhoto", "assistantName", "assistantPhoto", "lat", "lng", "invoiceUrl", "createdAt", "updatedAt") VALUES ('cmts78qy50bg3nc017h510k7b', 'ad9213a3-9f32-42b2-8792-6a58fb65e0da', 'pending', 'cmts6stm20b9cnc01fpx9a34p', 'arzu şener', '5302470338', 'ashener@gmail.com', 'Tahtakale mh Petunya sk Garantikoza evleri 2 etap a3 d5 ıspartakule avcılar istanbul, Avcılar / İstanbul', '3250', '0', NULL, '0', '3250', NULL, NULL, NULL, NULL, 'MCARIS Özel Medikal Filosu', 'Aynı Gün / 24 Saat İçerisinde', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-09-08T04:58:36.269Z', '2026-09-08T04:58:36.269Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Order" ("id", "accessToken", "status", "userId", "customerName", "customerPhone", "customerEmail", "shippingAddress", "subtotal", "discountAmount", "couponCode", "shippingCost", "total", "iyzicoToken", "iyzicoPaymentId", "failureReason", "trackingNumber", "carrier", "estimatedDelivery", "driverName", "driverPhone", "driverPhoto", "assistantName", "assistantPhoto", "lat", "lng", "invoiceUrl", "createdAt", "updatedAt") VALUES ('cmts79su90bh5nc017yqoyo5v', '8af7b445-a604-456c-91fb-2df26d5ea710', 'pending', 'cmts6stm20b9cnc01fpx9a34p', 'arzu şener', '5302470338', 'ashener@gmail.com', 'Tahtakale mh Petunya sk Garantikoza evleri 2 etap a3 d5 ıspartakule avcılar istanbul, Avcılar / İstanbul', '3250', '0', NULL, '0', '3250', NULL, NULL, NULL, NULL, 'MCARIS Özel Medikal Filosu', 'Aynı Gün / 24 Saat İçerisinde', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-09-08T04:59:25.378Z', '2026-09-08T04:59:25.378Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Order" ("id", "accessToken", "status", "userId", "customerName", "customerPhone", "customerEmail", "shippingAddress", "subtotal", "discountAmount", "couponCode", "shippingCost", "total", "iyzicoToken", "iyzicoPaymentId", "failureReason", "trackingNumber", "carrier", "estimatedDelivery", "driverName", "driverPhone", "driverPhoto", "assistantName", "assistantPhoto", "lat", "lng", "invoiceUrl", "createdAt", "updatedAt") VALUES ('cmts7ddud0blznc01ab0kmu6v', 'b3ed7a39-e18c-4a1a-b8c5-e90f00cee1f8', 'pending', 'cmts6stm20b9cnc01fpx9a34p', 'arzu şener', '5302470338', 'ashener@gmail.com', 'Tahtakale mh Petunya sk Garantikoza evleri 2 etap a3 d5 ıspartakule avcılar istanbul, Avcılar / İstanbul', '3250', '0', NULL, '0', '3250', NULL, NULL, NULL, NULL, 'MCARIS Özel Medikal Filosu', 'Aynı Gün / 24 Saat İçerisinde', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-09-08T05:02:12.565Z', '2026-09-08T05:02:12.565Z') ON CONFLICT DO NOTHING;
+
+-- Tablo: "OrderItem" (10 kayıt)
+INSERT INTO "OrderItem" ("id", "orderId", "productId", "productName", "unitPrice", "quantity", "lineTotal") VALUES ('cmtvm59zn006rmu01v2hsmzq8', 'cmtvm59zn006pmu01fcwrtrbh', 'cmst0ci54001vl147d5xwob22', 'Carine Bebek Pişik Önleyici Bariyer Krem | 100 Ml', '435', 1, '435') ON CONFLICT DO NOTHING;
+INSERT INTO "OrderItem" ("id", "orderId", "productId", "productName", "unitPrice", "quantity", "lineTotal") VALUES ('cmsspmzhv000fl1z8t51vp3bs', 'cmsspmzhv000dl1z8570498mw', 'cmsrhx8bx0009l1kbmwnvaa38', 'Herrman Yemek Masalı Etajer', '40000', 1, '40000') ON CONFLICT DO NOTHING;
+INSERT INTO "OrderItem" ("id", "orderId", "productId", "productName", "unitPrice", "quantity", "lineTotal") VALUES ('cmsspmzhv000gl1z8v6nk2ons', 'cmsspmzhv000dl1z8570498mw', 'cmssm2u440007l1z8ngawmh6k', 'MCaris 2 Motorlu ABS Hasta Karyolası', '24000', 1, '24000') ON CONFLICT DO NOTHING;
+INSERT INTO "OrderItem" ("id", "orderId", "productId", "productName", "unitPrice", "quantity", "lineTotal") VALUES ('cmswvz9dn002nl147l70aacco', 'cmswvz9dn002ll147vlinmv0d', 'cmst1l0k6002hl147v352hdnj', 'CARINE Yüz ve Vücut Bakım Kremi 150 Ml', '460', 1, '460') ON CONFLICT DO NOTHING;
+INSERT INTO "OrderItem" ("id", "orderId", "productId", "productName", "unitPrice", "quantity", "lineTotal") VALUES ('cmswxkkii002vl14796k7mu5d', 'cmswxkkii002tl1473ft6zol0', 'cmst1l0k6002hl147v352hdnj', 'CARINE Yüz ve Vücut Bakım Kremi 150 Ml', '460', 1, '460') ON CONFLICT DO NOTHING;
+INSERT INTO "OrderItem" ("id", "orderId", "productId", "productName", "unitPrice", "quantity", "lineTotal") VALUES ('cmtgx0c6o0003rv01m7s9lglt', 'cmtgx0c6n0001rv01dxxrtday', 'cmst19c240029l147036t9ica', 'Carine Saç Dökülmesine Karşı Şampuan 400 ML', '355', 1, '355') ON CONFLICT DO NOTHING;
+INSERT INTO "OrderItem" ("id", "orderId", "productId", "productName", "unitPrice", "quantity", "lineTotal") VALUES ('cmtgx957p0003t501vaxheijc', 'cmtgx957p0001t501hhvxc37e', 'cmst19c240029l147036t9ica', 'Carine Saç Dökülmesine Karşı Şampuan 400 ML', '355', 1, '355') ON CONFLICT DO NOTHING;
+INSERT INTO "OrderItem" ("id", "orderId", "productId", "productName", "unitPrice", "quantity", "lineTotal") VALUES ('cmts78qy50bg5nc01whputo90', 'cmts78qy50bg3nc017h510k7b', 'cmtnm0726000bw0bcjvqfvmh8', 'Amortisörlü Yatak Üstü Hasta Yemek Masası', '3250', 1, '3250') ON CONFLICT DO NOTHING;
+INSERT INTO "OrderItem" ("id", "orderId", "productId", "productName", "unitPrice", "quantity", "lineTotal") VALUES ('cmts79su90bh7nc017auovvb1', 'cmts79su90bh5nc017yqoyo5v', 'cmtnm0726000bw0bcjvqfvmh8', 'Amortisörlü Yatak Üstü Hasta Yemek Masası', '3250', 1, '3250') ON CONFLICT DO NOTHING;
+INSERT INTO "OrderItem" ("id", "orderId", "productId", "productName", "unitPrice", "quantity", "lineTotal") VALUES ('cmts7ddud0bm1nc01ak7r0yjg', 'cmts7ddud0blznc01ab0kmu6v', 'cmtnm0726000bw0bcjvqfvmh8', 'Amortisörlü Yatak Üstü Hasta Yemek Masası', '3250', 1, '3250') ON CONFLICT DO NOTHING;
+
+-- Tablo: "Review" (2 kayıt)
+INSERT INTO "Review" ("id", "productId", "userName", "rating", "title", "comment", "verified", "isApproved", "createdAt") VALUES ('cmt1g61cb0004n201ct9imc1l', 'cmsrhbf5z0001l1kb0omjc77l', 'Alper', 5, NULL, 'Harika hizmet.', FALSE, TRUE, '2026-08-20T11:38:39.563Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Review" ("id", "productId", "userName", "rating", "title", "comment", "verified", "isApproved", "createdAt") VALUES ('cmtnm4dg9001po301blkwfzab', 'cmssyoq3c001ll1478mu6wfcb', 'Alper', 5, NULL, 'Hasta yatağı fiyatları uygun bana kalırsa diğer markalardan daha kaliteli bir deneyim sunuyorlar.', FALSE, TRUE, '2026-09-04T23:56:15.476Z') ON CONFLICT DO NOTHING;
+
+-- Tablo: "BlogPost" (41 kayıt)
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtjblary0003a23oek1749eh', 'Yatak Yarası (Dekübitüs) Evreleri, Önleme Yöntemleri ve Boru Tipi Havalı Yatak Seçimi', 'yatak-yarasi-dekubitus-onleme-ve-havali-yatak-secimi', 'Bası yarası riskini sıfıra indirmek için boru tipi havalı yatak seçimi, 2 saatlik pozisyonlama planı ve klinik yara bakım protokolleri.', '
+## Dekübitüs (Bası Yarası) Neden Oluşur?
+
+Sürekli aynı pozisyonda yatan hastalarda vücut ağırlığının kemik çıkıntılarına (kuyruk sokumu, topuklar, omuz başları, dirsekler) yaptığı baskı, deri ve deri altı dokulardaki kan dolaşımını durdurur. 2 saatten uzun süren kan akışı kesintisi doku ölümüne ve bası yaralarına yol açar.
+
+---
+
+## Dekübitüsün 4 Klinik Evresi
+
+1. **Evre 1:** Deri bütünlüğü bozulmamıştır ancak bası bölgesinde parmakla basıldığında beyazlaşmayan kızarıklık vardır.
+2. **Evre 2:** Derinin üst tabakasında (epidermis/dermis) su kabarcığı veya yüzeysel sıyrık şeklinde açılma görülür.
+3. **Evre 3:** Deri altı yağ dokusuna kadar inen derin krater şeklinde yara oluşur.
+4. **Evre 4:** Kas, tendon ve kemik dokusunun açığa çıktığı, enfeksiyon riski çok yüksek derin yaralar.
+
+---
+
+## Bası Yaralarını Önlemenin 3 Altın Kuralı
+
+### 1. Boru Tipi Havalı Yatak Kullanımı
+- Baklava tipi basit şilteler yalnızca kısa süreli ve hafif hastalar içindir.
+- Uzun süreli yatan hastalarda mutlaka **A+B veya A+B+C ventilasyonlu (mikro hava delikli) boru tipi havalı yatak** kullanılmalıdır. Borular sırayla inip şişerek bası noktasını sürekli değiştirir.
+
+### 2. 2 Saatlik Pozisyon Verme Rutini
+- Hasta karyolasının kumandası ile sırt açısı 30-45 dereceye getirilmeli, sağ yan ve sol yan pozisyonları verilerek bası dağıtılmalıdır.
+
+### 3. Cilt Nem Dengesinin Korunması
+- Cilt ter ve idrar temasından korunmalı, bariyer kremler ve nefes alan sıvı geçirmez alezler kullanılmalıdır.
+    ', '/uploads/products/dali-low-entry-econ-1.jpg', 'MCARIS Medikal Yara Bakım Masası', '5 dk okuma', 'Hasta Bakımı', ARRAY['Dekübitüs', 'Yatak Yarası', 'Havalı Yatak', 'Boru Tipi Havalı Yatak', 'Yara Önleme']::text[], TRUE, 91, '2026-09-01T23:50:24.718Z', '2026-09-16T11:05:02.784Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtnm2v960006w0wo1l20ieko', 'Ankara''dan Tüm Türkiye''ye Güvenli Kargo, Kurulu Teslimat ve Hasta Karyolası Lojistik Ağı', 'turkiye-geneli-guvenli-kargo-ve-kurulum-rehberi', 'Ankara merkezli MCARIS Medikal güvencesiyle 81 ile kurulu hasta yatağı sevkiyatı, ambalajlama standartları, teslimat süreleri ve kargo güvencesi.', '
+## Medikal Karyolada Lojistik ve Montaj Hassasiyeti
+
+Hasta yatağı, sıradan bir e-ticaret kargosu gibi taşınamayacak kadar hassas mekanik, motor ve elektronik aksamlar içerir. Yanlış ambalajlama veya özensiz nakliye motor millerinin eğilmesine, plastik aksamların kırılmasına ve en kötüsü hastanın günlerce yataksız kalmasına neden olabilir.
+
+MCARIS Medikal, Ankara merkez fabrikasından Türkiye''nin 81 iline uzanan özel lojistik protokolü ile bu süreci sıfır riskle yönetmektedir.
+
+---
+
+## 1. Ankara İçi Gün İçinde Ücretsiz Teslimat & Montaj
+
+Ankara''nın 25 ilçesinde (Çankaya, Keçiören, Yenimahalle, Etimesgut, Mamak, Sincan, Gölbaşı, Pursaklar, Polatlı, Çubuk vb.):
+- Kendi mobil teknik araçlarımız ve uzman teknisyenlerimiz hizmet verir.
+- Siparişiniz gün içinde oda içerisine taşınır.
+- Montajı yapılır, tüm motor ve kumanda testleri gerçekleştirilir ve kullanım eğitimi verilir.
+
+---
+
+## 2. 81 İle Kurulu (Montajsız) Güvenli Kargo Standardı
+
+Ankara dışındaki illerimize (Bursa, Mersin, Çanakkale, Tekirdağ, Gaziantep, Zonguldak, Giresun, Kastamonu, İzmir, Antalya, Adana, Samsun, Erzurum ve diğer tüm şehirler):
+- **Kurulu Teslimat:** Karyolalarımız fabrikada %100 toplanmış ve test edilmiş olarak sevk edilir. Koli açıldığında vidalama gerektirmez; tek yapmanız gereken fişi prize takmaktır.
+- **Ağır Hizmet Ambalajı:** Şasi balonlu naylon, köşe koruma straforları ve mukavemetli koruyucu karton kutular ile kaplanır.
+- **Sigortalı Taşımacılık:** Ürünler kapınıza kadar tam nakliye sigortalı olarak ulaştırılır.
+    ', '/uploads/products/silver-2-motorlu-1.jpg', 'MCARIS Lojistik & Sevkiyat Koordinatörlüğü', '5 dk okuma', 'Teknik & Güvenlik', ARRAY['Hasta Yatağı Kargo', 'Türkiye Geneli Teslimat', 'Kurulu Teslimat', 'Güvenli Lojistik', 'Ankara']::text[], TRUE, 93, '2026-09-04T23:55:05.275Z', '2026-09-16T11:05:03.348Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtr7o4uz0002w0y8abxy473u', 'Hacettepe, Gazi ve İbni Sina Hastaneleri Çevresinde Medikal Hasta Yatağı Temini', 'ankara-universite-hastaneleri-hasta-yatagi-temini-ve-kiralama', 'Hacettepe Tıp, Gazi Üniversitesi ve Ankara Üniversitesi İbni Sina Hastanelerinden taburcu olan hastalar için evde bakım yatağı kiralama, SGK raporlu fatura ve teknik servis rehberi.', '
+## Ankara''nın Köklü Üniversite Hastanelerinde Evde Bakım İhtiyaçları
+
+Hacettepe Üniversitesi Tıp Fakültesi Hastanesi, Ankara Üniversitesi İbni Sina Hastanesi ve Gazi Üniversitesi Hastanesi; karmaşık cerrahiler, nöroşirürji müdahaleleri, onkolojik tedaviler ve organ nakli süreçlerinde Türkiye''nin dört bir yanından gelen hastalara hizmet vermektedir. Bu hastanelerden taburcu edilen hastaların önemli bir kısmı uzun süreli yatak istirahatine ihtiyaç duyar.
+
+Merkezi Sıhhiye, Beşevler ve Cebeci aksında bulunan bu hastanelerden evlerine dönecek aileler için **MCARIS Medikal**, hem hızlı kiralama hem de SGK mevzuatına uygun faturalı satın alma çözümleri sunmaktadır.
+
+---
+
+## SGK Hasta Yatağı Geri Ödemesi ve Fatura Standartları
+
+Üniversite hastanelerinin sağlık kurullarından alınan heyet raporlarında "motorlu hasta karyolası ve havalı yatak kullanması uygundur" ibaresi yer aldığında, SGK geri ödeme desteğinden faydalanmak mümkündür:
+
+1. **Sağlık Kurulu Raporu:** En az bir nöroloji, ortopedi, beyin cerrahisi veya fizik tedavi uzmanının imzasını içeren heyet raporu düzenlenmelidir.
+2. **E-Reçete:** İlgili uzman hekim tarafından medikal karyola ve şilte reçetesi yazılmalıdır.
+3. **ÜTS / UBB Barkod Kaydı:** MCARIS Medikal olarak teslim ettiğimiz tüm sıfır ürünler Sağlık Bakanlığı Ürün Takip Sistemi''ne (ÜTS) kayıtlıdır.
+4. **Fatura & İlaç-Medikal Provizyon:** SGK standartlarına uygun resmi karekodlu e-fatura kesilerek teslim edilir.
+
+---
+
+## Üniversite Hastaneleri Hastaları İçin Öne Çıkan Modeller
+
+- **Yoğun Bakım Sonrası İçin:** [4 Motorlu Yoğun Bakım Karyolası](/urunler) (Trendelenburg eğimi ile akciğer drenajı ve kan basıncı dengelemesi sağlar).
+- **Bakıcı Destekli Felç Tedavisi İçin:** [3 Motorlu Asansörlü Model](/urunler) (Yatak yüksekliği bel hizasına kaldırılarak pansuman ve alt değiştirme zahmetsizce yapılır).
+- **Geçici Nekahat Dönemleri İçin:** 2 Motorlu Ahşap / ABS Kiralık Karyolalar.
+
+Ankara içi acil sevkiyat taleplerinizde teknik ekibimiz **gün içinde kapınızda kurulum** gerçekleştirmektedir. Destek ve danışma için [Sıkça Sorulan Sorular](/sss) sayfamıza göz atabilirsiniz.
+', '/images/blog/ankara-universite-hastaneleri-eve-gecis-ve-sgk-karyola-rehberi.jpg', 'MCARIS Medikal Çankaya & Altındağ Ekibi', '5 dk okuma', 'Satın Alma & Kiralama', ARRAY['Hacettepe', 'Gazi Hastanesi', 'İbni Sina', 'Hasta Yatağı Ankara', 'SGK Raporu']::text[], TRUE, 47, '2026-09-07T12:22:47.963Z', '2026-09-16T11:05:03.461Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtr7o59z0005w0y8krdl9vhl', 'Saç Ekim, Estetik ve Dermatoloji Koltuğu Modelleri: Motorlu Koltuk Karşılaştırması', 'sac-ekim-ve-estetik-koltugu-modelleri-karsilastirmasi', 'Saç ekim merkezleri, medikal estetik ve güzellik klinikleri için 3 ve 4 motorlu koltuk modelleri; 360 derece hekim erişimi, başlık ergonomisi ve uzun seans konforu.', '
+## Estetik Operasyonlarda ve Saç Ekiminde Koltuk Seçiminin Önemi
+
+Saç ekimi operasyonları (FUE ve DHI teknikleri), ortalama 6 ila 9 saat süren ve hastanın hem yüzüstü greft alımı hem de sırtüstü kanal açma/ekim aşamalarında saatlerce sabit kaldığı uzun süreli işlemlerdir. Aynı şekilde medikal estetik uygulamaları (dolgu, botoks, mezoterapi, lazer ve iple yüz germe), hekimin hastanın yüzüne 360 derece açıyla ve doğru yükseklikte yaklaşabilmesini gerektirir.
+
+Doğru seçilmiş bir **estetik ve saç ekim koltuğu**, hekimin kronik bel-boyun ağrısı yaşamasını engellerken müşterinin operasyon boyunca rahat etmesini sağlar.
+
+---
+
+## 3 Motorlu mu Yoksa 4 Motorlu mu Tercih Edilmeli?
+
+### 3 Motorlu Estetik Koltukları:
+- **1. Motor:** Sırt açısını 0° yatay yataktan 85° dik koltuğa ayarlar.
+- **2. Motor:** Bacak kısmını yukarı-aşağı hareket ettirir.
+- **3. Motor:** Koltuğun toplam yüksekliğini 60 cm ile 95 cm arasında dikey asansörle yükseltip alçaltır.
+- *Kullanım:* Standart dermatoloji, cilt bakımı ve medikal estetik için idealdir.
+
+### 4 Motorlu Profesyonel Saç Ekim Koltukları:
+- 3 motora ek olarak **Trendelenburg / Tilt (Beşik) Hareketi** sunar.
+- Koltuğun oturma açısı komple geriye yatarak hastanın ense köküne greft alımı sırasında hekime kusursuz bir operasyon açısı yaratır.
+- Nefes alma delikli ve açısı ayarlanabilir özel cerrahi başlık aparatı ile yüzüstü yatışta boyun kasılmalarını tamamen sıfırlar.
+
+---
+
+## Malzeme Dayanımı ve Temizlik Protokolleri
+
+1. **Dikişsiz ve Sıvı Geçirmez Vinleks:** Saç ekiminde kullanılan serum fizyolojik, kan ve antiseptik solüsyonların süngere geçmesini önleyen kaynak dikişli antibakteriyel kaplama.
+2. **Kilitlenebilir Şasi:** Operasyon sırasında en ufak bir sarsıntı greft yerleşimini bozabileceğinden zemin sabitleme pabuçları veya merkezi frenli tekerlekler kullanılmalıdır.
+
+Klinik dekorasyonunuza uygun renk ve model seçenekleri için [Bakım Koltukları](/kategori/bakim-koltuklari) ve hekim çalışma konforu için [Tabure & Sandalyeler](/kategori/tabure-ve-sandalyeler) bölümlerimizi inceleyebilirsiniz.
+', '/images/blog/sac-ekim-ve-estetik-operasyon-koltuklari-rehberi.jpg', 'MCARIS Estetik & Klinik Proje Ekibi', '6 dk okuma', 'Teknik & Güvenlik', ARRAY['Saç Ekim Koltuğu', 'Estetik Koltuğu', 'Dermatoloji Koltuğu', '3 Motorlu Koltuk', '4 Motorlu Koltuk']::text[], TRUE, 37, '2026-09-07T12:22:48.503Z', '2026-09-16T11:05:03.575Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmu3zaq8y0000w0dgqyu5aia0', 'Hasta Yatağı ve Hasta Karyolası Modelleri: 2026 Evde Bakım ve Medikal Seçim Rehberi', 'hasta-yatagi-ve-hasta-karyolasi-modelleri-rehberi', 'Hasta yatağı ve hasta karyolası modelleri nelerdir? 2, 3 ve 4 motorlu ahşap ve ABS elektrikli karyola çeşitleri, hasta konforu, bakıcı ergonomisi ve doğru model seçim kriterleri.', 'Hasta yatağı ve hasta karyolası seçimi, uzun süreli yatak istirahatı gerektiren veya ameliyat sonrası nekahet dönemindeki hastaların iyileşme hızını ve yaşam kalitesini doğrudan belirleyen en kritik medikal yatırımdır. Günümüzde ev tipi hasta karyolası modelleri, hastane tipi medikal standartları ev ortamının sıcaklığıyla birleştirerek hem hastanın bağımsızlığını artırmakta hem de refakatçinin bakım yükünü en aza indirmektedir.
+
+Bu kapsamlı rehberde; hasta yatağı modelleri arasındaki yapısal ve fonksiyonel farkları, elektrikli motor sistemlerini, başlık ve korkuluk tasarımlarını ve hastanızın sağlık tablosuna en uygun modeli nasıl seçeceğinizi detaylandırıyoruz.
+
+---
+
+### Hasta Yatağı ile Standart Yatak Arasındaki Farklar Nelerdir?
+
+Standart ev tipi yataklar, vücut ağırlığını sabit bir düzlemde desteklemek üzere tasarlanmıştır. Ancak günde 12 saatten fazla yatarak vakit geçiren bir hasta için standart yataklar bası yaralarına (dekübitus ülseri), akciğerlerde sıvı toplanmasına ve kas-iskelet ağrılarına yol açar. 
+
+Medikal bir hasta karyolası ise şu hayati avantajları sağlar:
+1. **Bağımsız Pozisyonlama:** Sırt ve ayak açılarının elektrikli el kumandasıyla tek tuşla ayarlanması, hastanın yemek yeme, televizyon izleme ve nefes alma süreçlerini konforlu hale getirir.
+2. **Bası Yarası Önleme Entegrasyonu:** Lazer kesim medikal şilteler ve boru tipi havalı yatak sistemleriyle mükemmel uyum sağlayarak vücut temas basıncını dengeler.
+3. **Hasta Güvenliği:** Katlanabilir tabanca veya alüminyum korkuluklar, gece düşme ve yataktan kayma risklerini sıfıra indirir.
+4. **Çapraz Kilitli Tekerlek Sistemi:** Karyolanın oda içinde rahatça hareket ettirilmesini ve temizlik/transfer anında sarsıntısız sabitlenmesini sağlar.
+
+---
+
+### Hasta Karyolası Modelleri Nelerdir? (Tasarım ve Malzeme Çeşitleri)
+
+Karyola modelleri motor sayısının yanı sıra gövde ve korkuluk yapısına göre de gruplandırılır:
+
+* **ABS Panelli Hasta Karyolaları:** Başlık ve yan korkulukları antibakteriyel, darbelere dayanıklı ve kolay temizlenebilen ABS plastikten üretilir. Hastane hijyen standartlarını evine taşımak isteyen aileler için idealdir.
+* **Ahşap ve Mobilyalı Hasta Karyolaları:** Ev ortamına sıcaklık katan, hastane psikolojisini tamamen ortadan kaldıran şık ahşap kaplama modellerdir. Özellikle uzun dönemli palyatif bakım ve yaşlı bakımı için tercih edilir (Örn: Burmeier Dali serisi).
+* **Metal / Tabanca Korkuluklu Karyolalar:** Dayanıklı çelik profil şasi üzerine elektrostatik toz boya ile kaplanan, ekonomik ve uzun ömürlü medikal karyolalardır.
+
+---
+
+### Motor Sayılarına Göre Hasta Yatakları Karşılaştırma Tablosu
+
+| Karyola Modeli | Sırt Ayarı | Ayak Ayarı | Yükseklik (Asansör) | Trendelenburg | Tavsiye Edilen Hasta Grubu |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Tek Motorlu** | Var (Elektrikli) | Manuel / Yok | Yok | Yok | Kısa süreli dinlenme, hafif nekahat |
+| **2 Motorlu (Çift Motor)** | Var (Elektrikli) | Var (Elektrikli) | Yok | Yok | Standart evde bakım, oturabilen hastalar |
+| **3 Motorlu (Asansörlü)** | Var (Elektrikli) | Var (Elektrikli) | Var (Elektrikli) | Yok | Ağır hastalar, bakıcı bel sağlığı önceliği |
+| **4 Motorlu (Trendelenburg)**| Var (Elektrikli) | Var (Elektrikli) | Var (Elektrikli) | Var (Klinik Eğim) | Yoğun bakım, felç, kalp/akciğer hastaları |
+
+---
+
+### Doğru Hasta Karyolası Seçerken Dikkat Edilmesi Gereken 5 Kriter
+
+1. **Hastanın Hareket Kabiliyeti:** Hasta yataktan kendi başına kalkabiliyor mu, yoksa sürekli yatağa bağımlı mı? Sürekli yatan hastalar için asansörlü (3 veya 4 motorlu) modeller bakıcının eğilmeden pansuman ve hijyen yapabilmesi için zorunludur.
+2. **Hastanın Kilosu ve Boyu:** Şasinin taşıma kapasitesi (MCARIS modellerinde 150 kg - 250 kg güvenli çalışma yükü) ve güçlü lineer motorlar güvenli kullanım için kontrol edilmelidir.
+3. **Korkuluk Güvenliği:** Ani hareket eden veya demans/Alzheimer tanısı bulunan hastalar için baş-ayak aralığını tamamen kapatan çift parça ABS tabanca korkuluklar tercih edilmelidir.
+4. **Yedek Parça ve Servis Güvencesi:** Satın alınan veya kiralanan karyolada 2 yıl yerinde servis garantisi ve en az 10 yıl yedek parça temin garantisi aranmalıdır.
+5. **Aynı Gün Teslimat ve Montaj:** Hastaneden taburcu olma sürecinde hastanın mağdur olmaması için karyolanın aynı gün eve kurulması hayati önem taşır.
+
+---
+
+### MCARIS Medikal Güvencesi ile Hasta Yatağı Çözümleri
+
+MCARIS Medikal olarak, 2 motorlu ekonomik karyolalardan 4 motorlu Alman teknolojili ahşap bakım yataklarına kadar tüm modelleri doğrudan yerli üretim avantajıyla sunuyoruz. Ankara içi siparişlerinizde aynı gün ücretsiz teslimat, uzman personelimiz tarafından yerinde kurulum ve hijyen dezenfeksiyonu sağlamaktayız.
+
+* [Hasta Yatakları Kategorimizi İnceleyin](/kategori/hasta-yataklari)
+* [2 Motorlu ABS Hasta Karyolası Detayları](/urun/mcaris-2-motorlu-abs-hasta-karyolasi)
+* [Kiralama Seçenekleri ve Prosedürümüz](/kiralama-proseduru)', '/categories/hasta-yataklari.png', 'MCARIS Medikal Uzman Heyeti', '7 dk okuma', 'Hasta Karyolası Rehberi', ARRAY['hasta yatağı', 'hasta yatağı modelleri', 'hasta karyolası', 'hasta karyolası modelleri', 'medikal yatak', 'elektrikli hasta yatağı']::text[], TRUE, 0, '2026-09-16T10:49:25.857Z', '2026-09-16T10:49:25.857Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmu3zaqlh0001w0dgbozlz8cb', 'Tek Motorlu ve Manuel Hasta Yatakları: Kullanım Alanları, Avantajları ve Kimler İçin Uygundur?', 'tek-motorlu-ve-manuel-hasta-yatagi-modelleri', 'Tek motorlu ve manuel hasta yatakları hangi hastalarda tercih edilir? Sırt kaldırma fonksiyonu, ekonomik bakım çözümleri, elektrikli çift motorlu modellerle teknik farkları.', 'Evde hasta bakımına başlarken ailelerin en sık araştırdığı konulardan biri de bütçe ve fonksiyon dengesini doğru kurmaktır. Bu noktada "tek motorlu hasta yatağı" veya "manuel kollu hasta karyolası" modelleri, ekonomik bir çözüm arayan ve yalnızca temel sırt desteğine ihtiyaç duyan kullanıcıların karşısına çıkar.
+
+Peki tek motorlu bir hasta karyolası gerçekten yeterli midir? Kimler için uygundur ve çift motorlu sistemlerle arasındaki belirleyici farklar nelerdir?
+
+---
+
+### Tek Motorlu Hasta Karyolası Nedir ve Nasıl Çalışır?
+
+Tek motorlu hasta yatakları, gövdesinde tek bir elektrikli lineer aktüatör barındıran medikal karyolalardır. Bu motor genellikle hastanın **sırt kısmını 0 dereceden 75-80 dereceye kadar** dik konuma getirmek için kullanılır:
+
+* **Sırt Hareketi (Elektrikli):** El kumandası üzerindeki yukarı ve aşağı butonlarıyla hastanın oturur pozisyona gelmesini sağlar. Yemek yeme, ilaç alma ve solunum rahatlığı için temel harekettir.
+* **Ayak Hareketi:** Tek motorlu modellerde ayak kısmı ya sabittir ya da karyolanın altındaki mekanik kademelerle manuel olarak elle ayarlanır.
+
+---
+
+### Manuel (Kollu) Karyolalar ile Tek Motorlu Karyolalar Arasındaki Fark
+
+Eski nesil medikal karyolalarda sırt açısı, karyolanın ayak ucundaki çevirme kolları (krank mili) yardımıyla elle çevrilerek yükseltilirdi. Bu sistem:
+* Refakatçinin sürekli fiziksel güç harcamasını gerektirir,
+* Hasta tek başına yatarken pozisyonunu değiştiremez,
+* Gece saatlerinde hastanın acil oturması gerektiğinde bakıcıyı uyandırmak zorunda bırakır.
+
+Tek motorlu elektrikli karyola ise hastaya el kumandası vererek refakatçiye ihtiyaç duymadan sırtını dikleştirebilme bağımsızlığı tanır.
+
+---
+
+### Tek Motorlu Karyola Kimler İçin Uygundur?
+
+1. **Hafif Ortopedik Operasyon Geçirenler:** Ayak bileği veya kalça ameliyatı sonrası 2-4 haftalık kısa süreli istirahat sürecindeki bireyler.
+2. **Reflü ve Hafif KOAH Hastaları:** Gece yatarken sırtının 30-45 derece eğimli durması gereken, ancak bacaklarında dolaşım sorunu veya ödem bulunmayan hastalar.
+3. **Ekonomik Çözüm Arayanlar:** Minimum bütçeyle temel medikal konforu ve korkuluk güvenliğini sağlamak isteyen aileler.
+
+---
+
+### Tek Motorlu vs. Çift Motorlu (2 Motorlu) Karşılaştırması
+
+| Özellik | Tek Motorlu Karyola | Çift Motorlu (2 Motorlu) Karyola |
+| :--- | :--- | :--- |
+| **Sırt Hareketi** | Elektrikli (0° - 75°) | Elektrikli (0° - 75°) |
+| **Ayak Hareketi** | Sabit veya Manuel Kademeli | **Elektrikli Bağımsız (0° - 35°)** |
+| **Bacak Ödemi Önleme** | Yetersiz | **Mükemmel (Kalp Seviyesine Kaldırma)** |
+| **Fowler Pozisyonu** | Yapılamaz | **Tam Fowler ve Yarı Fowler Destekler** |
+| **Fiyat Farkı** | En Düşük Bütçe | Çok Az Farkla Çok Daha Yüksek Konfor |
+
+> ⚠️ **Klinik Uzman Tavsiyesi:** Hastanız günde 10 saatten fazla yatakta kalacaksa veya bacaklarında dolaşım bozukluğu/şişlik riski varsa, tek motorlu model yerine sırt ve ayak hareketini bağımsız kumandayla yöneten **2 motorlu çift hareketli bir karyola** tercih etmek uzun vadede hasta sağlığı açısından çok daha faydalıdır.
+
+---
+
+### MCARIS Medikal''de Güvenli Seçim
+
+MCARIS Medikal olarak hasta sağlığını ön planda tutuyor; tek motorlu modeller yerine fiyat-performans dengesi en üst düzeyde olan 2 motorlu güçlü piston motorlu karyolalarımızı ekonomik koşullarla sunuyoruz.
+
+* [2 Motorlu Hasta Karyolası Modellerimizi İnceleyin](/kategori/hasta-yataklari)
+* [Hasta Yatakları Karşılaştırma Sayfamız](/urunler?q=2+motorlu)', '/categories/silver-hasta-yataklari.png', 'MCARIS Medikal Uzman Heyeti', '5 dk okuma', 'Hasta Karyolası Rehberi', ARRAY['tek motorlu hasta yatağı', 'tek motorlu hasta karyolası', 'manuel hasta yatağı', 'tek hareketli karyola', 'ekonomik hasta yatağı']::text[], TRUE, 0, '2026-09-16T10:49:26.310Z', '2026-09-16T10:49:26.310Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmu3zaqr60002w0dg7dceidfr', 'Çift Motorlu (2 Motorlu) Hasta Yatağı ve Karyolası: Sırt ve Ayak Hareketleri ile Evde Konforlu Bakım', 'cift-motorlu-2-motorlu-hasta-yatagi-ve-karyolasi-rehberi', 'Çift motorlu (2 motorlu) elektrikli hasta yataklarının özellikleri, bağımsız sırt ve ayak kaldırma fonksiyonları, tabanca korkuluk ile alüminyum korkuluk seçenekleri ve fiyat avantajları.', 'Evde hasta bakımında Türkiye''de ve dünyada en çok tercih edilen, fiyat-performans oranı en yüksek medikal karyola sınıfı **çift motorlu (2 motorlu) hasta yataklarıdır**. İki bağımsız elektrikli motor sayesinde hastanın hem sırt bölgesi hem de bacak bölgesi el kumandasıyla kolayca kontrol edilir.
+
+Bu makalede çift motorlu hasta karyolasının çalışma mekanizmasını, hastaya sağladığı klinik faydaları, korkuluk tiplerini ve seçim yaparken dikkat etmeniz gereken teknik detayları inceleyebilirsiniz.
+
+---
+
+### Çift Motorlu (2 Motorlu) Karyolanın Temel Fonksiyonları
+
+2 motorlu hasta karyolalarında iki adet güçlü lineer aktüatör veya entegre dual motor sistemi bulunur. Bu motorlar şu iki temel hareketi yönetir:
+
+1. **Sırt Kısmı Kaldırma (0° - 75°):** Hastayı yatay pozisyondan tam oturur konuma getirir. Hastanın boğulma riski olmadan yemek yemesini, ilaçlarını yutmasını ve çevreyle göz teması kurarak sosyalleşmesini sağlar.
+2. **Ayak Kısmı Kaldırma (0° - 35°):** Bacakları diz bölgesinden kırarak yukarı doğru kaldırır. Bu hareket yerçekiminin etkisiyle kanın kalbe dönüşünü kolaylaştırır, bacaklardaki ödem ve şişlikleri engeller ve hastanın aşağı doğru kaymasını önler.
+
+---
+
+### Fowler Pozisyonunun Önemi Nedir?
+
+Sırt ve ayak kısımlarının aynı anda belli açılarla kaldırılmasıyla elde edilen pozisyona tıp literatüründe **Fowler Pozisyonu** denir. Çift motorlu karyolalar bu pozisyonu kusursuz şekilde sağlar:
+* Diyafram kası aşağı inerek akciğerlerin genişlemesini sağlar; nefes darlığı çeken hastaların oksijen satürasyonunu yükseltir.
+* Kuyruk sokumu (sakrum) üzerindeki yoğun vücut baskısını bacak ve kalça arasına yayarak bası yarası açılma riskini %60 oranında azaltır.
+* Karın kaslarındaki gerginliği azaltarak batın cerrahisi geçiren hastaların ağrısız dinlenmesine yardımcı olur.
+
+---
+
+### Tabanca Korkuluk mu, Alüminyum Korkuluk mu?
+
+Çift motorlu hasta karyolası satın alırken veya kiralarken karşınıza çıkan en yaygın iki korkuluk modeli şunlardır:
+
+* **Tabanca (ABS) Korkuluklu Modeller:** Yan korkuluklar sağ ve solda ikişer parça (toplam 4 parça) olarak bağımsız çalışır. Pistonlu mandal mekanizmasıyla tek hareketle aşağı iner. Karyolanın kenarından sıfır boşluk bırakarak tam güvenlik sağlar. Modern, şık ve hastane standartlarındadır.
+* **Alüminyum Korkuluklu Modeller:** Karyola boyunca tek parça uzanan, mandallı katlanabilir alüminyum panellerdir. Hafif, dayanıklı ve ekonomiktir. Yan transferlerde tek mandalla katlanarak hastanın tekerlekli sandalyeye geçişini kolaylaştırır.
+
+---
+
+### Çift Motorlu Hasta Karyolası Teknik Özellikleri (MCARIS Standartları)
+
+* **Motor Gücü:** 2 x 4500N / 6000N güçlü lineer motorlar (Sessiz ve sarsıntısız çalışma)
+* **Taşıma Kapasitesi:** 150 kg - 180 kg güvenli çalışma yükü
+* **Şasi Malzemesi:** Korozyona dayanıklı elektrostatik fırın boyalı çelik profil gövde
+* **Tekerlekler:** 360 derece dönebilen, bağımsız çapraz kilitli 100 mm medikal tekerler
+* **Serum Askısı:** Karyolanın dört köşesinde serum askısı takma yuvaları ve kromajlı serum askısı
+
+---
+
+### Kimler İçin 2 Motorlu Karyola Yeterlidir?
+
+* Yatağa bağımlı ancak bakıcısı tarafından ayağa kaldırılabilen hastalar,
+* Kalça/diz protezi ameliyatı geçiren ve 1-3 ay istirahat edecek hastalar,
+* Yaşlılığa bağlı yatakta uzun süre geçiren, oturma ve dinlenme desteğine ihtiyaç duyan bireyler.
+
+Eğer hastanın alt bakımı, pansumanı veya yatak banyosu tamamen yatak üzerinde yapılacaksa ve bakıcının eğilip belini zorlamaması hedefleniyorsa, yatağın komple yukarı yükseldiği **3 motorlu asansörlü modellere** geçilmesi tavsiye edilir.
+
+* [MCARIS 2 Motorlu ABS Hasta Karyolası Satın Al](/urun/mcaris-2-motorlu-abs-hasta-karyolasi)
+* [2 Motorlu Karyola Modellerimizi Filtreleyin](/urunler?q=2+motorlu)', '/categories/bakim-yataklari.png', 'MCARIS Medikal Uzman Heyeti', '6 dk okuma', 'Hasta Karyolası Rehberi', ARRAY['çift motorlu hasta yatağı', '2 motorlu hasta yatağı', 'çift motorlu hasta karyolası', '2 motorlu hasta karyolası', 'elektrikli karyola', 'ev tipi hasta yatağı']::text[], TRUE, 0, '2026-09-16T10:49:26.514Z', '2026-09-16T10:49:26.514Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtr7o4jk0000w0y8k6d9xqrn', 'Bilkent Şehir Hastanesi Hasta Yatağı Kiralama ve Acil Teslimat Rehberi', 'bilkent-sehir-hastanesi-hasta-yatagi-kiralama', 'Bilkent Şehir Hastanesi taburculuk sürecinde 2, 3 ve 4 motorlu hasta karyolası kiralama, Çankaya/Bilkent bölgesine gün içinde adrese anahtar teslim montaj ve SGK süreçleri.', '
+## Bilkent Şehir Hastanesi Taburculuk Sürecinde Acil Hasta Karyolası İhtiyacı
+
+Ankara Bilkent Şehir Hastanesi, Türkiye''nin ve Avrupa''nın en büyük sağlık komplekslerinden biri olarak her gün yüzlerce cerrahi operasyon, ortopedik ameliyat, nörolojik tedavi ve onkoloji yatışına ev sahipliği yapmaktadır. Tedavi sürecinin ardından hastaneden eve taburculuk kararı verildiğinde, hasta yakınlarının karşılaştığı en acil ve kritik ihtiyaç **ev tipi motorlu hasta karyolası** teminidir.
+
+Standart bir ev yatağı; ameliyat dikişleri bulunan, hareket kısıtlılığı yaşayan veya felç/inme geçiren bir hastanın bakımında hem hasta hem de refakatçi için ciddi fiziksel zorluklar yaratır. **MCARIS Medikal**, Bilkent Şehir Hastanesi kampüsüne ve Çankaya, Beytepe, Ümitköy, Çayyolu ve İncek bölgelerine **gün içinde adrese teslimat ve yerinde montaj** güvencesi sunmaktadır.
+
+---
+
+## Bilkent Bölgesinde Hangi Karyola Modeli Tercih Edilmeli?
+
+Hastanızın taburcu edildiği kliniğe (Ortopedi, Nöroloji, Genel Cerrahi veya Göğüs Hastalıkları) göre gereksinim duyulan fonksiyonlar değişiklik gösterir:
+
+| Tedavi / Klinik Alanı | Tavsiye Edilen Model | Kritik Fonksiyon | İdeal Kullanım Şekli |
+| :--- | :--- | :--- | :--- |
+| **Ortopedi & Kalça Kırığı** | 2 Motorlu Kumandalı | Sırt ve diz bükme açısı | 1-3 Aylık Kiralama |
+| **Nöroloji & Felç Bakımı** | 3 Motorlu Asansörlü | Dikey yükseklik ayarı | Kiralama / Satın Alma |
+| **Onkoloji & Yoğun Bakım Sonrası** | 4 Motorlu Trendelenburg | Dolaşım ve solunum drenajı | 2 Yıl Garantili Satış |
+
+---
+
+## 4 Adımda Bilkent Şehir Hastanesi Acil Kiralama Protokolü
+
+1. **Model Belirleme:** Danışma hattımızı (0536 820 02 69) arayarak hekiminizin önerdiği yatış pozisyonunu (yarı oturur Fowler açısı, bacak elevasyonu veya Trendelenburg) uzmanımıza iletin.
+2. **Adres ve Randevu:** Bilkent kampüsü çevresindeki veya Ankara''nın 25 ilçesindeki ev adresinizi paylaşın.
+3. **Gün İçinde Oda İçi Montaj:** Kendi teknik ekibimiz karyolayı katınıza çıkarır, hastanızın odasına kurar ve elektrik bağlantılarını test eder.
+4. **Kullanım Eğitimi:** Hasta yakınlarına el kumandası kullanımı, yan korkuluk kilitleri ve elektrik kesintisinde manuel indirme pimi uygulamalı gösterilir.
+
+---
+
+## Kiralama Sözleşmesinde Şeffaflık ve Hijyen Güvencesi
+
+Kiralık ürünlerimizde **depozito, senet veya gizli nakliye ücreti talep edilmez**. Her karyola, önceki kullanımdan sonra hastane tipi dezenfektanlarla sterilize edilir; 4 parçalı CNC kesim medikal şiltesi jelatinli sıfır ambalajında teslim edilir.
+
+Detaylı şartlar ve sözleşme detayları için [Kiralama Prosedürü](/kiralama-proseduru) sayfamızı inceleyebilir, tüm Ankara hizmet ağımız için [Çankaya Hasta Yatağı](/ankara-hasta-yatagi/cankaya) sayfamızdan bilgi alabilirsiniz.
+', '/images/blog/bilkent-sehir-hastanesi-hasta-yatagi-kiralama.jpg', 'MCARIS Medikal Ankara Lojistik Masası', '5 dk okuma', 'Satın Alma & Kiralama', ARRAY['Bilkent Şehir Hastanesi', 'Ankara Kiralama', 'Hasta Yatağı Kiralama', 'Çankaya', 'Acil Kurulum']::text[], TRUE, 37, '2026-09-07T12:22:47.553Z', '2026-09-16T11:05:03.386Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmu3zaqxz0003w0dg28cauvgn', 'Üç Motorlu (3 Motorlu) Asansörlü Hasta Yatağı ve Karyolası: Bakıcı Bel Sağlığı ve Kolay Transfer', 'uc-motorlu-3-motorlu-asansorlu-hasta-yatagi-ve-karyolasi-rehberi', 'Üç motorlu (3 motorlu) hasta karyolasının en büyük avantajı nedir? Elektrikli asansör sistemi ile yatak yükseklik ayarı, refakatçi ergonomisi ve güvenli hasta iniş-binişi.', 'Evde hasta bakımında en çok göz ardı edilen ancak uzun vadede en büyük soruna dönüşen unsur **bakıcının ve refakatçinin fiziksel tükenmişliğidir**. Sürekli yatan bir hastanın bezinin değiştirilmesi, pansumanının yapılması, kıyafetlerinin giydirilmesi ve yatak içinde çevrilmesi sırasında bakıcılar sürekli belden öne doğru eğilmek zorunda kalır. Bu durum bakıcılarda kalıcı bel fıtığı ve omurga rahatsızlıklarına yol açar.
+
+İşte **üç motorlu (3 motorlu) asansörlü hasta yatakları**, tam olarak bu sorunu ortadan kaldırmak ve hem hastayı hem de refakatçiyi korumak için tasarlanmıştır.
+
+---
+
+### Üçüncü Motorun Görevi Nedir? (Elektrikli Asansör Fonksiyonu)
+
+Standart 2 motorlu karyolalar sırt ve ayak hareketlerini yaparken, zeminden yükseklikleri 45-50 cm civarında sabittir. 3 motorlu karyolaya eklenen üçüncü motor ise **bütün yatak gövdesini dikey düzlemde yukarı ve aşağı** hareket ettirir:
+
+1. **Yatak Yükseltme (Asansör Yukarı):** Yatak yerden yaklaşık 80-90 cm yüksekliğe (çalışma tezgahı seviyesine) çıkar. Bakıcı hiç eğilmeden, dik bir omurga pozisyonunda hastanın alt bakımını, yara pansumanını veya masajını yapabilir.
+2. **Yatak Alçaltma (Asansör Aşağı):** Yatak yerden 40 cm seviyesine kadar iner. Bu pozisyon, hastanın ayaklarının yere tam basmasını sağlayarak yataktan tekerlekli sandalyeye veya koltuğa güvenle transfer edilmesini mümkün kılar.
+
+---
+
+### 3 Motorlu Asansörlü Karyolanın 4 Büyük Klinik Avantajı
+
+* **1. Düşme Riskini Sıfıra Yaklaştırma:** Yatak en alt seviyeye indirildiğinde, hastanın yataktan kayması veya düşmesi durumunda zeminle mesafe minimum olduğu için travma ve kırık riski engellenir.
+* **2. Kolay Transfer ve Ayağa Kaldırma:** Felçli veya güçsüz hastaların ayağa kalkabilmesi için yatak hafifçe yükseltilerek hastanın kalça açısı diz seviyesinin üzerine çıkarılır. Böylece hasta güç harcamadan ayağa kalkabilir.
+* **3. Bakıcı Bel Fıtığı ve Sakatlıklarını Önleme:** Bakıcılar gün boyu onlarca kez 60-90 kg ağırlığındaki bir hastayı çevirmek ve kaldırmak zorundadır. Yatak yüksekliği ayarlandığında bakıcı vücut ağırlığını dengeli kullanarak sakatlanmalardan korunur.
+* **4. Hastane Standartlarında Evde Yoğun Bakım:** Serum takılması, medikal cihaz bağlantıları ve aspirasyon işlemleri hasta uygun yüksekliğe getirilerek hatasız uygulanır.
+
+---
+
+### 2 Motorlu ile 3 Motorlu Karyola Karşılaştırması
+
+| Özellik | 2 Motorlu Hasta Karyolası | 3 Motorlu Asansörlü Karyola |
+| :--- | :--- | :--- |
+| **Sırt Kaldırma** | Var (Elektrikli) | Var (Elektrikli) |
+| **Ayak Kaldırma** | Var (Elektrikli) | Var (Elektrikli) |
+| **Yatak Yükseklik Ayarı** | ❌ Sabit Yükseklik | **✅ Var (40 cm - 85 cm Asansör)** |
+| **Bakıcı Bel Ergonomisi** | Orta (Sürekli eğilmek gerekir) | **Mükemmel (Eğilmeden bakım)** |
+| **Tekerlekli Sandalye Transferi**| Standart Zorluk | **Çok Kolay (Yükseklik eşitlenir)** |
+| **Kullanım Süresi** | Kısa ve Orta Vadeli | **Uzun Vadeli ve Sürekli Yatan Hasta** |
+
+---
+
+### 3 Motorlu Karyola Alırken Nelere Dikkat Edilmelidir?
+
+* **Asansör Kolon Yapısı:** Dikey asansör hareketini sağlayan makas mekanizmasının boşluksuz ve sağlam çelik lamalardan üretilmiş olması gerekir. Sarsıntısız inip kalkması hastada korku hissi oluşmasını önler.
+* **Lineer Aktüatör Kalitesi:** Yatak gövdesini hasta ile birlikte (yaklaşık 180-220 kg) kaldıracağı için en az 6000N - 8000N itme gücüne sahip motorlar kullanılmalıdır.
+* **Tekerlek Fren Sistemi:** Yatak yukarı kalktığında denge merkezinin değişmemesi için dört tekerin de güçlü bağımsız fren mekanizmasına sahip olması zorunludur.
+
+---
+
+### MCARIS Gold ve Platinum 3 Motorlu Karyola Çözümleri
+
+MCARIS Medikal olarak ürettiğimiz 3 motorlu asansörlü hasta karyolaları; antibakteriyel ABS başlıkları, 4 parça tabanca korkulukları ve sessiz çalışan güçlü motor bloklarıyla uzun süreli evde bakımın en güvenilir yardımcısıdır.
+
+* [3 Motorlu Asansörlü Hasta Karyolası Modellerimiz](/urunler?q=3+motorlu)
+* [Ankara İçi Kiralama ve Satın Alma Seçenekleri](/kategori/hasta-yataklari)', '/categories/gold-hasta-yataklari.png', 'MCARIS Medikal Uzman Heyeti', '7 dk okuma', 'Hasta Karyolası Rehberi', ARRAY['üç motorlu hasta yatağı', '3 motorlu hasta yatağı', 'üç motorlu hasta karyolası', '3 motorlu asansörlü karyola', 'asansörlü hasta yatağı', 'bakıcı ergonomisi']::text[], TRUE, 0, '2026-09-16T10:49:26.759Z', '2026-09-16T10:49:26.759Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtr7o5ei0006w0y85wphfqrx', 'Klinik ve Muayene Masası Seçim Rehberi: Manuel vs. Elektrikli Motorlu Masalar', 'klinik-muayene-masasi-secim-rehberi-manuel-vs-motorlu', 'Aile hekimliği merkezleri, özel poliklinikler ve hastaneler için muayene masası seçim rehberi; taşıma kapasitesi, kağıt rulo aparatı ve motorlu asansör avantajları.', '
+## Sağlık Kuruluşlarının Temel Taşı: Muayene Masaları
+
+Bir muayene odasına adım atan her hastanın ilk temas ettiği medikal mobilya **muayene masasıdır**. Fiziksel muayene, enjeksiyon, pansuman, EKG çekimi ve küçük cerrahi müdahaleler bu masa üzerinde gerçekleştirilir. Dolayısıyla muayene masasının sağlamlığı, hijyenik yapısı ve hastanın kolayca çıkabileceği yüksekliği kliniğin genel hizmet kalitesini doğrudan yansıtır.
+
+---
+
+## Manuel vs. Elektrikli Motorlu Muayene Masası Karşılaştırması
+
+| Özellik | Manuel (Kademeli) Muayene Masası | Elektrikli Motorlu Muayene Masası |
+| :--- | :--- | :--- |
+| **Yükseklik Ayarı** | Sabit yükseklik (genelde 70-75 cm) | 50 cm - 90 cm arasında motorlu asansör |
+| **Yaşlı ve Engelli Erişimi** | Basamak (tabure) kullanmak zorundadır | Masa 50 cm''e iner, tekerlekli sandalyeden kolay transfer |
+| **Sırt Ayarı** | Mekanik dişli/makas mandallı | El veya ayak kumandasıyla kesintisiz açı |
+| **Taşıma Kapasitesi** | 150 - 180 kg statik yük | 250 - 300 kg güçlü aktüatör desteği |
+| **Maliyet** | Düşük bütçeli, ekonomik | Uzun vadeli, prestijli ve ergonomik |
+
+---
+
+## Satın Alırken Dikkat Edilmesi Gereken 4 Hayati Detay
+
+1. **Kağıt Rulo Aparatı:** Her hasta arasında sedye örtüsünün hızlıca yenilenmesi çapraz enfeksiyonu önler. Masanın ayakucunda veya başucunda entegre kağıt rulo askısı bulunmalıdır.
+2. **Elektrostatik Toz Boya:** Çelik gövde nemli ortamlara ve hastane dezenfektanlarına karşı fırınlanmış elektrostatik toz boya ile kaplanmalı, paslanma riski sıfırlanmalıdır.
+3. **Sünger Kalınlığı ve Çökme Direnci:** En az 5-7 cm kalınlığında 28-32 DNS yüksek yoğunluklu sünger kullanılmalıdır.
+4. **Başucu Havluluk ve Nefes Boşluğu:** Masaj veya sırt muayenesinde hastanın rahat nefes alabilmesi için çıkarılabilir tıkaca sahip yüz oyuğu tercih edilmelidir.
+
+Tüm klinik modellerimiz için [Muayene ve Bakım Masaları](/kategori/muayene-ve-bakim-masalari) sayfamızı inceleyebilirsiniz.
+', '/images/blog/iki-motorlu-klinik-muayene-masasi-avantajlari.jpg', 'MCARIS Klinik Mobilya Koordinatörlüğü', '5 dk okuma', 'Teknik & Güvenlik', ARRAY['Muayene Masası', 'Elektrikli Muayene Masası', 'Klinik Masası', 'Poliklinik Donanım', 'Aile Hekimliği']::text[], TRUE, 39, '2026-09-07T12:22:48.666Z', '2026-09-16T11:05:03.613Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtr7o665000cw0y85uxp0zhq', 'ALS ve Motor Nöron Hastalarında Hasta Karyolası ve Solunum Desteği Pozisyonlaması', 'als-hastalarinda-hasta-karyolasi-ve-solunum-pozisyonlama', 'ALS hastalarında solunum yetmezliğini ve aspirasyon pnömonisini önlemek için 4 motorlu Trendelenburg hasta karyolasının hayati rolü ve pozisyonlama rehberi.', '
+## ALS Hastalığında Yatak Seçiminin Hayati Önemi
+
+Amiyotrofik Lateral Skleroz (ALS) ve motor nöron hastalıkları, kas kontrolünü sağlayan sinir hücrelerinin hasarıyla ilerleyen nörodejeneratif tablolardır. Hastalığın ilerleyen evrelerinde kol ve bacak kaslarının yanı sıra boyun, yutkunma ve diyafram solunum kasları da zayıflar. Yatağa bağımlı hale gelen bir ALS hastası için sıradan bir yatak ölümcül riskler barındırır.
+
+Doğru pozisyon verilemeyen bir ALS hastasında tükürük veya mide içeriğinin akciğerlere kaçması (**aspirasyon pnömonisi**) en sık karşılaşılan acil komplikasyondur.
+
+---
+
+## ALS Bakımında 4 Motorlu Karyolanın 4 Kritik Faydası
+
+### 1. Anti-Trendelenburg (Ters Eğim) ve Yarı Oturur (Fowler) Açısı
+Yatağın sırtının 60-70 derece kaldırılması ve şasinin ayakucuna doğru eğimli hale getirilmesi (Anti-Trendelenburg), yer çekimi etkisiyle karın içi organların diyaframa baskı yapmasını engeller. Bu durum akciğer kapasitesini %30''a kadar artırarak BiPAP veya ventilatör cihazı kullanan hastanın rahat nefes almasını sağlar.
+
+### 2. Yutkunma ve Aspirasyon Koruması
+Beslenme ve ilaç saatlerinde hastanın başı dik konuma getirilmeli, yutkunma güçlüğü yaşayan hastaya baş kontrolü sağlanmalıdır.
+
+### 3. Hassas Kumanda ve Göz / Parmak Teması
+Kas gücü azalan ALS hastaları için sert basılan kumandalar imkansızdır. MCARIS bünyesindeki Alman Burmeier Dali modelleri, yumuşak tuş takımı veya refakatçi kilitleme ünitesiyle hastayı yormadan güvenli kontrol sunar.
+
+### 4. Dikey Asansör ile Trakeostomi ve Aspirasyon Kolaylığı
+Boğazında trakeostomi kanülü bulunan hastaların günde onlarca kez aspire edilmesi gerekir. 3 ve 4 motorlu yatakların asansör özelliği yatağı bakıcının bel hizasına çıkararak aspirasyon işleminin steril ve hatasız yapılmasını sağlar.
+
+---
+
+## Ventilasyonlu Havalı Yatak Şarttır
+
+Kas erimesine bağlı olarak kemik çıkıntıları belirginleşen ALS hastalarında bası yarası riski çok yüksektir. Mutlaka 12 cm boru tipi havalı yatak kullanılmalıdır.
+
+Klinik standartlardaki modellerimizi [Hasta Yatakları](/kategori/hasta-yataklari) sayfamızdan inceleyebilirsiniz.
+', '/images/blog/als-solunum-yetmezligi-motorlu-karyola-fowler-pozisyonu.jpg', 'MCARIS Medikal Klinik Danışma Kurulu', '6 dk okuma', 'Hasta Bakımı', ARRAY['ALS Hasta Bakımı', 'Motor Nöron', 'Solunum Pozisyonlama', 'Trendelenburg Karyola', '4 Motorlu Yatak']::text[], TRUE, 116, '2026-09-07T12:22:49.661Z', '2026-09-16T11:05:03.840Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmu3zar5i0004w0dgji49a1dv', 'Dört Motorlu (4 Motorlu) Trendelenburg Hasta Yatağı ve Karyolası: Yoğun Bakım ve Tam Donanımlı Evde Bakım', 'dort-motorlu-4-motorlu-trendelenburg-hasta-yatagi-ve-karyolasi-rehberi', 'Dört motorlu (4 motorlu) tam fonksiyonlu hasta yatakları: Trendelenburg ve Anti-Trendelenburg klinik pozisyonları, solunum desteği, Alman Burmeier Dali ve ahşap mobilyalı çözümler.', 'Medikal hasta karyolası teknolojisinin ulaştığı en üst seviye **dört motorlu (4 motorlu) Trendelenburg fonksiyonlu hasta yataklarıdır**. Yoğun bakım servislerinde kullanılan ileri düzey medikal standartları doğrudan evinize taşıyan bu sistemler; felç, ağır travma, ALS, ileri evre Alzheimer ve solunum yetmezliği çeken hastaların en üst düzeyde konfor ve klinik emniyetle bakılmasını sağlar.
+
+Peki dördüncü motor ne işe yarar? Trendelenburg ve Anti-Trendelenburg pozisyonları neden hayati önem taşır?
+
+---
+
+### 4 Motorlu Hasta Karyolasının 4 Temel Hareketi
+
+4 motorlu bir karyola, elektrikli el kumandasındaki butonlar vasıtasıyla şu 4 eksende bağımsız hareket kabiliyetine sahiptir:
+
+1. **Sırt Bölgesi Hareketi:** 0 dereceden 75 dereceye kadar elektrikli dikleşme.
+2. **Ayak Bölgesi Hareketi:** 0 dereceden 35 dereceye kadar bacakları kırma ve yükseltme.
+3. **Dikey Asansör Hareketi:** Yatağın tamamını yerden 40 cm ile 85 cm arasında yükseltip alçaltma.
+4. **Trendelenburg & Anti-Trendelenburg Eğimi:** Yatağın gövdesini baş aşağı veya ayak aşağı doğru yaklaşık 12-16 derecelik klinik açıyla eğme.
+
+---
+
+### Trendelenburg ve Anti-Trendelenburg Pozisyonu Nedir?
+
+* **Trendelenburg Pozisyonu (Baş Aşağı - Ayak Yukarı):** Hastanın baş kısmı aşağıda, bacakları ve gövdesi yukarıda olacak şekilde yatağın eğim almasıdır.
+  * *Klinik Faydası:* Ani tansiyon düşmelerinde (hipotansiyon) kanın hayati organlara ve beyne hızla geri dönmesini sağlar. Dolaşım şoku durumlarında hayat kurtarıcı bir acil durum pozisyonudur.
+* **Anti-Trendelenburg Pozisyonu (Baş Yukarı - Ayak Aşağı / Kardiyak Koltuk):** Hastanın baş kısmı yukarıda, ayakları aşağıda olacak şekilde yatağın eğilmesidir.
+  * *Klinik Faydası:* Sırt kısmı da kaldırıldığında hasta yatak içerisinde **tam bir koltuk gibi oturur**. Mide içeriğinin yemek borusuna kaçmasını (aspirasyon ve reflü) önler, diyaframı rahatlatarak akciğer solunum kapasitesini maksimuma çıkarır. Özellikle yemek yedikten sonra hastayı yatakta dik oturtmak için altın standarttır.
+
+---
+
+### Ahşap Alman Teknolojisi: Burmeier Dali 4 Motorlu Karyola
+
+4 motorlu hasta karyolaları arasında dünya çapında referans kabul edilen model **Burmeier Dali (Almanya)** modelidir. MCARIS Medikal güvencesiyle sunduğumuz bu modelin öne çıkan üstünlükleri:
+
+* **24 Volt Güvenli Güç Sistemi:** Yatağın motorlarına 220V şebeke elektriği yerine güvenli 24V doğru akım gider. Bu sayede kablo ezilmelerinde bile elektrik çarpma riski sıfırdır.
+* **Kablosuz El Kumandası:** Hastanın kablo karmaşası yaşamadan tüm pozisyonları tek elle kolayca yönetebilmesini sağlar. Bakıcı kilitleme fonksiyonu ile istendiğinde kumanda hareketleri sınırlandırılabilir.
+* **Mobilyalı Ahşap Estetik:** Metal hastane görüntüsü yerine birinci sınıf kayın ahşap kaplamasıyla ev dekorasyonuna mükemmel uyum sağlar; hastada psikolojik ferahlama oluşturur.
+* **Entegre Hasta Tutunma Barı (Deveboynu):** Hastanın kendi kendine yataktan destek alarak doğrulmasını sağlayan orijinal üçgen tutunma aparatı standarttır.
+
+---
+
+### 2, 3 ve 4 Motorlu Karyolalar Arasındaki Karşılaştırma Özeti
+
+| Kriter | 2 Motorlu Karyola | 3 Motorlu Asansörlü | 4 Motorlu Trendelenburg |
+| :--- | :--- | :--- | :--- |
+| **Sırt ve Ayak Kaldırma** | ✅ Var | ✅ Var | ✅ Var |
+| **Yükseklik Asansörü** | ❌ Yok | ✅ Var | ✅ Var |
+| **Trendelenburg Pozisyonu** | ❌ Yok | ❌ Yok | **✅ Var (Klinik Eğim)** |
+| **Kardiyak Koltuk Pozisyonu**| ❌ Yok | ❌ Yok | **✅ Var (Tam Oturma)** |
+| **Elektrik Güvenliği** | Standart 220V/24V | Standart 220V/24V | **Özel 24V Düşük Voltaj** |
+| **Tavsiye Edilen Durum** | Standart Evde Bakım | Sürekli Yatan & Ağır Hasta | **Yoğun Bakım, Felç, Kalp-Akciğer Hastaları** |
+
+---
+
+### 4 Motorlu Karyola Satın Alırken veya Kiralarken Nelere Dikkat Edilmelidir?
+
+1. **Anti-Trendelenburg Derecesi:** Tıbbi açıdan en az 12-16 derece eğim sağlayabilmelidir.
+2. **Motor Kalitesi:** Dewert veya Linak gibi uluslararası medikal onaylı motor blokları tercih edilmelidir.
+3. **Akülü Yedekleme (Opsiyonel):** Elektrik kesintilerinde yatağın düz konuma getirilebilmesi için acil durum pil/akü desteği bulunmalıdır.
+4. **Ankara İçi Uzman Montaj:** 4 motorlu karmaşık sistemlerin uzman biyomedikal teknisyenler tarafından kurulması, teraziye alınması ve aileye kumanda eğitiminin verilmesi şarttır.
+
+---
+
+### MCARIS Medikal 4 Motorlu Karyola Ayrıcalığı
+
+MCARIS Medikal olarak, 4 motorlu ahşap ve ABS panelli hasta karyolalarını stoktan aynı gün teslimat avantajıyla sunuyoruz. 2 yıl yerinde servis garantisi, dezenfekte edilmiş ambalajlı teslimat ve 7/24 teknik destek hattımızla hastanızın yanındayız.
+
+* [Burmeier Dali 4 Motorlu Karyolayı İnceleyin](/urun/burmeier-dali-4-motorlu-alman-hasta-karyolasi)
+* [4 Motorlu Karyola Modellerimiz](/urunler?q=4+motorlu)
+* [Hasta Karyolası Kiralama ve Fiyat Bilgisi](/kiralama-proseduru)', '/categories/platinum-hasta-yataklari.png', 'MCARIS Medikal Uzman Heyeti', '8 dk okuma', 'Hasta Karyolası Rehberi', ARRAY['dört motorlu hasta yatağı', '4 motorlu hasta yatağı', 'dört motorlu hasta karyolası', '4 motorlu trendelenburg karyola', 'alman hasta yatağı', 'burmeier dali', 'yoğun bakım hasta yatağı']::text[], TRUE, 0, '2026-09-16T10:49:27.030Z', '2026-09-16T10:49:27.030Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtr7o6et000ew0y8bt7i5wlm', 'Evde Palyatif Bakım Sürecinde Medikal Karyola ve Refakatçi Ergonomisi Kılavuzu', 'evde-palyatif-bakim-surecinde-medikal-karyola-ve-refakatci-ergonomisi', 'Terminal dönem ve kronik hastaların evde palyatif bakımında konfor, ağrı yönetimi ve refakatçinin bel/sırt sağlığını koruyan asansörlü motorlu yatak çözümleri.', '
+## Palyatif Bakımda Amaç: Yaşam Kalitesi ve Onurlu Konfor
+
+Palyatif bakım; kanser, ileri evre organ yetmezlikleri, son dönem demans gibi yaşamı tehdit eden kronik hastalıklarda ağrının, nefes darlığının ve fiziksel sıkıntıların hafifletilmesini hedefleyen şefkatli bir bakım modelidir. Bu süreçte hastanın yattığı alan sadece bir uyku yeri değil; tüm gününü geçirdiği yaşam alanıdır.
+
+Aynı zamanda palyatif süreçte hastaya bakan aile bireyleri veya refakatçiler de tükenmişlik ve ciddi fiziksel rahatsızlıklarla karşı karşıya kalır.
+
+---
+
+## Refakatçi Ergonomisi Neden Göz Ardı Edilmemelidir?
+
+Yatalak bir hastanın altını temizlemek, çarşafını değiştirmek, pozisyon vermek ve yemek yedirmek için günde ortalama 20-30 kez yatağa eğilmek gerekir. Sabit yükseklikteki standart bir yatakta bu eğilme hareketleri, refakatçilerde **bel fıtığı, boyun düzleşmesi ve kronik kas spazmlarına** yol açar. Bir süre sonra bakıcı da hastalanarak hastaya bakamaz hale gelir.
+
+### 3 Motorlu Asansör Sistemi Bu Sorunu Nasıl Çözer?
+- Bakım yapılacağı zaman yatak tek tuşla bel hizasına (85-90 cm) yükseltilir. Bakıcı omurgasını dik tutarak tüm pansuman ve temizliği yorulmadan tamamlar.
+- Bakım bittiğinde yatak hastanın rahatça inebileceği güvenli seviyeye indirilir.
+
+---
+
+## Palyatif Bakım Odası Kontrol Listesi
+
+| Donanım | Gereklilik Nedeni | Tavsiye |
+| :--- | :--- | :--- |
+| **3 veya 4 Motorlu Karyola** | Refakatçi ergonomisi ve solunum rahatlığı | Asansörlü & Ahşap Modeller |
+| **Boru Tipi Havalı Yatak** | Ağrılı bası yaralarını sıfırlamak | A+B+C Ventilasyonlu Sistem |
+| **Amortisörlü Yemek Masası** | Yatak içi dökülmesiz beslenme | U-Ayak Tekerlekli Masa |
+| **Serum Askısı** | Serum, beslenme maması ve IV ilaçlar | Karyolaya monte 4 kancalı askı |
+
+Ankara içi kiralama ve satın alma süreçlerinizde hastanızın durumuna en uygun kombinasyonu belirlemek için uzman danışmanlarımızla [İletişim](/iletisim) kurabilirsiniz.
+', '/images/blog/palyatif-bakim-felcli-hasta-odasi-refakatci-ergonomisi.jpg', 'MCARIS Evde Bakım & Palyatif Destek Kurulu', '6 dk okuma', 'Hasta Bakımı', ARRAY['Palyatif Bakım', 'Refakatçi Ergonomisi', 'Asansörlü Karyola', '3 Motorlu Yatak', 'Evde Bakım']::text[], TRUE, 124, '2026-09-07T12:22:49.974Z', '2026-09-16T11:05:03.916Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtnm2uty0002w0woz8c5uypc', 'Mobilyalı ve Ahşap Hasta Karyolaları: Ev Sıcaklığında Klinik Konfor ve Estetik Bakım', 'mobilyali-hasta-yatagi-ahsap-hasta-yataklari', 'Hastane psikolojisini evden uzaklaştıran mobilyalı ve ahşap kaplama hasta karyolası modelleri. Gizlenmiş motor sistemleri ve ev dekorasyonuna uyum.', '
+## Hastane Havasından Uzaklaşmanın İyileşmeye Etkisi
+
+Hastaların taburcu olduktan sonra evde geçirdikleri iyileşme sürecinde en büyük psikolojik engellerden biri "hastane ortamının eve taşınması" hissiyatıdır. Beyaz metal aksamlı, soğuk plastik korkuluklu hastane yatakları, hastaya sürekli hasta olduğunu hatırlatır ve moral kaybına neden olur. Özellikle demans, Alzheimer ve uzun süreli felç hastalarında bu durum depresyonu tetikleyebilir.
+
+**Mobilyalı ve ahşap hasta karyolaları**, yatağın tüm medikal mekanizmalarını (motorlar, asansör makasları, kablolar) ahşap gövdenin içerisine gizleyerek modern bir ev mobilyası görünümü sunar.
+
+---
+
+## Ahşap Hasta Karyolalarının Öne Çıkan Özellikleri
+
+- **Gizli Motor Mimarisi:** Karyolanın altındaki piston motorlar özel ahşap panellerle örtülüdür; dışarıdan bakıldığında lüks bir baza veya masif yatak gibi görünür.
+- **Teleskopik Ahşap Yan Korkuluklar:** Korkuluklar alüminyum veya metal yerine doğal ahşap çıtalarla tasarlanmıştır. İstenildiğinde tek tuşla yatağın boy hizasına kadar indirilebilir veya yukarı kilitlenebilir.
+- **Alman Mühendisliği Standartları (Burmeier Dali Serisi):** 24V güvenli gerilim sistemi, kablosuz veya şık el kumandası ve yüksek torklu LINAK motorlarla donatılmıştır.
+- **Antibakteriyel Leke Tutmaz Kaplama:** Ahşap yüzeyler medikal dezenfektanlara, alkole ve neme karşı özel vernik ve laminat katmanıyla korunmuştur; kabarma veya çatlama yapmaz.
+    ', '/uploads/products/burmeier-dali-4-motorlu-alman-hasta-karyolasi-1.png', 'MCARIS Tasarım & Biyomedikal Heyeti', '5 dk okuma', 'Hasta Karyolası Rehberi', ARRAY['Ahşap Hasta Karyolası', 'Mobilyalı Yatak', 'Burmeier Dali', 'Ev Tipi Karyola', 'Demans Bakımı']::text[], TRUE, 53, '2026-09-04T23:55:04.727Z', '2026-09-16T11:05:03.198Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtr7o4zb0003w0y8l7eiy2u9', 'Diyaliz ve Kemoterapi Koltuğu Standartları: Motor Gücü, Trendelenburg ve Hasta Konforu', 'diyaliz-ve-kemoterapi-koltugu-standartlari-ve-fiyatlari', 'Diyaliz merkezleri, onkoloji klinikleri ve özel hastaneler için elektrikli motorlu bakım koltuğu seçim kriterleri; Trendelenburg acil şok pozisyonu ve antibakteriyel vinleks deri standartları.', '
+## Uzun Süreli Tedavi Seanslarında Medikal Koltuk Ergonomisi
+
+Hemodiyaliz ve kemoterapi seansları ortalama 3 ila 6 saat arasında süren, hastanın sürekli aynı pozisyonda oturmak veya uzanmak zorunda kaldığı zorlu klinik süreçlerdir. Bu seanslarda standart koltuklar veya basit muayene masaları yetersiz kalmakta; dolaşım bozukluklarına, şiddetli sırt ağrılarına ve halsizliğe neden olabilmektedir.
+
+Profesyonel bir **diyaliz ve kemoterapi koltuğu**, hastaya en konforlu oturma, dinlenme ve yatış açılarını sağlarken klinik personele de müdahale kolaylığı sunmalıdır.
+
+---
+
+## Diyaliz ve Onkoloji Koltuğunda Aranması Gereken 5 Temel Standart
+
+### 1. Çok Motorlu Bağımsız Kontrol (2, 3 veya 4 Motor)
+Koltuk üzerinde bulunan lineer aktüatör motorlar bağımsız çalışmalıdır:
+- **Sırt Motoru:** 0° - 75° arasında mikrometrik açıyla hastayı dik oturma veya dinlenme konumuna getirir.
+- **Ayak Motoru:** Krampları ve bacak ödemlerini önlemek için bacakları kalp hizasına kaldırır.
+- **Yükseklik Motoru (Asansör):** Hemşire ve hekimin kan alma, damar yolu açma veya kateter bakımını belini bükmeden yapmasını sağlar.
+
+### 2. Acil Durum Trendelenburg (Şok) Fonksiyonu
+Diyaliz seanslarında ani hipotansiyon (tansiyon düşmesi) ve senkop (bayılma) riski yüksektir. Koltuğun tek tuşla veya acil ayak pedalıyla **-12° Trendelenburg eğimine** geçebilmesi, kanın hızla beyne yönelmesini sağlayarak hayati bir güvenlik kalkanı oluşturur.
+
+### 3. Çok Yönlü Ayarlanabilir Kolçaklar
+Damar yolu ve fistül girişinin güvenliği için kolçaklar yukarı-aşağı, ileri-geri ve sağa-sola açılan 3 boyutlu mafsal yapısına sahip olmalıdır.
+
+---
+
+## Malzeme Kalitesi ve Hijyen Karşılaştırması
+
+| Özellik | Standart Suni Deri | MCARIS Medikal Vinleks Deri |
+| :--- | :--- | :--- |
+| **Dezenfektan Dayanımı** | Alkolde 2-3 ayda çatlar | Çamaşır suyu ve alkole tam dayanıklı |
+| **Sünger Yoğunluğu** | 22-28 DNS (kısa sürede çöker) | 32-36 DNS Yüksek Yoğunluklu Ortopedik |
+| **Taşıma Kapasitesi** | 120 - 150 kg | 200 - 250 kg Güçlendirilmiş Çelik Şasi |
+| **Garanti** | 1 Yıl Parça | 2 Yıl Yerinde Servis + 10 Yıl Parça Temini |
+
+Klinik ve kurumsal projeleriniz için [Bakım Koltukları](/kategori/bakim-koltuklari) kategorimizi inceleyebilir, toplu sipariş teklifleri için [İletişim](/iletisim) sayfamızdan uzman ekibimize ulaşabilirsiniz.
+', '/images/blog/diyaliz-kemoterapi-koltugu-secim-rehberi.jpg', 'MCARIS Klinik Donanım & B2B Mühendisliği', '6 dk okuma', 'Teknik & Güvenlik', ARRAY['Diyaliz Koltuğu', 'Kemoterapi Koltuğu', 'Trendelenburg Koltuk', 'Bakım Koltuğu', 'Klinik Donanım']::text[], TRUE, 43, '2026-09-07T12:22:48.120Z', '2026-09-16T11:05:03.499Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmu3zsl5p0000w0gk8zewj8di', 'Havalı Hasta Yatağı ve Antidekübit Yara Önleme Modelleri: Boru Tipi vs. Baklava Tipi Karşılaştırma Rehberi (2026)', 'havali-hasta-yatagi-ve-antidekubit-yara-onleme-modelleri-rehberi', 'Uzun süre yatan hastalarda bası yarası (dekübitüs) riskini sıfıra indiren boru tipi, baklava tipi ve ventilasyonlu havalı yatak teknolojileri, basınç dağılımı ilkeleri ve 24 saat kesintisiz kullanım tavsiyeleri.', '## Yatak Yarası (Dekübitüs) Neden Oluşur ve Nasıl Önlenir?
+
+Günde 15 saatten fazla yatağa bağımlı kalan hastalarda, vücut ağırlığının kemik çıkıntıları (kuyruk sokumu/sakrum, topuklar, kürek kemikleri ve dirsekler) üzerinde yarattığı sürekli mekanik basınç, kılcal damarlardaki kan dolaşımını durdurur. Kılcal damarlar kapandığında dokular oksijensiz kalır (iskemi) ve hücre ölümü başlar. Bu durum tıp literatüründe **dekübitüs ülseri** veya halk arasında **yatak yarası** olarak adlandırılır.
+
+Yatak yarası sadece birkaç gün içinde Evre 1 (kızarıklık) seviyesinden Evre 3 veya Evre 4 (kemiğe ve kas dokusuna kadar inen açık nekrotik yaralar) seviyesine ilerleyebilir. Bu yaraların tedavisi aylar sürebilir, yoğun antibiyotik tedavisi gerektirir ve hastanın genel yaşam kalitesini ağır şekilde tehdit eder.
+
+Dekübitüsün önlenmesindeki altın kural; **hastanın vücuduna temas eden basınç noktalarının her 8 ila 12 dakikada bir dinamik olarak değiştirilmesi ve dokuların yeniden kanlanmasının sağlanmasıdır.** Bu işlemi 7/24 kesintisiz olarak başaran tek medikal teknoloji **antidekübit havalı hasta yataklarıdır**.
+
+---
+
+## Boru Tipi vs. Baklava Tipi Havalı Yatak: Farklar ve Klinik Kriterler
+
+Piyasada genel olarak iki ana havalı yatak türü bulunmaktadır:
+
+### 1. Baklava Tipi Havalı Yataklar (Hafif Risk Grubu)
+- **Yapısı:** Yan yana dizilmiş küçük hava kabarcıklarından (baklava dilimi şeklinde hücreler) oluşur.
+- **Hücre Yüksekliği:** Yaklaşık 5 cm ila 7 cm arasındadır.
+- **Kullanım Amacı:** Yalnızca günde birkaç saat yatan, yatak içinde kendi kendine dönebilen veya 2-3 haftalık hafif nekahat dönemindeki hastalar için uygundur.
+- **Sınırlamaları:** 70 kg üzerindeki hastalarda hücreler kolayca tabana vurur ("bottoming out" etkisi). İleri evre bası yarası riski taşıyan felçli veya yoğun bakım hastalarında **kesinlikle yetersiz kalır**.
+
+### 2. Boru Tipi (Ventilasyonlu) Havalı Yataklar (Yüksek ve Çok Yüksek Risk Grubu)
+- **Yapısı:** Birbirinden bağımsız 17 ila 24 adet silindirik boru hücresinden (tubular cells) oluşur.
+- **Hücre Yüksekliği:** 10 cm ila 12 cm arasındadır. Yüksek hava hacmi sayesinde 140 kg''a kadar olan hastalarda dahi vücudun yatak tabanına temas etmesini tamamen engeller.
+- **A/B ve A/B/C Dalgalı Basınç:** Motor ünitesi, tek numaralı boruları şişirirken çift numaralı boruları indirir. Böylece hastanın altındaki basınç noktaları sürekli yer değiştirir ve hasta yorulmadan vücut kanlanması korunur.
+- **Mikro Lazer Ventilasyon:** Boruların orta bölgesinde yer alan mikroskobik deliklerden sürekli hafif hava üflenir. Bu hava akımı terlemeyi önler, cildi kuru tutar ve maserasyonu (cildin nemden dolayı yumuşayıp yırtılmasını) engeller.
+
+---
+
+## Havalı Yatak Tipleri Teknik Karşılaştırma Tablosu
+
+| Özellik / Kriter | Baklava Tipi Havalı Yatak | Boru Tipi (Ventilasyonlu) | Pozisyon Veren Boru Tipi |
+| :--- | :--- | :--- | :--- |
+| **Yatak Yarası Risk Düzeyi** | Düşük Risk (Evre 1 Öncesi) | Orta ve Yüksek Risk (Evre 1-3) | Çok Yüksek Risk (Evre 3-4 & Felç) |
+| **Hücre Yüksekliği** | 5 – 7 cm | 10 – 12 cm | 12 – 14 cm |
+| **Maksimum Taşıma Kapasitesi** | 70 – 80 kg | 120 – 140 kg | 150 – 180 kg |
+| **Hücre Değiştirilebilme** | Değiştirilemez (Tek Parça PVC) | Bağımsız Borular Değiştirilebilir | Bağımsız Borular Değiştirilebilir |
+| **Ventilasyon (Hava Üfleme)** | Genellikle Yok | Var (Lazer Kesim Mikro Delikler) | Var (Gelişmiş Mikro İklimlendirme) |
+| **Otomatik Pozisyonlama** | Yok | Yok | Var (Sağa/Sola 30° Rotasyon) |
+| **Pompa Gürültü Seviyesi** | Standart (< 40 dB) | Ultra Sessiz Diyafram (< 25 dB) | Akıllı Dijital Mikroişlemcili |
+| **CPR Acil Boşaltma Valfi** | Bulunmaz | Çoğu Modelde Mevcut | Standart Acil Tahliye Valfi |
+
+---
+
+## Motorlu Hasta Karyolası ile Havalı Yatak Uyumu
+
+Havalı yataklar tek başına düz bir bazanın üzerine serildiğinde yalnızca basınç dağılımı sağlar; ancak hastanın dik oturması, yemek yemesi veya ayaklarının dinlendirilmesi için mutlaka **elektrikli motorlu hasta karyolaları** ile birlikte kullanılmalıdır.
+
+Havalı yatağı karyolaya yerleştirirken şu noktalara dikkat edilmelidir:
+1. **Karyola Baş ve Ayak Hareketleri:** Karyolanın başı kalktığında (Fowler pozisyonu), havalı yatağın hava hortumlarının karyola mafsallarına sıkışmaması gerekir.
+2. **Karyola Seçimi:** 
+   - [2 Motorlu ABS Hasta Karyolası](/urunler/mcaris-2-motorlu-full-abs-hasta-yatagi-tabanca-korkuluklu) sırt ve ayak kaldırma hareketleriyle boru tipi havalı yatağın performansını maksimize eder.
+   - [3 Motorlu Asansörlü Karyola](/urunler/3-motorlu-hasta-yatagi) yatağın zemin yüksekliğini ayarlayarak havalı yatak üzerindeki hastaya pansuman yapılmasını kolaylaştırır.
+   - [Burmeier Dali 4 Motorlu Alman Karyolası](/urunler/burmeier-dali-4-motorlu-alman-hasta-karyolasi) Trendelenburg ve kardiyak koltuk pozisyonu ile ileri derece bası yarası olan hastalarda olağanüstü klinik rahatlama sağlar.
+3. **Pompanın Konumu:** Kompresör motoru karyolanın ayakucu korkuluğuna asılmalı, doğrudan yere temas ettirilmemelidir.
+
+---
+
+## Havalı Yatak Kullanımında Hayati İpuçları (Bakıcı Kılavuzu)
+
+- **Kompresör 7/24 Açık Kalmalıdır:** Havalı yatak motoru asla gece kapatılmamalıdır. Motor kapandığı anda tüm borular söner ve hasta sert şasi üzerinde kalarak hızla yara açar.
+- **Kilo / Basınç Ayar Düğmesi:** Kompresör üzerindeki basınç düğmesi hastanın gerçek kilosuna göre ayarlanmalıdır. Çok sert bırakılırsa basınç azalmaz; çok yumuşak bırakılırsa hasta tabana çarpar.
+- **Kalın Örtüler Kullanmayın:** Havalı yatağın üzerine kalın battaniyeler veya sıvı geçirmez sert brandalar sermeyin. Araya konulan kalın katmanlar, yatağın dalgalı basınç hareketlerinin hastanın cildine iletilmesini engeller.
+- **Çarşaf Seçimi:** Nefes alabilen, pamuklu ve esnek çarşaflar tercih edilmelidir.
+
+---
+
+## Ankara İçi Aynı Gün Teslimat ve Canlı WhatsApp Danışma
+
+Hastanızın kilosuna, günlük yatış süresine ve bası yarası risk durumuna göre en doğru havalı yatak ve karyola kombinasyonunu belirlemek için uzman fizyoterapist ve medikal danışmanlarımızla hemen iletişime geçebilirsiniz.
+
+Ankara genelinde 25 ilçeye aynı gün teslimat, odada eksiksiz kurulum ve kullanım eğitimi sunmaktayız.', NULL, 'MCARIS Medikal Uzman Heyeti', '8 dk', 'Rehber', ARRAY['havalı yatak', 'antidekübit', 'yatak yarası', 'hasta karyolası', 'boru tipi havalı yatak']::text[], TRUE, 0, '2026-09-16T11:03:19.070Z', '2026-09-16T11:03:19.070Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmu3zslrn0001w0gkg1iizgsb', 'Hasta Yatağı Kiralama mı, Satın Alma mı? 2026 Kapsamlı Maliyet, Hijyen ve İhtiyaç Karşılaştırma Rehberi', 'hasta-yatagi-kiralama-ve-satin-alma-rehberi', 'Evde nekahat ve bakım sürecinde hasta yatağı kiralamanın ve satın almanın ekonomik, klinik ve hijyenik analizi; aylık kiralama maliyetleri, kurulum avantajları ve 2. el yatak riskleri.', '## Hasta Yatağı İhtiyacında İlk Karar: Kiralamak mı, Satın Almak mı?
+
+Beklenmedik bir ameliyat, ani bir kaza, kalça kırığı veya felç gibi durumlarda hasta taburcu edilirken ailelerin karşılaştığı en acil ve kritik karar: **"Hasta yatağını kiralamalı mıyız, yoksa sıfır bir karyola mı satın almalıyız?"** sorusudur.
+
+Bu sorunun tek bir doğru cevabı yoktur; hastanın beklenen iyileşme süresine, hareket kabiliyetine, teşhis edilen hastalığın seyrine ve ailenin bütçesine göre en doğru karar değişkenlik gösterir. Bu rehberde, 2026 medikal sektörü verileri ışığında kiralama ve satın alma seçeneklerinin tüm artılarını, eksilerini ve gizli maliyetlerini ayrıntılı olarak inceliyoruz.
+
+---
+
+## Karar Ağacı: Hangi Durumda Kiralama, Hangi Durumda Satın Alma?
+
+### Ne Zaman Hasta Yatağı Kiralanmalıdır?
+1. **Kısa Süreli Nekahat (1 – 3 Ay):** Kalça protezi ameliyatı, diz cerrahisi, bacak kırıkları veya geçici travmalar sonrasında hastanın 4 ila 12 hafta içinde ayağa kalkıp normal yatağına döneceği öngörülüyorsa kiralama açık ara en ekonomik çözümdür.
+2. **Hastalığın Seyri Belirsizse:** Hastanın yoğun bakımdan yeni çıktığı ve evdeki bakım ihtiyacının ne kadar süreceğinin henüz kestirilemediği ilk 1-2 aylık deneme sürecinde kiralama tercih edilebilir.
+3. **Depolama Alanı Olmayan Evler:** İyileşme bittikten sonra yatağı evde saklayacak bodrum, çatı katı veya depo alanı bulunmayan aileler için kiralama sonrası firmanın yatağı evden söküp alması büyük bir lojistik kolaylıktır.
+
+### Ne Zaman Hasta Yatağı Satın Alınmalıdır?
+1. **Uzun Süreli ve Kronik Bakım (4 Ay ve Üzeri):** Alzheimer, Demans, Parkinson, ALS, ileri evre İnme (Felç) veya ileri yaş palyatif bakım süreçlerinde kiralama maliyetleri 4-5 ay içinde sıfır yatak satın alma bedelini aşar.
+2. **2 Yıl Yerinde Garanti ve Sıfır Cihaz Güvencesi:** Satın alınan tüm [MCARIS Hasta Yatakları](/kategori/hasta-yataklari) 2 yıl boyunca yerinde teknik servis, motor arızalarında anında parça değişimi ve 10 yıl yedek parça temin garantisi altındadır.
+3. **Sıfır Hijyen ve Kişiye Özel Donanım:** Sıfır alınan yatakta fabrikasyon sıfır motor, sıfır şasi ve ambalajından ilk kez çıkan anti-bakteriyel lazer kesim şilte teslim edilir.
+
+---
+
+## Kiralama vs. Satın Alma Ekonomik Karşılaştırma Tablosu (2026)
+
+| Bakım Süresi | Kiralama Toplam Maliyeti (Ortalama) | Sıfır Satın Alma Maliyeti (2 Motorlu Karyola) | Tavsiye Edilen Seçenek |
+| :--- | :--- | :--- | :--- |
+| **1 Ay (30 Gün)** | Düşük (Tek Aylık Kira + Nakliye) | Yüksek Başlangıç Yatırımı | **Kesinlikle Kiralama** |
+| **2 Ay (60 Gün)** | Orta (2 Aylık Kira) | Başlangıç Yatırımı | **Kiralama Avantajlı** |
+| **3 Ay (90 Gün)** | Amortisman Başlangıcı | Başlangıç Yatırımı | **Eşit / Karar Hastanın Seyrine Bağlı** |
+| **6 Ay (180 Gün)** | Kiralama Bedeli Satın Almaya Yaklaşır | Sabit Fiyat (2 Yıl Garanti Dahil) | **Kesinlikle Satın Alma** |
+| **1 Yıl ve Üzeri** | Satın Alma Bedelinin 1.5 – 2 Katına Ulaşır | Sabit Fiyat (Yüksek Tasarruf) | **Satın Alma (Net Tasarruf)** |
+
+---
+
+## İkinci El (2. El) Hasta Yatağı Almanın Tehlikeleri ve Hijyen Riskleri
+
+İnternet üzerindeki ikinci el platformlarından veya tanıdıklardan rastgele ikinci el hasta karyolası satın almak ilk bakışta hesaplı görünse de ciddi tehlikeler barındırır:
+
+1. **Çapraz Enfeksiyon ve Bakteriyel Kontaminasyon:** Ağır yatalak hastalarda bası yarası akıntıları, idrar kaçırma veya dirençli hastane bakterileri (MRSA vb.) yatak şasisinin görünmeyen iç profillerine ve şilte süngerine işleyebilir. Ev tipi dezenfektanlarla bu mikroplar temizlenemez.
+2. **Motor ve Piston Metal Yorgunluğu:** İkinci el karyolalardaki lineer aktüatörler (motorlar) daha önce kaç kez zorlandı, aşırı kiloya maruz kaldı mı bilinemez. Hastanız yatağın üzerindeyken motorun kilitlenmesi veya kırılması ciddi düşme kazalarına yol açar.
+3. **Korkuluk Boşlukları ve Sıkışma Riski:** Eski veya yıpranmış yan korkuluk kilitleri gevşeyebilir. Gece hastanın korkuluk arasına sıkışması ölümcül nefessiz kalma (asfiksi) riskine neden olabilir.
+4. **Garanti ve Servis Yokluğu:** Arıza durumunda yetkili teknik servis veya yedek parça desteği bulunamaz.
+
+> **MCARIS Kiralama Standartları:** MCARIS bünyesinde kiralanan tüm hasta yatakları hastanelerde kullanılan yüksek düzey medikal buhar ve antiviral dezenfeksiyon tünelinden geçirilir. Hastaya verilen yatak şiltesi **kesinlikle daha önce kullanılmamış, ambalajında sıfır visko/CNC sünger** olarak teslim edilir.
+
+---
+
+## Profesyonel Kiralama Hizmetinde Hangi Modeller Tercih Edilmelidir?
+
+Kiralama yaparken hastanın durumuna uygun motor seçimi yapılmalıdır:
+- **Kısa dönem ortopedi nekahati için:** [2 Motorlu ABS Hasta Yatağı](/urunler/mcaris-2-motorlu-full-abs-hasta-yatagi-tabanca-korkuluklu) sırt ve ayak kaldırma fonksiyonlarıyla yeterli ve ekonomiktir.
+- **Bakıcı destekli orta dönem bakım için:** [3 Motorlu Asansörlü Karyola](/urunler/3-motorlu-hasta-yatagi) yükseklik ayarı sayesinde bakıcının belini korur.
+- **Yoğun bakım ve nörolojik hastalar için:** [4 Motorlu Trendelenburg Karyola](/urunler/mcaris-4-motorlu-abs-hasta-karyolasi) tam pozisyonlama sağlar.
+
+---
+
+## Ankara Genelinde Aynı Gün Kurulum ve Geri Alma Desteği
+
+MCARIS Medikal olarak Ankara''nın tüm ilçelerine (Çankaya, Keçiören, Yenimahalle, Mamak, Etimesgut, Sincan, Gölbaşı ve çevre ilçeler) aynı gün içinde teslimat, adreste uzman personel ile kurulum ve hastanın kullanım eğitimi hizmeti sunuyoruz.
+
+Kiralama süreniz sona erdiğinde tek bir telefonla teknik ekibimiz evinize gelerek yatağı demonte eder ve odanızı temiz bir şekilde size teslim eder. Kiralama şartları, güncel aylık fiyatlar veya sıfır yatak satın alma avantajları hakkında bilgi almak için canlı WhatsApp danışma hattımızla hemen iletişime geçebilirsiniz.', NULL, 'MCARIS Medikal Uzman Heyeti', '9 dk', 'Rehber', ARRAY['hasta yatağı kiralama', 'kiralık hasta yatağı', 'hasta karyolası kiralama', '2. el hasta yatağı', 'ankara kiralama']::text[], TRUE, 0, '2026-09-16T11:03:19.859Z', '2026-09-16T11:03:19.859Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtr7o5s20009w0y80j5qrpkd', 'Amortisörlü Hasta Yemek Masası Neden Zorunludur? Tek Elle Yükseklik Ayarı ve Güvenlik', 'amortisorlu-hasta-yemek-masasi-kullanim-ve-faydalari', 'Yatağa bağımlı hastaların beslenme ve aktivitelerinde gazlı amortisörlü yemek masasının hayati rolü; dökülme bariyerleri, U-ayak tekerlekli şasi tasarımı.', '
+## Yatak İçi Beslenmede Yaşanan Kazalar ve Amortisör Çözümü
+
+Yatağa bağımlı veya hareket kısıtlılığı bulunan hastaların evde bakımında en sık yaşanan aksaklıklardan biri beslenme saatleridir. Standart sehpa veya tepsiler yatak üzerine konulduğunda devrilme, sıcak çorba/çay dökülmesi ve hastanın yanması gibi ciddi riskler taşır. Ayrıca hastanın boyuna göre ayarlanamayan sabit masalar, hastayı öne doğru eğilmeye zorlayarak mideye baskı yapar ve reflü/aspirasyon riskini artırır.
+
+**Gazlı amortisörlü hasta yemek masası**, tek dokunuşla zahmetsizce yükselip alçalabilen yapısıyla bu sorunları kökten çözer.
+
+---
+
+## Neden Sıradan Sehpa Değil, Özel Hasta Yemek Masası?
+
+- **U-Tipi Düşük Şasi:** Masanın tekerlekli ayak kısmı sadece 8-10 cm yüksekliğindedir. Bu sayede hasta karyolası motorlarının veya şasisinin altına rahatça girer; masa tablası tam olarak hastanın kucağına kadar yaklaşır.
+- **Tek Elle Gazlı Amortisör Kontrolü:** Refakatçi veya hasta tek bir mandala dokunarak masayı istediği milimetrik yükseklikte sabitler; masa kendi ağırlığıyla sertçe düşmez.
+- **Kenar Sıvı Bariyeri (Dökülme Önleyici):** Ahşap veya ABS tabla etrafındaki yükseltilmiş bordür, dökülen sıvıların yatağa ve çarşaflara akmasını engeller.
+- **360° Kilitli Tekerlekler:** Yemek bittiğinde tek elle yatağın yanından uzaklaştırılabilir, frenleri kilitlenerek sabitlenebilir.
+
+---
+
+## Beslenme Dışında Çok Amaçlı Kullanım
+
+Hasta yemek masaları yalnızca kahvaltı ve akşam yemeklerinde değil; hastanın kitap okuması, tablet/telefon kullanması, ilaçlarını düzenlemesi ve bulmaca çözmesi gibi günlük rehabilitasyon aktivitelerinde de bağımsızlık hissini güçlendirir.
+
+En dayanıklı modellerimiz için [Hasta Yemek Masaları](/kategori/hasta-yemek-masalari) kategorimizi ziyaret edebilir, karyola siparişinizin yanına ekleyebilirsiniz.
+', '/images/blog/amortisorlu-hasta-yemek-masasi-kullanim-rehberi.jpg', 'MCARIS Medikal Evde Bakım Destek Ekibi', '5 dk okuma', 'Hasta Bakımı', ARRAY['Hasta Yemek Masası', 'Amortisörlü Masa', 'Yatak Sehpası', 'Evde Hasta Bakımı', 'Medikal Mobilya']::text[], TRUE, 41, '2026-09-07T12:22:49.155Z', '2026-09-16T11:05:03.727Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtjblarb0001a23okas91251', 'Trendelenburg Pozisyonlu Hasta Karyolası Nedir? 4 Motorlu Karyolanın Klinik Faydaları', 'trendelenburg-hasta-karyolasi-nedir-faydalari', 'Trendelenburg ve Anti-Trendelenburg pozisyonlarının kan dolaşımı, tansiyon dengesi, solunum rahatlığı ve reflü önlemedeki kritik klinik faydaları.', '
+## Trendelenburg Pozisyonu Nedir?
+
+Trendelenburg pozisyonu; hastanın yatar pozisyondayken baş kısmının ayak seviyesine göre yaklaşık 15-30 derece daha aşağıda tutulması işlemidir. Anti-Trendelenburg ise bunun tam tersi olarak baş kısmının ayaklara göre yukarı doğru eğimli hale getirilmesidir.
+
+---
+
+## 4 Motorlu Trendelenburg Karyolaların Klinik Avantajları
+
+### 1. Dolaşım Sistemi ve Hipotansiyon Desteği
+- Ani tansiyon düşmelerinde (hipotansiyon) hastayı Trendelenburg pozisyonuna getirmek, kanın bacaklardan beyne ve hayati organlara akışını hızlandırır.
+
+### 2. Solunum Rahatlığı ve Akciğer Ventilasyonu
+- Anti-Trendelenburg pozisyonu diyafram üzerindeki karın içi organ baskısını azaltarak KOAH ve solunum güçlüğü çeken hastaların daha rahat nefes almasını sağlar.
+
+### 3. Gastroözofageal Reflü ve Aspirasyon Koruması
+- Yatağın baş kısmı eğimli yükseltilerek mide asidinin yemek borusuna kaçması ve beslenme esnasında akciğere gıda aspirasyonu riski engellenir.
+
+### 4. Yatak İçi Yukarı Kaydırma Kolaylığı
+- Zamanla aşağı doğru kayan hastaları yukarı çekmek bakıcı beline büyük yük bindirir. Trendelenburg pozisyonu açılarak yerçekimi yardımıyla hasta zahmetsizce yukarı kaydırılır.
+
+---
+
+## Burmeier Dali Serisi Alman Mühendisliği
+
+Burmeier 4 motorlu ahşap hasta karyolaları, 24V güvenli gerilim sistemi (Safe-24V), kablosuz el kumandası ve ahşap ev tipi tasarımıyla hastane havasından uzak, üst düzey klinik konfor sunar.
+    ', '/uploads/products/dali-low-entry-econ-1.jpg', 'MCARIS Medikal Klinik İnceleme Masası', '6 dk okuma', 'Hasta Karyolası Rehberi', ARRAY['Trendelenburg', '4 Motorlu', 'Burmeier', 'Solunum', 'Klinik Karyola']::text[], TRUE, 83, '2026-09-01T23:50:24.695Z', '2026-09-16T11:05:02.706Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtr7o6aj000dw0y8osydxu5m', 'Parkinson Hastalarında Yatak İçi Bağımsız Hareket ve Düşme Önleme Protokolü', 'parkinson-hastalarinda-yatak-ici-hareket-ve-dusme-onleme', 'Parkinson hastalarında gece hareket donması (akinezi), yataktan kalkarken yaşanan düşmeler ve alçak karyola (low-bed) teknolojisi ile güvenlik önlemleri.', '
+## Parkinson Hastalığında Gece Tutukluğu ve Yataktan Düşme Tehlikesi
+
+Parkinson hastalığında dopamin eksikliğine bağlı olarak ortaya çıkan rijidite (kas sertliği), titreme ve bradikinezi (hareket yavaşlığı), özellikle gece ilaç dozunun etkisinin azaldığı saatlerde hastanın yatak içinde dönememesine ve "donup kalmasına" (akinezi) yol açar. Tuvalete kalkmak isteyen bir Parkinson hastası, yataktan doğrulurken dengesini kaybederek yere düşebilir. Yaşlı hastalarda bu düşmeler kalça kırıkları ve kafa travmaları ile sonuçlanmaktadır.
+
+---
+
+## Parkinson Hastaları İçin Karyola Seçim Kriterleri
+
+### 1. Alçak Karyola (Low-Entry / Low-Bed) Tasarımı
+Düşme riskini en aza indiren en etkili yöntem, yatağın yere 20-25 cm''ye kadar yaklaşabilmesidir. Böylece hasta yatak kenarından kayıp düşse bile darbe şiddeti sıfıra iner. Gündüz bakımında ise yatak asansörle normal yüksekliğe kaldırılır.
+
+### 2. Destek Sağlayan Bölünmüş Korkuluklar
+Tek parça metal korkuluklar yerine mandallı alüminyum tabanca korkuluklar hastaya kalkış esnasında güçlü bir tutunma noktası sunar. Hasta korkuluktan güç alarak gövdesini doğrultabilir.
+
+### 3. Kaymayan Ortopedik Şilte
+Aşırı yumuşak yataklar Parkinson hastasının içine gömülmesine ve dönme kabiliyetini tamamen kaybetmesine neden olur. 4 parçalı CNC lazer kesim orta-sert medikal şilteler vücudu destekler.
+
+---
+
+## Ev İçi Düzenleme İpuçları
+
+- Yatağın etrafında ayağa takılabilecek gevşek halı ve uzatma kabloları kaldırılmalıdır.
+- Yatak başucuna gece hareket algılayıcı sensörlü hafif aydınlatmalar yerleştirilmelidir.
+- Refakatçi desteği için [Yaşlılarda Düşme Riskini Önleme Rehberi](/blog/yaslilarda-dusme-riskini-onleme-rehberi) makalemizi de inceleyebilirsiniz.
+
+Modellerimiz hakkında bilgi için [Hasta Karyolaları](/kategori/hasta-yataklari) sayfamıza başvurabilirsiniz.
+', '/images/blog/parkinson-yatak-ici-dusme-onleme-low-entry-karyola.jpg', 'MCARIS Nörolojik Bakım Destek Masası', '5 dk okuma', 'Hasta Bakımı', ARRAY['Parkinson Bakımı', 'Düşme Önleme', 'Hasta Karyolası', 'Akinezi', 'Güvenlik Korkuluğu']::text[], TRUE, 125, '2026-09-07T12:22:49.820Z', '2026-09-16T11:05:03.878Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtjblas90006a23o4zlp4p7c', 'Hasta Transfer Lifti (Vinç) Kullanım Rehberi ve Güvenlik İpuçları', 'hasta-transfer-lifti-vinc-kullanimi-ve-guvenlik', 'Yatalak hastaları yatak, tekerlekli sandalye ve banyo arasında güvenle transfer etmenin püf noktaları ve bakıcı ergonomisi.', '
+## Bakıcı Bel Sağlığı ve Hasta Güvenliği İçin Transfer Liftleri
+
+Ağır veya hareket kısıtlılığı olan hastaları tek başına kaldırmak bakıcılarda kalıcı bel fıtığı ve kas iskelet yaralanmalarına; hastalarda ise düşme ve cilt zedelenmelerine yol açabilir. Elektrikli hasta taşıma liftleri (hasta vinci), tek bir tuşla hastayı güvenle havalandırarak transfer etmeyi sağlar.
+
+---
+
+## Transfer Lifti Kullanırken Dikkat Edilecekler
+
+1. **Doğru Taşıma Bezi (Sling) Seçimi:** Hastanın baş kontrolü, kilosu ve transfer amacına uygun kumaş tipi seçilmelidir.
+2. **Ayak Açma Mekanizması:** Sandalye veya koltuğa yanaşırken liftin şasi ayakları pedal yardımıyla açılarak denge sağlanmalıdır.
+3. **Acil Durum İndirme Sistemi:** Elektrik kesintisi veya batarya bitmesi durumunda mekanik indirme vanası test edilmelidir.
+    ', '/uploads/products/silver-2-motorlu-1.jpg', 'MCARIS Medikal Teknik Ekip', '4 dk okuma', 'Teknik & Güvenlik', ARRAY['Transfer Lifti', 'Hasta Vinci', 'Sling', 'Bakıcı Sağlığı']::text[], TRUE, 80, '2026-09-01T23:50:24.729Z', '2026-09-16T11:05:02.896Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtr7o5ir0007w0y8lfkik2wh', 'Medikal Masaj ve Fizik Tedavi Masalarında Taşıma Kapasitesi ve Şasi Dayanımı', 'medikal-masaj-ve-fizik-tedavi-masasi-dayaniklilik-rehberi', 'Fizyoterapistler, manuel terapi uzmanları ve rehabilitasyon merkezleri için masaj masası şasi dayanımı, esnememe kriterleri ve hekim ergonomisi kılavuzu.', '
+## Fizik Tedavi ve Manuel Terapide Şasi Rijitliğinin Önemi
+
+Manuel terapi, osteopati, kayropraktik ve derin doku medikal masajı uygulayan uzmanlar; standart masaj masalarının kaldıramayacağı dinamik kuvvetler uygularlar. Terapist hastanın omurgasına veya eklemlerine baskı uyguladığında masanın sallanması, gıcırdaması veya şasisinin esnemesi, hem uygulanan kuvvetin boşa gitmesine neden olur hem de hastada güvensizlik hissi uyandırır.
+
+Bu nedenle fizik tedavi alanında kullanılan masalar, sıradan masaj yataklarından farklı mühendislik standartlarına sahip olmalıdır.
+
+---
+
+## Manuel Terapi Masasında Olması Gereken Teknik Standartlar
+
+- **Kalın Etli Kutu Profil:** Şasi en az 1.5 - 2 mm et kalınlığına sahip çelik profillerden kaynaklanmalı, alt çapraz bağlantı kolları ile güçlendirilmelidir.
+- **Sıfır Gıcırtı Mafsalları:** Hareketli parçalarda plastik veya teflon burçlar kullanılmalı, metal metale sürtünerek ses çıkarmamalıdır.
+- **Nefes Alma Yüz Deliği & Baş Yastığı:** Yüzüstü pozisyonda hastanın servikal boyun omurlarını zorlamayan ergonomik boşluk ve yumuşak yüz pedi.
+- **Ayarlanabilir Zemin Pabuçları:** Bozuk ve eğimli zeminlerde masanın dengede durmasını sağlayan vidalı kauçuk pabuçlar.
+
+---
+
+## Ahşap vs. Çelik Konstrüksiyon Masalar
+
+| Kriter | Ahşap Lüks SPA Masaj Masası | Çelik Profil Medikal Terapi Masası |
+| :--- | :--- | :--- |
+| **Estetik** | Doğal ahşap doku, sıcak ambiyans | Klinik, modern ve rijit görünüm |
+| **Dinamik Yük Direnci** | 200 kg''a kadar stabil | 300 kg''a kadar sıfır esneme |
+| **Kullanım Alanı** | Otel SPA''ları, masaj salonları | Hastaneler, fizik tedavi merkezleri |
+| **Ağırlık** | Nispeten ağır, sabit kullanım | Taşınabilir veya sabit modeller |
+
+Gelişmiş manuel terapi ve masaj masası seçeneklerimizi [Muayene ve Bakım Masaları](/kategori/muayene-ve-bakim-masalari) sayfamızda keşfedebilirsiniz.
+', '/images/blog/profesyonel-masaj-manuel-terapi-masasi-secimi.jpg', 'MCARIS Fizyoterapi & Rehabilitasyon Danışmanı', '5 dk okuma', 'Hasta Bakımı', ARRAY['Fizik Tedavi Masası', 'Medikal Masaj Masası', 'Manuel Terapi', 'Çelik Şasi', 'Rehabilitasyon']::text[], TRUE, 37, '2026-09-07T12:22:48.820Z', '2026-09-16T11:05:03.651Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtjblaqv0000a23osd9hnlqo', 'Ankara Hasta Yatağı Kiralama Fiyatları 2026: Aylık Kiralama ve Satın Alma Karşılaştırması', 'ankara-hasta-yatagi-kiralama-fiyatlari-rehberi', 'Ankara genelinde 2, 3 ve 4 motorlu hasta karyolası kiralama fiyatları, depozito şartları, teslimat süreleri ve satın alma ile maliyet analizi.', '
+## Ankara''da Hasta Yatağı Kiralama Süreci ve Fiyatlandırma
+
+Hasta karyolası kiralama, özellikle ortopedik operasyonlar (kalça protezi, kırık tedavisi), kısa süreli nekahet dönemleri veya hastanın iyileşme sürecinin henüz netleşmediği ilk aylarda aileler için en pratik ve bütçe dostu çözümdür.
+
+---
+
+## 2026 Ankara Kiralama Fiyat Kriterleri
+
+Ankara''da hasta yatağı kiralama bedelleri yatağın motor sayısına, gövde materyaline ve eklenen medikal aksesuarlara göre değişir:
+
+| Karyola Tipi | Motor Özelliği | İdeal Kullanım Alanı | Teslimat Kapsamı |
+| :--- | :--- | :--- | :--- |
+| **2 Motorlu Karyola** | Sırt ve Ayak Bağımsız | Kısa süreli iyileşme, oturabilen hasta | Karyola + Yatak + Serum Askısı |
+| **3 Motorlu Asansörlü** | Sırt, Ayak + Asansör | Bakıcılı hastalar, pansuman/temizlik | Karyola + Yatak + Serum Askısı + Kurulum |
+| **4 Motorlu Ahşap/ABS** | Trendelenburg + Full Pozisyon | Uzun süreli yatağa bağımlı, yoğun bakım | Karyola + Havalı Yatak + Montaj |
+
+---
+
+## Kiralama Yaparken Dikkat Edilmesi Gereken 5 Kritik Kural
+
+1. **Hijyen ve Dezenfeksiyon:** Kiralık yataklar her hastadan sonra hastane tipi medikal dezenfektanlarla sterilize edilmeli ve ambalajlı teslim edilmelidir.
+2. **Yerinde Kurulum:** Karyola mutlaka evinize taşınmalı, oda içerisine kurulmalı ve kumanda kullanımı aile bireylerine öğretilmelidir.
+3. **Depozito ve Sözleşme Şeffaflığı:** Sözleşmede gizli nakliye veya söküm ücreti olmamalıdır.
+4. **Acil Değişim / Teknik Servis:** Motor arızası durumunda aynı gün nöbetçi teknik servis müdahale edebilmelidir.
+5. **Kiralama Bedelini Satın Almaya Saydırma:** Kiralama uzadığında ödenen bedellerin satın alma fiyatından düşülmesi avantaj sağlar.
+
+---
+
+## Ankara 25 İlçeye Aynı Gün Ücretsiz Teslimat
+
+MCARIS Medikal, Çankaya''dan Keçiören''e, Yenimahalle''den Sincan ve Gölbaşı''na kadar Ankara''nın tüm ilçelerine kendi servis filosuyla gün içinde kurulum yapmaktadır.
+    ', '/uploads/products/gold-3-motorlu-1.jpg', 'MCARIS Medikal Finans & Operasyon Masası', '5 dk okuma', 'Satın Alma & Kiralama', ARRAY['Ankara Kiralama', 'Hasta Yatağı Fiyatları', 'Aylık Kiralama', '2 Motorlu', '3 Motorlu']::text[], TRUE, 84, '2026-09-01T23:50:24.678Z', '2026-09-16T11:05:02.633Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtjblasi0009a23odxq7m4jg', 'Kalça ve Diz Protezi Ameliyatı Sonrası Hasta Karyolası Kiralama Rehberi', 'kalca-protezi-ameliyati-sonrasi-hasta-yatagi-kiralama', 'Ortopedik cerrahi sonrası 90 derece kuralı, oturup kalkma desteği ve 1-2 aylık kısa dönem kiralama avantajları.', '
+## Ortopedik Ameliyatlar Sonrası İlk 6 Haftanın Önemi
+
+Total kalça protezi veya diz protezi ameliyatı olan hastaların protez çıkığını engellemek için bacak bacak üstüne atmaması ve 90 dereceden fazla kalça fleksiyonu yapmaması gerekir. Standart alçak ev koltukları ve yumuşak bazalar bu süreçte tehlikelidir.
+
+---
+
+## 2 ve 3 Motorlu Karyolaların Ameliyat Sonrası Faydaları
+
+- **Oturma Açısı Sınırlandırması:** Kumanda üzerinden sırt açısı kontrollü olarak 60-70 dereceye getirilir.
+- **Asansör Desteğiyle Kolay Ayağa Kalkma:** Yatak boy hizasına yükseltilerek hastanın bacaklarına aşırı yük binmeden walker veya koltuk değneğiyle ayağa kalkması sağlanır.
+- **1-2 Aylık Ekonomik Kiralama:** Ameliyat iyileşme dönemi genellikle 6-8 hafta sürdüğü için satın alma yerine 2 aylık kiralama en ekonomik çözümdür.
+    ', '/uploads/products/silver-2-motorlu-1.jpg', 'MCARIS Ortopedi & Ameliyat Sonrası Masası', '4 dk okuma', 'Satın Alma & Kiralama', ARRAY['Kalça Protezi', 'Diz Protezi', 'Ortopedi', 'Kiralama', 'Walker']::text[], TRUE, 100, '2026-09-01T23:50:24.738Z', '2026-09-16T11:05:03.010Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtjblas10004a23o1zl8ma0z', 'KOAH, Akciğer ve Kalp Hastalarında Yatak Pozisyonlama ve Medikal Oksijen Desteği', 'koah-akciger-hastalarinda-yatak-pozisyonlama-ve-oksijen', 'Solunum yetmezliği çeken KOAH ve kardiyak hastalarda Fowler pozisyonu, diyafram rahatlatma ve oksijen konsantratörü entegrasyonu.', '
+## Solunum Hastalıklarında Yatak Pozisyonunun Önemi
+
+Kronik Obstrüktif Akciğer Hastalığı (KOAH), kalp yetmezliği, zatürre ve akciğer fibrozisi gibi rahatsızlıklarda düz (sırtüstü) yatmak akciğer kapasitesini %30''a varan oranda daraltır ve hastada boğulma hissi yaratır.
+
+---
+
+## Fowler ve Semi-Fowler Pozisyonları
+
+- **Semi-Fowler Pozisyonu (30-45 Derece Sırt Açısı):** Gece uykusu esnasında diyaframı rahatlatır, reflüyü engeller ve oksijen satürasyonunu yükseltir.
+- **Fowler Pozisyonu (60-90 Derece Dik Oturma):** Yemek yerken, nebulizatör ve oksijen maskesi kullanırken akciğerlerin tam açılmasını sağlar.
+
+---
+
+## 3 ve 4 Motorlu Karyolaların Solunum Tedavisindeki Rolü
+
+- **Kademeli Sırt ve Ayak Kaldırma:** Ayakucu hafif yükseltilip sırt dikleştirildiğinde hasta yataktan kaymaz, abdominal organların göğüs kafesine yaptığı basınç düşer.
+- **Oksijen Konsantratörü Entegrasyonu:** Yatak yanındaki serum askısı ve medikal cihaz sehpaları, solunum cihazlarının kablo ve hortumlarının ezilmesini önler.
+    ', '/uploads/products/gold-3-motorlu-1.jpg', 'MCARIS Medikal Solunum & Bakım Ekibi', '4 dk okuma', 'Teknik & Güvenlik', ARRAY['KOAH', 'Solunum Desteği', 'Fowler Pozisyonu', 'Oksijen', 'Akciğer']::text[], TRUE, 90, '2026-09-01T23:50:24.722Z', '2026-09-16T11:05:02.822Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtjblase0008a23oyoq1bj01', 'Alzheimer ve Demans Hastaları İçin Düşme Önleyici Ahşap Hasta Karyolası Çözümleri', 'alzheimer-demans-hastalari-icin-guvenli-hasta-karyolasi', 'Demans ve Alzheimer hastalarında gece kalkışları, yataktan düşme riskleri ve hastane hissiyatını azaltan ev tipi ahşap korkuluklu modeller.', '
+## Demans Hastalarında Hasta Karyolası Güvenliği
+
+Alzheimer ve ileri yaş demans hastalarında yön duygusunun kaybı ve gece kafa karışıklığı (sundowning sendromu) nedeniyle yataktan düşme ve kalça kırığı vakaları sıkça yaşanır.
+
+---
+
+## Güvenlik Kriterleri ve Ahşap Karyola Avantajı
+
+1. **Low-Entry (Yere Yakın) Asansör:** Karyola tabanı zemine kadar (yaklaşık 20-25 cm) indirilebilir. Böylece hasta yataktan kayıp düşse dahi travma riski sıfırlanır.
+2. **Kademeli Ahşap Yan Korkuluklar:** Metal parmaklıkların aksine hastane ortamı hissi yaratmaz; hastanın ajitasyonunu ve kaçma dürtüsünü azaltır.
+3. **Kilitlenebilir Kumanda Fonksiyonu:** Hastanın kumandayla istemsizce tehlikeli açılar almasını engelleyen bakıcı kumanda kilitleme anahtarı bulunur.
+    ', '/uploads/products/dali-low-entry-econ-1.jpg', 'MCARIS Geriatri & Güvenlik Masası', '5 dk okuma', 'Hasta Karyolası Rehberi', ARRAY['Alzheimer', 'Demans', 'Düşme Önleme', 'Ahşap Karyola', 'Geriatri']::text[], TRUE, 83, '2026-09-01T23:50:24.734Z', '2026-09-16T11:05:02.972Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtjblasb0007a23oaxzwzm3u', 'İnme (Felç) Sonrası Evde Bakım ve Motorlu Hasta Yatağı Pozisyonlama Rehberi', 'inme-felc-sonrasi-hasta-bakimi-ve-yatak-rehberi', 'Hemipleji (kısmi felç) geçiren hastaların yatak içi transferi, bası yaralarından korunması, kas spazmlarının önlenmesi ve rehabilitasyon pozisyonları.', '
+## İnme Sonrası Evde Bakımda Yatak Seçiminin Önemi
+
+Serebrovasküler olay (inme/felç) sonrası vücudunun bir tarafında kuvvet kaybı yaşayan hastaların iyileşme sürecinde yatak içi pozisyonlama ve pasif egzersizler hayati önem taşır.
+
+---
+
+## Felçli Hastada Doğru Yatak Pozisyonlaması
+
+### 1. Etkilenen (Felçli) Taraf Üzerine Yatış
+- Omuz eklemi öne doğru çekilmeli, kol desteklenmeli ve dirsek düz tutulmalıdır.
+- Sırt kumanda yardımıyla 30 derece yükseltilerek başın doğal omurga hattında kalması sağlanır.
+
+### 2. Sağlam Taraf Üzerine Yatış
+- Felçli kol göğüs hizasında bir yastıkla desteklenir.
+- Felçli bacak dizden bükülerek altına destek konur, eklem deformiteleri engellenir.
+
+### 3. Yatak İçi Asansör Özelliğinin Faydaları
+- 3 motorlu asansörlü yataklar sayesinde fizik tedavi uzmanı veya aile yakını hastanın felçli uzuvlarına eğilmeden pasif hareket egzersizleri yaptırabilir.
+    ', '/uploads/products/gold-3-motorlu-1.jpg', 'MCARIS Nöroloji & Fizik Tedavi Danışma Masası', '5 dk okuma', 'Hasta Bakımı', ARRAY['İnme', 'Felç', 'Fizik Tedavi', 'Rehabilitasyon', 'Pozisyonlama']::text[], TRUE, 85, '2026-09-01T23:50:24.732Z', '2026-09-16T11:05:02.934Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtnm2uq50001w0woehfeohdn', 'Ekonomik Hasta Yatağı Seçim Rehberi: Bütçeye Uygun, Güvenli ve Dayanıklı Karyola Modelleri', 'ekonomik-hasta-yatagi-uygun-fiyatli-hasta-yataklari', 'Bütçenizi zorlamadan kaliteli, motorlu ve güvenli bir hasta karyolası nasıl seçilir? 2 motorlu modeller, şasi dayanıklılığı ve 2026 fiyat analizi.', '
+## Hasta Yatağında Fiyatı Belirleyen Temel Unsurlar
+
+Evde hasta bakımı maliyetli bir süreçtir. Aileler genellikle bütçelerini sarsmayacak en ekonomik hasta yatağını ararken güvenlikten ve kaliteden ödün verme riskiyle karşılaşırlar. Bir hasta yatağının maliyetini ve kalitesini belirleyen 4 ana bileşen vardır:
+
+1. **Motorun Cinsi ve Gücü:** Tek parça kutu motorlar (dual motor) daha ucuzdur ancak pistonlu bağımsız motorlar (2x6000N) çok daha uzun ömürlü ve güçlüdür.
+2. **Profil Et Kalınlığı ve Çelik Ağırlığı:** İnce saçtan üretilen merdiven altı karyolalar zamanla eğilir ve kırılır. Güvenli bir medikal karyola en az 1.5 - 2 mm et kalınlığında DKP çelikten imal edilmelidir.
+3. **Korkuluk ve Başlık Malzemesi:** Tel kafesli korkuluklar en ucuz segmenttir ancak hastanın parmaklarını sıkıştırabilir. Alüminyum tabanca korkuluklar hem ekonomik hem de son derece güvenlidir.
+4. **Yatak Şiltesi Kalitesi:** Karyola ne kadar iyi olursa olsun üzerindeki sünger 28 DNS''den düşükse kısa sürede çöker ve hastanın vücudunda yara açar.
+
+---
+
+## 2 Motorlu Ekonomik Modeller: Kimler İçin Yeterlidir?
+
+Medikal pazarın en çok satan ve fiyat/performans şampiyonu olan **2 Motorlu Karyolalar**, kablolu el kumandasıyla baş ve ayak ucunu bağımsız kaldırır:
+- Kendi başına ayağa kalkabilen veya oturabilen,
+- 2-4 aylık geçici nekahet döneminde olan (kırık, fıtık ameliyatı),
+- Bakıcısının eğilerek yatakta yoğun pansuman yapmasına gerek olmayan hastalar için **2 motorlu modeller fazlasıyla yeterli ve en ekonomik çözümdür.**
+
+---
+
+## İkinci El ve Hurda Yatak Tuzağına Dikkat Edin
+
+İnternetteki ilan sitelerinden fatura ve garantisi olmayan ikinci el yatak satın almak ilk başta ucuz görünebilir. Ancak:
+- Önceki hastanın enfeksiyon taşıma riski (özellikle MRSA ve mantar enfeksiyonları),
+- 3 gün sonra motorunun arızalanması durumunda muhatap bulunamaması,
+- Yedek parça eksikliği nedeniyle yatağın atıl kalması gibi sorunlar astarı yüzünden pahalıya getirir.
+
+MCARIS Medikal, sıfır fabrika garantili ürünleri doğrudan üreticiden halka sunduğu için aracı komisyonlarını ortadan kaldırarak 2 motorlu modelleri en uygun fiyatlarla temin etmenizi sağlar.
+    ', '/uploads/products/mcaris-2-motorlu-hasta-karyolasi-metal-korkuluk-ahsap-baslik-1.png', 'MCARIS Medikal Finans & Satın Alma Masası', '5 dk okuma', 'Satın Alma & Kiralama', ARRAY['Ekonomik Hasta Yatağı', 'Hasta Karyolası Fiyatları', '2 Motorlu Karyola', 'Medikal Bütçe', 'Kiralama']::text[], TRUE, 51, '2026-09-04T23:55:04.589Z', '2026-09-16T11:05:03.160Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtr7o5n60008w0y8jqhye0sf', 'Kozmetik ve Cilt Bakım Yatakları: Güzellik Merkezleri İçin Fonksiyonel Masalar', 'kozmetik-ve-cilt-bakim-yataklari-guzellik-merkezi-rehberi', 'Güzellik salonları, cilt bakım merkezleri ve kalıcı makyaj stüdyoları için konforlu, ayarlanabilir ve şık bakım yatakları seçim rehberi.', '
+## Güzellik Salonlarında Müşteri Sadakatini Belirleyen Detay: Yatak Konforu
+
+Cilt bakımı, hydrafacial seansları, ipek kirpik uygulamaları ve kalıcı makyaj işlemleri ortalama 45 dakika ile 2 saat arasında sürer. Bu süre boyunca müşterinin yattığı yatağın sert olması, bel boşluğunu doldurmaması veya baş açısının ayarlanamaması müşterinin huzursuz olmasına ve işlemden memnun kalmamasına yol açar.
+
+Estetik sektöründe başarı, uzman eller kadar müşterinin kendini özel hissettiği konforlu bir kabin ortamıyla mümkündür.
+
+---
+
+## Kozmetik Yataklarında Aranan Temel Nitelikler
+
+1. **Kademeli Sırt ve Ayak Ayarı:** Maske kuruma süresinde hastayı hafif oturur konuma getirmek veya lazer epilasyon esnasında bacakları kaldırmak için pratik makas mekanizması.
+2. **Kozmetik Ürün Dayanımlı Döşeme:** Tonikler, asitler, yağlar ve esansların dökülmesi durumunda leke tutmayan, ıslak mendil veya sabunlu bezle kolayca arınan silinebilir yüzey.
+3. **Alt Raf ve Depolama Alanı:** Havlu, cihaz propları ve sarf malzemelerini el altında tutmaya yarayan alt sepet veya ahşap ızgara rafı.
+4. **Çıkarılabilir Kolçaklar:** İhtiyaç halinde genişliği artıran veya dar alanlarda sökülebilen pratik tak-çıkar kol destekleri.
+
+Güzellik merkeziniz için en şık modelleri [Bakım Yatakları](/kategori/bakim-yataklari) ve [Medikal Kozmetik](/kategori/medikal-kozmetik) koleksiyonumuzda bulabilirsiniz.
+', '/images/blog/guzellik-merkezi-cilt-bakim-yataklari-motorlu-kontrol.jpg', 'MCARIS Estetik Donanım Uzmanı', '5 dk okuma', 'Teknik & Güvenlik', ARRAY['Cilt Bakım Yatağı', 'Kozmetik Yatak', 'Güzellik Merkezi', 'Lazer Masası', 'Bakım Yatağı']::text[], TRUE, 37, '2026-09-07T12:22:48.979Z', '2026-09-16T11:05:03.689Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtjblask000aa23om4gie7ua', 'Ankara 25 İlçede Hasta Yatağı Aynı Gün Kurulum, Dezenfeksiyon ve Teknik Servis Ağı', 'ankara-hasta-yatagi-ayni-gun-kurulum-ve-servis', 'Çankaya''dan Keçiören''e, Yenimahalle''den Etimesgut ve Gölbaşı''na Ankara genelinde gün içinde anahtar teslim teknik servis ve teslimat süreci.', '
+## Ankara İçi Acil Medikal Lojistik
+
+Hastaneden taburcu olan bir hastanın eve geldiğinde yatağının hazır olmaması aileler için büyük stres kaynağıdır. MCARIS Medikal, Ankara genelinde 25 ilçenin tamamına tam donanımlı servis araçlarıyla aynı gün teslimat sağlar.
+
+---
+
+## Ankara İlçelerine Özel Teslimat Ağı
+
+- **Merkez İlçeler (Çankaya, Yenimahalle, Keçiören, Etimesgut, Mamak, Altındağ):** Siparişten itibaren gün içinde adrese varış ve kurulum.
+- **Gelişen ve Dış İlçeler (Sincan, Gölbaşı, Pursaklar, Polatlı, Kahramankazan, Çubuk):** Aynı gün planlı teslimat ve oda içi kurulum.
+- **Ücretsiz Taşıma & Montaj:** Kat sayısı fark etmeksizin karyola odanıza taşınır, çalışır halde test edilerek teslim edilir.
+    ', '/uploads/products/gold-3-motorlu-1.jpg', 'MCARIS Lojistik & Saha Operasyon Masası', '4 dk okuma', 'Teknik & Güvenlik', ARRAY['Ankara Teslimat', 'Çankaya', 'Yenimahalle', 'Keçiören', 'Etimesgut']::text[], TRUE, 107, '2026-09-01T23:50:24.741Z', '2026-09-16T11:05:03.049Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtnm2uxu0003w0wokbuo9fob', '2 Motorlu Elektrikli Hasta Karyolası Nedir? Pozisyonlar, Motor Gücü ve Kullanım Alanları', '2-motorlu-hasta-yatagi-nedir-ve-nasil-kullanilir', 'En çok tercih edilen 2 motorlu hasta yataklarının sırt ve ayak kaldırma fonksiyonları, kablolu el kumandası kullanımı ve bakım süreçleri.', '
+## 2 Motorlu Hasta Karyolası Çalışma Prensibi
+
+2 motorlu elektrikli hasta yatakları, evde bakım sektöründe en yaygın kullanılan medikal karyola sınıfıdır. Adını bünyesinde barındırdığı iki bağımsız elektronik motordan alır.
+
+Bu iki motor hastaya iki temel anatomik hareket serbestliği sunar:
+1. **Sırt (Baş) Kısmı Kaldırma (0° - 80°):** Hastanın sırtını yastık dizmeye gerek kalmadan dikleştirir.
+2. **Ayak Ucu Kısmı Kaldırma (0° - 45°):** Hastanın bacaklarını diz bölgesinden bükerek yukarı kaldırır (Fowler Pozisyonu).
+
+---
+
+## Klinik ve Günlük Yaşam Faydaları
+
+### 1. Aspirasyon (Boğulma) Riskini Önleme
+Yatalak hastaların düz yatarak beslenmesi veya su içmesi, gıdaların nefes borusuna kaçmasına (aspirasyon pnömonisi) yol açar. Kumandadan sırt açısının 70-80 dereceye getirilmesi hastanın güvenle yemek yemesini sağlar.
+
+### 2. Akciğer Kapasitesini ve Oksijenlenmeyi Artırma
+Yatay pozisyonda iç organlar diyaframa baskı yapar ve nefes darlığı yaratır. Sırtın kaldırılması diyaframı serbest bırakır, KOAH ve kalp yetmezliği olan hastaların rahat nefes almasını sağlar.
+
+### 3. Ödem ve Varis Oluşumunu Engelleme
+Ayak ucunun kaldırılması yerçekiminin etkisiyle bacaklarda biriken sıvının dolaşıma katılmasına yardımcı olur. Kalp ve damar yükünü hafifletir.
+    ', '/uploads/products/gold-2-motorlu-1.jpg', 'MCARIS Biyomedikal Mühendislik Departmanı', '6 dk okuma', 'Hasta Karyolası Rehberi', ARRAY['2 Motorlu Karyola', 'Elektrikli Yatak', 'Kumandalı Karyola', 'Hasta Pozisyonlama', 'Ev Tipi Bakım']::text[], TRUE, 59, '2026-09-04T23:55:04.866Z', '2026-09-16T11:05:03.235Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtjblarj0002a23ob8kxec6n', 'SGK Hasta Yatağı Geri Ödemesi Nasıl Alınır? Heyet Raporu ve ÜTS/UBB Fatura Rehberi', 'sgk-hasta-yatagi-geri-odemesi-ve-rapor-rehberi', 'Sosyal Güvenlik Kurumu (SGK) üzerinden motorlu hasta karyolası ve havalı yatak desteği almak için gereken sağlık kurulu raporu ve fatura prosedürleri.', '
+## SGK Hasta Yatağı Destek Süreci
+
+Sosyal Güvenlik Kurumu (SGK), Sağlık Uygulama Tebliği (SUT) kapsamında yatağa bağımlı hastaların motorlu hasta yatağı ve havalı yatak ihtiyaçlarına belirli oranlarda geri ödeme desteği sağlamaktadır.
+
+---
+
+## SGK Hasta Yatağı Geri Ödemesi İçin Adım Adım Rehber
+
+### 1. Adım: Sağlık Kurulu (Heyet) Raporu Alınması
+- Tam teşekküllü bir devlet veya üniversite hastanesinden en az 3 uzman hekimin imzaladığı "Sağlık Kurulu Raporu" alınmalıdır.
+- Raporda hastanın tanısı, yatağa bağımlılık durumu ve **"Motorlu Hasta Karyolası ve Havalı Yatak Kullanması Uygundur"** ibaresi açıkça yer almalıdır.
+
+### 2. Adım: E-Reçete Düzenlenmesi
+- Uzman hekim tarafından SUT koduna uygun elektronik reçete düzenlenir.
+
+### 3. Adım: ÜTS / UBB Kayıtlı Medikal Fatura Kesimi
+- Satın alacağınız veya kiralayacağınız medikal firmanın T.C. Sağlık Bakanlığı Ürün Takip Sistemi (ÜTS) ve Ulusal Bilgi Bankası (UBB) kayıtlı olması zorunludur.
+- Faturada ürünün barkod numarası ve UBB kodu eksiksiz yer almalıdır.
+
+### 4. Adım: SGK İl Müdürlüğüne Başvuru
+- Rapor, reçete, medikal fatura, UBB barkod çıktıları ve kimlik fotokopisi ile ikamet ettiğiniz ilin SGK İl Müdürlüğü / Medikal Malzeme Servisine teslim edilir.
+- Onaylanan destek tutarı hastanın veya vasisinin IBAN hesabına yatırılır.
+
+---
+
+## MCARIS Medikal SGK ve Resmi Belge Danışmanlığı
+
+MCARIS Medikal tüm ürünlerinde Sağlık Bakanlığı ÜTS kayıtlı barkodlar ve SGK mevzuatına tam uyumlu resmi fatura düzenleyerek dosyanızın sorunsuz onaylanmasını sağlar.
+    ', '/uploads/products/silver-2-motorlu-1.jpg', 'MCARIS Medikal Hukuk & SGK Masası', '5 dk okuma', 'Satın Alma & Kiralama', ARRAY['SGK', 'Hasta Yatağı Raporu', 'Heyet Raporu', 'ÜTS', 'UBB']::text[], TRUE, 83, '2026-09-01T23:50:24.704Z', '2026-09-16T11:05:02.745Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtjblas60005a23oca2d2f74', 'Evde Hasta Bakımında Doğru Hasta Karyolası Seçimi: 2, 3 ve 4 Motorlu Karşılaştırması', 'dogru-hasta-karyolasi-secimi-rehberi', 'Hastanızın hareket kabiliyeti ve tedavi sürecine göre en uygun motorlu hasta yatağını seçmek için bilmeniz gereken tüm klinik kriterler ve mühendislik detayları.', '
+## Evde Bakım Sürecinde Hasta Yatağının Önemi
+
+Uzun süreli yatağa bağımlı veya hareket kısıtlılığı yaşayan hastaların bakımında standart ev yatakları hem hasta konforu hem de bakıcı sağlığı açısından ciddi riskler barındırır. Profesyonel motorlu hasta karyolaları; hastanın oturma, ayak kaldırma, yükseklik ayarlama (asansör) ve kan dolaşımını düzenleyici Trendelenburg pozisyonlarını zahmetsizce almasını sağlar.
+
+---
+
+## 2, 3 ve 4 Motorlu Karyolaların Farkları
+
+### 1. 2 Motorlu Hasta Karyolaları
+- **Hareket Kabiliyeti:** Sırt (baş) ve ayakucu bağımsız olarak hareket eder.
+- **Kimler İçin Uygundur:** Kısa süreli iyileşme dönemindeki, desteksiz ayağa kalkabilen ve temel oturma pozisyonuna ihtiyaç duyan hastalar.
+
+### 2. 3 Motorlu Asansörlü Hasta Karyolaları
+- **Hareket Kabiliyeti:** Sırt ve ayak hareketine ek olarak tüm karyola aşağı-yukarı (asansör hareketi) hareket eder.
+- **Bakıcıya Faydası:** Bakıcının hastanın altını temizlerken veya pansuman yaparken belini bükmesini engeller.
+
+### 3. 4 Motorlu Trendelenburg Hasta Karyolaları
+- **Hareket Kabiliyeti:** Sırt, ayak, asansör ve Trendelenburg pozisyonları.
+- **Klinik Endikasyonlar:** Solunum güçlüğü çeken, tansiyon regülasyonuna ihtiyaç duyan, reflü riski olan hastalar.
+    ', '/uploads/products/dali-low-entry-econ-1.jpg', 'MCARIS Medikal Uzman Heyeti', '5 dk okuma', 'Hasta Karyolası Rehberi', ARRAY['Hasta Yatağı', '2 Motorlu', '4 Motorlu', 'Trendelenburg', 'Evde Bakım']::text[], TRUE, 83, '2026-09-01T23:50:24.726Z', '2026-09-16T11:05:02.859Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtnm2v1q0004w0wohz9xqqk6', 'Havalı Yatak Kullanımında Dikkat Edilmesi Gerekenler: Doğru Basınç Ayarı, 7/24 Kesintisiz Çalışma ve Bakım', 'havali-yatak-kullaniminda-dikkat-edilmesi-gerekenler', 'Bası yarasını önleyen havalı yatakların motor kullanımı, hasta kilosuna göre basınç regülatörü ayarı, delinmeleri önleme ve temizlik kuralları.', '
+## Havalı Yatak Kullanımında En Sık Yapılan Hatalar
+
+Havalı yataklar, sürekli yatan hastalarda vücut ağırlığının tek bir kemik çıkıntısına baskı yapmasını engellemek için tasarlanmış medikal cihazlardır. Ancak yanlış kullanım yatağın tüm koruyucu etkisini sıfırlayabilir.
+
+İşte evde bakımda mutlaka dikkat edilmesi gereken altın kurallar:
+
+---
+
+## 1. Motor Asla Kapatılmamalıdır (7/24 Kesintisiz Çalışma)
+
+En sık yapılan ölümcül hata; "ses yapıyor" veya "elektrik harcamasın" gerekçesiyle geceleri havalı yatak motorunun fişten çekilmesidir.
+- Motor kapatıldığı anda borulardaki basınçlı hava boşalır.
+- Hasta doğrudan karyolanın sert zeminine oturur.
+- Basınç altındaki kılcal damarlar tıkanır ve **birkaç saat içinde kalıcı bası yarası başlar.**
+- Modern kompresörler 7W enerji tüketir (ayda 10-15 TL) ve aşırı ısınmaya karşı termal korumalıdır; 7 gün 24 saat güvenle çalışır.
+
+---
+
+## 2. Hasta Kilosuna Göre Basınç Ayarı (Regülatör Kalibrasyonu)
+
+Havalı yatak motorunun ön panelinde bir basınç ayar düğmesi bulunur:
+- **Hafif Hastalar (40 - 60 kg):** Düğme 1-3 kademesine getirilmelidir.
+- **Orta Kilolu Hastalar (60 - 85 kg):** Düğme 4-6 kademesinde tutulmalıdır.
+- **Ağır Hastalar (85 - 120 kg):** Düğme maksimuma (7-10) getirilmelidir.
+    ', '/uploads/products/p20-12-cm-ab-sistem-boru-tipi-havali-yatak-1.jpg', 'MCARIS Yara Bakım & Klinik Ekibi', '5 dk okuma', 'Hasta Bakımı', ARRAY['Havalı Yatak', 'Yatak Yarası Önleme', 'Boru Tipi Yatak', 'Basınç Ayarı', 'Dekübitüs']::text[], TRUE, 79, '2026-09-04T23:55:05.006Z', '2026-09-16T11:05:03.272Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtr7o4qc0001w0y8cmg84hxe', 'Etlik Şehir Hastanesi ve Keçiören Çevresi Hasta Karyolası Kiralama & Satış', 'etlik-sehir-hastanesi-hasta-karyolasi-kiralama-ve-satis', 'Etlik Şehir Hastanesi ortopedi, onkoloji ve nöroloji taburculukları için Keçiören, Yenimahalle ve Etlik çevresine gün içinde adrese anahtar teslim hasta yatağı hizmeti.', '
+## Etlik Şehir Hastanesi''nden Evde Bakıma Güvenli Geçiş
+
+Ankara''nın kuzey aksında sağlık hizmeti veren **Etlik Şehir Hastanesi**, çevre ilçeler olan Keçiören, Yenimahalle, Altındağ ve Pursaklar başta olmak üzere geniş bir hasta popülasyonuna hizmet vermektedir. Cerrahi operasyon veya yoğun bakım yatışı sonrasında taburculuk planı yapılırken, yatağa bağımlı kalacak hastanın konforunu korumak ve refakatçinin bel sağlığını güvenceye almak amacıyla profesyonel bir hasta karyolası kurulması zorunludur.
+
+MCARIS Medikal merkez servis üssümüz, Etlik Şehir Hastanesi kampüsüne ve Keçiören bölgesine çok yakın bir lojistik konumdadır. Bu avantaj sayesinde siparişleriniz **gün içinde kapınızda anahtar teslim** kurulur.
+
+---
+
+## Keçiören Bölgesinde Evlerin Mimari Yapısı ve Taşıma Güvencesi
+
+Keçiören ve Etlik çevresinde eski ve yeni binalar bir arada bulunmaktadır. Birçok yapıda bina asansörü dar veya asansörsüz dik merdivenler mevcuttur. MCARIS Medikal olarak sunduğumuz modüler karyola teknolojisinin avantajları:
+
+- **Modüler ABS Başlık ve Şasi:** Karyolalarımız kapı eşiklerinden ve dar merdiven sahanlıklarından geçecek şekilde tasarlanmıştır.
+- **Sıfır Çizik & Güvenli Taşıma:** 2 veya 3 kişilik sertifikalı lojistik ekibimiz, kat fark etmeksizin karyolayı evinize zarar vermeden taşır.
+- **Kilitli Medikal Tekerlekler:** Parke ve halı zeminlerde iz bırakmayan, çapraz fren sistemli tekerlekler yatağı oda içerisinde sabitlemenizi sağlar.
+
+---
+
+## 2 Motorlu vs. 3 Motorlu: Hangisi Kiralanmalı?
+
+| Kriter | 2 Motorlu ABS Karyola | 3 Motorlu Asansörlü Karyola |
+| :--- | :--- | :--- |
+| **Sırt Kaldırma Açısı** | 0° - 85° (Kumandalı) | 0° - 85° (Kumandalı) |
+| **Ayakucu Kaldırma** | 0° - 45° (Kumandalı) | 0° - 45° (Kumandalı) |
+| **Yükseklik Ayarı (Asansör)** | Sabit Yükseklik | 45 cm - 90 cm dikey asansör |
+| **Bakıcı Ergonomisi** | Standart eğilme gerektirir | Refakatçiyi bel fıtığından korur |
+| **Aylık Kiralama Maliyeti** | En ekonomik seçenek | Yüksek konfor ve kolay pansuman |
+
+---
+
+## Acil Teslimat ve Randevu
+
+Etlik Şehir Hastanesi''nde taburculuk işlemleri sürerken çağrı merkezimizi arayarak (0536 820 02 69) yatağınızın eve siz varmadan önce hazır hale getirilmesini sağlayabilirsiniz.
+
+Detaylı ilçe bilgisi ve referanslarımız için [Keçiören Hasta Yatağı](/ankara-hasta-yatagi/kecioren) ve [Yenimahalle Hasta Yatağı](/ankara-hasta-yatagi/yenimahalle) sayfalarımızı ziyaret edebilirsiniz.
+', '/images/blog/etlik-sehir-hastanesi-taburculuk-ve-karyola-kiralama.jpg', 'MCARIS Medikal Keçiören Bölge Servisi', '5 dk okuma', 'Satın Alma & Kiralama', ARRAY['Etlik Şehir Hastanesi', 'Keçiören', 'Hasta Karyolası', 'Kiralık Yatak', 'Yenimahalle']::text[], TRUE, 43, '2026-09-07T12:22:47.796Z', '2026-09-16T11:05:03.424Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtr7o5xj000aw0y8jx4ama4q', 'Medikal Cihaz Sehpası Seçimi: EKG, Lazer ve Koter Cihazları İçin Güvenli Taşıma', 'medikal-cihaz-sehpasi-secimi-ekg-ve-lazer-tasima', 'Kliniklerde EKG, lazer, koter ve ultrason cihazlarının güvenli taşınması için antistatik kilitli tekerlekler, kablo yönetimi ve çekmeceli sehpa seçim kılavuzu.', '
+## Yüksek Değerli Klinik Cihazların Güvenliği
+
+Hastanelerde ve özel kliniklerde kullanılan EKG cihazları, elektrokoterler, lazer epilasyon üniteleri, ultrason probları ve fizyoterapi elektroterapi cihazları on binlerce liralık hassas biyomedikal yatırımlardır. Bu cihazların odalar arasında taşınırken sarsılması, devrilmesi veya kablolarının tekerleklere dolanması cihazda kalıcı kalibrasyon bozukluklarına yol açabilir.
+
+Profesyonel bir **medikal cihaz sehpası**, pahalı klinik donanımlarınızı koruyan koruyucu bir taşıma platformudur.
+
+---
+
+## Cihaz Sehpasında Olması Gereken 4 Mühendislik Standardı
+
+1. **Antistatik ve Kilitli Medikal Tekerlekler:** Cihazların hassas elektronik devrelerine statik elektrik yüklenmesini önleyen antistatik tekerlekler ve çalışma anında kaymayı önleyen fren pabuçları.
+2. **Kablo Geçiş Kanalları ve Grup Priz Yuvası:** Cihazın güç adaptörü ve problarının karmaşık şekilde sarkmasını engelleyen entegre kablo kılavuzları.
+3. **Kilitli ve Teleskopik Çekmeceler:** Ultrason jelleri, elektrot pedleri, lazer gözlükleri ve cerrahi sarf malzemelerini tozdan koruyan rulmanlı çekmeceler.
+4. **Devrilme Önleyici Geniş Taban Ağırlığı:** Ağırlık merkezi yere yakın tutulmuş çelik şasi, ani manevralarda bile sehpanın devrilmesini imkansız kılar.
+
+Kliniğinize uygun 2 çekmeceli ve çok raflı modelleri [Cihaz Sehpaları](/kategori/cihaz-sehpasi) sayfamızda bulabilirsiniz.
+', '/images/blog/medikal-cihaz-tasima-sehpasi-klinik-setup-rehberi.jpg', 'MCARIS Biyomedikal Donanım Masası', '5 dk okuma', 'Teknik & Güvenlik', ARRAY['Cihaz Sehpası', 'EKG Sehpası', 'Lazer Cihaz Sehpası', 'Klinik Sehpası', 'Antistatik Tekerlek']::text[], TRUE, 35, '2026-09-07T12:22:49.351Z', '2026-09-16T11:05:03.765Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtnm2uif0000w0wo1jlj1j5p', 'Yaşlılarda Düşme Riskini Önleme Rehberi: Ev İçi Düzenleme ve Güvenli Hasta Karyolası Seçimi', 'yaslilarda-dusme-ve-dusmeyi-onlemek-icin-alinabilecek-tedbirler', 'Yaşlı bireylerde düşme sonucu kalça kırığı ve travmaları önlemek için ev içi düzenleme ipuçları, düşme önleyici alçak hasta yatağı çözümleri ve refakatçi tavsiyeleri.', '
+## Yaşlılarda Düşme Vakaları ve Neden Olduğu Klinik Riskler
+
+Yaşlanmayla birlikte reflekslerin zayıflaması, kas kütlesinin (sarkopeni) azalması, denge merkezindeki kaymalar, tansiyon düşmesi ve görme bozuklukları gibi fizyolojik faktörler yaşlı bireylerde düşme riskini katlanarak artırır. 65 yaş üstü bireylerde ev içi kazaların %70''inden fazlasını **yataktan kalkarken veya gece tuvalete giderken yaşanan düşmeler** oluşturur.
+
+Düşmelerin en vahim klinik sonucu ise **kalça kırıklarıdır**. Kalça kırığı ameliyatı geçiren yaşlı hastalar aylarca yatağa bağımlı kalmakta, akciğer embolisi, derin ven trombozu ve yatak yarası gibi ölümcül komplikasyonlarla karşı karşıya kalmaktadır. Bu nedenle yaşlı bakımında birincil hedef "düşmeyi olmadan önce önlemektir".
+
+---
+
+## 1. Yatak İçi ve Çevresi Güvenlik Önlemleri
+
+- **Alçak Tabanlı (Low-Entry) Hasta Karyolası Tercihi:** Standart ev yatakları 60-70 cm yüksekliğindedir ve yaşlı bir birey yataktan inerken ayakları yere tam basmadığı için baş dönmesiyle düşer. 3 ve 4 motorlu asansörlü yataklar taban yüksekliğini 25-30 cm''ye kadar indirerek ayakların zemine düz basmasını sağlar.
+- **Çift Kademeli Kilitli Yan Korkuluklar:** Gece istemsizce yataktan yuvarlanmayı önlemek için karyolanın her iki tarafında da boşluksuz ABS veya alüminyum tabanca korkuluk bulunmalıdır. Korkuluk aralıkları hastanın kolunun veya boynunun sıkışmayacağı EN 60601-2-52 medikal standartlarında olmalıdır.
+- **Kaymaz Zemin ve Çift Taraflı Tutunma Barı:** Yatak kenarına basılan noktalarda halı ve kilim kesinlikle kaldırılmalı; zemin kaydırmaz medikal zemin kaplaması veya kauçuk tabanlı matlarla desteklenmelidir.
+- **Gece Lambası ve Sensörlü Aydınlatma:** Yatağın hemen altına yerleştirilecek hareket sensörlü yumuşak LED aydınlatmalar, yaşlının aniden uyandığında yönünü bulmasını kolaylaştırır.
+
+---
+
+## 2. Ev İçi Düzenlemede Dikkat Edilmesi Gereken 5 Kritik Kural
+
+1. **Eşiklerin ve Kabloların Kaldırılması:** Oda kapılarındaki eşikler düzleştirilmeli, yerdeki elektrik ve uzatma kabloları süpürgelik içine gizlenmelidir.
+2. **Banyo ve Tuvalette Islak Zemin Güvenliği:** Klozet kenarlarına duvara sabitlenen paslanmaz çelik tutunma barları monte edilmeli, kaymaz tabureli duş alanı oluşturulmalıdır.
+3. **Doğru Terlik ve Ayakkabı Seçimi:** Arkası açık terlikler yaşlıların ayağından fırlayarak tökezlemeye yol açar. Bileği saran, altı kauçuk tabanlı medikal ortopedik ayakkabılar giyilmelidir.
+4. **İlaç Saatlerinin Düzenlenmesi:** Uyku yapan veya tansiyonu düşüren ilaçların ardından hastanın yataktan tek başına kalkmasına izin verilmemelidir.
+5. **Acil Durum Çağrı Butonu:** Yatak başında veya hastanın boynunda asılı bir acil çağrı butonu bulunmalı, hasta refakatçiye tek tuşla seslenebilmelidir.
+    ', '/uploads/products/burmeier-dali-4-motorlu-alman-hasta-karyolasi-2.png', 'MCARIS Geriatri & Klinik Bakım Heyeti', '7 dk okuma', 'Hasta Bakımı', ARRAY['Yaşlı Bakımı', 'Düşme Önleme', 'Hasta Karyolası', 'Kalça Kırığı', 'Evde Güvenlik']::text[], TRUE, 55, '2026-09-04T23:55:04.311Z', '2026-09-16T11:05:03.123Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtr7o61t000bw0y8x5i7xh1p', 'Dövme ve Flebotomi Kol Sehpası Ergonomisi: Ayarlanabilir Mafsal ve Yastık Teknolojisi', 'dovme-ve-medikal-kol-sehpasi-ergonomisi-ve-ozellikleri', 'Dövme sanatçıları ve kan alma istasyonları için 360 derece döner mafsallı, yükseklik amortisörlü ve konforlu kol sehpası incelemesi.', '
+## Hassas Çizim ve Kan Almada Kol Sabitleme Zorunluluğu
+
+İster saatlerce süren ayrıntılı bir dövme seansı olsun, isterse zor damar yolu bulunan bir hastadan kan alma işlemi; el ve kolun en ufak bir titremesi tüm sonucu etkileyebilir. Kolun boşlukta kalması veya rahatsız bir zemine dayanması kas yorgunluğuna ve istemsiz reflekslere yol açar.
+
+Bu sebeple profesyonel stüdyolarda ve sağlık kabinlerinde **360 derece ayarlanabilir kol dayama sehpası** temel bir ihtiyaçtır.
+
+---
+
+## İdeal Bir Kol Sehpasında Bulunması Gerekenler
+
+- **360° Küresel Mafsal Kilidi:** Kol yastığının her yöne eğilmesini ve sanatçının veya uzmanın istediği açıda milimetrik olarak kilitlenmesini sağlayan ağır hizmet tipi top kilit.
+- **Yüksek Yoğunluklu Yastık:** Dirsek ve ön kolun baskı noktalarında ağrı yapmayan 4-6 cm kalınlığında deformasyona dirençli sünger.
+- **Mürekkep ve Sıvı Tutmaz Kaplama:** Alkol, dezenfektan ve pigment lekelerinden kolayca arındırılabilen vinil döşeme.
+- **Geniş Taban Stabilitesi:** Ayak basılan veya dirsekle yüklenilen anlarda sallanmayan döküm veya kare çelik profil taban.
+
+Renk ve şasi alternatifleri için [Dövme Kol Sehpaları](/kategori/dovme-kol-sehpalari) kategorimizi inceleyebilirsiniz.
+', '/images/blog/amortisorlu-kol-dayama-enjeksiyon-sehpasi-standartlari.jpg', 'MCARIS Teknik Ekipmanı', '4 dk okuma', 'Teknik & Güvenlik', ARRAY['Dövme Kol Sehpası', 'Flebotomi Sehpası', 'Kol Dayama Sehpası', 'Ayarlanabilir Sehpa', 'Stüdyo Donanım']::text[], TRUE, 35, '2026-09-07T12:22:49.506Z', '2026-09-16T11:05:03.802Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtr7o5410004w0y8s3cutets', 'Kan Alma Koltuğu Seçim Rehberi: Laboratuvar ve Hastane İçin Ergonomik Kriterler', 'kan-alma-koltugu-secim-rehberi-laboratuvar-ve-klinik', 'Özel tıp merkezleri, laboratuvarlar ve hastaneler için hidrolik ve motorlu kan alma koltuğu seçim kılavuzu; senkop önleme, çift kolçak ve hijyen standartları.', '
+## Laboratuvar ve Polikliniklerde Kan Alma Sürecinin Dinamikleri
+
+Flebotomi (kan alma) işlemi, basit bir iğne enjeksiyonu gibi görünse de hastaların %5 ila %10''unda vazovagal senkop (iğne korkusu, tansiyon düşmesi ve ani bayılma) reaksiyonlarına yol açabilen hassas bir tıbbi prosedürdür. Yanlış tasarlanmış, kol desteği yetersiz veya sabit dik duran bir koltukta bayılan bir hastanın koltuktan düşme ve kafa travması yaşama riski mevcuttur.
+
+Bu sebeple profesyonel sağlık kuruluşlarında kullanılan **kan alma koltukları**, hem hastanın güvenliğini hem de flebotomi uzmanının ergonomisini garanti altına almalıdır.
+
+---
+
+## İdeal Bir Kan Alma Koltuğunda Olması Gereken Özellikler
+
+### 1. Hızlı Yatar Pozisyona Geçiş (Senkop Güvenliği)
+Kan verme esnasında baş dönmesi veya bayılma belirtisi gösteren hasta, saniyeler içinde sırtı geriye yatırılarak ve bacakları hafifçe yukarı kaldırılarak şok pozisyonuna alınabilmelidir. Mekanik gazlı amortisörlü veya motorlu modeller bu geçişi sarsıntısız sağlar.
+
+### 2. Çift Taraflı Anatomik Kol Destekleri (Kolçaklar)
+- Sağ ve sol koldan kan alabilmek için her iki tarafta poliüretan dolgulu geniş kolçak bulunmalıdır.
+- Kolçaklar hastanın boyuna ve damar açısına göre yükseklik ve eksenel açı ayarına sahip olmalıdır.
+
+### 3. Kompakt ve Yer Kaplamayan Tasarım
+Laboratuvar bekleme alanlarında alan tasarrufu sağlayan, ancak hastanın otururken rahat nefes alabileceği geniş oturma yüzeyi (50-55 cm) sunmalıdır.
+
+---
+
+## Hidrolik vs. Motorlu Kan Alma Koltukları
+
+| Parametre | Hidrolik Yükseklik Ayarlı Koltuk | Elektrikli Kumandalı Motorlu Koltuk |
+| :--- | :--- | :--- |
+| **Enerji İhtiyacı** | Elektriksiz çalışır (Ayak pedallı) | 220V Şebeke elektriği / Adaptör |
+| **Kullanım Alanı** | Yoğun sirkülasyonlu laboratuvarlar | Özel klinikler, VIP kan alma odaları |
+| **Sırt Hareketi** | Manuel gazlı amortisör mandalı | El kumandası ile mikrometrik |
+| **Bakım Kolaylığı** | Sıfır elektronik arıza riski | Motor ve kumanda periyodik kontrolü |
+
+MCARIS Medikal üretimi Liva serisi hidrolik ve elektrikli kan alma koltuklarını [Bakım Koltukları](/kategori/bakim-koltuklari) sayfamızdan inceleyebilirsiniz.
+', '/images/blog/kan-alma-ve-laboratuvar-koltuklari-standartlari.jpg', 'MCARIS Medikal Biyomedikal Danışmanı', '5 dk okuma', 'Teknik & Güvenlik', ARRAY['Kan Alma Koltuğu', 'Flebotomi', 'Laboratuvar Mobilyası', 'Senkop Önleme', 'Klinik Koltuk']::text[], TRUE, 39, '2026-09-07T12:22:48.289Z', '2026-09-16T11:05:03.537Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtnm2v5l0005w0wokdgfk7i4', 'Evde Hasta Bakımında Gerekli Temel Medikal Ekipmanlar ve Bakıcı Kontrol Listesi', 'evde-hasta-bakiminda-gerekli-medikal-urunler', 'Hastaneden taburcu olan bir hastanın evde konforlu ve güvenli iyileşmesi için ihtiyaç duyulan tüm medikal demirbaşlar ve pratik hasta bakım ürünleri.', '
+## Hastaneden Eve Geçiş Sürecinde Hazırlık
+
+Hastanede hekim ve hemşire gözetiminde olan hastanın ev ortamına nakledilmesi, aileler için hem duygusal hem de operasyonel olarak büyük bir hazırlık gerektirir. Doğru medikal ekipmanlar temin edilmediğinde hem hastanın iyileşme süreci gecikir hem de bakım veren yakınlar kısa sürede fiziksel olarak tükenir.
+
+İşte taburculuk öncesi evde mutlaka hazır bulundurulması gereken temel medikal kontrol listesi:
+
+---
+
+## 1. Temel Demirbaş Ekipmanlar
+
+- **Motorlu Hasta Karyolası:** Hastanın oturması, dinlenmesi ve güvenle yataktan kalkması için vazgeçilmezdir.
+- **Boru Tipi Havalı Yatak:** Günde 12 saatin üzerinde yatan her hastada bası yarasını önlemek için 12 cm boru tipi ventilasyonlu sistem hazır edilmelidir.
+- **Amortisörlü Hasta Yemek Masası:** Yatak üzerinde beslenme, ilaç alma ve kitap okuma için U ayaklı, yüksekliği ayarlanabilir masa gereklidir.
+- **Serum Askısı:** Dört tekerlekli mobil serum askısı veya karyola köşesine monte edilen askı aparatları evdeki sıvı tedavilerini düzenler.
+- **Hasta Transfer Lifti (Vinç):** Kilolu veya tamamen hareketsiz hastaların yataktan tekerlekli sandalyeye taşınmasında bakıcının belini korur.
+    ', '/uploads/products/amortisorlu-hasta-yemek-masasi-1.jpg', 'MCARIS Evde Bakım Danışmanlığı', '6 dk okuma', 'Hasta Bakımı', ARRAY['Evde Hasta Bakımı', 'Medikal Ürünler', 'Hasta Karyolası', 'Yemek Masası', 'Transfer Lifti']::text[], TRUE, 85, '2026-09-04T23:55:05.146Z', '2026-09-16T11:05:03.310Z') ON CONFLICT DO NOTHING;
+INSERT INTO "BlogPost" ("id", "title", "slug", "excerpt", "content", "coverImage", "author", "readTime", "category", "tags", "isPublished", "viewCount", "createdAt", "updatedAt") VALUES ('cmtjblaso000ba23o9ig1rujh', 'Hasta Karyolalarında 2 Yıl Yerinde Garanti ve 10 Yıl Parça Temini Neden Hayatidir?', 'hasta-karyolasi-2-yil-yerinde-garanti-ve-servis', 'Medikal cihazlarda teknik servis hızının hasta konforu üzerindeki etkisi, yerinde müdahale avantajı ve motor yedek parça güvencesi.', '
+## Yatağa Bağımlı Hastada Teknik Arıza Tolere Edilemez
+
+Hasta yatağının motorunun veya kumandasının bozulması, hastanın saatlerce yanlış pozisyonda kalmasına ve acı çekmesine yol açabilir. Bu nedenle sıradan garanti taahhütleri yerine **"Yerinde Servis"** garantisi aranmalıdır.
+
+---
+
+## MCARIS 2 Yıl Yerinde Garanti Kapsamı
+
+1. **Yatağı Söküp Gönderme Derdi Yok:** Servis teknisyenimiz arıza bildirimi üzerine doğrudan evinize gelir.
+2. **Yedek Parça ve Motor Değişimi:** Arızalı motor veya el kumandası anında yenisiyle değiştirilir.
+3. **10 Yıl Boyunca Orijinal Parça Temini:** Ürününüz 10 yıl boyunca fabrika çıkışlı orijinal parça desteği altındadır.
+    ', '/uploads/products/burmeier-dali-4-motorlu-alman-hasta-karyolasi-2.png', 'MCARIS Kalite & Garanti Masası', '4 dk okuma', 'Teknik & Güvenlik', ARRAY['Yerinde Servis', 'Garanti', 'Yedek Parça', 'Motor Arızası', 'Teknik Servis']::text[], TRUE, 105, '2026-09-01T23:50:24.744Z', '2026-09-16T11:05:03.086Z') ON CONFLICT DO NOTHING;
+
+-- Tablo: "Coupon" (4 kayıt)
+INSERT INTO "Coupon" ("id", "code", "type", "value", "minSubtotal", "description", "isActive", "createdAt", "updatedAt") VALUES ('cmtwz3ivg000aw0ckckaiws24', 'MCARIS900', 'fixed', '900', '900', '900 TL Net İndirim', TRUE, '2026-09-11T13:09:26.476Z', '2026-09-11T13:09:26.476Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Coupon" ("id", "code", "type", "value", "minSubtotal", "description", "isActive", "createdAt", "updatedAt") VALUES ('cmtwz3jk1000bw0ckmx1o3suw', 'FIRSAT900', 'fixed', '900', '900', '900 TL Özel Fırsat İndirimi', TRUE, '2026-09-11T13:09:27.362Z', '2026-09-11T13:09:27.362Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Coupon" ("id", "code", "type", "value", "minSubtotal", "description", "isActive", "createdAt", "updatedAt") VALUES ('cmtwz3k5p000cw0ck23m33na5', 'HOSGELDIN200', 'fixed', '200', '1000', '1.000 TL üzeri 200 TL Net İndirim', TRUE, '2026-09-11T13:09:28.142Z', '2026-09-11T13:09:28.142Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Coupon" ("id", "code", "type", "value", "minSubtotal", "description", "isActive", "createdAt", "updatedAt") VALUES ('cmtwz3l3g000dw0ck3ct867o6', 'SAGLIK15', 'percentage', '15', '2500', '2.500 TL üzeri %15 Medikal İndirimi', TRUE, '2026-09-11T13:09:29.357Z', '2026-09-11T13:09:29.357Z') ON CONFLICT DO NOTHING;
+
+-- Tablo: "Faq" (173 kayıt)
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtjc128m0000w0vg4bhcb6oz', 'Karyola & Modeller', '2, 3 ve 4 motorlu hasta karyolaları arasındaki temel farklar nelerdir?', '2 motorlu karyolalar sadece sırt ve ayakucu açısını ayarlar. 3 motorlu karyolalar buna ek olarak tüm yatağın yüksekliğini (asansör) indirip kaldırarak bakıcının eğilmeden işlem yapmasını sağlar. 4 motorlu karyolalar ise ayrıca Trendelenburg ve Anti-Trendelenburg (eğim) hareketlerini yaparak kan dolaşımı ve solunum desteği sunar.', 1, TRUE, '2026-09-02T00:02:40.150Z', '2026-09-02T00:02:40.150Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtjc12f60001w0vg7z3occev', 'Karyola & Modeller', 'Hasta yatağının motoru elektrik kesildiğinde çalışır mı?', 'Tüm motorlu karyolalarımızda 9V yedek pil desteği bulunmaktadır. Elektrik kesilse dahi hasta güvenle yatay veya oturur konuma getirilebilir.', 2, TRUE, '2026-09-02T00:02:40.386Z', '2026-09-02T00:02:40.386Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtjc12ia0002w0vg2rjzckb1', 'Karyola & Modeller', 'Boru tipi havalı yatak neden kullanılmalıdır?', 'Uzun süre yatağa bağımlı kalan hastalarda bası yaralarını (dekübitüs) önlemek için hücreleri sıralı olarak şişip inen A+B ventilasyonlu boru tipi havalı yataklar kullanılmalıdır. Standart sünger yataklar basıyı tek noktada toplar.', 3, TRUE, '2026-09-02T00:02:40.499Z', '2026-09-02T00:02:40.499Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtjc12or0004w0vg7xbbffai', 'Kiralama & Satış', 'Kiraladığımız yatağı sonradan satın alabilir miyiz?', 'Evet, kiralama süreniz boyunca ödediğiniz kiralama bedelleri satın alma tutarından düşülerek sıfır garantili fatura kesilebilir.', 5, TRUE, '2026-09-02T00:02:40.731Z', '2026-09-02T00:02:40.731Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtjc12ro0005w0vg0tjuib6c', 'Teslimat & Montaj', 'Ankara içi teslimat ne kadar sürer ve ücretli midir?', 'Ankara''nın 25 ilçesinin tamamına (Çankaya, Yenimahalle, Keçiören, Etimesgut, Mamak, Sincan vb.) kendi teknik servis araçlarımızla AYNI GÜN 2 ila 4 saat içinde ÜCRETSİZ teslimat ve montaj yapıyoruz.', 6, TRUE, '2026-09-02T00:02:40.837Z', '2026-09-02T00:02:40.837Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtjc12uj0006w0vgu0vyp8xh', 'Teslimat & Montaj', 'Kurulumu kim yapıyor, hasta yakınlarına eğitim veriliyor mu?', 'Teslimatı MCARIS Medikal''in kendi sertifikalı teknik personeli yapar. Karyolayı odanıza kurar, kumanda ve acil durum fonksiyonlarını hasta yakınlarına birebir uygulamalı anlatır.', 7, TRUE, '2026-09-02T00:02:40.940Z', '2026-09-02T00:02:40.940Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtjc12xh0007w0vgpshn7jpj', 'Teknik Servis & Garanti', 'Hasta karyolalarının garanti süresi ne kadardır?', 'Satın alınan tüm MCARIS hasta karyolaları 2 YIL YERİNDE SERVİS GARANTİSİ ve 10 yıl yedek parça temin garantisi altındadır. Arıza durumunda servisimiz adresinize gelir.', 8, TRUE, '2026-09-02T00:02:41.045Z', '2026-09-02T00:02:41.045Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtjc130d0008w0vgj1880zb8', 'Teknik Servis & Garanti', 'Hafta sonu veya acil durumlarda teknik servis hizmeti var mı?', 'Evet, 7/24 kesintisiz acil danışma ve teknik nöbetçi servis ekibimiz bulunmaktadır.', 9, TRUE, '2026-09-02T00:02:41.149Z', '2026-09-02T00:02:41.149Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnlky2m0000w0lg2jz0xt9a', 'Karyola & Modeller', 'Hasta yatağı motoru kaç Newton (N) itme gücünde olmalıdır?', 'Kaliteli bir hasta karyolasında motorların en az 6000N (yaklaşık 600 kg kaldırma kapasitesi eşdeğeri) lineer itme gücüne sahip olması gerekir. MCARIS Medikal modellerinde 6000N - 6500N tork gücünde, sessiz çalışan, aşırı ısınma korumalı motorlar kullanılır. Düşük Newton gücündeki motorlar hasta ağırlığı altında zorlanır, dişli sıyırır ve erken aşınır.', 2, TRUE, '2026-09-04T23:41:09.119Z', '2026-09-04T23:41:09.119Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnlky9v0001w0lggplqz9o3', 'Karyola & Modeller', 'Karyola şasisi metal mi yoksa plastik mi olmalı, et kalınlığı nedir?', 'Karyolanın ana taşıyıcı iskeleti kesinlikle et kalınlığı en az 1.5 - 2 mm olan yüksek dayanımlı çelik profilden üretilmeli ve paslanmaya karşı 200°C elektrostatik fırın toz boyayla kaplanmalıdır. Başlıklar ve korkuluklar ise darbeye dayanıklı, silinebilir anti-bakteriyel ABS veya hafif alüminyum malzemeden üretilmelidir.', 4, TRUE, '2026-09-04T23:41:09.379Z', '2026-09-04T23:41:09.379Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnlkyd50002w0lgz99qt89w', 'Karyola & Modeller', 'Hasta yataklarında ABS başlık ve alüminyum korkuluk neden tercih edilmelidir?', 'ABS plastik başlıklar hafif, dezenfektanlara dirençli, paslanmaz ve kolay silinebilir özelliktedir. Alüminyum tabanca korkuluklar ve 4 parça ABS bağımsız korkuluklar ise tek elle mandalından pratikçe açılıp kapanabilir; hastanın istemsizce yataktan düşmesini veya kaymasını %100 oranında engellerken ferah bir görüş alanı sunar.', 5, TRUE, '2026-09-04T23:41:09.498Z', '2026-09-04T23:41:09.498Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnlkyge0003w0lg2reqa2v6', 'Karyola & Modeller', 'Yatak başlıkları neden sökülebilir mandallı sistem olmalıdır?', 'Acil tıbbi müdahale gerektiren durumlarda (kalp masajı, aspirasyon, solunum tüpü müdahalesi) sağlık personelinin baş ucundan hastaya doğrudan ulaşabilmesi şarttır. Ayrıca hastanın saç yıkama, yatak içi banyo veya transfer işlemlerinde başlığın saniyeler içinde çıkarılabilmesi bakım veren kişiye geniş bir hareket serbestliği sağlar.', 6, TRUE, '2026-09-04T23:41:09.614Z', '2026-09-04T23:41:09.614Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnlkyjn0004w0lgiye0n8fq', 'Karyola & Modeller', 'Yatak sırt kısmı ve ayak ucu kaçar derece kalkabilir?', 'Karyolalarımızın sırt açısı ergonomik el kumandasıyla 0 dereceden 80-85 dereceye kadar dikleşebilir. Bu sayede hasta rahatça yemek yiyebilir, kitap okuyabilir ve nefes darlığını azaltabilir. Ayak ucu ise 0 ile 45 derece arasında kaldırılarak bacaklardaki kan dolaşımı hızlandırılır ve ödem oluşumu engellenir.', 7, TRUE, '2026-09-04T23:41:09.731Z', '2026-09-04T23:41:09.731Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnlkymv0005w0lgw1ij7px0', 'Karyola & Modeller', 'Hastamın kilosu çok yüksek (obez), standart karyolalar taşır mı?', 'Standart karyolalarımız 150-180 kg güvenli çalışma yüküne sahiptir. 150 kg üzerindeki kilolu ve obez hastalarımız için şasisi 2.5 mm çelikle güçlendirilmiş, çift pistonlu motorlarla donatılmış ve yatak genişliği 110-120 cm olan Bariatrik Ağır Bakım Karyolaları tercih edilmelidir.', 8, TRUE, '2026-09-04T23:41:09.847Z', '2026-09-04T23:41:09.847Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnlkyq50006w0lgoxmoi5fu', 'Karyola & Modeller', 'Ev tipi ahşap baza görünümlü hasta karyolalarının avantajları nelerdir?', 'Burmeier Dali ve MCARIS Platinum gibi ahşap kaplama modeller, hastane odası psikolojisini ortadan kaldırarak ev mobilyası sıcaklığı sunar. Hastanın psikolojik moralini ve iyileşme motivasyonunu yükseltirken, gizli motor mekanizmaları sayesinde tüm profesyonel 4 motorlu yoğun bakım hareketlerini eksiksiz yerine getirir.', 9, TRUE, '2026-09-04T23:41:09.965Z', '2026-09-04T23:41:09.965Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm25u1000tw08ca5lxcru8', 'Karyola & Modeller', 'Karyola metal mi plastik mi olmalı?', 'Taşıyıcı ana şasi mutlaka elektrostatik fırın boyalı çelik profilden üretilmelidir. Yan korkuluklar ve başlıklar ise hijyenik, darbelere dayanıklı ve kolay temizlenen medikal ABS plastikten olmalıdır.', 30, TRUE, '2026-09-04T23:54:32.329Z', '2026-09-04T23:54:32.329Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtjc133c0009w0vga9uilcho', 'Ödeme & SGK', 'SGK hasta yatağı için geri ödeme yapıyor mu?', 'Evet. Tam teşekküllü devlet veya üniversite hastanesinden alınan ''Motorlu Hasta Karyolası ve Havalı Yatak Kullanması Uygundur'' ibareli sağlık kurulu raporu ve reçete ile SGK''dan SUT kapsamında geri ödeme desteği alınabilir. Firmamız Sağlık Bakanlığı ÜTS kayıtlı resmi fatura kesmektedir.', 10, TRUE, '2026-09-02T00:02:41.256Z', '2026-09-04T23:55:23.636Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnlkyth0007w0lg6smsx8av', 'Karyola & Modeller', 'Katlanabilir hasta bakım yatağı ne zaman ve neden tercih edilir?', 'Dar oda kapıları, dönüşü zor asansörsüz apartman merdivenleri veya dönemsel olarak odadan odaya taşınması gereken durumlarda katlanabilir kompakt şaseli modeller tercih edilir. Bu modeller taşıma kolaylığı sunarken işlev ve motor gücü bakımından sabit karyolalarla aynı performansı sunar.', 10, TRUE, '2026-09-04T23:41:10.085Z', '2026-09-04T23:41:10.085Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnlkyx30008w0lgvf6ejngs', 'Kiralama & Satış', 'Hasta karyolası satın almak mı yoksa kiralamak mı daha avantajlıdır?', 'Tahmini yatak istirahat süresi 1-4 ay arasında olan geçici ortopedik ameliyatlar, kalça kırıkları ve kısa vadeli nekahat dönemlerinde kiralama maliyet açısından çok daha ekonomiktir. Bakım süreci 6 ayı aşacaksa veya felç, ALS, Alzheimer gibi kalıcı bakım söz konusuysa, 2 yıl resmi yerinde garanti ve mülkiyet avantajı sunan satın alma seçeneği daha avantajlıdır.', 12, TRUE, '2026-09-04T23:41:10.215Z', '2026-09-04T23:41:10.215Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnlkz0w0009w0lgwnodatk8', 'Kiralama & Satış', 'Kiralık hasta yataklarında hijyen ve dezenfeksiyon nasıl sağlanır?', 'Filomuza dönen her bir karyola depomuzda profesyonel ozonlama odalarından geçer ve hastane sınıfı geniş spektrumlu tıbbi yüzey dezenfektanlarıyla %100 sterilize edilir. Yatak şilteleri her yeni kullanıcı için sıfır veya tam sterilize sıvı geçirmez poliüretan kılıfla ambalajlı olarak teslim edilir.', 13, TRUE, '2026-09-04T23:41:10.353Z', '2026-09-04T23:41:10.353Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnlkz4a000aw0lgth1s16nz', 'Kiralama & Satış', 'Kiralık hasta yatağını istediğimiz zaman iade edebilir miyiz?', 'Evet. Hastanız iyileştiğinde veya taburculuk durumu sonlandığında çağrı merkezimizi aramanız yeterlidir. Ankara genelindeki mobil araçlarımız uygun olduğunuz gün ve saatte adresinize gelerek karyolayı odanızdan söker ve ücretsiz teslim alır.', 14, TRUE, '2026-09-04T23:41:10.475Z', '2026-09-04T23:41:10.475Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnlkz7d000bw0lgvu8wb9d4', 'Kiralama & Satış', 'Kiraladığımız hasta yatağını sonradan satın alabilir miyiz?', 'Evet. Kiralama süresi boyunca hastanızın durumunun uzun süreli bakıma evrilmesi halinde, o güne kadar ödediğiniz kiralama bedelleri sıfır ürünün liste fiyatından mahsup edilerek sıfır garantili resmi fatura düzenlenebilmektedir.', 15, TRUE, '2026-09-04T23:41:10.585Z', '2026-09-04T23:41:10.585Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnlkzan000cw0lgy2bbw6xm', 'Kiralama & Satış', 'Kiralık yatak sözleşmesinde depozito veya senet alıyor musunuz?', 'MCARIS Medikal olarak karşılıklı güven ilkesiyle çalışıyoruz. Modellerimizin büyük kısmında depozito veya senet talep etmiyoruz. Teslimat anında imzalanan şeffaf bir kiralama formu ve yalnızca ilgili ayın kira bedeli ile süreç başlatılmaktadır.', 16, TRUE, '2026-09-04T23:41:10.704Z', '2026-09-04T23:41:10.704Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnlkzdw000dw0lgz34wk84x', 'Kiralama & Satış', 'Kiralama süresini sonradan uzatabilir miyim, fiyat her ay değişir mi?', 'Kiralama süresini istediğiniz kadar aylık periyotlarla uzatabilirsiniz. Sözleşme tarihindeki sabit fiyat güvencesi devam eder; genel ekonomik dalgalanmalardan veya enflasyon artışlarından etkilenmeden ilk anlaştığınız tarife üzerinden ödemenizi tamamlarsınız.', 17, TRUE, '2026-09-04T23:41:10.820Z', '2026-09-04T23:41:10.820Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnlkzh0000ew0lgknbife6x', 'Kiralama & Satış', 'İkinci el hasta yatağı satın almak neden risklidir?', 'İkinci el yataklarda önceki hastanın enfeksiyon ve hijyen riskleri, motor dişlilerinin ömrünü tamamlamış olması ve elektrik tesisatındaki gizli arızalar hastanızı yarı yolda bırakabilir. Ayrıca fatura ve resmi servis garantisi olmadığı için SGK geri ödemesi alınamaz. Bu nedenle garantili sıfır ürün veya steril kiralama önerilir.', 18, TRUE, '2026-09-04T23:41:10.932Z', '2026-09-04T23:41:10.932Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnlkzka000fw0lgfmprsh8k', 'Kiralama & Satış', 'Refakatçi için ayrı bir yatak veya dinlenme koltuğu kiralanabilir mi?', 'Evet. Hastanın yanında 7/24 nöbet tutan aile bireyleri ve bakıcılar için yerden tasarruf sağlayan katlanabilir refakatçi karyolaları ve medikal refakatçi dinlenme koltukları opsiyonel olarak kiralanabilir ve satın alınabilir.', 19, TRUE, '2026-09-04T23:41:11.050Z', '2026-09-04T23:41:11.050Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnlkznm000gw0lg638qkcif', 'Teslimat & Montaj', 'Ankara içi teslimat ne kadar sürer ve nakliye ücretli midir?', 'Ankara genelinde 25 ilçenin tamamında (Çankaya, Yenimahalle, Keçiören, Etimesgut, Mamak, Sincan, Gölbaşı vb.) kendi medikal lojistik araçlarımızla AYNI GÜN 2 ila 3 saat içinde teslimat yapıyoruz. Nakliye, kata çıkarma ve oda içi montaj tamamen ÜCRETSİZDİR.', 20, TRUE, '2026-09-04T23:41:11.170Z', '2026-09-04T23:41:11.170Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnlkzr6000hw0lg6jbj2xnl', 'Teslimat & Montaj', 'Ankara''nın hangi ilçelerine aynı gün teslimat hizmetiniz var?', 'Merkez ilçelerimiz (Çankaya, Keçiören, Yenimahalle, Mamak, Etimesgut, Sincan, Altındağ, Pursaklar, Gölbaşı) başta olmak üzere Polatlı, Beypazarı, Kahramankazan, Çubuk, Elmadağ, Akyurt ve diğer tüm ilçelere aynı gün randevulu sevkiyat ve montaj sağlıyoruz.', 21, TRUE, '2026-09-04T23:41:11.299Z', '2026-09-04T23:41:11.299Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnlkzv3000iw0lgqeln8wt7', 'Teslimat & Montaj', 'Karyola kurulumunu kim yapıyor, hasta yakınlarına eğitim veriliyor mu?', 'Kurulumu MCARIS Medikal''in kendi kadrolu, sertifikalı teknik personelleri gerçekleştirir. Yatak istenilen odaya taşınır, kurulur, tüm fonksiyonları test edilir ve hasta yakınlarına kumanda kullanımı, acil indirme pimi, korkuluk kilitleri ve bakım kuralları uygulamalı olarak anlatılır.', 22, TRUE, '2026-09-04T23:41:11.439Z', '2026-09-04T23:41:11.439Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnlkzyd000jw0lgdhghy1f6', 'Teslimat & Montaj', 'Hasta bakım yatağının montajı evde ne kadar sürer?', 'Modüler ve pratik tasarımlı karyolalarımızın montajı, elektrik bağlantıları ve fonksiyon testleri deneyimli teknisyenlerimiz tarafından ortalama 15-20 dakika içinde tamamlanarak hasta yatışına hazır hale getirilir.', 23, TRUE, '2026-09-04T23:41:11.557Z', '2026-09-04T23:41:11.557Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnll01j000kw0lgza3pa5kf', 'Teslimat & Montaj', 'Apartman asansörü dar veya yoksa karyola eve nasıl çıkarılır?', 'Lojistik ekiplerimiz iki veya üç kişilik teknik kadrolarla sevk edilir. Karyolalarımız modüler demonte edilebildiği için dar kapılardan ve asansörsüz dik merdivenlerden duvara veya mobilyalara zarar vermeden güvenle kata çıkarılır.', 24, TRUE, '2026-09-04T23:41:11.671Z', '2026-09-04T23:41:11.671Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnll04m000lw0lglq5ynj1g', 'Teslimat & Montaj', 'Hasta yatağı odada prize uzak bir yere kurulabilir mi?', 'Evet. Karyolalarımızın elektrik besleme kabloları standart olarak uzundur; ayrıca montaj ekiplerimiz ihtiyaç halinde akım korumalı kaliteli uzatma kabloları ile güvenli elektrik bağlantısını sağlar.', 25, TRUE, '2026-09-04T23:41:11.782Z', '2026-09-04T23:41:11.782Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnll07n000mw0lg03fwfrqe', 'Teslimat & Montaj', 'Hafta sonu veya tatil günlerinde acil teslimat yapıyor musunuz?', 'Evet. Hastaneden acil taburculuk veya beklenmedik cerrahi operasyon durumlarında Cumartesi ve Pazar günleri dahil olmak üzere haftanın 7 günü nöbetçi teknik sevkiyat araçlarımız hizmet vermektedir.', 26, TRUE, '2026-09-04T23:41:11.891Z', '2026-09-04T23:41:11.891Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnll0av000nw0lg3v01z66n', 'Teknik Servis & Garanti', 'Hasta karyolalarının garanti süresi ve kapsamı nedir?', 'Satın alınan tüm MCARIS hasta karyolaları 2 YIL YERİNDE SERVİS GARANTİSİ ve 10 YIL YEDEK PARÇA TEMİN GARANTİSİ altındadır. Motor, kontrol kutusu, el kumandası, şasi kaynağı ve hareketli makas sistemleri garanti kapsamındadır.', 27, TRUE, '2026-09-04T23:41:12.008Z', '2026-09-04T23:41:12.008Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnll0e6000ow0lgkw70is5c', 'Teknik Servis & Garanti', 'Kiralık veya satın alınan yatak bozulursa teknik servis süreci nasıl işler?', 'Herhangi bir arıza durumunda teknik servis hattımıza bildirim yaptığınızda, Ankara içinde aynı gün 2-4 saatte, çevre illerde 24 saat içinde gezici teknik servisimiz adresinize ulaşır. Arıza yerinde giderilir; parça beklenmesi gereken durumlarda yatak anında yenisiyle birebir değiştirilir.', 28, TRUE, '2026-09-04T23:41:12.127Z', '2026-09-04T23:41:12.127Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnll0hi000pw0lgpjsj3oj7', 'Teknik Servis & Garanti', 'Hasta yataklarında zamanla gıcırtı oluşursa nasıl önlenir?', 'Gıcırtı sesleri metal eklem noktalarının zamanla yağsız kalmasından kaynaklanabilir. 6 ayda bir hareketli makas mafsallarına ve motor pim yuvalarına sprey beyaz gres veya medikal silikon yağlayıcı sıkılarak sesler tamamen kesilebilir. MCARIS karyolaları kendinden burçlu yağsız sürtünme mafsallarıyla donatılmıştır.', 29, TRUE, '2026-09-04T23:41:12.247Z', '2026-09-04T23:41:12.247Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnll0ks000qw0lgihfhxphr', 'Teknik Servis & Garanti', 'Medikal yatak kumandasına sıvı kaçarsa veya kablosu koparsa ne yapılmalıdır?', 'Kumandalarımız IPX4 sıvı sıçramalarına karşı korumalıdır. Ancak yoğun çorba, su veya ilaç dökülmesi durumunda derhal fişi çekip kumandayı kurulayınız. Kablo ezilmesi veya tuş arızalarında teknik servisimizden 24 saatte yedek kumanda temin edebilirsiniz.', 30, TRUE, '2026-09-04T23:41:12.364Z', '2026-09-04T23:41:12.364Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnll0o0000rw0lgfxzl3vts', 'Teknik Servis & Garanti', 'Karyola motorları çok gürültü yapar mı, gece uykusunu böler mi?', 'Kesinlikle hayır. Modellerimizde kullanılan lineer pistonlu motorlar fısıltı sessizliğinde (45 desibelin altında) çalışır. Gece pozisyon değiştirirken ne hastayı ne de odadaki refakatçiyi rahatsız etmez.', 31, TRUE, '2026-09-04T23:41:12.480Z', '2026-09-04T23:41:12.480Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnll0r6000sw0lgsmgpwcey', 'Teknik Servis & Garanti', 'Garanti süresi (2 yıl) dolduktan sonra yedek parça ve servis desteği sürer mi?', 'Evet. 10 yıl boyunca motor, kumanda, tekerlek, başlık, korkuluk ve şasi aksamları için orijinal yedek parça stoğu bulundurma garantimiz vardır. Garanti sonrasında da uygun maliyetli servis hizmetimiz devam eder.', 32, TRUE, '2026-09-04T23:41:12.595Z', '2026-09-04T23:41:12.595Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnll0ub000tw0lg5dee3iwd', 'Teknik Servis & Garanti', 'Hastane yatağı tekerlekleri parke ve seramik zeminlere zarar verir mi?', 'Hayır. Tekerleklerimiz 360 derece dönebilen, medikal kauçuk kaplamalı ve zemin çizmez özelliktedir. Laminat parke, masif ahşap veya seramik zeminlerde leke bırakmaz ve sarsıntısız kayma sağlar.', 33, TRUE, '2026-09-04T23:41:12.707Z', '2026-09-04T23:41:12.707Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnll0xd000uw0lg9c8qf3tj', 'Ödeme & SGK', 'SGK hasta yatağı için geri ödeme yapıyor mu, şartlar nelerdir?', 'Evet. Tam teşekküllü devlet veya üniversite hastanelerinden alınacak sağlık kurulu (heyet) raporunda ''Motorlu Hasta Karyolası ve Havalı Yatak Kullanması Uygundur'' ibaresi yer almalıdır. Hekim reçetesi ve Sağlık Bakanlığı ÜTS kayıtlı MCARIS faturası ile SGK İl Müdürlüklerine başvurarak SUT limitleri dahilinde nakdi geri ödeme desteği alınabilir.', 34, TRUE, '2026-09-04T23:41:12.817Z', '2026-09-04T23:41:12.817Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnll10y000vw0lghoyaqpbl', 'Ödeme & SGK', 'SGK heyet raporu hangi hastanelerden ve hangi bölümlerden alınmalıdır?', 'Devlet veya üniversite hastanelerinin Nöroloji, Fizik Tedavi ve Rehabilitasyon, Ortopedi veya Beyin Cerrahisi polikliniklerinin yer aldığı sağlık kuruluna başvurulmalıdır. Raporun e-Rapor formatında düzenlenmiş olması süreci hızlandırır.', 35, TRUE, '2026-09-04T23:41:12.946Z', '2026-09-04T23:41:12.946Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnll145000ww0lg7i44tlyy', 'Ödeme & SGK', 'SGK faturası keserken ÜTS (Ürün Takip Sistemi) kaydı gerekli midir?', 'Evet, zorunludur. Sağlık Bakanlığı Ürün Takip Sistemi''ne (ÜTS) kayıtlı olmayan medikal ürünlerin faturaları SGK tarafından kesinlikle onaylanmaz. MCARIS Medikal tüm ürünlerinde ÜTS barkod eşleştirmesiyle resmi yasal fatura kesmektedir.', 36, TRUE, '2026-09-04T23:41:13.061Z', '2026-09-04T23:41:13.061Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnll1pm000xw0lgq8yalr9b', 'Ödeme & SGK', 'Pozisyon veren ve boru tipi havalı yataklar SGK tarafından karşılanır mı?', 'SGK standart havalı yatak SUT kodu üzerinden sabit bir taban tutar öder. Gelişmiş boru tipi veya otomatik sağa-sola pozisyon veren modeller tercih edildiğinde kalan fark tutarı hasta tarafından karşılanır.', 37, TRUE, '2026-09-04T23:41:13.834Z', '2026-09-04T23:41:13.834Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnll1sq000yw0lg6b7d09c4', 'Ödeme & SGK', 'Hangi ödeme yöntemleri geçerlidir, kapıda ödeme var mı?', 'Teslimat ve montaj anında kapıda nakit, tüm banka kartlarıyla POS cihazından tek çekim veya taksitli ödeme ile banka havalesi / FAST seçeneklerimiz geçerlidir.', 38, TRUE, '2026-09-04T23:41:13.947Z', '2026-09-04T23:41:13.947Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnll1w7000zw0lg48m05u2k', 'Ödeme & SGK', 'Kredi kartına taksit imkanı sunuluyor mu?', 'Evet. Anlaşmalı tüm banka ve kredi kartlarına (Bonus, Maximum, World, Axess, Paraf, CardFinans) web sitemiz üzerinden veya kapıda mobil POS ile vade farksız taksit imkanı sunulmaktadır.', 39, TRUE, '2026-09-04T23:41:14.072Z', '2026-09-04T23:41:14.072Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnll1za0010w0lg6gkvu0d0', 'Ödeme & SGK', 'Kiralama faturaları şirket veya şahıs adına kesilebilir mi?', 'Evet. Tüm kiralama ve satış işlemlerimizde şahıs TC kimlik numarasına e-Arşiv veya kurumsal şirket bilgilerine e-Fatura düzenlenmektedir.', 40, TRUE, '2026-09-04T23:41:14.182Z', '2026-09-04T23:41:14.182Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnll22f0011w0lghfz1hwwu', 'Kullanım & Hasta Bakımı', 'Boru tipi havalı yatak neden baklava tipinden çok daha etkilidir?', 'Baklava tipi havalı yataklar yalnızca yüzeysel hava akışı sağlar ve 1. evre bası riskinde kalır. Boru tipi havalı yataklar ise sıralı (A+B / A+B+C) bağımsız tüp hücre yapısıyla hastanın altındaki basınç noktalarını sürekli değiştirir, mikro hava üfleme (ventilasyon) delikleriyle cildi kuru tutar ve yatak yaralarını %90''a varan oranda önler.', 41, TRUE, '2026-09-04T23:41:14.295Z', '2026-09-04T23:41:14.295Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnll25l0012w0lgplox2svn', 'Kullanım & Hasta Bakımı', 'Havalı yatağın kompresör motoru 24 saat kesintisiz çalışmalı mı?', 'Kesinlikle evet. Havalı yatak motoru fişten çekilir veya kapatılırsa borulardaki hava kısa sürede boşalır ve hasta doğrudan sert süngere temas ederek bası yarası riskine maruz kalır. Motorlarımız 7/24 kesintisiz çalışmaya uygun, enerji tasarruflu ve aşırı ısınma korumalı kompresör teknolojisine sahiptir.', 42, TRUE, '2026-09-04T23:41:14.410Z', '2026-09-04T23:41:14.410Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnll28q0013w0lg0iazkdpf', 'Kullanım & Hasta Bakımı', 'Yatak yarası (dekübitüs / bası yarası) belirtileri nelerdir ve evde nasıl önlenir?', 'Kuyruk sokumu, topuklar, kalça ve kürek kemiklerinde kalıcı kızarıklık, ciltte ısı artışı ve hassasiyet ilk evre belirtileridir. Önlemek için mutlaka boru tipi havalı yatak kullanılmalı, hasta karyolası hareketleriyle günde en az 2 saatte bir pozisyon değiştirilmeli, cilt kuru tutulmalı ve bariyer kremler uygulanmalıdır.', 43, TRUE, '2026-09-04T23:41:14.523Z', '2026-09-04T23:41:14.523Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnll2bw0014w0lgml3uw2ho', 'Kullanım & Hasta Bakımı', 'Trendelenburg ve Anti-Trendelenburg pozisyonu hangi klinik durumlarda kullanılır?', 'Trendelenburg (ayaklar yukarıda, baş aşağıda) şok ve tansiyon düşmelerinde hayati organlara kan akışını artırmak için uygulanır. Anti-Trendelenburg (baş yukarıda, ayaklar eğimli) ise solunum sıkıntısı çeken, reflü yaşayan ve yatakta dik oturamayan yoğun bakım hastalarında göğüs kafesini rahatlatmak için doktor kontrolünde kullanılır.', 44, TRUE, '2026-09-04T23:41:14.636Z', '2026-09-04T23:41:14.636Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnll2f90015w0lg5c65zv5m', 'Kullanım & Hasta Bakımı', 'Asansör (yükseklik ayarı) özelliği refakatçinin sağlığına nasıl katkı sağlar?', 'Yatak bel hizasına yükseltildiğinde hasta yakını veya bakıcı eğilmek zorunda kalmaz; bu da bakım verenlerde sıkça rastlanan bel fıtığı, kas spazmı ve boyun düzleşmesi gibi mesleki rahatsızlıkları engeller. Yatak indirildiğinde ise hastanın tekerlekli sandalyeye geçişi çok kolaylaşır.', 45, TRUE, '2026-09-04T23:41:14.757Z', '2026-09-04T23:41:14.757Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm261p000uw08c3rn1ykc7', 'Kiralama & Satış', 'Kiralık yatak fiyatları her ay değişir mi?', 'Hayır, kiralama sözleşmesinin imzalandığı gün geçerli olan aylık kira bedeli kiralama süresince sabit kalır; ara zamlardan veya kur dalgalanmalarından etkilenmez.', 31, TRUE, '2026-09-04T23:54:32.606Z', '2026-09-04T23:54:32.606Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnll2ie0016w0lgfr5zg1wm', 'Kullanım & Hasta Bakımı', 'Yatak şiltesi neden CNC lazer kesim kanallı medikal sünger olmalıdır?', 'Motorlu karyolalarda yatak 4 parçalı olarak katlandığı için sıradan yaylı veya sert süngerler kırılır ve motoru zorlar. Lazer kesim kanallı medikal şilteler karyolanın hareket açılarına kusursuz esner, vücut ağırlığını dengeler ve hava sirkülasyonu sağlayarak terlemeyi önler.', 46, TRUE, '2026-09-04T23:41:14.871Z', '2026-09-04T23:41:14.871Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnll2lj0017w0lg6kf9qvd8', 'Kullanım & Hasta Bakımı', 'Yatağa bağımlı hastanın banyosu yatak içinde nasıl yaptırılır?', 'Sökülebilir mandallı ABS başlıklar ve korkuluklar indirildikten sonra, yatak üzerine özel su tahliyeli şişme ''Yatak İçi Banyo Seti'' yerleştirilir. Karyolanın baş ve ayak ayarlarıyla hafif açı verilerek motorlu aksama su temas ettirmeden hastanın saç ve vücut banyosu konforla yaptırılabilir.', 47, TRUE, '2026-09-04T23:41:14.984Z', '2026-09-04T23:41:14.984Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnll2ou0018w0lga4ro094m', 'Kullanım & Hasta Bakımı', 'Hasta yatağının tekerlek kilitleri ve yan korkulukları neden hayati önemdedir?', 'Hasta yataktan kalkarken veya pozisyon değiştirirken yatağın kayması sonucu meydana gelen düşmeler ciddi kırıklara yol açabilir. Çapraz veya merkezi tekerlek kilitleri yatağı zemine sabitler; kilitlenebilir yan korkuluklar ise özellikle gece saatlerinde bilinç bulanıklığı yaşayan hastaların düşmesini tamamen önler.', 48, TRUE, '2026-09-04T23:41:15.103Z', '2026-09-04T23:41:15.103Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnll2s20019w0lg7idumwov', 'Kullanım & Hasta Bakımı', 'Serum askısı ve yatak üstü yemek masası karyolaya nasıl monte edilir?', 'Karyolalarımızın 4 köşesinde de standart serum askısı soketleri bulunur; askıyı takıp vidasını sıkmanız yeterlidir. Yatak üstü amortisörlü yemek masaları ise tekerlekli ayaklarıyla karyolanın altına girerek istenen yüksekliğe tek hareketle ayarlanabilir.', 49, TRUE, '2026-09-04T23:41:15.219Z', '2026-09-04T23:41:15.219Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm20250000w08clbgjtqin', 'Karyola & Modeller', 'Hasta yatağı motoru kaç Newton olmalı?', 'Kaliteli ve uzun ömürlü bir hasta yatağı motoru en az 4500N ile 6000N itme gücünde olmalıdır. 6000 Newton güç, yatağın yaklaşık 180-230 kg ağırlığındaki bir hastayı sarsıntısız, sessiz ve zorlanmadan kaldırmasını sağlar. Düşük Newton değerine sahip ucuz motorlar zamanla ısınır, dişli sıyırır ve hastanın yatakta mahsur kalmasına yol açabilir. MCARIS ürünlerinde 2x6000N ve 4x6000N pistonlu medikal motorlar kullanılır.', 1, TRUE, '2026-09-04T23:54:24.845Z', '2026-09-04T23:54:24.845Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm20ca0001w08cetgv5n73', 'Kullanım & Hasta Bakımı', 'Yatak şiltesi neden lazer kesim olmalıdır?', 'Lazer kesim CNC sünger şilteler, yatağın sırt ve ayak katlanma açılarında (0°-80° ve 0°-45°) büzüşme veya potluk yapmadan karyola profiline tam uyum sağlar. Süngerin üzerindeki hava kanalları mikro hava sirkülasyonu yaratarak terlemeyi azaltır ve vücut ağırlığını yüzeye homojen dağıtır. Standart düz süngerler ise katlanma bölgelerinde kırılarak hastanın beline baskı yapar.', 2, TRUE, '2026-09-04T23:54:25.210Z', '2026-09-04T23:54:25.210Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm20j50002w08cm24uvup6', 'Kullanım & Hasta Bakımı', 'Havalı yatak 24 saat çalışmalı mı?', 'Evet, havalı yatağın kompresör motoru asla kapatılmamalıdır (7/24 kesintisiz çalışmalıdır). Motor kapatıldığı anda borulardaki hava boşalır ve hasta doğrudan karyolanın sert zeminine temas eder; bu da yatak yarası (dekübitüs) sürecini birkaç saat içinde başlatır. Modern havalı yatak motorları 7 Watt civarında çok düşük elektrik tüketir, ısınmaz ve gece uykusunu bölmeyecek kadar sessizdir.', 3, TRUE, '2026-09-04T23:54:25.458Z', '2026-09-04T23:54:25.458Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm20q00003w08cq1hefgp5', 'Kiralama & Satış', 'Kiralık yataklar hijyenik mi?', 'MCARIS Medikal bünyesindeki kiralık hasta yatakları her kullanım sonrasında hastane standartlarında tıbbi dezenfektanlar ve ozonlama üniteleri ile %100 sterilize edilir. Yatak şilteleri her yeni kullanıcı için sıfır veya tam dezenfekte edilmiş sıvı geçirmez koruyucu alez kılıfıyla kaplanarak teslim edilir. Yatağın hastanıza ulaştığında ambalajlı ve sıfır hijyen standartlarında olması garanti altındadır.', 4, TRUE, '2026-09-04T23:54:25.704Z', '2026-09-04T23:54:25.704Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm20xa0004w08cpvri7ue2', 'Karyola & Modeller', 'Asansörlü hasta yatağı neden tercih edilmeli?', '3 ve 4 motorlu asansörlü hasta yatakları, tüm yatak platformunun dikey olarak 40 cm ile 90 cm arasında yükselip alçalmasını sağlar. Bu özellik; alt temizliği, pansuman, enjeksiyon ve çarşaf değişimi gibi bakım süreçlerinde refakatçinin eğilme zorunluluğunu ortadan kaldırarak bakıcının bel ve boyun fıtığı olmasını engeller. Ayrıca yatak en alt seviyeye indirildiğinde hastanın tekerlekli sandalyeye transferi çok daha güvenli hale gelir.', 5, TRUE, '2026-09-04T23:54:25.966Z', '2026-09-04T23:54:25.966Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm213v0005w08c3n8agbbk', 'Karyola & Modeller', 'Trendelenburg pozisyonu ne işe yarar?', 'Trendelenburg pozisyonu, yatağın baş ucunun aşağıda ayak ucunun yukarıda olduğu veya Ters Trendelenburg (yarı koltuk) ile başın yukarıda olduğu eğim pozisyonudur. Tansiyon düşmelerinin dengelenmesi, beyne kan akışının artırılması, akciğerlerdeki sekresyon ve sıvının tahliyesi ile sindirimin kolaylaştırılmasında hekim tavsiyesiyle hayati rol oynar. 4 motorlu yoğun bakım modellerimizde el kumandasıyla tek tuşla verilebilir.', 6, TRUE, '2026-09-04T23:54:26.203Z', '2026-09-04T23:54:26.203Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm21am0006w08cusulq8dq', 'Teslimat & Montaj', 'Hasta bakım yatağı kurulumu ne kadar sürer?', 'MCARIS Medikal profesyonel teknik ekibi tarafından oda içerisine nakliye, montaj ve ilk çalıştırma kontrolleri ortalama 15-20 dakika içinde tamamlanır. Kurulum bittikten sonra hasta yakınlarına el kumandasının kullanımı, emniyet mandalları ve yatak fonksiyonları hakkında uygulamalı eğitim verilir.', 7, TRUE, '2026-09-04T23:54:26.446Z', '2026-09-04T23:54:26.446Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm21ht0007w08czcpb8e5l', 'Teknik Servis & Garanti', 'Elektrik kesilince yatak çalışır mı?', 'MCARIS motorlu hasta karyolalarında acil durum indirme bataryası (9V pil desteği) veya motor üzerinde manuel serbest bırakma mandalları bulunur. Elektrik kesintisi yaşandığında yatak hangi açıda kalmış olursa olsun bu acil indirme mekanizmasıyla güvenli ve düz pozisyona zahmetsizce getirilebilir.', 8, TRUE, '2026-09-04T23:54:26.706Z', '2026-09-04T23:54:26.706Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm21p50008w08cwch6p6pv', 'Kiralama & Satış', 'İkinci el medikal yatak alırken nelere dikkat etmeliyim?', 'İkinci el yatak alımında en büyük risk; motorların tork ömrünün bitmiş olması, dişlilerin ses yapması ve metal yorgunluğuna bağlı şasi çatlaklarıdır. Ayrıca önceki hastadan kalan enfeksiyon ve hijyen riskleri hayati tehlike doğurabilir. İkinci el ürünlerde servis ve parça garantisi bulunmadığından, MCARIS 2 yıl resmi yerinde garantili sıfır ürünler veya steril kurumsal kiralama tercih edilmelidir.', 9, TRUE, '2026-09-04T23:54:26.969Z', '2026-09-04T23:54:26.969Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm21vy0009w08csba9r31p', 'Kullanım & Hasta Bakımı', 'Yatak korkulukları nasıl temizlenir?', 'Alüminyum tabanca korkuluklar ve antibakteriyel ABS yan korkuluklar, hastaya ve malzemeye zarar vermeyen tıbbi yüzey dezenfektanları veya sabunlu nemli bir bezle silinerek kolayca temizlenir. Asitli, aşındırıcı veya yoğun çamaşır suyu içeren kimyasallardan boya ve kilit mekanizmalarını korumak adına kaçınılmalıdır.', 10, TRUE, '2026-09-04T23:54:27.215Z', '2026-09-04T23:54:27.215Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm223l000aw08cjmh0o0st', 'Kiralama & Satış', 'Kiralık yatağı istediğim zaman iade edebilir miyim?', 'Evet, hastanız iyileştiğinde veya ihtiyacınız kalmadığında çağrı merkezimize bir telefon açmanız yeterlidir. Ankara içi ve çevre illerdeki servis ekiplerimiz randevu saatinde adresinize gelerek yatağı demonte edip teslim alır.', 11, TRUE, '2026-09-04T23:54:27.489Z', '2026-09-04T23:54:27.489Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm22ba000bw08c7g5h6jya', 'Karyola & Modeller', 'Medikal yatak ile normal yatak arasındaki fark nedir?', 'Normal ev yatakları sabittir; hastayı oturtmak için arkasına yastıklar dizmek gerekir ve bu durum omurgayı deforme eder. Medikal hasta karyolaları ise elektrikli motorlarıyla sırt ve ayak açısını milimetrik ayarlar, hastanın yataktan düşmesini önleyen kilitli korkuluklara, serum yuvalarına ve refakatçinin bakımını kolaylaştıran asansör fonksiyonlarına sahiptir.', 12, TRUE, '2026-09-04T23:54:27.766Z', '2026-09-04T23:54:27.766Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm22i9000cw08cdptpzql9', 'Kullanım & Hasta Bakımı', 'Boru tipi havalı yatak neden baklava tipinden iyidir?', 'Baklava tipi havalı yataklar ince hava hücrelerine sahiptir ve yalnızca hafif, kısa süreli yatan hastalar içindir; 80 kg üzerindeki hastalarda basınç dağıtamaz. Boru tipi havalı yataklar ise 8-12 cm kalınlığındaki bağımsız tüpleriyle hastayı havada asılı tutar, havalandırma (ventilasyon) delikleriyle terletmez ve A+B veya A+B+C döngüsüyle dekübitüs yatak yaralarını %90''a varan oranda engeller.', 13, TRUE, '2026-09-04T23:54:28.017Z', '2026-09-04T23:54:28.017Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm22pt000dw08c4ptnfu20', 'Ödeme & SGK', 'Medikal yatağı faturasıyla SGK''dan nasıl para alınır?', 'Tam teşekküllü devlet veya üniversite hastanelerinin Nöroloji, Ortopedi veya Fizik Tedavi heyetlerinden ''2 veya 3 motorlu elektrikli hasta karyolası ve havalı yatak kullanması gereklidir'' ibareli sağlık kurulu raporu alınmalıdır. MCARIS Medikal''in keseceği ÜTS/UBB kayıtlı medikal fatura, garanti belgesi ve reçete SGK İl Müdürlüğüne teslim edilerek resmi ödeme limiti tutarında geri ödeme alınır.', 14, TRUE, '2026-09-04T23:54:28.289Z', '2026-09-04T23:54:28.289Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm22wi000ew08c2ur4t6ff', 'Karyola & Modeller', 'Yatak başlıkları neden sökülebilir olmalı?', 'Acil tıbbi durumlarda (örneğin kalp masajı, entübasyon veya aspirasyon işlemi) hastaya baş ucundan 360 derece kesintisiz müdahale edilebilmesi için başlıkların tek hareketle sökülebilmesi şarttır. Ayrıca hastanın saçını yıkarken veya çarşaf değiştirirken başlığın çıkarılması büyük ergonomi sağlar.', 15, TRUE, '2026-09-04T23:54:28.530Z', '2026-09-04T23:54:28.530Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2334000fw08ci1oawksy', 'Kullanım & Hasta Bakımı', 'Visco yatak şiltesi mi sünger mi?', 'Hasta karyolalarında kullanılacak şiltenin karyolanın hareketlerine uyum sağlayabilmesi için yüksek dansiteli (28-32 DNS) CNC lazer kesim medikal sünger tercih edilmelidir. Saf visco yataklar yavaş tepki verdiği ve vücudu gömdüğü için motor katlanmalarında kırışabilir; en ideal form alt katmanı lazer kesim sünger, üst katmanı 3-4 cm visco konfor tabakası olan medikal şiltelerdir.', 16, TRUE, '2026-09-04T23:54:28.769Z', '2026-09-04T23:54:28.769Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm239q000gw08crtuqworq', 'Kullanım & Hasta Bakımı', 'Serum askısı yatağın her yerine takılır mı?', 'MCARIS hasta karyolalarının dört köşesinde de fabrikasyon serum askısı yuvaları yer alır. Odanın mimarisine, prizlerin konumuna veya tedavi yönüne göre serum askısı hastanın sağına veya soluna saniyeler içinde takılabilir.', 17, TRUE, '2026-09-04T23:54:29.006Z', '2026-09-04T23:54:29.006Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm23gd000hw08c9xsuo4xx', 'Kullanım & Hasta Bakımı', 'Yatak yarası evde nasıl tedavi edilir?', 'Yatak yarasında en kritik adım basıncın kesilmesidir. 2 saatte bir pozisyon verilmeli, kesinlikle ventilasyonlu boru tipi veya pozisyon veren havalı yatak kullanılmalı, yara steril pansuman ürünleri ve yara örtüleri ile hekim kontrolünde takip edilmelidir. Deri kesinlikle ıslak veya kuru bırakılmamalı, bariyer kremler uygulanmalıdır.', 18, TRUE, '2026-09-04T23:54:29.246Z', '2026-09-04T23:54:29.246Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm23mw000iw08cegs04nb3', 'Kiralama & Satış', 'Belediye yatakları kaliteli mi?', 'Belediyelerin sosyal hizmet birimlerince sağlanan yataklar genellikle daha önce onlarca hastanın kullandığı, temel 2 motorlu veya manuel eski modellerdir. Ağır bakım hastaları, yatak yarası olanlar veya asansör/Trendelenburg ihtiyacı olan vakalarda yetersiz kalmaktadır. MCARIS sıfır ve steril profesyonel çözümler sunar.', 19, TRUE, '2026-09-04T23:54:29.481Z', '2026-09-04T23:54:29.481Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm23u1000jw08cjj8ohnhn', 'Kiralama & Satış', 'Refakatçi için ayrı bir yatak kiralanabilir mi?', 'Evet, refakatçinin gece hastanın yanında rahat istirahat edebilmesi için katlanır refakatçi karyolaları veya medikal refakatçi dinlenme koltukları temin edilebilmektedir.', 20, TRUE, '2026-09-04T23:54:29.738Z', '2026-09-04T23:54:29.738Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm240n000kw08c3ez7n09h', 'Teknik Servis & Garanti', 'Yatak gıcırtısı nasıl önlenir?', 'Yatak gıcırtıları hareketli makas eklemleri ve motor pimlerinin uzun süreli sürtünmesinden kaynaklanır. 6 ayda bir hareket noktalarına silikonlu sıvı gres veya teknik yağlama spreyi uygulanarak ses tamamen kesilebilir. MCARIS karyolalarında sürtünme noktaları ses yapmayan teflon burçlarla izole edilmiştir.', 21, TRUE, '2026-09-04T23:54:29.975Z', '2026-09-04T23:54:29.975Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm248a000lw08cvx6k7ego', 'Karyola & Modeller', 'Hastane yatağı tekerlekleri zemine zarar verir mi?', 'Hayır, MCARIS yataklarında kullanılan 100 mm ve 125 mm çapındaki tekerlekler antistatik gri medikal poliüretan/termoplastik kauçuk kaplıdır. Laminat parke, masif ahşap veya fayans zeminlerde kesinlikle iz bırakmaz ve çizilme yapmaz.', 22, TRUE, '2026-09-04T23:54:30.250Z', '2026-09-04T23:54:30.250Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm24fy000mw08c3tkgermh', 'Teknik Servis & Garanti', 'Kiralık yatağın bozulması durumunda ne olur?', 'Kiralama süresi boyunca tüm teknik aksaklıklar ve motor arızaları MCARIS garantisi kapsamındadır. Arıza durumunda nöbetçi servisimiz 2-4 saat içinde (şehir içi) adresinize gelir; yerinde onarılamayan parçalarda motor veya karyola anında yenisiyle değiştirilir, hiçbir ek ücret alınmaz.', 23, TRUE, '2026-09-04T23:54:30.527Z', '2026-09-04T23:54:30.527Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm24mo000nw08co4afukyo', 'Kullanım & Hasta Bakımı', 'Şişme yatak ile havalı yatak aynı şey mi?', 'Kesinlikle hayır. Kamp veya misafir için üretilen şişme yataklar kapalı hava depolarıdır ve hava devir daimi yapmaz; terletir ve yatak yarasına davetiye çıkarır. Medikal havalı yataklar ise sürekli çalışan kompresörü ile hücreleri sırayla şişirip indiren, mikro havalandırmalı tıbbi cihazlardır.', 24, TRUE, '2026-09-04T23:54:30.768Z', '2026-09-04T23:54:30.768Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm24t6000ow08c8cty6fdr', 'Karyola & Modeller', 'Yemek masası yatağa dahil mi?', 'Yemek masası karyola setinden bağımsız bir aksesuardır ancak kampanya dönemlerimizde 3 ve 4 motorlu yatak alımlarında veya kiralama setlerinde amortisörlü yemek masası indirimli set olarak eklenebilmektedir.', 25, TRUE, '2026-09-04T23:54:31.002Z', '2026-09-04T23:54:31.002Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm24zn000pw08clphnlpq0', 'Karyola & Modeller', 'Katlanabilir hasta bakım yatağı var mı?', 'Evet, özellikle dar merdivenli binalar veya odalar arası taşınması gereken durumlar için şasisi ikiye katlanabilen modüler hasta karyolası modellerimiz mevcuttur.', 26, TRUE, '2026-09-04T23:54:31.235Z', '2026-09-04T23:54:31.235Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm257e000qw08coaa5iwma', 'Kiralama & Satış', 'Kiralık yatakta depozito alıyor musunuz?', 'MCARIS Medikal olarak hasta yakınlarına güven esasıyla çalışıyoruz. Çoğu modelimizde senet veya depozito talep edilmez; yalnızca ilk ayın kira bedeli ve nakliye/montaj hizmeti alınarak sözleşme başlatılır.', 27, TRUE, '2026-09-04T23:54:31.515Z', '2026-09-04T23:54:31.515Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm25e0000rw08c3jsvwe5d', 'Kullanım & Hasta Bakımı', 'Yatalak hasta banyosu nasıl yaptırılır?', 'Yatağın sırtı dikleştirilip korkulukları indirilerek yatak içi şişme banyo havuzları serilir. Bu havuzlar sayesinde hasta yataktan kaldırılmadan su tahliye hortumu yardımıyla güvenle yıkanabilir.', 28, TRUE, '2026-09-04T23:54:31.752Z', '2026-09-04T23:54:31.752Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm25lu000sw08ci7x106gm', 'Teknik Servis & Garanti', 'Medikal yatak kumandası su kaçarsa bozulur mu?', 'MCARIS el kumandaları IPX4 sıvı sıçrama koruma standardına sahiptir. Sıvı temasında derhal kurulanmalıdır; suya daldırılmadığı sürece nem ve sıçramalardan etkilenmez.', 29, TRUE, '2026-09-04T23:54:32.035Z', '2026-09-04T23:54:32.035Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm268g000vw08cxb0fytya', 'Karyola & Modeller', 'Yatak tekerlek kilitleri ne işe yarar?', 'Hasta yatağa otururken, yataktan kalkarken veya pozisyon verilirken karyolanın kaymasını önlemek için tekerlek kilitleri kilitlenmelidir. Çapraz 2 tekerlek veya merkezi kilit sistemi tam stabilite sağlar.', 32, TRUE, '2026-09-04T23:54:32.849Z', '2026-09-04T23:54:32.849Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm26f0000ww08cnrojs4vk', 'Ödeme & SGK', 'Pozisyon veren havalı yatak SGK ödemesi var mı?', 'SGK standart boru tipi havalı yataklar için sabit geri ödeme limiti belirler. Pozisyon veren yüksek teknolojili yataklarda SGK tavan fiyatı aşan kısım hasta yakını tarafından fark olarak karşılanır.', 33, TRUE, '2026-09-04T23:54:33.085Z', '2026-09-04T23:54:33.085Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm26li000xw08cge9flv1w', 'Karyola & Modeller', 'Yatak sırt kısmı kaç derece kalkar?', 'MCARIS motorlu hasta yataklarında sırt kısmı 0 dereceden yaklaşık 80-85 dereceye kadar dikleşebilir. Bu açı hastanın yatakta tam dik oturarak yemek yemesine ve televizyon izlemesine imkan tanır.', 34, TRUE, '2026-09-04T23:54:33.319Z', '2026-09-04T23:54:33.319Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm26se000yw08cv8ceeldg', 'Karyola & Modeller', 'Ayak ucunun kalkması neden önemli?', 'Ayak ucunun 0°-45° kaldırılması (V pozisyonu), kanın bacak toplardamarlarından kalbe dönüşünü hızlandırır; bacaklarda ödem oluşumunu ve derin ven trombozu (pıhtı atma) riskini önler.', 35, TRUE, '2026-09-04T23:54:33.567Z', '2026-09-04T23:54:33.567Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm26yw000zw08cw9utw6jn', 'Karyola & Modeller', 'Yatak başlıkları neden renkli olur?', 'Ev tipi modellerde ahşap tonları ve sıcak renkler hastanedeki soğuk klinik ortam hissini azaltarak hastanın moral ve psikolojisini olumlu etkiler.', 36, TRUE, '2026-09-04T23:54:33.801Z', '2026-09-04T23:54:33.801Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm275g0010w08c3s56f2x6', 'Teknik Servis & Garanti', 'Medikal yatak motorları çok mu yakar?', 'Kesinlikle hayır. Motorlar yalnızca kumanda tuşuna basılı tutulduğunda elektrik çeker (ortalama 50 Watt anlık güç). Bekleme modunda enerji tüketimi sıfıra yakındır; elektrik faturasına aylık etkisi 5-10 TL''yi geçmez.', 37, TRUE, '2026-09-04T23:54:34.036Z', '2026-09-04T23:54:34.036Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm27cs0011w08ckfy41irj', 'Kiralama & Satış', 'Kiralık yatağı ne kadar süre tutabilirim?', 'Minimum kiralama süresi 1 aydır. Süreç hastanızın iyileşme seyrine göre hiçbir sınırlama olmaksızın dilediğiniz ay kadar uzatılabilir.', 38, TRUE, '2026-09-04T23:54:34.301Z', '2026-09-04T23:54:34.301Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm27jd0012w08clgpfiygv', 'Kullanım & Hasta Bakımı', 'Yatak şiltesi terletir mi?', 'Standart süngerler terletebilir; ancak MCARIS şilteleri lazer kesim hava kanallarına ve nefes alabilen özel kılıflara sahiptir. Üzerine boru tipi ventilasyonlu havalı yatak eklendiğinde terleme tamamen son bulur.', 39, TRUE, '2026-09-04T23:54:34.538Z', '2026-09-04T23:54:34.538Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm27pt0013w08c4sqg34nm', 'Karyola & Modeller', 'Neden MCARIS Medikal''i tercih etmelisiniz?', 'MCARIS Medikal; yerli üretim gücü, Ankara merkezli 25 ilçede 2-4 saatte aynı gün ücretsiz teslimat/kurulum ağı, 2 yıl koşulsuz yerinde servis garantisi, 10 yıl yedek parça temini ve şeffaf fiyat politikasıyla sektörün öncüsüdür.', 40, TRUE, '2026-09-04T23:54:34.770Z', '2026-09-04T23:54:34.770Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtjc12ln0003w0vgo9ja76qg', 'Kiralama & Satış', 'Hasta yatağı kiralama süreci nasıl işler?', 'Çağrı merkezimizi aradığınızda uzman danışmanımız hastanızın boy, kilo ve klinik durumuna göre en ideal modeli önerir. Onayınızla birlikte aynı gün teknik servisimiz adrese gelerek montajı yapar, sözleşmeyi imzalatır ve kumanda eğitimini verir.', 41, TRUE, '2026-09-02T00:02:40.620Z', '2026-09-04T23:54:34.995Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm285o0014w08cyw6jihmy', 'Kiralama & Satış', 'Kiralık hasta yatakları hijyenik midir?', 'Evet, filomuzdaki her yatak dezenfeksiyon tünelinden geçirilir, antibakteriyel solüsyonlarla temizlenir ve kılıfları steril ambalaj içinde teslim edilir.', 42, TRUE, '2026-09-04T23:54:35.341Z', '2026-09-04T23:54:35.341Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm28cg0015w08cr6c8rm21', 'Teslimat & Montaj', 'Fiyatlara nakliye ve kurulum dahil midir?', 'Ankara merkez ilçelerinde tüm satış ve kiralama operasyonlarımızda adrese nakliye, kata çıkarma, kurulum ve kullanım eğitimi fiyata dahildir.', 43, TRUE, '2026-09-04T23:54:35.584Z', '2026-09-04T23:54:35.584Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm28iv0016w08cc9rgystx', 'Kiralama & Satış', 'Kiralama süresini istediğim zaman uzatabilir miyim?', 'Evet, ilk ay bittiğinde bir telefon veya WhatsApp mesajı ile kiralama sürenizi dilediğiniz kadar uzatabilirsiniz.', 44, TRUE, '2026-09-04T23:54:35.816Z', '2026-09-04T23:54:35.816Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm28ph0017w08chg4dtk0x', 'Teknik Servis & Garanti', 'Motor arızası durumunda ne yapmalıyım?', 'Doğrudan MCARIS teknik destek hattını aramalısınız. Teknik ekibimiz 24 saat içinde adresinize gelerek arızayı yerinde giderir veya yatağı yenisiyle değiştirir.', 45, TRUE, '2026-09-04T23:54:36.054Z', '2026-09-04T23:54:36.054Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm28vy0018w08c4323g3zk', 'Karyola & Modeller', 'Yatağın yan korkulukları güvenli midir?', 'Evet, kilitli tabanca tipi korkuluklar hastanın ağırlığıyla açılmaz; çift emniyet pimi sayesinde hastanın istemsizce yataktan düşmesini kesin olarak önler.', 46, TRUE, '2026-09-04T23:54:36.287Z', '2026-09-04T23:54:36.287Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm292f0019w08cigtm5hpx', 'Kiralama & Satış', 'Havalı yatak kiralama bedeli ayrı mıdır?', 'Havalı yataklar hijyen ve hijyenik temas gerekçesiyle genellikle sıfır olarak satılır veya kiralama setlerimize avantajlı paket indirimiyle eklenir.', 47, TRUE, '2026-09-04T23:54:36.519Z', '2026-09-04T23:54:36.519Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm29ap001aw08cj6fhq9qm', 'Kiralama & Satış', 'Depozito alıyor musunuz?', 'Standart modellerimizde depozito veya senet talep etmiyoruz; müşteri memnuniyeti ve güven esasıyla kiralama yapıyoruz.', 48, TRUE, '2026-09-04T23:54:36.818Z', '2026-09-04T23:54:36.818Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm29h2001bw08cvhfhgco2', 'Kiralama & Satış', 'Kiralama sözleşmesi yapılıyor mu?', 'Evet, tarafların haklarını ve garanti şartlarını güvenceye almak amacıyla teslimat sırasında ıslak imzalı kiralama sözleşmesi düzenlenir.', 49, TRUE, '2026-09-04T23:54:37.047Z', '2026-09-04T23:54:37.047Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm29ni001cw08c4vkadp35', 'Karyola & Modeller', '2 motorlu ile 3 motorlu yatak arasındaki fark nedir?', '2 motorlu model sadece baş ve ayak ucunu hareket ettirir; 3 motorlu model ise bunlara ek olarak yatağı komple yukarı ve aşağı kaldıran asansör motoruna sahiptir.', 50, TRUE, '2026-09-04T23:54:37.279Z', '2026-09-04T23:54:37.279Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm29ue001dw08c3ve32m3r', 'Karyola & Modeller', 'Hangi durumlarda 4 motorlu yatak kiralanmalıdır?', 'Yoğun bakım taburcusu, akciğerinde sıvı birikimi olan veya kan dolaşımı bozukluğu yaşayan hastalarda Trendelenburg pozisyonu için 4 motorlu yatak tercih edilmelidir.', 51, TRUE, '2026-09-04T23:54:37.526Z', '2026-09-04T23:54:37.526Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2a0v001ew08cpao88y9j', 'Kiralama & Satış', 'Yatak şiltesi kiralama paketine dahil mi?', 'Evet, tüm kiralık karyola paketlerimize 4 parçalı lazer kesim medikal şilte ve serum askısı eksiksiz dahildir.', 52, TRUE, '2026-09-04T23:54:37.759Z', '2026-09-04T23:54:37.759Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2a78001fw08cf02l1xeg', 'Teslimat & Montaj', 'Yatağı teslim alırken nelere dikkat etmeliyim?', 'Tüm kumanda fonksiyonlarının çalıştığı, tekerlek kilitlerinin tuttuğu ve şiltenin temizliği teknisyenimizle birlikte kontrol edilmelidir.', 53, TRUE, '2026-09-04T23:54:37.988Z', '2026-09-04T23:54:37.988Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2adq001gw08c5q7is4pk', 'Teslimat & Montaj', 'Apartman asansörü yoksa yatak eve nasıl çıkarılır?', 'Lojistik ekiplerimiz karyolayı modüler parçalar halinde daire kapınızdan içeriye taşıyarak oda içerisinde montajını gerçekleştirir.', 54, TRUE, '2026-09-04T23:54:38.222Z', '2026-09-04T23:54:38.222Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2ald001hw08cgc005u8n', 'Kiralama & Satış', 'Kiralık yatağı başka birine devredebilir miyim?', 'Sözleşme ve hijyen kuralları gereği karyolanın firmamızın bilgisi ve dezenfeksiyonu dışında başka adrese veya kişiye devri yasaktır.', 55, TRUE, '2026-09-04T23:54:38.497Z', '2026-09-04T23:54:38.497Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2as0001iw08c8mqy5rry', 'Karyola & Modeller', 'Hastamın kilosu çok yüksek, kiralık yatak taşır mı?', 'Standart modeller 150 kg''a kadar taşır; daha kilolu hastalar için güçlendirilmiş bariatrik modellerimiz mevcuttur.', 56, TRUE, '2026-09-04T23:54:38.737Z', '2026-09-04T23:54:38.737Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2ayg001jw08cpwaqgsqd', 'Ödeme & SGK', 'Kiralama ödemesini nasıl yapabilirim?', 'Ödemenizi teslimat anında kapıda nakit, kredi kartı veya banka havalesi / EFT ile gerçekleştirebilirsiniz.', 57, TRUE, '2026-09-04T23:54:38.968Z', '2026-09-04T23:54:38.968Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2b4x001kw08c4lfjmnqh', 'Kullanım & Hasta Bakımı', 'Havalı yatak boru tipi mi baklava tipi mi daha iyi?', 'Yatalak hastalar için tartışmasız boru tipi havalı yataklar tercih edilmelidir; baklava tipleri bası yarasına karşı yetersiz kalmaktadır.', 58, TRUE, '2026-09-04T23:54:39.201Z', '2026-09-04T23:54:39.201Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2bbo001lw08cha52f913', 'Kiralama & Satış', 'Yemek masası kiralama paketine dahil mi?', 'Standart pakette yer almaz, talep halinde kiralık setinize ekonomik ek ücretle dahil edilebilir.', 59, TRUE, '2026-09-04T23:54:39.445Z', '2026-09-04T23:54:39.445Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2blz001mw08c5g66kdpd', 'Teslimat & Montaj', 'Kiralık yatak kurulumu ne kadar sürer?', 'Ortalama 15-20 dakika içerisinde montaj ve deneme tamamlanır.', 60, TRUE, '2026-09-04T23:54:39.682Z', '2026-09-04T23:54:39.682Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2bsn001nw08caq5e0vox', 'Teslimat & Montaj', 'Hafta sonu teslimat yapıyor musunuz?', 'Evet, acil medikal ihtiyaçlar için cumartesi ve pazar günleri de nöbetçi lojistik ekiplerimiz teslimat yapmaktadır.', 61, TRUE, '2026-09-04T23:54:40.056Z', '2026-09-04T23:54:40.056Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2bz0001ow08cwu7kafbc', 'Kiralama & Satış', 'Sadece havalı yatak kiralanabilir mi?', 'Havalı yataklar ten teması ve hijyen nedeniyle sıfır olarak satılmaktadır; ancak özel pozisyon veren gelişmiş modellerde kiralama opsiyonumuz mevcuttur.', 62, TRUE, '2026-09-04T23:54:40.284Z', '2026-09-04T23:54:40.284Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2c5j001pw08c93yneqth', 'Kiralama & Satış', 'Kiralık yatak için rapor gerekli mi?', 'Hayır, kiralama için herhangi bir heyet raporu gerekmez; doğrudan sipariş verebilirsiniz.', 63, TRUE, '2026-09-04T23:54:40.520Z', '2026-09-04T23:54:40.520Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2cbw001qw08c4desably', 'Kiralama & Satış', 'Kiralama sözleşmesi kaç aylık yapılır?', 'Sözleşmeler 1 aylık periyotlarla düzenlenir ve her ay yenilenebilir.', 64, TRUE, '2026-09-04T23:54:40.749Z', '2026-09-04T23:54:40.749Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2cic001rw08cyudycg1i', 'Karyola & Modeller', 'Yatak başlıkları sökülebilir mi?', 'Evet, tüm modellerimizin başlıkları mandallı olup acil durumlarda tek elle sökülebilir.', 65, TRUE, '2026-09-04T23:54:40.981Z', '2026-09-04T23:54:40.981Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2cox001sw08c4aafms3d', 'Karyola & Modeller', 'Tekerlekler zemine zarar verir mi?', 'Medikal kauçuk tekerlekler parke veya seramik zeminlerde iz bırakmaz ve sessizdir.', 66, TRUE, '2026-09-04T23:54:41.217Z', '2026-09-04T23:54:41.217Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2cvj001tw08crs9aasjo', 'Teknik Servis & Garanti', 'Kumanda bozulursa yatak nasıl kontrol edilir?', 'Motor üzerinde yer alan manuel indirme mandallarıyla yatak acil olarak düz konuma getirilebilir.', 67, TRUE, '2026-09-04T23:54:41.456Z', '2026-09-04T23:54:41.456Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2d1z001uw08csgvzypgg', 'Karyola & Modeller', 'Yatakta serum askısı yeri var mı?', 'Karyolanın 4 köşesinde de serum askısı yuvaları mevcuttur.', 68, TRUE, '2026-09-04T23:54:41.688Z', '2026-09-04T23:54:41.688Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2d8d001vw08ctm4rxk66', 'Kiralama & Satış', 'Kiralık yatağın markası nedir?', 'Tüm kiralık yataklarımız MCARIS Medikal kendi üretimimiz olan CE ve ISO sertifikalı medikal karyolalardır.', 69, TRUE, '2026-09-04T23:54:41.918Z', '2026-09-04T23:54:41.918Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2dev001ww08cxmltr1o7', 'Kiralama & Satış', 'İkinci el satın alma mı kiralama mı mantıklı?', 'Süreç 4 aydan kısaysa kiralama, 6 aydan uzunsa sıfır garantili ürün satın almak ekonomik açıdan daha mantıklıdır.', 70, TRUE, '2026-09-04T23:54:42.151Z', '2026-09-04T23:54:42.151Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2dm1001xw08cqx383dxb', 'Teslimat & Montaj', 'Yatağı balkona veya dar odaya kurabilir misiniz?', 'Evet, standart 90x190 cm ölçülerindeki modellerimiz kapı genişliği 80 cm üzeri olan tüm odalara kurulabilir.', 71, TRUE, '2026-09-04T23:54:42.409Z', '2026-09-04T23:54:42.409Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2dsf001yw08ci5eoi6t8', 'Kiralama & Satış', 'Kiralık yataklarda koku olur mu?', 'Hayır, uygulanan tıbbi dezenfeksiyon ve ozonlama sayesinde hiçbir koku veya leke bulunmaz.', 72, TRUE, '2026-09-04T23:54:42.640Z', '2026-09-04T23:54:42.640Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2dyw001zw08c4bngalo2', 'Teknik Servis & Garanti', 'Kumanda kablosu hasta tarafından koparılırsa ne olur?', 'Teknik servisimiz yedek kumandayı aynı gün adresinize ulaştırarak değişimi sağlar.', 73, TRUE, '2026-09-04T23:54:42.872Z', '2026-09-04T23:54:42.872Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2e5b0020w08c8ki87vk3', 'Karyola & Modeller', 'Yatağın boyu ve genişliği standart mı?', 'Standart iç ölçü 90x190 cm, dış korkuluk dahil ölçü yaklaşık 100x205 cm''dir.', 74, TRUE, '2026-09-04T23:54:43.103Z', '2026-09-04T23:54:43.103Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2ebp0021w08cb8an3o9v', 'Kiralama & Satış', 'Kiralama fiyatları her yıl ne kadar artıyor?', 'Fiyatlar yıllık maliyetlere göre güncellenir; mevcut kiracılarımızın sözleşme süresince fiyatı sabittir.', 75, TRUE, '2026-09-04T23:54:43.334Z', '2026-09-04T23:54:43.334Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2ei30022w08cw0b0n98s', 'Kiralama & Satış', 'Yatağı iade ederken temizlemeli miyim?', 'Kaba temizliğinin yapılması yeterlidir; detaylı sterilizasyon servis depomuzda profesyonelce yapılır.', 76, TRUE, '2026-09-04T23:54:43.563Z', '2026-09-04T23:54:43.563Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2eoj0023w08clacxqh9d', 'Karyola & Modeller', 'Kiralık yataklar manuel kola sahip mi?', 'Hayır, tüm kiralama filomuz motorlu ve el kumandalı modern sistemlerden oluşur.', 77, TRUE, '2026-09-04T23:54:43.796Z', '2026-09-04T23:54:43.796Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2evk0024w08cle56a068', 'Kiralama & Satış', 'MCARIS Medikal''den kiralama yapmanın en büyük avantajı nedir?', 'Ankara içi 2-4 saatte adrese kurulum, sıfır ayarında hijyen, ücretsiz yerinde teknik servis ve depozitosuz esnek kiralama avantajıdır.', 78, TRUE, '2026-09-04T23:54:44.049Z', '2026-09-04T23:54:44.049Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2f3c0025w08cr4plylvr', 'Karyola & Modeller', 'Medikal yatak alırken motor sayısına neden dikkat etmelisiniz?', 'Motor sayısı yatağın fonksiyonunu belirler: 2 motorlu (sırt/ayak), 3 motorlu (asansörlü yükseklik), 4 motorlu (Trendelenburg) pozisyonları sunar.', 79, TRUE, '2026-09-04T23:54:44.328Z', '2026-09-04T23:54:44.328Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2f9p0026w08cihfunyef', 'Karyola & Modeller', 'ABS korkuluklu yataklar neden daha güvenlidir?', 'ABS kaplama parmak sıkışmasını önler, darbeleri emer ve kırılmaya karşı ekstra dayanıklıdır.', 80, TRUE, '2026-09-04T23:54:44.558Z', '2026-09-04T23:54:44.558Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2fgp0027w08c39up1pym', 'Kullanım & Hasta Bakımı', 'Lazer kesim şilte yatak yarasını engeller mi?', 'Kan dolaşımını rahatlatır ancak yatalak hastalarda tek başına yetmez; boru tipi havalı yatakla birlikte kullanılmalıdır.', 81, TRUE, '2026-09-04T23:54:44.809Z', '2026-09-04T23:54:44.809Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2fph0028w08chctphd0a', 'Karyola & Modeller', 'İki motorlu hasta yatağı hangi hastalar için uygundur?', 'Kendi başına ayağa kalkabilen, kısa süreli nekahet dönemindeki veya oturma desteğine ihtiyaç duyan hastalar içindir.', 82, TRUE, '2026-09-04T23:54:45.126Z', '2026-09-04T23:54:45.126Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2fwj0029w08cs3ep95kp', 'Karyola & Modeller', 'Asansörlü hasta yatağı refakatçiye nasıl fayda sağlar?', 'Bakıcının eğilmeden işlem yapmasını sağlayarak bel fıtığı ve sırt ağrısı riskini sıfıra indirir.', 83, TRUE, '2026-09-04T23:54:45.379Z', '2026-09-04T23:54:45.379Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2g33002aw08cz2v18lln', 'Kullanım & Hasta Bakımı', 'Havalı yatak kullanımı zorunlu mudur?', 'Günde 12 saatten fazla yatağa bağımlı ve pozisyon değiştiremeyen tüm hastalarda tıbbi bir zorunluluktur.', 84, TRUE, '2026-09-04T23:54:45.615Z', '2026-09-04T23:54:45.615Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2ga3002bw08cf2jihua2', 'Karyola & Modeller', 'Ev tipi hasta bakım yatağı ile hastane yatağı arasındaki fark nedir?', 'Ev tipi yataklar ahşap ve sıcak tasarımlarla ev ortamına uyum sağlar; hastane yatakları ise tamamen metal ve ABS gövdelidir.', 85, TRUE, '2026-09-04T23:54:45.868Z', '2026-09-04T23:54:45.868Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2ggn002cw08cg499u6kz', 'Teknik Servis & Garanti', 'Elektrik kesintisinde yatak pozisyonu nasıl değiştirilir?', '9V yedek pil desteği veya motor üzerindeki manuel emniyet mandalı kullanılarak yatak düz pozisyona indirilebilir.', 86, TRUE, '2026-09-04T23:54:46.104Z', '2026-09-04T23:54:46.104Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2gni002dw08cam5szzl1', 'Kullanım & Hasta Bakımı', 'Hasta yatağı temizliği nasıl yapılmalıdır?', 'Tıbbi yüzey dezenfektanı veya sabunlu nemli bezle silinmeli, motor ve kumandaya doğrudan su dökülmemelidir.', 87, TRUE, '2026-09-04T23:54:46.350Z', '2026-09-04T23:54:46.350Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2gu0002ew08cwsqongky', 'Kiralama & Satış', 'Kiralama mı yoksa satın alma mı daha mantıklı?', 'Kısa süreli (1-3 ay) iyileşme dönemlerinde kiralama; 6 ayı aşan kronik süreçlerde satın alma daha ekonomiktir.', 88, TRUE, '2026-09-04T23:54:46.585Z', '2026-09-04T23:54:46.585Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2h0h002fw08ckzqxavb4', 'Karyola & Modeller', 'Yatak tekerleklerinin kilitlenmesi neden önemlidir?', 'Hastanın transferi sırasında karyolanın kaymasını ve düşme kazalarını engellemek için hayati önem taşır.', 89, TRUE, '2026-09-04T23:54:46.817Z', '2026-09-04T23:54:46.817Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2h7f002gw08c8o69mzdn', 'Karyola & Modeller', 'Kilolu (obez) hastalar için özel yatak var mı?', 'Evet, 250 kg taşıma kapasitesine sahip genişletilmiş bariatrik hasta karyolalarımız mevcuttur.', 90, TRUE, '2026-09-04T23:54:47.067Z', '2026-09-04T23:54:47.067Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2hdw002hw08c9l28e3hx', 'Karyola & Modeller', 'Ahşap hasta yatakları dayanıklı mıdır?', 'İç şasisi çelik konstrüksiyon olduğu için metal yataklar kadar sağlam ve uzun ömürlüdür.', 91, TRUE, '2026-09-04T23:54:47.301Z', '2026-09-04T23:54:47.301Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2hl3002iw08cn4er1kuf', 'Kiralama & Satış', 'Kiralık hasta yatağı alırken hijyen nasıl sağlanır?', 'Kurumsal firmalardan ozonla dezenfekte edilmiş ve şiltesi ambalajlı ürünler tercih edilmelidir.', 92, TRUE, '2026-09-04T23:54:47.559Z', '2026-09-04T23:54:47.559Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2hru002jw08c6zryyq97', 'Teknik Servis & Garanti', 'Yatak kumandası bozulursa ne yapılmalıdır?', 'Kumanda soketini kontrol ediniz; arıza devam ediyorsa teknik servisimiz aynı gün yedek kumanda getirir.', 93, TRUE, '2026-09-04T23:54:47.802Z', '2026-09-04T23:54:47.802Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2hyi002kw08c44nhkvgr', 'Kullanım & Hasta Bakımı', 'Serum askısı yatağa nasıl monte edilir?', 'Yatağın 4 köşesindeki yuvalara sokulup sabitleme vidası sıkılarak monte edilir.', 94, TRUE, '2026-09-04T23:54:48.043Z', '2026-09-04T23:54:48.043Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2i54002lw08c78fnxq6r', 'Kullanım & Hasta Bakımı', 'Yatak şiltesi seçerken nelere dikkat edilmelidir?', 'Dansitesinin en az 28 DNS olmasına, lazer kesim kanallarına ve sıvı geçirmez kılıfına dikkat edilmelidir.', 95, TRUE, '2026-09-04T23:54:48.281Z', '2026-09-04T23:54:48.281Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2ibk002mw08c828far1f', 'Kiralama & Satış', 'Refakatçi yatağı kullanımı gerekli midir?', 'Hastanın başında 24 saat bekleyen yakınının sağlığı ve konforu için refakatçi koltuğu tavsiye edilir.', 96, TRUE, '2026-09-04T23:54:48.513Z', '2026-09-04T23:54:48.513Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2ii5002nw08c73smffvk', 'Teslimat & Montaj', 'Hasta yatağı kurulumunu kendimiz yapabilir miyiz?', 'Karyolalar profesyonel montaj gerektirir; MCARIS uzman ekipleri ücretsiz kurulum yapmaktadır.', 97, TRUE, '2026-09-04T23:54:48.749Z', '2026-09-04T23:54:48.749Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2iof002ow08cdbqdwh1t', 'Karyola & Modeller', 'Katlanabilir hasta yatakları ne zaman tercih edilir?', 'Dar oda ve merdiven girişlerinde ya da yazlığa taşıma gibi mobil durumlarda tercih edilir.', 98, TRUE, '2026-09-04T23:54:48.976Z', '2026-09-04T23:54:48.976Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2iuz002pw08chlvibtej', 'Kullanım & Hasta Bakımı', 'Kumandalı yatak kullanımı zor mudur?', 'Hayır, anlaşılır simgeler içeren kumandasıyla tek bir tuşa basarak istenen açı kolayca verilir.', 99, TRUE, '2026-09-04T23:54:49.211Z', '2026-09-04T23:54:49.211Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2j1h002qw08cihuen6ee', 'Karyola & Modeller', 'Yatak başlıkları neden sökülebilir olmalıdır?', 'Acil tıbbi müdahale, aspirasyon ve yatakta saç yıkama gibi işlemler için sökülebilir olmalıdır.', 100, TRUE, '2026-09-04T23:54:49.445Z', '2026-09-04T23:54:49.445Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2j8h002rw08ctcsrwt79', 'Teknik Servis & Garanti', 'Yatak motorları çok gürültü yapar mı?', 'Hayır, kaliteli piston motorlar 30 dB altında sessiz çalışır; hastayı rahatsız etmez.', 101, TRUE, '2026-09-04T23:54:49.697Z', '2026-09-04T23:54:49.697Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2jf9002sw08ccl558bix', 'Kullanım & Hasta Bakımı', 'Yatak yarası (bası yarası) belirtileri nelerdir?', 'Kuyruk sokumu ve topuklarda geçmeyen kızarıklık, ısı artışı ve sertlik ilk evre bası yarası belirtisidir.', 102, TRUE, '2026-09-04T23:54:49.941Z', '2026-09-04T23:54:49.941Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2jlu002tw08cgcq6j3s6', 'Karyola & Modeller', 'Hasta yemek masası her yatağa uyumlu mudur?', 'Evet, U ayak yapısı sayesinde tüm hasta karyolalarının altına yanaşarak tam uyum sağlar.', 103, TRUE, '2026-09-04T23:54:50.179Z', '2026-09-04T23:54:50.179Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2jsd002uw08c1r8f98w2', 'Karyola & Modeller', 'Merkezi kilit sistemi nedir?', 'Ayak ucundaki tek bir pedala basılarak 4 tekerleğin aynı anda kilitlenmesini sağlayan güvenli sistemdir.', 104, TRUE, '2026-09-04T23:54:50.413Z', '2026-09-04T23:54:50.413Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2jyx002vw08cengmzfdo', 'Kullanım & Hasta Bakımı', 'Yatak koruyucu örtü (alez) kullanılmalı mı?', 'Evet, süngere sıvı geçişini önlemek ve hijyen sağlamak için sıvı geçirmez alez şarttır.', 105, TRUE, '2026-09-04T23:54:50.649Z', '2026-09-04T23:54:50.649Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2k5e002ww08cdmmif0sd', 'Kullanım & Hasta Bakımı', 'Fizik tedavi sürecinde hasta yatağının rolü nedir?', 'Asansör ayarı fizyoterapistin doğru açıda çalışmasını sağlar; oturma açısı kas kaybını önler.', 106, TRUE, '2026-09-04T23:54:50.883Z', '2026-09-04T23:54:50.883Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2kbz002xw08cfu6el3en', 'Karyola & Modeller', 'Yatak korkulukları arasında boşluk kalması tehlikeli mi?', 'Evet, hastanın uzuvlarının sıkışmaması için korkuluk aralıkları medikal standartlara (EN 60601-2-52) uygun olmalıdır.', 107, TRUE, '2026-09-04T23:54:51.119Z', '2026-09-04T23:54:51.119Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2kix002yw08cf8fq3cxn', 'Kullanım & Hasta Bakımı', 'Yatalak hasta banyosu yatakta nasıl yapılır?', 'Yatak içine yerleştirilen tahliye hortumlu şişme banyo havuzları ile hasta ıslanmadan yıkanır.', 108, TRUE, '2026-09-04T23:54:51.369Z', '2026-09-04T23:54:51.369Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2kpi002zw08c6ls995yn', 'Teknik Servis & Garanti', 'Garanti süresi bittikten sonra servis desteği devam eder mi?', 'Evet, MCARIS Medikal 10 yıl boyunca ücretli orijinal yedek parça ve teknik servis desteği sağlar.', 109, TRUE, '2026-09-04T23:54:51.606Z', '2026-09-04T23:54:51.606Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2kvv0030w08cvkmv9lr2', 'Teknik Servis & Garanti', 'Hasta yatağı motorları ne kadar elektrik harcar?', 'Yalnızca hareket esnasında bir ampul kadar elektrik harcar; aylık faturaya etkisi 5-10 TL''dir.', 110, TRUE, '2026-09-04T23:54:51.835Z', '2026-09-04T23:54:51.835Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2l2e0031w08cmg1o7zwy', 'Kullanım & Hasta Bakımı', 'Havalı yatak motoru gece kapatılmalı mı?', 'Kesinlikle hayır; motor gece kapatılırsa yatak söner ve hastanın vücudunda saatler içinde yara açılır.', 111, TRUE, '2026-09-04T23:54:52.070Z', '2026-09-04T23:54:52.070Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2l8y0032w08caiasycl6', 'Kullanım & Hasta Bakımı', 'Pozisyon veren havalı yatak nedir?', 'Hastayı otomatik olarak sağa ve sola 30-45 derece yatırarak yara oluşumunu önleyen akıllı sistemdir.', 112, TRUE, '2026-09-04T23:54:52.307Z', '2026-09-04T23:54:52.307Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2lfn0033w08c9re0yhjm', 'Karyola & Modeller', 'Yatak başlıklarının malzemesi ne olmalıdır?', 'Antibakteriyel, darbelere dayanıklı ve kolay silinebilir ABS veya medikal laminat kaplama ahşap olmalıdır.', 113, TRUE, '2026-09-04T23:54:52.548Z', '2026-09-04T23:54:52.548Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2lm30034w08crhzt8pol', 'Karyola & Modeller', 'Hastane yatağının yüksekliği neden ayarlanmalıdır?', 'Hastanın yataktan inişinde alçak, refakatçinin bakımında yüksek konum ergonomi ve güvenlik sağlar.', 114, TRUE, '2026-09-04T23:54:52.780Z', '2026-09-04T23:54:52.780Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2lsp0035w08c1fzgprip', 'Karyola & Modeller', 'Yatak şasisi neden çelikten üretilir?', 'Ağır yük altında esnememesi, kırılmaması ve uzun yıllar stabil çalışması için çelikten üretilir.', 115, TRUE, '2026-09-04T23:54:53.018Z', '2026-09-04T23:54:53.018Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2lyx0036w08cgzcimsd7', 'Karyola & Modeller', 'Tekerleklerin çapı önemli midir?', 'Evet, 100-125 mm büyük tekerlekler halı ve eşiklerde yatağın çok daha rahat sürülmesini sağlar.', 116, TRUE, '2026-09-04T23:54:53.242Z', '2026-09-04T23:54:53.242Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtnm2m5a0037w08ct3fwkyf3', 'Karyola & Modeller', 'Neden MCARIS Medikal''den hasta yatağı almalısınız?', 'Fabrika satış fiyatları, 2 yıl yerinde servis güvencesi, 10 yıl parça temini ve uzman hekim kadrosu desteğiyle en güvenilir medikal çözümü sunduğu için.', 117, TRUE, '2026-09-04T23:54:53.471Z', '2026-09-04T23:54:53.471Z') ON CONFLICT DO NOTHING;
+INSERT INTO "Faq" ("id", "category", "question", "answer", "order", "isActive", "createdAt", "updatedAt") VALUES ('cmtjc136f000aw0vgp5k0h2zh', 'Ödeme & SGK', 'Hangi ödeme yöntemleri geçerlidir?', 'Kredi kartına vade farksız taksit, kapıda nakit/POS ile ödeme ve banka havalesi/EFT seçeneklerimiz mevcuttur.', 11, TRUE, '2026-09-02T00:02:41.367Z', '2026-09-04T23:55:23.636Z') ON CONFLICT DO NOTHING;
+
+-- Tablo: "StoreSetting" (3 kayıt)
+INSERT INTO "StoreSetting" ("id", "key", "value", "updatedAt") VALUES ('cmtu06m1v0oecpo01b0y3d1wq', 'hero_settings', '{"pillCity":"Ankara","pillText":"Stok Ürünlerde Aynı Gün Ücretsiz Teslimat & Kurulum ","mainTitle":"Konforlu Evde Bakım İçin Hasta Yatakları","highlightTitle":"Veteriner Ekipmanları ve Dövme (Tattoo) Ekipmanları","description":"Evde bakım süreçleri için özel geliştirilen elektrikli hasta yatakları, 2, 3 ve 4 motorlu ahşap/ABS karyolalar, Veteriner Ekipmanları ve Dövme (Tattoo) Ekipmanları. 2 yıl resmi garanti ve CE & ISO 9001 sertifikalı Alman standartlarında üretim.","whatsappText":"WhatsApp Sipariş","whatsappNumber":"905368200269","showcaseItems":[{"id":"4-motorlu","tabLabel":"Evde Bakım Karyolaları","badge":"Alman Teknolojisi • Trendelenburg","title":"Burmeier Dali 4 Motorlu","subtitle":"Ahşap Alman Hasta Karyolası","description":"24V güvenli gerilim, kablosuz el kumandası, asansör ve Trendelenburg pozisyonlarıyla en üst düzey evde bakım.","link":"/urun/burmeier-dali-4-motorlu-alman-hasta-karyolasi","image":"/uploads/products/burmeier-dali-4-motorlu-alman-hasta-karyolasi-1-117f.webp","features":["4 Bağımsız Güçlü Motor","Trendelenburg & Asansör","Ahşap ","Alman Güvencesi & 2 Yıl Garanti"]},{"id":"3-motorlu","tabLabel":"Hasta Bakım Karyolaları","badge":"Asansörlü & ABS Panelli","title":"MCARIS Gold 4 Motorlu","subtitle":"Asansörlü ABS Hasta Karyolası","description":"Sırt, ayak ve elektrikli asansör yükseklik ayarıyla hasta bakımını kolaylaştıran antibakteriyel ABS tasarım.","link":"/urun/mcaris-4-motorlu-abs-hasta-karyolasi","image":"/categories/gold-hasta-yataklari.png","features":["4 Bağımsız Lineer Motor","Yükseklik Ayarlı Asansör","Abs Korkuluk","Çapraz Kilitli Medikal Teker"]},{"id":"2-motorlu","tabLabel":"Dövme Ekipmanları","badge":"Dövme Salonu Ekipmanları","title":"Elegance 3 Motorlu Yükseklik Hareketli Koltuk | Siyah","subtitle":"Dövme (Tattoo) Koltukları","description":"Sırt ve ayak hareketlerini elektrikli motorla sağlayan, ev mobilyası görünümünde şık ve sessiz karyola.","link":"/urun/mcaris-elegance-3-motorlu-yukseklik-hareketli-koltuk-siyah","image":"/uploads/products/mcaris-elegance-3-motorlu-yukseklik-hareketli-koltuk-siyah-1-a5ad.webp","features":["Garanti: 2 Yıl"],"productId":"cmssylx88001hl147m148f18o"},{"id":"transfer-lift","tabLabel":"Veteriner Ekipmanları","badge":"Veteriner Muayene Masaları","title":"Motorlu Veteriner Pet Bakım Ve Muayene Masası – Oval – Beyaz","subtitle":"Veteriner Bakım Masası","description":"Yataktan tekerlekli sandalyeye veya banyoya hastayı tek kişiyle güvenle ve güç harcamadan taşıma çözümü.","link":"/urun/motorlu-veteriner-pet-bakim-ve-muayene-masasi-oval-beyaz","image":"/uploads/products/motorlu-veteriner-pet-bakim-ve-muayene-masasi-oval-beyaz-1-42ef.webp","features":["Garanti: 2 Yıl"],"productId":"cmssxyav7000tl147eqds3qt3"}]}', '2026-09-09T11:23:55.625Z') ON CONFLICT DO NOTHING;
+INSERT INTO "StoreSetting" ("id", "key", "value", "updatedAt") VALUES ('cmtu0kgwr0ok3po01f8qv59i8', 'store_contact', '{"storeName":"MCaris Medikal","phone":"+90 5368200269","whatsapp":"905368200269","email":"info@mcaris.com.tr","address":"Ankara, Türkiye","workingHours":"09:00 - 19:00 (Pazartesi - Cumartesi)","city":"Ankara","country":"Türkiye"}', '2026-09-09T11:27:18.136Z') ON CONFLICT DO NOTHING;
+INSERT INTO "StoreSetting" ("id", "key", "value", "updatedAt") VALUES ('cmtu0mu800ok4po0184fbtyas', 'seo_settings', '{"defaultTitle":"MCaris Medikal | Hasta Karyolası & Medikal Ekipmanlar","titleTemplate":"%s | MCaris Medikal","defaultDescription":" 2, 3 ve 4 motorlu hasta yatakları, veteriner ekipmanları, dövme (tatoo) ekipmanları ve medikal bakım ürünleri. Stok ürünlerde Ankara içi aynı gün teslimat ve kurulum.","keywords":"hasta yatağı, hasta karyolası, 4 motorlu hasta karyolası, ankara hasta yatağı, medikal karyola, burmeier dali, dövme ekipmanları, veteriner ekipmanları","googleVerification":"","analyticsId":""}', '2026-09-09T11:29:08.699Z') ON CONFLICT DO NOTHING;
+
+-- Tablo: "ContactMessage" (3 kayıt)
+INSERT INTO "ContactMessage" ("id", "name", "phone", "email", "subject", "message", "createdAt") VALUES ('cmsramn5w0000l1jcvpvyvf4n', 'Test', '0555', 'test@mcaris.com.tr', 'Konu', 'Mesaj', '2026-08-17T19:24:55.974Z') ON CONFLICT DO NOTHING;
+INSERT INTO "ContactMessage" ("id", "name", "phone", "email", "subject", "message", "createdAt") VALUES ('cmsraoqn90000l1tpool6dxla', 'Sıla Çakır', '05559998877', 'info@mcaris.com.tr', 'Hasta Yatakları Danışmanlığı', 'Merhaba, Platinum hasta yatağı hakkında bilgi almak istiyorum.', '2026-08-17T19:24:56.628Z') ON CONFLICT DO NOTHING;
+INSERT INTO "ContactMessage" ("id", "name", "phone", "email", "subject", "message", "createdAt") VALUES ('cmsrayikp0001l1tpks0zio4k', 'sila cakir', '0 (551) 734 96 66', 'silacakir01@gmail.com', 'Hasta Yatakları Danışmanlığı', 'xxxx', '2026-08-17T19:24:56.730Z') ON CONFLICT DO NOTHING;
+
+SET session_replication_role = 'origin';
