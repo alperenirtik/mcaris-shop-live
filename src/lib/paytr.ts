@@ -28,6 +28,11 @@ export interface PaytrTokenResult {
  * PayTR API anahtarlarının ortam değişkenlerinde tanımlı olup olmadığını kontrol eder.
  */
 export function isPaytrConfigured(): boolean {
+  // PAYTR_ENABLED=0 | false | off → tamamen kapalı (yalnızca havale)
+  const flag = String(process.env.PAYTR_ENABLED ?? "1").trim().toLowerCase();
+  if (flag === "0" || flag === "false" || flag === "off" || flag === "no") {
+    return false;
+  }
   return Boolean(
     process.env.PAYTR_MERCHANT_ID &&
     process.env.PAYTR_MERCHANT_KEY &&
