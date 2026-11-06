@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { prisma } from "@/lib/db";
 import { extractOrGenerateProductCode } from "@/lib/productCode";
 import { cleanProductTitle } from "@/lib/products";
+import { sanitizePublicProductSpecs } from "@/lib/probedCatalog";
 import { SITE_URL } from "@/lib/seo";
 
 function escapeXml(unsafe: string): string {
@@ -151,7 +152,9 @@ export async function generateProductFeedXml(options: {
         .map((img) => `      <g:additional_image_link>${escapeXml(img)}</g:additional_image_link>`)
         .join("\n");
 
-      const specs = (product.specs as Record<string, string>) || {};
+      const specs = sanitizePublicProductSpecs(
+        (product.specs as Record<string, string>) || {}
+      );
       const specDetailsXml = Object.entries(specs)
         .map(([key, val]) => {
           if (!key || !val) return "";

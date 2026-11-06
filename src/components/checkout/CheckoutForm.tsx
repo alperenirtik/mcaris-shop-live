@@ -1,9 +1,11 @@
 "use client";
 
 import { useState, useMemo, useEffect } from "react";
+import Image from "next/image";
 import { createOrderAndRedirectAction } from "@/app/checkout/actions";
 import { TURKEY_CITIES } from "@/lib/turkey-cities";
 import { BANK_IBAN, BANK_NAME, BANK_ACCOUNT_HOLDER } from "@/lib/constants";
+import PaymentLogos from "@/components/layout/PaymentLogos";
 
 interface CheckoutFormProps {
   initialUser?: {
@@ -15,7 +17,7 @@ interface CheckoutFormProps {
 }
 
 export default function CheckoutForm({ initialUser }: CheckoutFormProps) {
-  // PayTR / kart kapalı — yalnızca havale / EFT
+  const [paymentMethod, setPaymentMethod] = useState<"card" | "transfer">("card");
   const [couponCode, setCouponCode] = useState("");
   
   useEffect(() => {
@@ -67,7 +69,11 @@ export default function CheckoutForm({ initialUser }: CheckoutFormProps) {
       onSubmit={() => setIsSubmitting(true)}
       className="bg-[#0F1E36] rounded-2xl p-6 md:p-8 border border-slate-700 space-y-6"
     >
-      <input type="hidden" name="paymentMethod" value="havale" />
+      <input
+        type="hidden"
+        name="paymentMethod"
+        value={paymentMethod === "transfer" ? "havale" : "card"}
+      />
       <input type="hidden" name="couponCode" value={couponCode} />
 
       {/* Step 1: Müşteri Bilgileri */}
@@ -263,76 +269,125 @@ export default function CheckoutForm({ initialUser }: CheckoutFormProps) {
           </div>
         </div>
 
-        <div className="p-4 rounded-xl border border-brand bg-brand/5 flex items-start gap-3">
-          <input
-            type="radio"
-            name="paymentChoiceRadio"
-            checked
-            readOnly
-            className="mt-1 accent-[#0F1E36]"
-          />
-          <div className="space-y-1 flex-1">
-            <div className="flex items-center gap-2">
-              <span className="font-bold text-xs sm:text-sm text-slate-900 font-inter">Havale / EFT</span>
-              <span className="bg-emerald-50 text-emerald-900 text-[10px] font-bold px-2 py-0.5 rounded-full border border-emerald-200">
-                Aktif
-              </span>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {/* Card Option */}
+          <div
+            onClick={() => setPaymentMethod("card")}
+            className={`p-4 rounded-xl border transition-colors cursor-pointer flex items-start gap-3 relative overflow-hidden ${
+              paymentMethod === "card"
+                ? "border-brand bg-brand/5"
+                : "border-slate-200 hover:border-slate-300 bg-white"
+            }`}
+          >
+            <input
+              type="radio"
+              name="paymentChoiceRadio"
+              checked={paymentMethod === "card"}
+              onChange={() => setPaymentMethod("card")}
+              className="mt-1 accent-[#0F1E36]"
+            />
+            <div className="space-y-1.5 flex-1">
+              <div className="flex items-center justify-between gap-3 flex-wrap">
+                <div className="flex items-center gap-2">
+                  <span className="font-bold text-xs sm:text-sm text-slate-900 font-inter">Kredi / Banka Kartı</span>
+                  <span className="bg-emerald-50 text-emerald-900 text-[10px] font-bold px-2 py-0.5 rounded-full border border-emerald-200">
+                    3D Secure
+                  </span>
+                </div>
+                <Image
+
+                  src="/images/paytr.svg"
+                  alt="PayTR"
+                  width={135}
+                  height={24}
+                  className="h-6 w-auto object-contain"
+                />
+              </div>
+              <p className="text-xs text-slate-500 font-inter leading-relaxed">
+                PayTR güvencesiyle tüm kredi kartlarına tek çekim ve 12 aya varan taksit imkanı.
+              </p>
             </div>
-            <p className="text-xs text-slate-500 font-inter leading-relaxed">
-              Banka hesabımıza doğrudan havale / EFT / FAST ile sipariş verin. Kartlı ödeme şu an kapalıdır.
-            </p>
+          </div>
+
+          {/* Transfer Option */}
+          <div
+            onClick={() => setPaymentMethod("transfer")}
+            className={`p-4 rounded-xl border transition-colors cursor-pointer flex items-start gap-3 relative overflow-hidden ${
+              paymentMethod === "transfer"
+                ? "border-brand bg-brand/5"
+                : "border-slate-200 hover:border-slate-300 bg-white"
+            }`}
+          >
+            <input
+              type="radio"
+              name="paymentChoiceRadio"
+              checked={paymentMethod === "transfer"}
+              onChange={() => setPaymentMethod("transfer")}
+              className="mt-1 accent-[#0F1E36]"
+            />
+            <div className="space-y-1">
+              <div className="flex items-center gap-2">
+                <span className="font-bold text-xs sm:text-sm text-slate-900 font-inter">Havale / EFT</span>
+              </div>
+              <p className="text-xs text-slate-500 font-inter leading-relaxed">
+                Banka hesabımıza doğrudan havale / EFT ile sipariş verin.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div className="p-4 rounded-xl bg-amber-50/70 border border-amber-200 space-y-3 font-inter">
-          <div className="flex items-center justify-between border-b border-amber-200/80 pb-2">
-            <div className="flex items-center gap-2 font-bold text-xs sm:text-sm text-amber-950 font-inter">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-amber-600">
-                <path d="M3 21h18" />
-                <path d="M3 10h18" />
-                <path d="M5 6l7-3 7 3" />
-                <path d="M4 10v11" />
-                <path d="M20 10v11" />
-                <path d="M8 10v11" />
-                <path d="M12 10v11" />
-                <path d="M16 10v11" />
-              </svg>
-              <span>Banka Havale / EFT Bilgileri</span>
-            </div>
-            <span className="text-[10px] font-bold text-amber-800 bg-amber-100 px-2 py-0.5 rounded-md">
-              {BANK_NAME}
-            </span>
-          </div>
-
-          <div className="space-y-2 text-xs font-inter text-slate-800">
-            <div>
-              <span className="text-slate-500 font-medium block text-[11px]">Alıcı / Firma Unvanı:</span>
-              <span className="font-bold text-slate-900 font-inter">
-                {BANK_ACCOUNT_HOLDER}
+        {/* Dynamic IBAN Box when Havale is selected */}
+        {paymentMethod === "transfer" && (
+          <div className="p-4 rounded-xl bg-amber-50/70 border border-amber-200 space-y-3 font-inter animate-in fade-in duration-300">
+            <div className="flex items-center justify-between border-b border-amber-200/80 pb-2">
+              <div className="flex items-center gap-2 font-bold text-xs sm:text-sm text-amber-950 font-inter">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-amber-600">
+                  <path d="M3 21h18" />
+                  <path d="M3 10h18" />
+                  <path d="M5 6l7-3 7 3" />
+                  <path d="M4 10v11" />
+                  <path d="M20 10v11" />
+                  <path d="M8 10v11" />
+                  <path d="M12 10v11" />
+                  <path d="M16 10v11" />
+                </svg>
+                <span>Banka Havale / EFT Bilgileri</span>
+              </div>
+              <span className="text-[10px] font-bold text-amber-800 bg-amber-100 px-2 py-0.5 rounded-md">
+                {BANK_NAME}
               </span>
             </div>
 
-            <div>
-              <span className="text-slate-500 font-medium block text-[11px]">IBAN Numarası:</span>
-              <div className="flex items-center justify-between bg-white p-2.5 rounded-xl border border-amber-200 mt-1">
-                <code className="font-mono font-bold text-xs md:text-sm text-slate-900 tracking-wider">
-                  {iban}
-                </code>
-                <button
-                  type="button"
-                  onClick={handleCopyIban}
-                  className="text-xs font-bold text-amber-800 bg-amber-100 hover:bg-amber-200 px-3 py-1 rounded-lg transition-colors cursor-pointer"
-                >
-                  {copied ? "✓ Kopyalandı" : "Kopyala"}
-                </button>
+            <div className="space-y-2 text-xs font-inter text-slate-800">
+              <div>
+                <span className="text-slate-500 font-medium block text-[11px]">Alıcı / Firma Unvanı:</span>
+                <span className="font-bold text-slate-900 font-inter">
+                  {BANK_ACCOUNT_HOLDER}
+                </span>
+              </div>
+
+              <div>
+                <span className="text-slate-500 font-medium block text-[11px]">IBAN Numarası:</span>
+                <div className="flex items-center justify-between bg-white p-2.5 rounded-xl border border-amber-200 mt-1">
+                  <code className="font-mono font-bold text-xs md:text-sm text-slate-900 tracking-wider">
+                    {iban}
+                  </code>
+                  <button
+                    type="button"
+                    onClick={handleCopyIban}
+                    className="text-xs font-bold text-amber-800 bg-amber-100 hover:bg-amber-200 px-3 py-1 rounded-lg transition-colors cursor-pointer"
+                  >
+                    {copied ? "✓ Kopyalandı" : "Kopyala"}
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
 
-          <p className="text-[11px] text-amber-900/80 leading-relaxed font-inter">
-            Siparişi onayladıktan sonra ödemenizi yukarıdaki IBAN adresine gönderiniz. Açıklama kısmına sipariş numaranızı eklemeniz yeterlidir.
-          </p>
-        </div>
+            <p className="text-[11px] text-amber-900/80 leading-relaxed font-inter">
+              Siparişi onayladıktan sonra ödemenizi yukarıdaki IBAN adresine gönderiniz. Açıklama kısmına sipariş numaranızı eklemeniz yeterlidir.
+            </p>
+          </div>
+        )}
       </div>
 
       {/* Trust Badges */}
@@ -345,9 +400,19 @@ export default function CheckoutForm({ initialUser }: CheckoutFormProps) {
           <div className="flex items-center gap-2">
             <span>Ücretsiz Kurulum &amp; Kargo</span>
           </div>
+          <PaymentLogos className="justify-end" />
         </div>
         <p className="text-[11px] font-medium leading-relaxed text-slate-500">
-          Ödeme yöntemi olarak yalnızca banka havalesi / EFT / FAST kabul edilmektedir.
+          Bu internet sitesinde ödeme hizmetleri{" "}
+          <a
+            href="https://www.paytr.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-slate-700 hover:text-slate-950 underline-offset-2 hover:underline"
+          >
+            PayTR Ödeme ve Elektronik Para Kuruluşu A.Ş.
+          </a>{" "}
+          tarafından sağlanmaktadır.
         </p>
       </div>
 
@@ -371,7 +436,11 @@ export default function CheckoutForm({ initialUser }: CheckoutFormProps) {
               <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
               <path d="M7 11V7a5 5 0 0 1 10 0v4" />
             </svg>
-            <span>Havale / EFT İle Siparişi Onayla →</span>
+            <span>
+              {paymentMethod === "transfer"
+                ? "Havale / EFT İle Siparişi Onayla →"
+                : "Kredi Kartı İle Ödemeye Geç →"}
+            </span>
           </>
         )}
       </button>

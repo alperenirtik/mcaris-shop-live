@@ -3,6 +3,7 @@ import { prisma } from "./db";
 import type { ProductWithCategory, Series } from "./types";
 import { slugifyTurkish } from "./categories";
 import { formatProductCode } from "./productCode";
+import { sanitizePublicProductSpecs } from "./probedCatalog";
 
 export const PRODUCT_INCLUDE = {
   category: { select: { id: true, name: true, slug: true } },
@@ -94,13 +95,14 @@ export function extractDynamicFilters(products: ProductWithCategory[]): DynamicF
 }
 
 export function serializeProduct(product: ProductWithCategoryPayload): ProductWithCategory {
-  const specs = (product.specs as Record<string, string>) || {};
+  const rawSpecs = (product.specs as Record<string, string>) || {};
+  const specs = sanitizePublicProductSpecs(rawSpecs);
   return {
     ...product,
     name: cleanProductTitle(product.name),
     price: product.price.toString(),
     specs,
-    sku: product.sku || specs["Ürün Kodu"] || specs["sku"] || null,
+    sku: product.sku || rawSpecs["Ürün Kodu"] || rawSpecs["sku"] || null,
     vatRate: product.vatRate ?? null,
     createdAt: product.createdAt,
     updatedAt: product.updatedAt,

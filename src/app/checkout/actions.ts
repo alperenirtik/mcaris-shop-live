@@ -18,8 +18,7 @@ const checkoutSchema = z.object({
   address: z.string().min(5, "Açık adres gereklidir."),
   city: z.string().min(2, "İl seçimi gereklidir."),
   district: z.string().min(2, "İlçe seçimi gereklidir."),
-  // PayTR / iyzico kapalı — yalnızca havale
-  paymentMethod: z.enum(["havale"]).default("havale"),
+  paymentMethod: z.enum(["havale", "card", "paytr", "iyzico"]).default("card"),
   couponCode: z.string().optional(),
   customerNotes: z.string().optional(),
 });
@@ -39,8 +38,7 @@ export async function createOrderAndRedirectAction(formData: FormData): Promise<
     address: String(formData.get("shippingAddress") || "").trim(),
     city: String(formData.get("city") || "").trim(),
     district: String(formData.get("district") || "").trim(),
-    // Kart / PayTR gönderilse bile havale’ye zorla
-    paymentMethod: "havale",
+    paymentMethod: String(formData.get("paymentMethod") || "havale").trim(),
     couponCode: String(formData.get("couponCode") || "").trim().toUpperCase() || undefined,
     customerNotes: String(formData.get("customerNotes") || "").trim() || undefined,
   };
